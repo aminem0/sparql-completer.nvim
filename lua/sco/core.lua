@@ -9,6 +9,7 @@ local final_tab = {}
 -- NOTE: There must be a better way, later check LuaRocks for a package
 local sources = {
     "dc",
+    "dwciri",
 }
 
 -- Load all source tables dynamically
