@@ -39,15 +39,25 @@ return {
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/caste]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [dwc:Occurrence]
+
++ **Range**
+- [xsd:anyURI]
+
 + **Definition**
 - Categorisation of individuals for eusocial species (including some mammals and arthropods).
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary that aligns best with the dwc:Taxon. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary that aligns best with the [dwc:Taxon]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
-    {
+    { -- NOTE: It applies to the dwc:Event?
         label = "dwciri:dataGeneralizations",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:dataGeneralizations",
@@ -57,11 +67,21 @@ return {
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/dataGeneralizations]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [dwc:Event]
+
++ **Range**
+- [xsd:anyURI]
+
 + **Definition**
 - Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.
 
 + **Comments**
-- Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -75,11 +95,21 @@ return {
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/degreeOfEstablishment]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [dwc:Occurrence]
+
++ **Range**
+- [xsd:anyURI]
+
 + **Definition**
 - The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.
 
 + **Comments**
-- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/doe/]. For details, refer to [https://doi.org/10.3897/biss.3.38084]. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/doe/]. For details, refer to [https://doi.org/10.3897/biss.3.38084]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 
 + **Examples**
 - [http://rs.tdwg.org/dwcdoe/values/d003]

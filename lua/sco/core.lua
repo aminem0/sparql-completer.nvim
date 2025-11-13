@@ -10,6 +10,7 @@ local final_tab = {}
 local sources = {
     "dc",
     "dwciri",
+    "owl",
 }
 
 -- Load all source tables dynamically
