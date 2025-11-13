@@ -170,10 +170,10 @@ function M.queryo()
             "Content-Type: " .. request_content_type,
             "-H",
             "Accept: " .. accept_mime_type,
-            -- "--data-binary",
-            -- query,
-            "--data-urlencode",
-            "query=" .. url_encode(query),
+            "--data-binary",
+            query,
+            --"--data-urlencode",
+            --"query=" .. url_encode(query),
         }
     elseif http_method == "GET" then
         cmd = {
