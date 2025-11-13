@@ -62,7 +62,7 @@ function M.setup(opts)
     cmp.setup.filetype({ "rq", "sparql" }, {
         sources = cmp.config.sources({
             { name = "sparql_completer" },
-            { name = "buffer" },
+            -- { name = "buffer" },
         }),
     })
 end
