@@ -497,6 +497,7 @@ return {
     },
     {
         label = "WHERE",
+        insertText = "WHERE {}",
         kind = cmp.lsp.CompletionItemKind.Keyword,
         description = "WHERE",
         documentation = {
