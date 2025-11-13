@@ -36,7 +36,7 @@ function M.setup(opts)
                     -- detail = term.description,
                     kind = term.kind,
                     documentation = {
-                        kind = term.documentation.kind,
+                        -- kind = term.documentation.kind,
                         value = term.documentation.value,
                     },
                 })
