@@ -186,7 +186,7 @@ function M.queryo()
         }
     end
 
-    print(cmd)
+    print(vim.inspect(cmd))
     -- Run curl and capture output
     local response = vim.fn.systemlist(cmd)
 
