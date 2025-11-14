@@ -4,6 +4,8 @@ M.options = {
     sources = {
         "dc",
         "dsw",
+
+        "pok",
     },
 
     enable_autocmds = true,

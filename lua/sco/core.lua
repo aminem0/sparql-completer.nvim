@@ -1,9 +1,12 @@
 local M = {}
 
+-- Load both cmp and the configuration table
+-- NOTE: Moved vocabularies to load to configuration,
+-- so this part is necessary
 local cmp = require("cmp")
 local config = require("sco.config")
 
--- Internal state
+-- Initialize empty tables for the terms and the index
 local vocab = {}
 local index = {}
 
@@ -11,21 +14,29 @@ local index = {}
 -- Load all term tables from sco.sources.*
 -----------------------------------------------------
 local function load_vocabularies()
-    vocab = {} -- reset
-    index = {} -- reset
+    -- Reset empty tables on each call
+    vocab = {}
+    index = {}
 
+    -- Load all tables dynamically
+    -- TEST: Trying out a new version with index lookup
+    -- NOTE: That final dot will still kill you ...
     for _, src in ipairs(config.options.sources) do
         local ok, data = pcall(require, "sco.sources." .. src)
         if ok and type(data) == "table" then
             for _, term in ipairs(data) do
                 table.insert(vocab, term)
 
-                -- Build prefix index for fast lookup  e.g. "rdf:" or "owl:ver"
+                -- Build prefix index for better lookup
+                -- NOTE: I considered three letters since most prefixes
+                -- are made up of three letters
                 local key = term.description:sub(1, 3):lower()
                 index[key] = index[key] or {}
                 table.insert(index[key], term)
             end
         else
+            -- WARN: Helpful error catch for rewriting
+            -- Tried it out with empty pok table
             if vim.g.sco_debug then
                 vim.notify("Failed to load vocab source: " .. src, vim.log.levels.WARN)
             end
