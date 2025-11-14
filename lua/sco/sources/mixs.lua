@@ -53,4 +53,57 @@ return {
 ]],
         },
     },
+    {
+        label = "mixs:isol_growth_condt",
+        insertText = "mixs:0000003",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:isol_growth_condt",
+        deprecated = false,
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000003]
+
++ **Type**
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Publication reference in te form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material.
+
++ **Examples**
+- `doi:10.1016/j.syapm.2018.01.009`
+]],
+        },
+    },
+    {
+        label = "mixs:contam_screen_input",
+        insertText = "mixs:0000005",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:contam_screen_input",
+        deprecated = false,
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000005]
+
++ **Type**
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The type of sequence data used as input.
+
++ **Examples**
+- `contigs`
+]],
+        },
+    },
+
 }
