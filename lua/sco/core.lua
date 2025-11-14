@@ -10,9 +10,9 @@ local config = require("sco.config")
 local vocab = {}
 local index = {}
 
------------------------------------------------------
--- Load all term tables from sco.sources.*
------------------------------------------------------
+
+-- NOTE: Function to load all terms from the Lua tables
+-- in lua/sco/sources/
 local function load_vocabularies()
     -- Reset empty tables on each call
     vocab = {}
@@ -38,9 +38,10 @@ local function load_vocabularies()
     end
 end
 
------------------------------------------------------
--- Better matching (case-insensitive, substring)
------------------------------------------------------
+-- NOTE: Function to lookup only candidates that have
+-- the same prefix, otherwise lookup entire vocabulary
+-- WARN: Keep everything case-insensitive
+-- BTW thank you xmp: vocabulary ...
 local function search(prefix)
     local results = {}
     local key = prefix:sub(1, 3):lower()
