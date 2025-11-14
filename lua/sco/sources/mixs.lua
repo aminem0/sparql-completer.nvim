@@ -105,5 +105,59 @@ return {
 ]],
         },
     },
+    {
+        label = "mixs:wga_amp_kit",
+        insertText = "mixs:0000006",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wga_amp_kit",
+        deprecated = false,
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000006]
+
++ **Type**
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Kit used to amplify genomic DNA in preparation for sequencing.
+
++ **Examples**
+- `qiagen repli-g`
+]],
+        },
+    },
+    {
+        label = "mixs:experimental_factor",
+        insertText = "mixs:0000008",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:experimental_factor",
+        deprecated = false,
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000008]
+
++ **Type**
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Variable aspects of an experiment design that can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI).
+
++ **Examples**
+- `time series design [EFO:0001779]`
+]],
+        },
+    },
+
+
 
 }
