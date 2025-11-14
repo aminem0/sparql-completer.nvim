@@ -32,7 +32,7 @@ return {
     {
         label = "dc:coverage",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dc:coverage",
+        description = "coverage",
         deprecated = false,
         documentation = {
             kind = "markdown",
@@ -54,7 +54,7 @@ return {
     {
         label = "dc:creator",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dc:creator",
+        description = "creator",
         deprecated = false,
         documentation = {
             kind = "markdown",
