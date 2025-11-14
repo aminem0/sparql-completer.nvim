@@ -6,6 +6,7 @@ M.options = {
         "dsw",
         "dwc",
         "eco",
+        "gbif",
         "http",
         "mixs",
         "miqe",
