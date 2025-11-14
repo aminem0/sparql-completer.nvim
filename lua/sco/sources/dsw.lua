@@ -8,27 +8,6 @@ https://www.semantic-web-journal.net/system/files/swj1093.pdf
 
 return {
     {
-        label = "dcterms:Location",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "dcterms:Location",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dc/terms/Location]
-
-+ **Type**
-- [owl:Class]
-
-+ **Subclass relationships**
-- [dcterms:Location] ⊑ [dcterms:LocationPeriodOrJurisdiction]
-
-+ **Definition**
-- A spatial region or named place.
-]],
-        },
-    },
-    {
         label = "dsw:DriedSpecimen",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:DriedSpecimen",
@@ -40,6 +19,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [dsw:DriedSpecimen] ⊑ [dwc:PreservedSpecimen]
@@ -54,7 +34,7 @@ return {
         deprecated = true,
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:IndividualOrganism",
-        documentation = { -- NOTE: ORGANISM? REVOIR DEFINITION
+        documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
@@ -62,9 +42,10 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Definition**
-- A particular organism or defined group of organisms considered to be taxonomically homogeneous. Instances of the Organism class are intended to facilitate linking of one or more Identification instances to one or more Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.
+- A particular organism or defined group of organisms considered to be taxonomically homogeneous. Instances of the [dsw:Organism] class are intended to facilitate linking of one or more Identification instances to one or more [dwc:Occurrence] instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.
 
 + **Comment**
 - This class is equivalent to the more well-known Darwin Core class [dwc:Organism]. It was deprecated following the addition of [dwc:Organism] to Darwin Core on 2014-10-26.
@@ -88,6 +69,9 @@ return {
 + **Subclass relationships**
 - [dsw:LivingSpecimen] ⊑ [dsw:Specimen]
 
++ **Definition**
+- A specimen that is alive.
+
 + **Comments**
 - Deprecated in favor of the Darwin Core class [dwc:LivingSpecimen].
 ]],
@@ -110,6 +94,9 @@ return {
 + **Subclass relationships**
 - [dsw:PreservedSpecimen] ⊑ [dsw:Specimen]
 
++ **Definition**
+- A specimen that has been preserved.
+
 + **Comments**
 - Deprecated in favor of the Darwin Core class [dwc:PreservedSpecimen].
 ]],
@@ -129,7 +116,7 @@ return {
 - [owl:Class]
 
 + **Subclass relationships**
-- [dsw:SpecimenInAlcohol] ⊑ [dwc:PreservedSpecimen] ⊑ [dsw:Specimen]
+- [dsw:SpecimenInAlcohol] ⊑ [dwc:PreservedSpecimen]
 
 + **Definition**
 - A specimen preserved in alcohol.
@@ -176,63 +163,6 @@ return {
         },
     },
     {
-        label = "dwc:Occurrence",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "dwc:Occurrence",
-        documentation = { -- NOTE: ORGANISM?
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/dwc/terms/Occurrence]
-
-+ **Type**
-- [owl:Class]
-
-+ **Definition**
-- An existence of an Organism (sensu [http://rs.tdwg.org/dwc/terms/Organism]) at a particular place at a particular time.
-]],
-        },
-    },
-    {
-        label = "dwc:PreservedSpecimen",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "dwc:PreservedSpecimen",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/dwc/terms/PreservedSpecimen]
-
-+ **Type**
-- [owl:Class]
-
-+ **Subclass relationships**
-- [dsw:PreservedSpecimen] ⊑ [dwc:Specimen]
-
-+ **Definition**
-- A specimen that has been preserved.
-]],
-        },
-    },
-    {
-        label = "foaf:Agent",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "foaf:Agent",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://xmlns.com/foaf/0.1/Agent]
-
-+ **Type**
-- [owl:Class]
-
-+ **Definition**
-- An agent (eg. person, group, software or physical artifact).
-]],
-        },
-    },
-    {
         label = "dsw:atEvent",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:atEvent",
@@ -259,11 +189,11 @@ return {
 ]],
         },
     },
-    {
+    { -- WARN: Conflicting ranges given in definition and comments. If you consider dsw:Token to possibly be the dwc:Organism itself (it is not disjoint with it). But even then why reference the deprecated class?
         label = "dsw:derivedFrom",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:derivedFrom",
-        documentation = { -- WARNING: Revoir ranges
+        documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
@@ -283,307 +213,7 @@ return {
 - Links a subject [dsw:Token] instance to an object instance of another [dsw:Token] or a [dwc:Organism].
 
 + **Comments**
-- Range can be [dsw:IndividualOrganism] or another [dsw:Specimen]. This property is preferred over its inverse if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:evidenceFor",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:evidenceFor",
-        documentation = { -- WARNING: Revoir ranges
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/evidenceFor]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-- **Subproperty relationships**
-- [dsw:evidenceFor] ⊑ [ro:isEvidenceFor]
-
-+ **Domain**
-- [dsw:Token]
-
-+ **Range**
-- [dwc:Occurrence]
-
-+ **Definition**
-- Links a subject dsw:Token instance to an object [dwc:Occurrence] instance.
-
-+ **Comments**
-- In most cases this will act like a functional property (only possibly documenting a single occurrence), but some images may document several occurrences, so the formal specification of functional property is omitted.
-
-This property is preferred over its inverse if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:georefBy",
-        deprecated = true,
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:georefBy",
-        documentation = { -- NOTE: dsw?
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/georefBy]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dcterms:Location]
-
-+ **Range**
-- [foaf:Agent]
-
-+ **Comments**
-- Was [dsw:georeferenceByURI]; deprecated 2014-11-21 to be replaced by [dwciri:georeferencedBy].
-]],
-        },
-    },
-    {
-        label = "dsw:hasIdentification",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:hasIdentification",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/hasIdentification]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Organism]
-
-+ **Range**
-- [dwc:Identification]
-
-+ **Definition**
-- Links a subject [dwc:Organism] instance to an object [dwc:Identification] instance.
-
-+ **Comments**
-- The [dsw:hasIdentification] relationship is one-to-many (one individual organism has many identifications). Use the inverse property [dsw:identifies] in preference to this one if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:hasOccurrence",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:hasOccurrence",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/hasOccurrence]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Organism]
-
-+ **Range**
-- [dwc:Occurrence]
-
-+ **Definition**
-- Links a subject [dwc:Organism] instance to an object [dwc:Occurrence] instance.
-
-+ **Comments**
-- The [dsw:hasOccurrence] relationship is one-to-many (one individual organism may have many occurrences).
-
-Use the inverse property dsw:occurrenceOf in preference to this one if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:idBasedOn",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:idBasedOn",
-        documentation = { -- NOTE: dsw??
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/idBasedOn]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-- **Subproperty relationships**
-- [dsw:idBasedOn] ⊑ [ro:hasEvidence]
-
-+ **Domain**
-- [dwc:Identification]
-
-+ **Range**
-- [dsw:Token]
-
-+ **Definition**
-- Links a subject [dsw:Identification] instance to an object [dsw:Token] instance.
-
-+ **Comments**
-- The subject identification was in part based on the object token. Was [dsw:identifiedBasedOn]. Use the inverse property [dsw:isBasisForId] in preference to this one if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:idBy",
-        deprecated = true,
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:idBy",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/idBy]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Identification]
-
-+ **Range**
-- [foaf:Agent]
-
-+ **Comments**
-- Was [dsw:identificationByURI]; deprecated 2014-11-21 to be replaced by [dwciri:identifiedBy].
-]],
-        },
-    },
-    {
-        label = "dsw:individualOrganismRemarks",
-        deprecated = true,
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:individualOrganismRemarks",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/individualOrganismRemarks]
-
-+ **Type**
-- [owl:DatatypeProperty]
-
-+ **Domain**
-- [dsw:IndividualOrganism]
-
-+ **Comments**
-- Deprecated in favor of [dwc:organismRemarks] on 2014-11-21.
-]],
-        },
-    },
-    {
-        label = "dsw:locatedAt",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:locatedAt",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/locatedAt]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Event]
-
-+ **Range**
-- [dcterms:Location]
-
-+ **Definition**
-- Links a subject [dwc:Event] instance to an object [dcterms:Location] instance.
-
-+ **Comments**
-- The [dsw:locatedAt] relationship is many-to-one (many events at one location). This property is preferred over its inverse if the link is made in only one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:recBy",
-        deprecated = true,
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:recBy",
-        documentation = { -- NOTE: REVOIR ????
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/recBy]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Occurrence]
-
-+ **Range**
-- [foaf:Agent]
-
-+ **Definition**
-- Links a subject [dwc:Occurrence] instance to ?????
-
-+ **Comments**
-- Deprecated 2014-11-21 to be replaced by [dwciri:recordedBy].
-]],
-        },
-    },
-    {
-        label = "dsw:taxonOfId",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:taxonOfId",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/taxonOfId]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Taxon]
-
-+ **Range**
-- [dwc:Identification]
-
-+ **Definition**
-- Links a subject [dwc:Taxon] instance to an object [dwc:Identification] instance.
-
-+ **Comments**
-- The [dsw:taxonOfID] relationship is one-to-many (one taxon may be referenced in many identifications). Use the well-known [dwciri:toTaxon] predicate in preference to this one if the link is only made in one direction.
-]],
-        },
-    },
-    {
-        label = "dsw:toTaxon",
-        deprecated = true,
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dsw:toTaxon",
-        documentation = { -- NOTE: UPPERCASE
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.org/dsw/toTaxon]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [dwc:Event]
-
-+ **Range**
-- [dcterms:Location]
-
-+ **Definition**
-- The [dsw:toTaxon] relationship is many-to-one (many identifications can reference one taxon). This property should link to a taxon concept (i.e. Taxon name plus Authority) URI, such as: [http://biodiversity.org.au/apni.taxon/118883].
-
-+ **Comments**
-- Deprecated 2014-11-21 to be replaced by [dwciri:toTaxon].
+- Range can be [dwc:Organism] or another [dsw:Specimen]. This property is preferred over its inverse if the link is made in only one direction.
 ]],
         },
     },
@@ -607,10 +237,68 @@ Use the inverse property dsw:occurrenceOf in preference to this one if the link 
 - [dwc:Occurrence]
 
 + **Definition**
-- Links a subject dwc:Event instance to an object dwc:Occurrence instance.
+- Links a subject [dwc:Event] instance to an object [dwc:Occurrence] instance.
 
 + **Comments**
 - The [dsw:eventOf] relationship is one-to-many (one event has many occurrences). Use the inverse property [dsw:atEvent] in preference to this one if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:evidenceFor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:evidenceFor",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/evidenceFor]
+
++ **Type**
+- [owl:ObjectProperty]
+
+- **Subproperty relationships**
+- [dsw:evidenceFor] ⊑ [ro:0002472]
+
++ **Domain**
+- [dsw:Token]
+
++ **Range**
+- [dwc:Occurrence]
+
++ **Definition**
+- Links a subject [dsw:Token] instance to an object [dwc:Occurrence] instance.
+
++ **Comments**
+- In most cases this will act like a functional property (only possibly documenting a single occurrence), but some images may document several occurrences, so the formal specification of functional property is omitted. This property is preferred over its inverse if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:georefBy",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:georefBy",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/georefBy]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dcterms:Location]
+
++ **Range**
+- [foaf:Agent]
+
++ **Definition**
+- Links a subject [dcterms:Location] instance to an object [foaf:Agent] who determined the georeference.
+
++ **Comments**
+- Was [dsw:georeferenceByURI]; deprecated 2014-11-21 to be replaced by [dwciri:georeferencedBy].
 ]],
         },
     },
@@ -666,6 +354,118 @@ Use the inverse property dsw:occurrenceOf in preference to this one if the link 
 
 + **Comments**
 - Use the inverse property [dsw:evidenceFor] in preference to this one if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:hasIdentification",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:hasIdentification",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/hasIdentification]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dwc:Organism]
+
++ **Range**
+- [dwc:Identification]
+
++ **Definition**
+- Links a subject [dwc:Organism] instance to an object [dwc:Identification] instance.
+
++ **Comments**
+- The [dsw:hasIdentification] relationship is one-to-many (one individual organism has many identifications). Use the inverse property [dsw:identifies] in preference to this one if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:hasOccurrence",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:hasOccurrence",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/hasOccurrence]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dwc:Organism]
+
++ **Range**
+- [dwc:Occurrence]
+
++ **Definition**
+- Links a subject [dwc:Organism] instance to an object [dwc:Occurrence] instance.
+
++ **Comments**
+- The [dsw:hasOccurrence] relationship is one-to-many (one individual organism may have many occurrences). Use the inverse property [dsw:occurrenceOf] in preference to this one if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:idBasedOn",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:idBasedOn",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/idBasedOn]
+
++ **Type**
+- [owl:ObjectProperty]
+
+- **Subproperty relationships**
+- [dsw:idBasedOn] ⊑ [ro:0002558]
+
++ **Domain**
+- [dwc:Identification]
+
++ **Range**
+- [dsw:Token]
+
++ **Definition**
+- Links a subject [dwc:Identification] instance to an object [dsw:Token] instance.
+
++ **Comments**
+- The subject identification was in part based on the object token. Was [dsw:identifiedBasedOn]. Use the inverse property [dsw:isBasisForId] in preference to this one if the link is made in only one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:idBy",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:idBy",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/idBy]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dwc:Identification]
+
++ **Range**
+- [foaf:Agent]
+
++ **Definition**
+- Links a subject [dwc:Identification] instance to an object [foaf:Agent] responsible for its identification.
+
++ **Comments**
+- Was [dsw:identificationByURI]; deprecated 2014-11-21 to be replaced by [dwciri:identifiedBy].
 ]],
         },
     },
@@ -727,6 +527,33 @@ Use the inverse property dsw:occurrenceOf in preference to this one if the link 
         },
     },
     {
+        label = "dsw:locatedAt",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:locatedAt",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/locatedAt]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dwc:Event]
+
++ **Range**
+- [dcterms:Location]
+
++ **Definition**
+- Links a subject [dwc:Event] instance to an object [dcterms:Location] instance.
+
++ **Comments**
+- The [dsw:locatedAt] relationship is many-to-one (many events at one location). This property is preferred over its inverse if the link is made in only one direction.
+]],
+        },
+    },
+    {
         label = "dsw:locates",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:locates",
@@ -781,52 +608,110 @@ Use the inverse property dsw:occurrenceOf in preference to this one if the link 
         },
     },
     {
-        label = "ro:isEvidenceFor",
-        insertText = "ro:0002472",
+        label = "dsw:recBy",
+        deprecated = true,
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "ro:isEvidenceFor",
+        description = "dsw:recBy",
         documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
-- [http://purl.obolibrary.org/obo/RO_0002472]
+- [http://purl.org/dsw/recBy]
 
 + **Type**
 - [owl:ObjectProperty]
 
 + **Domain**
-- [owl:Class]
+- [dwc:Occurrence]
 
 + **Range**
-- [owl:Class]
+- [foaf:Agent]
 
 + **Definition**
-- A relationship between a piece of evidence a and some entity b, where b is an information content entity, material entity or process, and the a supports either the existence of b, or the truth value of b.
+- Links a subject [dwc:Occurrence] instance to an object [foaf:Agent] responsible for recording it.
+
++ **Comments**
+- Deprecated 2014-11-21 to be replaced by [dwciri:recordedBy].
 ]],
         },
     },
     {
-        label = "ro:hasEvidence",
-        insertText = "ro:0002558",
+        label = "dsw:taxonOfId",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "hasEvidence",
+        description = "dsw:taxonOfId",
         documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
-- [http://purl.obolibrary.org/obo/RO_0002558]
+- [http://purl.org/dsw/taxonOfId]
 
 + **Type**
 - [owl:ObjectProperty]
 
 + **Domain**
-- [owl:Class]
+- [dwc:Taxon]
 
 + **Range**
-- [owl:Class]
+- [dwc:Identification]
 
 + **Definition**
-- x has evidence y iff, x is an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x.
+- Links a subject [dwc:Taxon] instance to an object [dwc:Identification] instance.
+
++ **Comments**
+- The [dsw:taxonOfID] relationship is one-to-many (one taxon may be referenced in many identifications). Use the well-known [dwciri:toTaxon] predicate in preference to this one if the link is only made in one direction.
+]],
+        },
+    },
+    {
+        label = "dsw:toTaxon",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:toTaxon",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/toTaxon]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [dwc:Identification]
+
++ **Definition**
+- Links a [dwc:Identification] instance to a taxonomic entity such as a taxon, taxon concept, or taxon name use.
+
++ **Comments**
+- The [dsw:toTaxon] relationship is many-to-one (many identifications can reference one taxon). This property should link to a taxon concept (i.e. Taxon name plus Authority) URI, such as: [http://biodiversity.org.au/apni.taxon/118883]. Deprecated 2014-11-21 to be replaced by [dwciri:toTaxon].
+]],
+        },
+    },
+    {
+        label = "dsw:individualOrganismRemarks",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dsw:individualOrganismRemarks",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://purl.org/dsw/individualOrganismRemarks]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [dsw:IndividualOrganism]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Comments or notes about the [dsw:IndividualOrganism] instance.
+
++ **Comments**
+- Deprecated in favor of [dwc:organismRemarks] on 2014-11-21.
 ]],
         },
     },
