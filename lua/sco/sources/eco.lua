@@ -632,6 +632,38 @@ return {
         },
     },
     {
+        label = "eco:includeOrExclude",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:includeOrExclude",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/includeOrExclude]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Whether the combination of [eco:surveyTargetType] and [eco:surveyTargetValue] is included or excluded in a [eco:SurveyTarget].
+
++ **Comments**
+- Combinations of [eco:SurveyTarget] records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of `include` and `exclude` only.
+
++ **Examples**
+- `include`
+- `exclude`
+]],
+        },
+    },
+    {
         label = "eco:inventoryTypes",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "eco:inventoryTypes",
@@ -924,6 +956,38 @@ return {
         },
     },
     {
+        label = "eco:isSurveyTargetFullyReported",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:isSurveyTargetFullyReported",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- A declaration of whether the counts for an instance of the [eco:SurveyTarget] report everything that matches the declared [eco:SurveyTarget].
+
++ **Comments**
+- If `true` (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything that [eco:SurveyTarget] that is included but that does not appear in the counts (absent counts signify absence of detection).
+
++ **Examples**
+- `true`
+- `false`
+]],
+        },
+    },
+    {
         label = "eco:isTaxonomicScopeFullyReported",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "eco:isTaxonomicScopeFullyReported",
@@ -1098,7 +1162,7 @@ return {
 - [rdf:Property]
 
 + **Domain**
-- [dwc:Survey]
+- [eco:Survey]
 
 + **Range**
 - [xsd:string]
@@ -1492,6 +1556,189 @@ return {
 
 + **Definition**
 - A reference to a controlled vocabulary in which the definition of a value in [eco:surveyTargetType] is given.
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetUnit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetUnit",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetUnit]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Unit associated with a value in [eco:surveyTargetValue].
+
++ **Comments**
+- Recommended best practice is to use a controlled vocabulary.
+
++ **Examples**
+- `m`
+- `g`
+- `years`
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetUnitIRI",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetUnitIRI",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetUnitIRI]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:anyURI]
+
++ **Definition**
+- An IRI of a controlled vocabulary value for a target unit.
+
++ **Comments**
+- Recommended best practice is to use an IRI for a term in a controlled vocabulary.
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetUnitSource",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetUnitIRI",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetUnitSource]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [eco:surveyTargetValueSource] ⊑ [dcterms:source]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:anyURI]
+
++ **Definition**
+- A reference to a controlled vocabulary in which the definition of a value in [eco:surveyTargetUnit] is given.
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetValue",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetValue",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetValue]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A value of a characteristic to include or exclude in a [eco:SurveyTarget] for a given [eco:surveyTargetType].
+
++ **Comments**
+- Recommended best practice is to use a controlled vocabulary.
+
++ **Examples**
+- `Aves`
+- `oak savannah`
+- `native`
+- `tree`
+- `female`
+- `adult`
+- `height`
+- `weight`
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetValueIRI",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetValueIRI",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetValueIRI]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:anyURI]
+
++ **Definition**
+- An IRI of a controlled vocabulary value for a target value.
+
++ **Comments**
+- Recommended best practice is to use an IRI for a term in a controlled vocabulary.
+]],
+        },
+    },
+    {
+        label = "eco:surveyTargetValueSource",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "eco:surveyTargetValueIRI",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/eco/terms/surveyTargetValueSource]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [eco:surveyTargetValueSource] ⊑ [dcterms:source]
+
++ **Domain**
+- [eco:SurveyTarget]
+
++ **Range**
+- [xsd:anyURI]
+
++ **Definition**
+- A reference to a controlled vocabulary in which the definition of a value in [eco:surveyTargetValue] is given.
 ]],
         },
     },
