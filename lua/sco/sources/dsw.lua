@@ -65,6 +65,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [dsw:LivingSpecimen] ⊑ [dsw:Specimen]
@@ -90,6 +91,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [dsw:PreservedSpecimen] ⊑ [dsw:Specimen]
@@ -114,6 +116,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [dsw:SpecimenInAlcohol] ⊑ [dwc:PreservedSpecimen]
@@ -135,6 +138,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Definition**
 - A form of evidence derived from a [dwc:Organism].
@@ -153,6 +157,7 @@ return {
 
 + **Type**
 - [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [dsw:LivingSpecimen] ⊑ [dwc:Specimen]
@@ -174,6 +179,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Occurrence]
@@ -201,6 +207,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dsw:Token]
@@ -229,6 +236,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Event]
@@ -256,6 +264,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 - **Subproperty relationships**
 - [dsw:evidenceFor] ⊑ [ro:0002472]
@@ -287,6 +296,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dcterms:Location]
@@ -314,6 +324,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Organism]
@@ -342,6 +353,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Occurrence]
@@ -369,6 +381,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Organism]
@@ -396,6 +409,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Organism]
@@ -423,6 +437,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 - **Subproperty relationships**
 - [dsw:idBasedOn] ⊑ [ro:0002558]
@@ -454,6 +469,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Identification]
@@ -481,6 +497,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Identification]
@@ -508,6 +525,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Subproperty relationships**
 - [dsw:isBasisForId] ⊑ [ro:isEvidenceFor]
@@ -538,6 +556,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Event]
@@ -565,6 +584,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Event]
@@ -592,6 +612,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Occurrence]
@@ -620,6 +641,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Occurrence]
@@ -647,6 +669,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Taxon]
@@ -675,6 +698,7 @@ return {
 
 + **Type**
 - [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dwc:Identification]
@@ -700,6 +724,7 @@ return {
 
 + **Type**
 - [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [dsw:IndividualOrganism]
