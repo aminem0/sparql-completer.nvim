@@ -1,20 +1,24 @@
+-- Load files as local variables
+local config = require("sco.config")
+local core = require("sco.core")
+local autocmds = require("sco.autocmds")
+local keymaps = require("sco.keymaps")
+
 local M = {}
 
 function M.setup(opts)
-    -- Config is always required, so make it a local variable
-    local config = require("sco.config")
     config.setup(opts or {})
 
-    require("sco.core").setup(opts)
+    core.setup(opts)
 
     -- Make autocommands and keymaps optional
     -- At its core we want a completion source
     if config.enable_autocmds then
-        require("sco.autocmds").setup()
+        autocmds.setup()
     end
 
     if config.enable_keymaps then
-        require("sco.keymaps").setup()
+        keymaps.setup()
     end
 end
 
