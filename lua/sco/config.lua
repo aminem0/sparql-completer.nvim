@@ -5,7 +5,7 @@ M.options = {
         "dc",
         "dsw",
 
-        "pok",
+        "pik",
     },
 
     enable_autocmds = true,
