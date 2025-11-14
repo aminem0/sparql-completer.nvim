@@ -1,4 +1,4 @@
-print("Welcome, wayward sheep, to the holy Church of SPARQL ⛪")
+-- print("Welcome, wayward sheep, to the holy Church of SPARQL ⛪")
 
 local M = {}
 local cmp = require("cmp")
