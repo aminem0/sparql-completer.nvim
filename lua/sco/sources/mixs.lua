@@ -9,7 +9,6 @@ return {
         insertText = "mixs:0000001",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:samp_size",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -17,6 +16,7 @@ return {
 - [https://w3id.org/mixs/0000001]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -35,7 +35,6 @@ return {
         insertText = "mixs:0000002",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:samp_collect_device",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -43,6 +42,7 @@ return {
 - [https://w3id.org/mixs/0000002]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -58,7 +58,6 @@ return {
         insertText = "mixs:0000003",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:isol_growth_condt",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -66,6 +65,7 @@ return {
 - [https://w3id.org/mixs/0000003]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -84,7 +84,6 @@ return {
         insertText = "mixs:0000005",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:contam_screen_input",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -92,6 +91,7 @@ return {
 - [https://w3id.org/mixs/0000005]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -110,7 +110,6 @@ return {
         insertText = "mixs:0000006",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:wga_amp_kit",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -118,6 +117,7 @@ return {
 - [https://w3id.org/mixs/0000006]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -136,7 +136,6 @@ return {
         insertText = "mixs:0000008",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:experimental_factor",
-        deprecated = false,
         documentation = {
             kind = "markdown",
             value = [[
@@ -144,6 +143,7 @@ return {
 - [https://w3id.org/mixs/0000008]
 
 + **Type**
+- [owl:DatatypeProperty]
 - [rdf:Property]
 
 + **Range**
@@ -157,6 +157,190 @@ return {
 ]],
         },
     },
+    {
+        label = "mixs:lat_lon",
+        insertText = "mixs:0000009",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:lat_lon",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000009]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees, limited to 8 decimal points, and in WGS84 system.
+
++ **Examples**
+- `50.586825 6.408977`
+]],
+        },
+    },
+    {
+        label = "mixs:geo_loc_name",
+        insertText = "mixs:0000010",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:geo_loc_name",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000010]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list ([http://insdc.org/country.html]), or the GAZ ontology ([http://purl.bioontology.org/ontology/GAZ]).
+
++ **Examples**
+- `USA: Maryland, Bethesda`
+]],
+        },
+    },
+ {
+        label = "mixs:collection_date",
+        insertText = "mixs:0000011",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:collection_date",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000011]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: `2008-01-23T19:23:10+00:00`; `2008-01-23T19:23:10`; `2008-01-23`; `2008-01`; `2008`; Except: `2008-01`; `2008` all are ISO8601 compliant.
+
++ **Examples**
+- `2013-03-25T12:42:31+01:00`
+]],
+        },
+    },
+     {
+        label = "mixs:env_broad_scale",
+        insertText = "mixs:0000012",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:env_broad_scale",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000012]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Report the major environmental system the sample or specimen came from. The system(s) identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. in the desert or a rainforest). We recommend using subclasses of EnvO's biome class: [http://purl.obolibrary.org/obo/ENVO_00000428]. EnvO documentation about how to use the field: [https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS].
+
++ **Examples**
+- `rangeland biome [ENVO:01000247]`
+]],
+        },
+    },
+     {
+        label = "mixs:env_local_scale",
+        insertText = "mixs:0000013",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:env_local_scale",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000013]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Report the entity or entities which are in the sample or specimen's local vicinity and which you believe have significant causal influences on your sample or specimen. We recommend using EnvO terms which are of smaller spatial grain than your entry for 'env_broad_scale' ([mixs:0000012]). Terms, such as anatomical sites, from other OBO Library ontologies which interoperate with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation about how to use the field: [https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS].
+
++ **Examples**
+- `hillside [ENVO:01000333]`
+]],
+        },
+    },
+{
+        label = "mixs:env_medium",
+        insertText = "mixs:0000014",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:env_medium",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000014]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. We recommend using subclasses of 'environmental material' ([http://purl.obolibrary.org/obo/ENVO_00010483]). EnvO documentation about how to use the field: [https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS]. Terms from other OBO ontologies are permissible as long as they reference mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities (e.g. a tree, a leaf, a table top).
+
++ **Examples**
+- `bluegrass field soil [ENVO:00005789]`
+]],
+        },
+    },
+    { -- WARN: Will this term need a class RelToOxygenEnum with instances? Or just a controlled set of strings?
+        label = "mixs:rel_to_oxygen",
+        insertText = "mixs:0000015",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:rel_to_oxygen",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000015]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Range**
+- [mixs:RelToOxygenEnum]
+
++ **Definition**
+- Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments.
+
++ **Examples**
+- `aerobe`
+]],
+        },
+    },
+    
+    
 
 
 
