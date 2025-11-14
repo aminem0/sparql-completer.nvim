@@ -1,6 +1,11 @@
 local M = {}
 
 M.options = {
+    sources = {
+        "dc",
+        "dsw",
+    },
+
     enable_autocmds = true,
     enable_keymaps = true,
 

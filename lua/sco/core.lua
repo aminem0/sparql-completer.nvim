@@ -14,7 +14,7 @@ local function load_vocabularies()
     vocab = {} -- reset
     index = {} -- reset
 
-    for _, src in ipairs(sco.sources) do
+    for _, src in ipairs(config.options.sources) do
         local ok, data = pcall(require, "sco.sources." .. src)
         if ok and type(data) == "table" then
             for _, term in ipairs(data) do
