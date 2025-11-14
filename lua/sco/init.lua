@@ -13,11 +13,11 @@ function M.setup(opts)
 
     -- Make autocommands and keymaps optional
     -- At its core we want a completion source
-    if config.enable_autocmds then
+    if config.options.enable_autocmds then
         autocmds.setup()
     end
 
-    if config.enable_keymaps then
+    if config.options.enable_keymaps then
         keymaps.setup()
     end
 end
