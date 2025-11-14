@@ -590,39 +590,6 @@ return {
         },
     },
     {
-        label = "ac:fundingAttribution",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "ac:fundingAttribution",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/ac/terms/fundingAttribution]
-
-+ **Type**
-- [owl:DatatypeProperty]
-- [rdf:Property]
-
-+ **Domain**
-- [dwc:Event]
-
-+ **Range**
-- [xsd:string]
-
-+ **Definition**
-- Text description of organizations or individuals who funded the creation of the resource.
-
-+ **Comments**
-- Specify the full official name of the funding body. This should include the complete name without abbeviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). The recommended best practice is to separate the values in a list with space vertical bar space (` | `).
-
-+ **Examples**
-- `Norges forskningsråd`
-- `Artsdatabanken`
-- `Ocean Census | Nippon Foundation`
-]],
-        },
-    },
-    {
         label = "dwc:acceptedNameUsage",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedNameUsage",
@@ -653,7 +620,7 @@ The full name, with authorship and date information if known, of the currently v
 ]],
         },
     },
-    {
+    { -- NOTE: Verify range
         label = "dwc:acceptedNameUsageID",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedNameUsageID",
@@ -720,7 +687,7 @@ The full name, with authorship and date information if known, of the currently v
 ]],
         },
     },
-    {
+    { -- NOTE: Verify range
         label = "dwc:acceptedScientificNameID",
         deprecated = true,
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -750,12 +717,12 @@ The full name, with authorship and date information if known, of the currently v
 ]],
         },
     },
-    {
+    { -- BUG: Really uppercase?
         label = "dwc:AcceptedTaxon",
         deprecated = true,
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:AcceptedTaxon",
-        documentation = { -- BUG: Really class??
+        documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
@@ -779,7 +746,7 @@ The full name, with authorship and date information if known, of the currently v
 ]],
         },
     },
-    {
+    { -- BUG: Really uppercase?
         label = "dwc:AcceptedTaxonID",
         deprecated = true,
         kind = cmp.lsp.CompletionItemKind.Class,
