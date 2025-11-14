@@ -174,12 +174,12 @@ return {
 ]],
         },
     },
-    {
+    { -- BUG: REVOIR DEPRECATED
         label = "owl:DataRange",
         kind = cmp.lsp.CompletionItemKind.Class,
         deprecated = true,
         description = "owl:DataRange",
-        documentation = { -- BUG: REVOIR DEPRECATED
+        documentation = {
             kind = "markdown",
             value = [[
 + **Identifier**
@@ -189,7 +189,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:DataRange] ⊑ [rdfs:Datatype] ⊑ [rdfs:Resource]
+- [owl:DataRange] ⊑ [rdfs:Datatype]
 
 + **Definition**
 - The class of OWL data ranges, which are special kinds of datatypes.
@@ -213,7 +213,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:DatatypeProperty] ⊑ [rdf:Property] ⊑ [owl:DatatypeProperty]
+- [owl:DatatypeProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of data properties.
@@ -234,7 +234,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:DeprecatedClass] ⊑ [rdfs:Class] ⊑ [owl:DeprecatedClass]
+- [owl:DeprecatedClass] ⊑ [rdfs:Class]
 
 + **Definition**
 - The class of deprecated classes.
@@ -255,7 +255,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:DeprecatedProperty] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:DeprecatedProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of deprecated properties.
@@ -276,7 +276,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:FunctionalProperty] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:FunctionalProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of functional properties.
@@ -297,7 +297,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:InverseFunctionalProperty] ⊑ [owl:ObjectProperty] ⊑ [rdf:Property] ⊑ [owl:InverseFunctionalProperty]
+- [owl:InverseFunctionalProperty] ⊑ [owl:ObjectProperty]
 
 + **Definition**
 - The class of inverse functional properties.
@@ -318,7 +318,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:IrreflexiveProperty] ⊑ [owl:Property] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:IrreflexiveProperty] ⊑ [owl:Property]
 
 + **Definition**
 - The class of irreflexive properties.
@@ -402,7 +402,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:ObjectProperty] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:ObjectProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of object properties.
@@ -444,7 +444,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:OntologyProperty] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:OntologyProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of ontology properties.
@@ -465,7 +465,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:ReflexiveProperty] ⊑ [owl:ObjectProperty] ⊑ [rdf:Property] ⊑ [owl:ReflexiveProperty]
+- [owl:ReflexiveProperty] ⊑ [owl:ObjectProperty]
 
 + **Definition**
 - The class of reflexive properties.
@@ -486,7 +486,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:Restriction] ⊑  [owl:Class] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [owl:Restriction] ⊑ [owl:Class]
 
 + **Definition**
 - The class of property restrictions.
@@ -507,7 +507,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:SymmetricProperty] ⊑ [owl:ObjectProperty] ⊑ [owl:ObjectProperty] ⊑ [rdfs:Resource]
+- [owl:SymmetricProperty] ⊑ [owl:ObjectProperty]
 
 + **Definition**
 - The class of symmetric properties.
@@ -528,7 +528,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [owl:TransitiveProperty] ⊑ [owl:ObjectProperty] ⊑ [rdf:Property] ⊑ [rdfs:Resource]
+- [owl:TransitiveProperty] ⊑ [owl:ObjectProperty]
 
 + **Definition**
 - The class of transitive properties.
@@ -591,7 +591,7 @@ return {
 - [rdf:Property]
 
 + **Domain**
-- [owl:Restriction]
+- [owl:Resource]
 
 + **Range**
 - [rdfs:Resource]
@@ -615,7 +615,7 @@ return {
 - [rdf:Property]
 
 + **Domain**
-- [owl:Restriction]
+- [owl:Resource]
 
 + **Range**
 - [rdfs:Resource]
@@ -639,7 +639,7 @@ return {
 - [rdf:Property]
 
 + **Domain**
-- [owl:Restriction]
+- [owl:Resource]
 
 + **Range**
 - [rdfs:Resource]
@@ -1055,6 +1055,30 @@ return {
 
 + **Definition**
 - The property that determines the individual that a has-value restriction refers to.
+]],
+        },
+    },
+        {
+        label = "owl:imports",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:imports",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#imports]
+
++ **Type**
+- [owl:OntologyProperty]
+
++ **Domain**
+- [owl:Ontology]
+
++ **Range**
+- [owl:Ontology]
+
++ **Definition**
+- The property that is used for importing other ontologies into a given ontology.
 ]],
         },
     },

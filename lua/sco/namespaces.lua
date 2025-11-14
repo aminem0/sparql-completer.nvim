@@ -22,6 +22,7 @@ return {
     doap = "http://usefulinc.com/ns/doap#",
     dsw = "http://purl.org/dsw/",
     dwc = "http://rs.tdwg.org/dwc/terms/",
+    dwciri = "http://rs.tdwg.org/dwc/iri/",
     ec = "http://purl.uniprot.org/enzyme/",
     eco = "http://rs.tdwg.org/eco/terms/",
     edam = "http://edamontology.org/",
