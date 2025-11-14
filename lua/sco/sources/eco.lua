@@ -53,8 +53,8 @@ return {
 
 + **Examples**
 - `all bird species`
-- `all bird species except *Larus* gulls, fulmars and kittiwakes`
-- `reproductive female *Ctenomys sociabilis* (only)`
+- `all bird species except <i>Larus</i> gulls, fulmars and kittiwakes`
+- <code>reproductive female <i>Ctenomys sociabilis</i> (only)</code>
 - `*Onchorhynchus mykiss* and *Onchorhynchus clarkii* (only)`
 - `all total lengths except < 12 inches`
 ]],
