@@ -266,7 +266,7 @@ return {
 - [owl:ObjectProperty]
 - [rdf:Property]
 
-- **Subproperty relationships**
++ **Subproperty relationships**
 - [dsw:evidenceFor] ⊑ [ro:0002472]
 
 + **Domain**
@@ -439,7 +439,7 @@ return {
 - [owl:ObjectProperty]
 - [rdf:Property]
 
-- **Subproperty relationships**
++ **Subproperty relationships**
 - [dsw:idBasedOn] ⊑ [ro:0002558]
 
 + **Domain**
