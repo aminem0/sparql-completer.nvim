@@ -1,13 +1,13 @@
 -- lua/sco/utils.lua
 local M = {}
 
-local endpoints = require("sco.lookups.sparql_endpoints") -- ensure spelling
+local endpoints = require("sco.lookups.sparql_endpoints") -- keep your actual module names
 local requests = require("sco.lookups.request_content_types")
 local types = require("sco.lookups.mime_types")
 local extensions = require("sco.lookups.file_extensions")
 local http_methods = require("sco.lookups.http_methods")
 
--- module state (safe, not bare locals)
+-- Module state (safe, configurable)
 M.state = {
   accept_mime_type = "*/*",
   request_content_type = "application/sparql-query",
@@ -16,7 +16,7 @@ M.state = {
   debug = false,
 }
 
--- build mime -> ext map once
+-- Build mime -> extension map for O(1) lookup
 local mime_map = {}
 for _, it in ipairs(extensions) do
   if it.mime_type and it.extension then
@@ -24,43 +24,22 @@ for _, it in ipairs(extensions) do
   end
 end
 
--- Utility: notify (quiet by default)
+-- Notify helper (quiet by default unless debug)
 local function notify(msg, level)
   level = level or vim.log.levels.INFO
-  if M.state.debug or level == vim.log.levels.ERROR then
+  if M.state.debug or level == vim.log.levels.ERROR or level == vim.log.levels.WARN then
     vim.notify("[sco] " .. msg, level)
   end
 end
 
--- Setter helpers (store in state)
-function M.set_endpoint(url)
-  M.state.sparql_endpoint_url = url
-  notify("endpoint set", vim.log.levels.DEBUG)
-end
-
-function M.set_request_content_type(mime)
-  M.state.request_content_type = mime
-  notify("request content type set: " .. mime, vim.log.levels.DEBUG)
-end
-
-function M.set_accept_mime_type(mime)
-  M.state.accept_mime_type = mime
-  notify("accept mime set: " .. mime, vim.log.levels.DEBUG)
-end
-
-function M.set_http_method(method)
-  M.state.http_method = method
-  notify("HTTP method set: " .. tostring(method), vim.log.levels.DEBUG)
-end
-
--- interactive selectors (use setters above)
+-- Interactive setters using vim.ui.select
 function M.select_request_type()
   vim.ui.select(requests, {
     prompt = "Set request type:",
     format_item = function(item) return item.name end,
   }, function(choice)
     if choice then
-      M.set_request_content_type(choice.mime_type)
+      M.state.request_content_type = choice.mime_type
       notify("Request type set to " .. choice.name, vim.log.levels.INFO)
     else
       notify("Request type selection cancelled", vim.log.levels.WARN)
@@ -74,7 +53,7 @@ function M.select_mime_type()
     format_item = function(item) return item.name end,
   }, function(choice)
     if choice then
-      M.set_accept_mime_type(choice.mime_type)
+      M.state.accept_mime_type = choice.mime_type
       notify("Accept type set to " .. choice.name, vim.log.levels.INFO)
     else
       notify("Accept type selection cancelled", vim.log.levels.WARN)
@@ -88,8 +67,8 @@ function M.select_endpoint_url()
     format_item = function(item) return item.name end,
   }, function(choice)
     if choice then
-      M.set_endpoint(choice.url)
-      notify("Endpoint set to " .. choice.name, vim.log.levels.INFO)
+      M.state.sparql_endpoint_url = choice.url
+      notify("✨SPARQL✨ endpoint set to " .. choice.name, vim.log.levels.INFO)
     else
       notify("Endpoint selection cancelled", vim.log.levels.WARN)
     end
@@ -99,9 +78,10 @@ end
 function M.select_http_method()
   vim.ui.select(http_methods, {
     prompt = "Set HTTP method:",
+    format_item = function(item) return tostring(item) end,
   }, function(choice)
     if choice then
-      M.set_http_method(choice)
+      M.state.http_method = choice
       notify("HTTP method set to " .. tostring(choice), vim.log.levels.INFO)
     else
       notify("HTTP method selection cancelled", vim.log.levels.WARN)
@@ -109,8 +89,8 @@ function M.select_http_method()
   end)
 end
 
--- helper: create a floating window and return buffer and win id
-local function floaty(content_lines, ft)
+-- Floating results window (safe buffer options and local 'q' mapping)
+local function floaty(lines, ft)
   local buf = vim.api.nvim_create_buf(false, true)
   vim.api.nvim_buf_set_option(buf, "buftype", "nofile")
   vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
@@ -118,7 +98,7 @@ local function floaty(content_lines, ft)
   if ft then
     vim.api.nvim_buf_set_option(buf, "filetype", ft)
   end
-  vim.api.nvim_buf_set_lines(buf, 0, -1, false, content_lines)
+  vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
 
   local width = math.floor(vim.o.columns * 0.8)
   local height = math.floor(vim.o.lines * 0.8)
@@ -137,7 +117,7 @@ local function floaty(content_lines, ft)
 
   local win = vim.api.nvim_open_win(buf, true, opts)
 
-  -- keymap to close window (only in this buffer)
+  -- map 'q' to close this floating window only
   vim.keymap.set("n", "q", function()
     if vim.api.nvim_win_is_valid(win) then
       vim.api.nvim_win_close(win, true)
@@ -147,12 +127,11 @@ local function floaty(content_lines, ft)
   return buf, win
 end
 
--- robust Content-Type extraction from header lines (array)
+-- Extract main content-type (strip parameters like ;charset=)
 local function extract_content_type(header_lines)
   for _, line in ipairs(header_lines or {}) do
     local name, value = line:match("^%s*([^:]+):%s*(.+)$")
     if name and value and name:lower() == "content-type" then
-      -- return main type (before ;)
       local main = value:match("^[^;]+")
       if main then
         return vim.trim(main)
@@ -164,80 +143,66 @@ local function extract_content_type(header_lines)
   return nil
 end
 
-local function mime_to_ext(mime)
-  if not mime then return nil end
-  return mime_map[mime]
+local function mime2ext(mimo)
+  if not mimo then return nil end
+  return mime_map[mimo]
 end
 
--- safe filename base
-local function safe_basename()
-  local name_base = vim.fn.fnamemodify(vim.fn.expand("%"), ":t:r")
-  if name_base == "" then name_base = "sco" end
-  -- remove path-unfriendly chars
-  name_base = name_base:gsub("[^%w%-_%.]", "_")
-  return name_base
+-- Simple URL-encoding (keeps it small and reliable)
+local function url_encode(s)
+  if s == nil then return "" end
+  s = tostring(s)
+  s = s:gsub("\r\n", "\n")
+  s = s:gsub("\n", " ")
+  s = s:gsub("([^%w%-._~ ])", function(c) return string.format("%%%02X", string.byte(c)) end)
+  s = s:gsub(" ", "%%20")
+  return s
 end
 
--- Use curl as a job (async). Returns job id.
--- opts can include: { on_done = function(success, headers, body, http_code) end }
+-- Main function: execute SPARQL query synchronously using curl
+-- This keeps your original blocking behaviour but with better validation/parsing
 function M.queryo()
-    local filepath = vim.fn.expand("%:p")
+  local endpoint = M.state.sparql_endpoint_url
+  if not endpoint or endpoint == "" then
+    notify("No SPARQL endpoint configured. Use select_endpoint_url()", vim.log.levels.ERROR)
+    return
+  end
 
-    -- Read query contents
-    local query = table.concat(vim.fn.readfile(filepath), "\n")
+  local filepath = vim.fn.expand("%:p")
+  if filepath == "" then
+    notify("No file associated with current buffer to read SPARQL query from", vim.log.levels.ERROR)
+    return
+  end
 
-    -- Handle form-encoded case
-    if request_content_type == "application/x-www-form-urlencoded" then
-        query = "query=" .. query
-    end
+  -- Read query contents
+  local query_lines = vim.fn.readfile(filepath)
+  local query = table.concat(query_lines, "\n")
 
-    local cmd
+  -- If form-encoded, prepare key/value form
+  local is_form = (M.state.request_content_type == "application/x-www-form-urlencoded")
+  local cmd
 
-    if http_method == "POST" then
-        -- curl reads the query from STDIN (the '@-' argument)
-        cmd = {
-            "curl",
-            "-i",
-            "-s",
-            "-X", "POST",
-            sparql_endpoint_url,
-            "-H", "Content-Type: " .. request_content_type,
-            "-H", "Accept: " .. accept_mime_type,
-            "--data-binary", "@-",
-        }
+  if M.state.http_method == "POST" then
+    -- Use stdin: curl --data-binary @-  (curl will read the body from stdin)
+    cmd = {
+      "curl",
+      "-i",
+      "-s",
+      "-X", "POST",
+      endpoint,
+      "-H", "Content-Type: " .. M.state.request_content_type,
+      "-H", "Accept: " .. M.state.accept_mime_type,
+      "--data-binary", "@-",
+    }
 
-        -- IMPORTANT:
-        -- systemlist(cmd, query) sends `query` as STDIN
-        -- curl reads STDIN because of '@-'
-        response = vim.fn.systemlist(cmd, query)
-
-    elseif http_method == "GET" then
-        -- GET uses URL encoding, so no stdin is involved
-        cmd = {
-            "curl",
-            "-i",
-            "-s",
-            sparql_endpoint_url .. "?query=" .. url_encode(query),
-            "-H", "Accept: " .. accept_mime_type,
-        }
-
-        response = vim.fn.systemlist(cmd)
-    end
-
-    -- Combine response
-    local resp_str = table.concat(response, "\n")
-
-    -- Split headers and body
-    local resp_headers, resp_body = resp_str:match("(.-)\r\n\r\n(.*)")
-    local resp_headerso = vim.fn.split(resp_headers, "\r\n")
-    local resp_bodyo = vim.fn.split(resp_body, "\n")
-
-    -- Construct output file base name
-    local name_base = vim.fn.fnamemodify(vim.fn.expand("%"), ":t:r")
-
-    -- Save output
-    vim.fn.writefile(resp_bodyo, name_base .. mime2ext(contento(resp_headerso)))
-    vim.fn.writefile(resp_headerso, name_base .. ".http")
-end
-
-return M
+    -- For form-encoded, we want curl to encode the form instead of raw stdin.
+    -- In that case use --data-urlencode "query=..." and don't use stdin.
+    if is_form then
+      cmd = {
+        "curl",
+        "-i",
+        "-s",
+        "-G", -- ensure using GET-like handling for data-urlencode
+        "--data-urlencode", "query=" .. query,
+        endpoint,
+        "-H", "Accept: " .. M.state.accept_mime_type,
