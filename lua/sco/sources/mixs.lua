@@ -313,7 +313,7 @@ return {
 ]],
         },
     },
-    { -- WARN: Will this term need a class RelToOxygenEnum with instances? Or just a controlled set of strings?
+    {
         label = "mixs:rel_to_oxygen",
         insertText = "mixs:0000015",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -325,21 +325,46 @@ return {
 - [https://w3id.org/mixs/0000015]
 
 + **Type**
-- [owl:ObjectProperty]
+- [owl:DatatypeProperty]
 - [rdf:Property]
-
-+ **Range**
-- [mixs:RelToOxygenEnum]
 
 + **Definition**
 - Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments.
+
++ **Coments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/RelToOxygenEnum/].
 
 + **Examples**
 - `aerobe`
 ]],
         },
     },
-    
+        {
+        label = "mixs:samp_mat_process",
+        insertText = "mixs:0000016",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_mat_process",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000016]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.
+
++ **Examples**
+- `filtering of seawater, storing samples in ethanol`
+]],
+        },
+    },
     
 
 
