@@ -111,7 +111,7 @@ return {
 - [rdfs:Literal] ⊑ [rdfs:Resource]
 
 + **Definition**
-- The class of literal values, eg. textual strings and integers.
+- The class of literal values, e.g. textual strings and integers.
 ]],
         },
     },
