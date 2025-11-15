@@ -100,6 +100,9 @@ return {
 + **Definition**
 - The type of sequence data used as input.
 
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/ContamScreenInputEnum/].
+
 + **Examples**
 - `contigs`
 ]],
@@ -225,7 +228,7 @@ return {
 - [rdf:Property]
 
 + **Range**
-- [xsd:string]
+- [xsd:dateTime]
 
 + **Definition**
 - The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid times: `2008-01-23T19:23:10+00:00`; `2008-01-23T19:23:10`; `2008-01-23`; `2008-01`; `2008`; Except: `2008-01`; `2008` all are ISO8601 compliant.
@@ -331,7 +334,7 @@ return {
 + **Definition**
 - Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments.
 
-+ **Coments**
++ **Comments**
 - This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/RelToOxygenEnum/].
 
 + **Examples**
@@ -365,8 +368,106 @@ return {
 ]],
         },
     },
+     {
+        label = "mixs:size_frac",
+        insertText = "mixs:0000017",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:size_frac",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000017]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Filtering pore size used in sample preparation.
+
++ **Examples**
+- `0-0.22 micrometer`
+]],
+        },
+    },
+     {
+        label = "mixs:depth",
+        insertText = "mixs:0000018",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:depth",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000018]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The vertical distance below local surface. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.
+]],
+        },
+    },
+     {
+        label = "mixs:depth",
+        insertText = "mixs:0000018",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:depth",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000018]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The vertical distance below local surface. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.
+]],
+        },
+    },
+     {
+        label = "mixs:subspecf_gen_lin",
+        insertText = "mixs:0000020",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:subspecf_gen_lin",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000020]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Information about the genetic distinctness of the sequenced organism below the subspecies level, e.g., serovar, serotype, biotype, ecotype, or any relevant genetic typing schemes like Group I plasmid. Subspecies should not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage name and the lineage rank separated by a colon, e.g., `biovar:abc123`.
+
++ **Examples**
+- `serovar:Newport`
+]],
+        },
+    },
+
+
     
-
-
 
 }
