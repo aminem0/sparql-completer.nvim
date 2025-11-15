@@ -9,6 +9,7 @@ M.options = {
         "dcterms",
         "dsw",
         "dwc",
+        "dwciri",
         "eco",
         "gbif",
         "ggbn",

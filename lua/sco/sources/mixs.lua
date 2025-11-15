@@ -445,6 +445,147 @@ return {
     },
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+     {
+        label = "mixs:ploidy",
+        insertText = "mixs:0000021",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ploidy",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000021]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy ([PATO:001374]) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2018-03-27) please refer to [http://purl.bioontology.org/ontology/PATO].
+
++ **Examples**
+- `allopolyploidy [PATO:0001379]`
+]],
+        },
+    },
+     {
+        label = "mixs:num_replicons",
+        insertText = "mixs:0000022",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:num_replicons",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000022]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- Reports the number of replicons in a nuclear genome of eukaryotes, in the genome of a bacterium or archaea or the number of segments in a segmented virus. Always applied to the haploid chromosome count of a eukaryote.
+
++ **Examples**
+- `2`
+]],
+        },
+    },
+     {
+        label = "mixs:extrachrom_elements",
+        insertText = "mixs:0000023",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:extrachrom_elements",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000023]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids).
+
++ **Examples**
+- `5`
+]],
+        },
+    },
+         {
+        label = "mixs:estimated_size",
+        insertText = "mixs:0000024",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:estimated_size",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000024]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The estimated size of the genome prior to sequencing. Of particular importance in the sequencing of (eukaryotic) genome which could remain in draft form for a long or unspecified period.
+
++ **Examples**
+- `300000 bp`
+]],
+        },
+    },
+     {
+        label = "mixs:ref_biomaterial",
+        insertText = "mixs:0000025",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ref_biomaterial",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000025]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Primary publication if isolated before genome publication; otherwise, primary genome report.
+
++ **Examples**
+- `doi:10.1016/j.syapm.2018.01.009`
+]],
+        },
+    },
 
 }
