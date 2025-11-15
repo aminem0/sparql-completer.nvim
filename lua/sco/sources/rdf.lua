@@ -48,7 +48,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [rdf:Bag] ⊑ [rdfs:Container] ⊑ [rdfs:Resource]
+- [rdf:Bag] ⊑ [rdfs:Container]
 
 + **Definition**
 - The class of unordered containers.

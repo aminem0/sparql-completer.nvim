@@ -11,6 +11,7 @@ M.options = {
         "dwc",
         "eco",
         "gbif",
+        "ggbn",
         "http",
         "mixs",
         "miqe",
