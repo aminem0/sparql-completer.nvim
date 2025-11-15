@@ -4,6 +4,9 @@ M.options = {
     sources = {
         "ac",
         "dc",
+        "dcam",
+        "dcmitype",
+        "dcterms",
         "dsw",
         "dwc",
         "eco",
@@ -11,8 +14,10 @@ M.options = {
         "http",
         "mixs",
         "miqe",
+        "owl",
         "rdf",
         "rdfs",
+        "sparql",
         "up",
     },
 
