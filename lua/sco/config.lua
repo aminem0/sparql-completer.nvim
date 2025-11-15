@@ -11,6 +11,8 @@ M.options = {
         "http",
         "mixs",
         "miqe",
+        "rdf",
+        "rdfs",
         "up",
     },
 
