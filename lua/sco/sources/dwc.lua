@@ -375,6 +375,44 @@ return {
         },
     },
     {
+        label = "dwc:NucleotideAnalysis",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:NucleotideAnalysis",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/NucleotideAnalysis]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- A link between a [dwc:NucleotideSequence] and a [dwc:Event] and a[ dwc:MaterialEntity] from which it was derived, using a specified [dwc:Protocol].
+]],
+        },
+    },
+    {
+        label = "dwc:NucleotideSequence",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:NucleotideSequence",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/NucleotideSequence]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- A digital representation of a nucleotide sequence.
+]],
+        },
+    },
+    {
         label = "dwc:Occurrence",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Occurrence",
@@ -449,6 +487,37 @@ return {
         },
     },
     {
+        label = "dwc:OrganismInteraction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:OrganismInteraction",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/OrganismInteraction]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- An interaction between two [dwc:Organisms] during a [dwc:Event].
+
++ **Comments**
+- Supports only primary observed interactions, not habitual or derived taxon-level interactions. Pairwise interactions must be used to represent multi-organism interactions. When possible, typify the action rather than the state from which an action is inferred, with the actor as the subject [dwc:Occurrence] and the acted-upon as the related [dwc:Occurrence]. Only one direction of a two-way interaction is necessary, though both are permissible as distinct [dwc:OrganismInteractions] with distint subject [dwc:Occurrences].
+
++ **Examples**
+- `a bee visiting a flower`
+- `a Mallophora ruficauda hunting an Apis mellifera in flight`
+- `a viral infection in a plant`
+- `a female spider mating with a male spider`
+- `a lion cub nursing from its mother`
+- `a mosquito sucking blood from a chimpanzee's arm`
+- `a slug eating a fungus growing on decomposing stump` (2 interactions)
+]],
+        },
+    },
+    {
         label = "dwc:PreservedSpecimen",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:PreservedSpecimen",
@@ -468,6 +537,53 @@ return {
 + **Examples**
 - `a plant on a herbarium sheet`
 - `a cataloged lot of fish in a jar`
+]],
+        },
+    },
+    {
+        label = "dwc:Protocol",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:Protocol",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/Protocol]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- A method used during an action.
+
++ **Examples**
+- `a pitfall trap method for sampling ground-dwelling arthropods`
+- `a point-radius georeferencing method`
+- `a linear regression model to estimate body mass from skeletal measurements`
+- `a Bayesian phylogenetic inference method`
+]],
+        },
+    },
+    {
+        label = "dwc:Provenance",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:Provenance",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/Provenance]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- Information about an entity's origins.
+
++ **Comments**
+- This is a convenience class to group related properties.
 ]],
         },
     },
@@ -498,7 +614,6 @@ return {
 ]],
         },
     },
-
     {
         label = "dwc:Sample",
         kind = cmp.lsp.CompletionItemKind.Class,
@@ -610,6 +725,28 @@ return {
 
 + **Examples**
 - `the genus Truncorotaloides as published by Brönniman et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820`
+]],
+        },
+    },
+    {
+        label = "dwc:UsagePolicy",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "dwc:UsagePolicy",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/dwc/terms/UsagePolicy]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- Information about rights, usage, and attribution statements applicable to an entity.
+
++ **Comments**
+- This is a convenience class to group related properties.
 ]],
         },
     },
