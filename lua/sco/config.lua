@@ -20,6 +20,7 @@ M.options = {
         "owl",
         "rdf",
         "rdfs",
+        "skos",
         "sparql",
         "up",
     },
