@@ -46,6 +46,27 @@ return {
 ]],
         },
     },
+    {
+        label = "minext:MineralName",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "minext:MineralName",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/MineralName]
+
++ **Type**
+- [rdfs:Class]
+
++ **Definition**
+- The designation of a mineral by a linguistic expression including both informal (verbatim) and formal (classifications) types.
+
++ **Comments**
+- Each Constituent Part belongs to one and only one Constituent Part Type (Rock, Fossil, Mineral, etc). The shared characteristic among all records that utilize the Mineralogy Extension is they must belong to the Constituent Part Type, Mineral defined as an element or a chemical compound that is normally crystalline and that has been formed as a result of geological processes (Nickel 1995).
+]],
+        },
+    },
 
 
 
@@ -54,7 +75,6 @@ return {
 
 
 
-    
 
     {
         label = "minext:chemistryRemarks",
@@ -113,7 +133,166 @@ return {
 ]],
         },
     },
-{
+  {
+        label = "minext:classificationCode",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:classificationCode",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/classificationCode]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Alphanumeric pattern that adheres to a defined encoding scheme that identifies a particular term in a classification scheme.
+
++ **Comments**
+- Classification codes are specific to a classification system and conform to a [xkos:notationPattern].
+
++ **Examples**
+- `71.02.02a.01`
+- `9.AD.25`
+]],
+        },
+    },
+       {
+        label = "minext:constituentPartIdentifier",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:constituentPartIdentifier",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/constituentPartIdentifier]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:ConstituentPart]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A unique identifier for an instance of a [minext:ConstituentPart].
+
++ **Comments**
+- In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the [dwc:constituentPartID] globally unique. Recommended best practice is to use a persistent, globally unique identifier. Constituent Part ID is used to construct the relationship between a specimen (compound object) and mineral (constituent part).
+
++ **Examples**
+- `8fa58e08-08de-4ac1-b69c-1235340b7111`
+]],
+        },
+    },
+          {
+        label = "minext:constituentPartProportion",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:constituentPartProportion",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/constituentPartProportion]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:ConstituentPart]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The qualitative or quantitative fraction the geologic specimen is composed of the constituent part.
+
++ **Comments**
+- Recommended best practice is to use a controlled vocabulary such as [https://cgi.vocabs.ga.gov.au/object?uri=http%3A//resource.geosciml.org/classifier/cgi/proportionterm].
+
++ **Examples**
+- `20%`
+- `minor`
+- `dominant`
+]],
+        },
+    },
+        {
+        label = "minext:constituentPartRole",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:constituentPartRole",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/constituentPartRole]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:ConstituentPart]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specifies the relationship between a constituent part and its parent geologic specimen.
+
++ **Comments**
+- Recommended best practice is to use a controlled vocabulary such as [https://cgi.vocabs.ga.gov.au/object?uri=http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole].
+
++ **Examples**
+- `matrix`
+- `groundmass`
+- `phenocryst`
+- `xenolith`
+- `vein`
+]],
+        },
+    },
+    {
+        label = "minext:constituentPartType",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:constituentPartType",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/constituentPartType]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:ConstituentPart]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Term belonging to an upper-level, generalized Classification Scheme of Constituent Parts.
+
++ **Comments**
+- Recommended best practice is to use a shared controlled vocabulary. A Constituent Part belongs to only one Constituent Part Type.
+
++ **Examples**
+- `Mineral`
+- `Fossil`
+- `Rock`
+]],
+        },
+    },
+   {
         label = "minext:geologicEvent",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:geologicEvent",
@@ -205,7 +384,6 @@ return {
 ]],
         },
     },
-
     {
         label = "minext:materialEntityIdentifier",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -292,6 +470,37 @@ return {
 
 + **Examples**
 - `Novak, G. A., & Gibbs, G. V. (1971). The crystal chemistry of the silicate garnets. American Mineralogist: Journal of Earth and Planetary Materials, 56(5-6), 791-825.`
+]],
+        },
+    },
+      { -- NOTE: Why use pipe operator on author names in example?
+        label = "minext:mineralNamePublishedIn",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:mineralNamePublishedIn",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/mineralNamePublishedIn]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A reference to the publication in which the name is derived, provided as formal citations or URI to an external resources.
+
++ **Comments**
+- Narrower scope than [dwc:namePublishedIn].
+
++ **Examples**
+- `Strunz | H. & Nickel | E.H. (2001): Strunz mineralogical tables. Schweizerbart | Stuttgart | 869 p.`
+- `Gaines | R.V. | Skinner | H.C. | Foord | E.E. | Mason | B. | Rosenzweig | A. (1997): Dana' new mineralogy. Wiley & Sons | New York | 1819 p.`
 ]],
         },
     },
@@ -393,7 +602,40 @@ return {
 ]],
         },
     },
-    { -- WARN: Would dwc:Location be the same as dcterms:Location?
+    {
+        label = "minext:name",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:name",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/name]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A human-readable lexical label assigned to a mineral includes both informal (e.g., variety, synonym) and formal (classification) forms.
+
++ **Comments**
+- The name defined in the first object is considered the preferred name.
+
++ **Examples**
+- `Quartz`
+- `Smoky Quartz`
+- `Muscovite`
+- `Garnet Group`
+]],
+        },
+    },
+     { -- WARN: Would dwc:Location be the same as dcterms:Location?
         label = "minext:namedPlace",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:namedPlace",
@@ -422,6 +664,159 @@ return {
 - `Susanna Mine`
 - `Craigleith Quarry`
 - `Red Cloud Mine`
+]],
+        },
+    },
+        {
+        label = "minext:nameRemarks",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:nameRemarks",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/nameRemarks]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Statements that provide further information on any part of a mineral name, especially information not captured elsewhere in the mineral name class.
+]],
+        },
+    },
+        {
+        label = "minext:nameType",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:nameType",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/nameType]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A term belonging a categorization scheme for organizing names based on usage and concept lineage.
+
++ **Comments**
+- - Ideally, terms in this field are derived from a enumerated domain. See Gavryliv (2023) for a detailed breakdown of informal, alternate names.
+
++ **Examples**
+- `Variety`
+- `Synonym`
+- `Classification`
+- `Historical`
+- `Group Name`
+]],
+        },
+    },
+       { -- NOTE: Namespace will be dwc: not temporary minext:?
+        label = "minext:nameIdentifier",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:nameIdentifier",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/nameIdentifier]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- An identifier for the set of [dwc:MineralName] information. May be a global unique identifier or an identifier specific to the data set.
+
++ **Comments**
+- Recommended best practice is to use a persistent, globally unique identifier. Name ID is used to establish the one to many relationship between dwc:Mineral and dwc:MineralName that allows the assignment of multiple names to a single mineral in a specimen.
+
++ **Examples**
+- `8fa58e08-08de-4ac1-b69c-1235340b7001`
+- [https://api.mindat.org/minerals_ima/21]
+]],
+        },
+    },
+      {
+        label = "minext:predicatedName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:predicatedName",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/predicatedName]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:ConstituentPart]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A compound name of a specimen that includes two parts: 1) Mineral names and 2) One or more term separators (predicates) that define the relationship between the minerals in a specimen.
+
++ **Comments**
+- Always contains at least three parts: 2 mineral names and the predicated phrase that defines the relationship between them. A predicated name may contain more than two mineral names.
+
++ **Examples**
+- `Azurite after Malachite`
+- `Rutile in Quartz`
+]],
+        },
+    },
+{
+        label = "minext:specimenDescription",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:specimenDescription",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/specimenDescription]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Comments or notes about the specimen (physical object) especially those that distinguish the specimen from similar materials in a collection.
+
++ **Comments**
+- See broader concept [http://rs.tdwg.org/dwc/terms/occurrenceRemarks] for additional usage notes.
+
++ **Examples**
+- `Showpiece`
+- `Historically valuable`
+- `Extraordinary composition`
+- `Two generations of quartz`
 ]],
         },
     },
