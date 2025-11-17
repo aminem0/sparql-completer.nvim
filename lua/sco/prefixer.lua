@@ -1,10 +1,12 @@
+-- Annoying I know, but I need to know it loaded correctly
 print("Welcome, wayward sheep, to the holy Church of SPARQL ⛪")
 
 local M = {}
 
+-- Load the predefined list of namespaces
 local namespaces = require("sco.namespaces")
 
-function M.add_bo()
+function M.add_tim()
     local pos = vim.api.nvim_win_get_cursor(0)
     local row = pos[1] - 1
     local col = pos[2]
@@ -12,8 +14,8 @@ function M.add_bo()
     local line = vim.api.nvim_buf_get_lines(0, row, row + 1, false)[1] or ""
     local typed = line:sub(1, col)
 
-    if typed:match("#whoiscarl") then
-        vim.api.nvim_buf_set_lines(0, 0, 0, false, { "# BOETTIGER!!! 🚀 🌱 🦆 🐋" })
+    if typed:match("#whoistim") then
+        vim.api.nvim_buf_set_lines(0, 0, 0, false, { "# BERNERS-LEE!!!" })
     end
 end
 
@@ -52,7 +54,7 @@ function M.add_namespace2()
     local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
 
     print("popoko")
-    -- 1. Collect all used prefixes
+    -- Collect all used prefixes
     local used_prefixes = {}
     for _, line in ipairs(lines) do
         for prefix in line:gmatch("(%w+):[%w_%-]+") do
@@ -63,14 +65,14 @@ function M.add_namespace2()
         end
     end
 
-    -- 2. Build new prefix lines
+    -- Build new prefix lines
     local new_prefixes = {}
     for prefix, _ in pairs(used_prefixes) do
         table.insert(new_prefixes, "PREFIX " .. prefix .. ": <" .. namespaces[prefix] .. ">")
     end
     table.sort(new_prefixes) -- nice consistent order
 
-    -- 3. Remove any existing PREFIX lines at the top
+    -- Remove any existing PREFIX lines at the top
     local first_nonprefix = 0
     for i, line in ipairs(lines) do
         if not line:match("^%s*[Pp][Rr][Ee][Ff][Ii][Xx]") then
@@ -80,7 +82,7 @@ function M.add_namespace2()
     end
     vim.api.nvim_buf_set_lines(buf, 0, first_nonprefix, false, {})
 
-    -- 4. Insert the fresh prefix block
+    -- Insert the fresh prefix block
     if #new_prefixes > 0 then
         vim.api.nvim_buf_set_lines(buf, 0, 0, false, new_prefixes)
     end
@@ -118,7 +120,7 @@ function M.remove_unused_prefixes()
     local used_prefixes = {}
     local defined_prefixes = {}
 
-    -- Step 1: Identify all PREFIX lines and the prefixes they declare
+    -- Identify all PREFIX lines and the prefixes they declare
     for i, line in ipairs(lines) do
         local prefix, iri = line:match("^PREFIX%s+(%w+):%s+<([^>]+)>")
         if prefix and iri then
@@ -126,7 +128,7 @@ function M.remove_unused_prefixes()
         end
     end
 
-    -- Step 2: Search for usages of each defined prefix in the rest of the file
+    -- Search for usages of each defined prefix in the rest of the file
     for i, line in ipairs(lines) do
         for prefix, info in pairs(defined_prefixes) do
             if not used_prefixes[prefix] and i - 1 ~= info.line_num then
@@ -138,7 +140,7 @@ function M.remove_unused_prefixes()
         end
     end
 
-    -- Step 3: Remove unused PREFIX lines (start from bottom to avoid shifting lines)
+    -- Remove unused PREFIX lines (start from bottom to avoid shifting lines)
     local to_remove = {}
     for prefix, info in pairs(defined_prefixes) do
         if not used_prefixes[prefix] then

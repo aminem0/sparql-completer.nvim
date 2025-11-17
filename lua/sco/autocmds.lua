@@ -17,18 +17,9 @@ function M.setup()
     vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
         pattern = { "*.rq", "*.sparql" },
         callback = function()
-            prefixer.add_bo()
+            prefixer.add_tim()
         end,
     })
-
-    --[[
-  -- Autocommand: only trigger for SPARQL files
-    vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            prefixer.add_namespace()
-        end,
-    })]]
 
     -- Autocommand to run this function on file write
     vim.api.nvim_create_autocmd("BufWritePre", {
