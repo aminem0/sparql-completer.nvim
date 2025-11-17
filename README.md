@@ -23,6 +23,8 @@ return {
         "hrsh7th/nvim-cmp",
         "hrsh7th/nvim-buffer",
     },
+    ft = { "rq", "sparql" },
+    lazy = true,
 
   config = function()
   end
@@ -35,8 +37,7 @@ HTTP requests are made using [cURL](https://curl.se), so you need to make sure t
 
 ## Usage
 
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), the completion engine.
-
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), the completion engine. Prefereab
 
 SPARQL query formatting is done automatically upon writing.
 
@@ -44,12 +45,14 @@ The plugin considers an internal lookup table to define prefixes and namespaces.
 
 In order to avoid fragmentation of vocabularies and possible duplication of terms, terms are indexed by namespace. Consequently, 
 
+One example would be for example the term `dwc:Occurrence` class, which is present in the Darwin-SW ontology. However, for this plugin, it is considered only in the `dwc.lua` file. Consequently, the `dsw.lua` file only considers terms belonging to the `dsw` namespace. The same is done for all terms.
 
+- [lspkind](https://github.com/onsails/lspkind.nvim), for completion icons
 
 Users are encouraged to consider the following plugins in order to have a better experience:
 
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), for better XXXX. Ensure that you have the `sparql` parser installed. This is done either in the Lua config files or by running the command `TSInstall sparql`.
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), for syntax highlighting. Ensure that you have the `sparql` parser installed. This is done either in the Lua config files or manually by running the command `TSInstall sparql`.
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), for better 
 - [nvim-web-devicon](https://github.com/nvim-tree/nvim-web-devicons), for an extra pazazz. I WILL SUBMIT AN ICON FOR `.rq` AND `.sparql` FILES. 
 
 ## Relationship to other projects

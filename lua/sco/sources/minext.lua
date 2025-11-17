@@ -26,6 +26,24 @@ return {
         },
     },
     {
+        label = "minext:Conservation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "minext:Conservation",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/Conservation]
+
++ **Type**
+- [rdfs:Class]
+
++ **Definition**
+- Processes, protocols, and techniques established for the purpose of the protextion and conservation of a mineral or specimen.
+]],
+        },
+    },
+    {
         label = "minext:ConstituentPart",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:ConstituentPart",
@@ -43,6 +61,24 @@ return {
 
 + **Comments**
 - Each Constituent Part belongs to one and only one Constituent Part Type (Rock, Fossil, Mineral, etc). The shared characteristic among all records that utilize the Mineralogy Extension is they must belong to the Constituent Part Type, Mineral defined as an element or a chemical compound that is normally crystalline and that has been formed as a result of geological processes (Nickel 1995).
+]],
+        },
+    },
+    {
+        label = "minext:Hazard",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "minext:Hazard",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/Hazard]
+
++ **Type**
+- [rdfs:Class]
+
++ **Definition**
+- Properties that describe sources of of potential damage, harm, or adverse health effects on something or someone.
 ]],
         },
     },
@@ -71,11 +107,6 @@ return {
 
 
 
-    
-
-
-
-
     {
         label = "minext:chemistryRemarks",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -97,6 +128,37 @@ return {
 
 + **Definition**
 - General remarks about the chemical and isotopic composition of a mineral.
+]],
+        },
+    },
+    {
+        label = "minext:classificationCode",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:classificationCode",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/classificationCode]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:MineralName]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Alphanumeric pattern that adheres to a defined encoding scheme that identifies a particular term in a classification scheme.
+
++ **Comments**
+- Classification codes are specific to a classification system and conform to a [xkos:notationPattern].
+
++ **Examples**
+- `71.02.02a.01`
+- `9.AD.25`
 ]],
         },
     },
@@ -133,38 +195,7 @@ return {
 ]],
         },
     },
-  {
-        label = "minext:classificationCode",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "minext:classificationCode",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/minext/terms/classificationCode]
-
-+ **Type**
-- [rdf:Property]
-
-+ **Domain**
-- [minext:MineralName]
-
-+ **Range**
-- [xsd:string]
-
-+ **Definition**
-- Alphanumeric pattern that adheres to a defined encoding scheme that identifies a particular term in a classification scheme.
-
-+ **Comments**
-- Classification codes are specific to a classification system and conform to a [xkos:notationPattern].
-
-+ **Examples**
-- `71.02.02a.01`
-- `9.AD.25`
-]],
-        },
-    },
-       {
+    {
         label = "minext:constituentPartIdentifier",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartIdentifier",
@@ -194,7 +225,7 @@ return {
 ]],
         },
     },
-          {
+    {
         label = "minext:constituentPartProportion",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartProportion",
@@ -226,7 +257,7 @@ return {
 ]],
         },
     },
-        {
+    {
         label = "minext:constituentPartRole",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartRole",
@@ -292,7 +323,36 @@ return {
 ]],
         },
     },
-   {
+    {
+        label = "minext:damageRemarks",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:damageRemarks",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/damageRemarks]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:Conservation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A general description of any material changes to a mineral which is perceived to have negatively affected an item's value-defining aspect.
+
++ **Examples**
+- `Due to oxidation and hydration of the pyrite in the coal, the sample has largely decayed to a coal powder with some larger coal pieces`
+- `Some terminations broken off`
+- `Attached label not legible` (or `torn` or `covered`)
+]],
+        },
+    },
+    {
         label = "minext:geologicEvent",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:geologicEvent",
@@ -324,7 +384,7 @@ return {
 ]],
         },
     },
-        { -- NOTE: dwc:Location??
+    { -- NOTE: dwc:Location??
         label = "minext:geologicProvince",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:geologicProvince",
@@ -355,7 +415,98 @@ return {
 - `Dalradian Metamorphic Belt`
 ]],
         },
-    },    
+    },
+    {
+        label = "minext:handlingRequirements",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:handlingRequirements",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/handlingRequirements]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:Conservation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A summary of the procedural requirements employed to preserve and protect the specimen during physical interaction.
+
++ **Examples**
+- `Handle with gloves`
+- `Not to be taken out of storage medium`
+- `delicate`
+- `avoid contact with direct sunlight`
+]],
+        },
+    },
+    {
+        label = "minext:hazardDescription",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:hazardDescription",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/hazardDescription]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:Hazard]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- General remarks regarding the hazard type within the scope of the specific collection object.
+
++ **Examples**
+- `asbestos`
+- `slightly radioactive`
+]],
+        },
+    },
+    {
+        label = "minext:hazardType",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:hazardType",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/hazardType]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:Hazard]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Term that belongs to a hazard classification scheme based on a set of unique characteristics and negative health outcomes
+
++ ** Comments**
+- Recommended best practice is to use a controlled vocabulary.
+
++ **Examples**
+- `Carcinogen`
+- `skin irritant`
+- `radioactive`
+- `toxic`
+]],
+        },
+    },
     {
         label = "minext:isTypeLocality",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -414,7 +565,61 @@ return {
 ]],
         },
     },
-      {
+    {
+        label = "minext:maxCrystalDimensionInMillimiters",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:maxSpecimenDimensionInMillimeters",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/maxSpecimenDimensionInMillimeters]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:decimal]
+
++ **Definition**
+- Maximum axial dimension of largest crystal measured in millimeters.
+
++ **Examples**
+- `30`
+]],
+        },
+    },
+    {
+        label = "minext:maxSpecimenDimensionInMillimeters",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:maxSpecimenDimensionInMillimeters",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/maxSpecimenDimensionInMillimeters]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:decimal]
+
++ **Definition**
+- Maximum axial dimension of specimen measured in millimeters.
+
++ **Examples**
+- `100`
+]],
+        },
+    },
+    {
         label = "minext:measuredChemistry",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:measuredChemistry",
@@ -443,7 +648,7 @@ return {
 ]],
         },
     },
-        {
+    {
         label = "minext:measuredFormulaSource",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:measuredFormulaSource",
@@ -473,7 +678,67 @@ return {
 ]],
         },
     },
-      { -- NOTE: Why use pipe operator on author names in example?
+    {
+        label = "minext:measuredMassInGrams",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:measuredMassInGrams",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/measuredMassInGrams]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:decimal]
+
++ **Definition**
+- Mass of specimen measured in grams.
+
++ **Examples**
+- `4994`
+]],
+        },
+    },
+    {
+        label = "minext:mineralDescription",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:mineralDescription",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/mineralDescription]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Comments or notes about the mineral instance, especially those that distinguish the mineral from similar items in a collection.
+
++ **Comments**
+- The scope of this term is strictly to a mineral within the context of the specimen. Specimen level descriptions belong in the related term [minext:specimenDescription]. Sibling concept to [http://rs.tdwg.org/dwc/terms/occurrenceRemarks].
+
++ **Examples**
+- `Pink fluorite on quartz`
+- `Lengenbachite on sugar-stained dolomite`
+- `Epitaxial growth on kyanite`
+- `Doubly terminated quartz crystals`
+]],
+        },
+    },
+    { -- NOTE: Why use pipe operator on author names in example?
         label = "minext:mineralNamePublishedIn",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralNamePublishedIn",
@@ -538,7 +803,7 @@ return {
 ]],
         },
     },
-      {
+    {
         label = "minext:mineralSequence",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralSequence",
@@ -569,7 +834,7 @@ return {
 ]],
         },
     },
-            {
+    {
         label = "minext:modeOfOccurrence",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:modeOfOccurrence",
@@ -635,7 +900,7 @@ return {
 ]],
         },
     },
-     { -- WARN: Would dwc:Location be the same as dcterms:Location?
+    { -- WARN: Would dwc:Location be the same as dcterms:Location?
         label = "minext:namedPlace",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:namedPlace",
@@ -667,7 +932,7 @@ return {
 ]],
         },
     },
-        {
+    {
         label = "minext:nameRemarks",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameRemarks",
@@ -691,7 +956,7 @@ return {
 ]],
         },
     },
-        {
+    {
         label = "minext:nameType",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameType",
@@ -725,7 +990,7 @@ return {
 ]],
         },
     },
-       { -- NOTE: Namespace will be dwc: not temporary minext:?
+    { -- NOTE: Namespace will be dwc: not temporary minext:?
         label = "minext:nameIdentifier",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameIdentifier",
@@ -756,7 +1021,7 @@ return {
 ]],
         },
     },
-      {
+    {
         label = "minext:predicatedName",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:predicatedName",
@@ -787,7 +1052,7 @@ return {
 ]],
         },
     },
-{
+    {
         label = "minext:specimenDescription",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:specimenDescription",
@@ -849,5 +1114,96 @@ return {
 - `Ashe Metamorphic Suite`
 ]],
         },
-    },    
+    },
+    {
+        label = "minext:treatments",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:treatments",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/treatments]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [minext:Conservation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Description of any actions taken to alter the specimen for a particular purpose.
+
++ ** Comments**
+- Includes both proactive and reactive actions.
+
++ **Examples**
+- `Mineral heated to enhance color`
+- `Pieces glued together for reconstruction`
+- `Polished surface to improvement that visibility of fabrics and mineralogy`
+]],
+        },
+    },
+    {
+        label = "minext:verbatimMass",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:verbatimMass",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/verbatimMass]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The original reported verbatim mass includes original units of measurement.
+
++ **Examples**
+- `11.01 Lbs`
+- `105.07 g`
+- `2.45 kg`
+]],
+        },
+    },
+    {
+        label = "minext:verbatimSize",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "minext:verbatimSize",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [http://rs.tdwg.org/minext/terms/verbatimSize]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [dwc:MaterialAssertion]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The verbatim size of a specimen as originally described in primary source material.
+
++ **Examples**
+- `10 cm x 5 cm X 5 cm`
+- `largest diameter 16 cm`
+- `width 3 inches`
+]],
+        },
+    },
+
 }
