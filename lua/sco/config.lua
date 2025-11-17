@@ -2,6 +2,7 @@ local M = {}
 
 M.options = {
     sources = {
+        "abcd",
         "ac",
         "dc",
         "dcam",

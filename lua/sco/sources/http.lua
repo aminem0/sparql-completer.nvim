@@ -40,7 +40,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [http:EntityHeader] ⊑  [http:MessageHeader]
+- [http:EntityHeader] ⊑ [http:MessageHeader]
 
 + **Definition**
 - A header in an HTTP message. The [http:EntityHeader] class is a subclass of the [http:MessageHeader] class.
