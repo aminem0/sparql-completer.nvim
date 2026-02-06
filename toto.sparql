@@ -1,8 +1,0 @@
-SELECT ?a ?b ?c
-
-
-WHERE {
-  ?a ?b ?c
-}
-
-LIMIT 10 
