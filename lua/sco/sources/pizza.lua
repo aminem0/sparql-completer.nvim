@@ -17,7 +17,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#Country]
 
 + **Type**
-- [rdf:Class]
+- [owl:Class]
 
 + **Equivalency relationships**
 - [pizza:Country] ≡ {[pizza:America], [pizza:England], [pizza:France], [pizza:Germany], [pizza:Italy]}
@@ -34,7 +34,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#DeepPanBase]
 
 + **Type**
-- [rdf:Class]
+- [owl:Class]
 
 + **Subclass relationships**
 - [pizza:DeepPanBase] ⊑ [pizza:PizzaBase]
@@ -51,7 +51,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza]
 
 + **Type**
-- [rdf:Class]
+- [owl:Class]
 
 + **Subclass relationships**
 - [pizza:Pizza] ⊑ [pizza:Food]
@@ -69,7 +69,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase]
 
 + **Type**
-- [rdf:Class]
+- [owl:Class]
 
 + **Subclass relationships**
 - [pizza:PizzaBase] ⊑ [pizza:Food]
@@ -86,7 +86,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase]
 
 + **Type**
-- [rdf:Class]
+- [owl:Class]
 
 + **Subclass relationships**
 - [pizza:ThinAndCrispyBase] ⊑ [pizza:PizzaBase]
@@ -103,6 +103,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#America]
 
 + **Type**
+- [owl:NamedIndividual]
 - [pizza:Country]
 ]],
         },
@@ -117,6 +118,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#England]
 
 + **Type**
+- [owl:NamedIndividual]
 - [pizza:Country]
 ]],
         },
@@ -131,6 +133,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#France]
 
 + **Type**
+- [owl:NamedIndividual]
 - [pizza:Country]
 ]],
         },
@@ -145,6 +148,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#Germany]
 
 + **Type**
+- [owl:NamedIndividual]
 - [pizza:Country]
 ]],
         },
@@ -159,6 +163,7 @@ return {
 - [http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy]
 
 + **Type**
+- [owl:NamedIndividual]
 - [pizza:Country]
 ]],
         },
