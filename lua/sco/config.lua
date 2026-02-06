@@ -21,6 +21,7 @@ M.options = {
         "miqe",
         "mixs",
         "owl",
+        "pizza",
         "rdf",
         "rdfs",
         "skos",
