@@ -10,7 +10,7 @@ return {
     {
         label = "pizza:Pizza",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "pizza:contributor",
+        description = "pizza:Pizza",
         documentation = {
             value = [[
 + **Identifier**

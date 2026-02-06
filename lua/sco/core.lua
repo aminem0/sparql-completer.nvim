@@ -60,7 +60,10 @@ local function search(prefix)
                 insertText = term.insertText or term.label,
                 kind = term.kind,
                 deprecated = false or term.deprecated,
-                documentation = term.documentation,
+                documentation = {
+                    kind = "markdown",
+                    value = term.documentation.value,
+                },
             })
         end
     end
