@@ -1,16 +1,14 @@
 # `sparql-completer.nvim`
 
-A Neovim plugin to help write SPARQL queries more efficiently.
+A Neovim plugin to help write SPARQL queries more efficiently by providing namespace-aware completion.
 
+This plugin was motivated by limitations in existing SPARQL editors such as [the Wikidata query service](https://query.wikidata.org), where completion requires manual prefix invocation (you have to type `prefix:` followed by the combination of `<CTRL + SPACE>`) and is largely restricted to Wikidata vocabularies.
 
-I found that the [Wikidata query service](https://query.wikidata.org) was cool, but not intuitive. For some reason, having to type `prefix:` followed by the combination of ``<CTRL + SPACE>`` seemed inefficient for real queries. Furthermore, this suggestion functionality is limited to Wikidata terms. Consequently, researchers will be saddened to find the absence of fan favorites like Darwin Core terms.
+As a result, commonly used vocabularies in biodiversity and ecology, such as Darwin Core, are not supported
 
-I was inspired by the insertion functionality in [YASGUI](https://yasgui.triply.cc), which I found awesome.
+Several interesting vocabularies are considered, providing a more fluid and exciting SPARQL experience. 
 
-
-
-
-This 
+---
 
 ## Installation
 
@@ -21,46 +19,54 @@ return {
     "aminem0/sparql-completer.nvim",
     dependencies = {
         "hrsh7th/nvim-cmp",
-        "hrsh7th/nvim-buffer",
+        "hrsh7th/cmp-buffer",
     },
     ft = { "rq", "sparql" },
     lazy = true,
-
-  config = function()
-  end
+    config = function()
+    end
 }
 ```
 
+---
+
 ## Dependencies and requirements
 
-HTTP requests are made using [cURL](https://curl.se), so you need to make sure that you have it. However, it is highly likely that you already have it installed.
+To make HTTP requests [curl](https://curl.se) is required. It is installed on most systems.
+
+---
 
 ## Usage
 
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), the completion engine. Prefereab
+Completion and suggestion of terms is provided via [nvim-cmp](https://github.com/hrsh7th/nvim-cmp). It is a dependency of this project.
 
-SPARQL query formatting is done automatically upon writing.
+  The plugin considers an internal lookup table to define prefixes and namespaces.
 
-The plugin considers an internal lookup table to define prefixes and namespaces.
+  To avoid vocabulary fragmentation and possible term duplication, all terms are indexed strictly by namespace. Each namespace is defined in its own file, and terms are declared only once. 
 
-In order to avoid fragmentation of vocabularies and possible duplication of terms, terms are indexed by namespace. Consequently, 
+  For example, the class `dwc:Occurrence` exists in the Darwin-SW ontology, but within this plugin, it is considered exclusively under the `dwc:` namespace. Consequently, the `dsw:` namespace file contains only terms belonging to the `dsw:` namespace. The same convention is applied consistently across all vocabularies.
 
-One example would be for example the term `dwc:Occurrence` class, which is present in the Darwin-SW ontology. However, for this plugin, it is considered only in the `dwc.lua` file. Consequently, the `dsw.lua` file only considers terms belonging to the `dsw` namespace. The same is done for all terms.
+---
 
-- [lspkind](https://github.com/onsails/lspkind.nvim), for completion icons
+## Recommended plugins
 
-Users are encouraged to consider the following plugins in order to have a better experience:
+For an improved editing experience, the following plugins are recommended:
 
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), for syntax highlighting. Ensure that you have the `sparql` parser installed. This is done either in the Lua config files or manually by running the command `TSInstall sparql`.
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), for better 
-- [nvim-web-devicon](https://github.com/nvim-tree/nvim-web-devicons), for an extra pazazz. I WILL SUBMIT AN ICON FOR `.rq` AND `.sparql` FILES. 
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), for syntax highlighting. Ensure that the `sparql` parser is installed. This is done either in the Lua config files or manually by running the command `TSInstall sparql`.
+
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), for indentation visualization. 
+
+- [lspkind](https://github.com/onsails/lspkind.nvim), for completion icons.
+
+---
 
 ## Relationship to other projects
 
-This plugin was the origin of [the dwc-owl ontology](https://github.com/aminem0/dwc-owl). I wanted to have a consistent way to query the triples in my triplestore. However, I felt that designing an ontology through suggestion terms was a bad way to proceed, so I decided to do it separately.
+This plugin was the origin for the development of [the dwc-owl ontology](https://github.com/aminem0/dwc-owl). The goal was to enable consistend and expressive querying of a personal triplestore (quadstore to be more precise). Ontology development was later separated from this plugin to ensure a cleaner and more principled design process.
 
+---
 
-# Contact
+## Contact
 
 El-Amine Mimouni [el-amine.mimouni@mcgill.ca](mailto:el-amine.mimouni@mcgill.ca)
 
