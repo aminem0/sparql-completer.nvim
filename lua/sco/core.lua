@@ -59,7 +59,7 @@ local function search(prefix)
                 filterText = term.description,
                 insertText = term.insertText or term.label,
                 kind = term.kind,
-                deprecated = term.deprecated,
+                deprecated = false or term.deprecated,
                 documentation = term.documentation,
             })
         end
