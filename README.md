@@ -62,11 +62,11 @@ For an improved editing experience, the following plugins are recommended:
 
 ## Relationship to other projects
 
-This plugin was the origin for the development of [the dwc-owl ontology](https://github.com/aminem0/dwc-owl). The goal was to enable consistend and expressive querying of a personal triplestore (quadstore to be more precise). Ontology development was later separated from this plugin to ensure a cleaner and more principled design process.
+This plugin was the origin for the development of [the DwC-OWL ontology](https://github.com/aminem0/dwc-owl). The goal was to enable consistend and expressive querying of a personal triplestore (quadstore to be more precise). Ontology development was later separated from this plugin to ensure a cleaner and more principled design process.
 
 ---
 
 ## Contact
 
-El-Amine Mimouni [el-amine.mimouni@mcgill.ca](mailto:el-amine.mimouni@mcgill.ca)
+El-Amine Mimouni [el-amine.mimouni@mcgill.ca]((mailto:el-amine.mimouni@mcgill.ca))
 
