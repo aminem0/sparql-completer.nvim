@@ -10,7 +10,6 @@ local config = require("sco.config")
 local vocab = {}
 local index = {}
 
-
 -- NOTE: Function to load all terms from the Lua tables
 -- in lua/sco/sources/
 local function load_vocabularies()
@@ -59,7 +58,7 @@ local function search(prefix)
                 label = term.label,
                 filterText = term.description,
                 insertText = term.insertText or term.label,
-                kind = term.kind,
+                -- kind = term.kind,
                 deprecated = term.deprecated,
                 documentation = term.documentation,
             })

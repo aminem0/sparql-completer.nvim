@@ -5367,7 +5367,7 @@ The full name, with authorship and date information if known, of the currently v
 - [xsd:string]
 
 + **Definition**
-- The full scientific name of the phylum or division in which the [dwc:Taxon] is clsssified.
+- The full scientific name of the phylum or division in which the [dwc:Taxon] is classified.
 
 + **Examples**
 - `Chordata` (phylum)
