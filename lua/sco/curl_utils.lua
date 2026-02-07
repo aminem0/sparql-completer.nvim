@@ -3,7 +3,7 @@ local M = {}
 local sparql_endpoints = require("sco.lookups.sparql_endpoints")
 local content_types = require("sco.lookups.request_content_types")
 local mime_types = require("sco.lookups.mime_types")
-local extensions = require("sco.lookups.file_extensions")
+local file_extensions = require("sco.lookups.file_extensions")
 local http_methods = require("sco.lookups.http_methods")
 
 M.state = {
@@ -70,7 +70,7 @@ function M.select_http_method()
 end
 
 function mime2ext(mimo)
-    for _, item in ipairs(extensions) do
+    for _, item in ipairs(file_extensions) do
         if item.mime_type == mimo then
             return item.extension
         end
@@ -176,9 +176,6 @@ function M.queryo()
             "-H", "Accept: " .. M.state.accept_mime_type,
         }
         response = vim.fn.systemlist(cmd)
-    else
-        print("Unsupported HTTP method: " .. tostring(M.state.http_method), vim.log.levels.ERROR)
-        return
     end
 
     local resp_str = table.concat(response, "\n")
@@ -202,14 +199,11 @@ function M.queryo()
     end
 
     local ctype = extract_content_type(header_lines)
-    local ext = mime2ext(ctype) or ".txt"
+    local body_ext = mime2ext(ctype) or ".txt"
     local name_base = vim.fn.fnamemodify(vim.fn.expand("%"), ":t:r")
 
-    local ok1, err1 = pcall(vim.fn.writefile, body_lines, name_base .. ext)
-    local ok2, err2 = pcall(vim.fn.writefile, header_lines, name_base .. ".http")
-    if not ok1 or not ok2 then
-        notify("Failed to write response files: " .. tostring(err1 or err2), vim.log.levels.ERROR)
-    end
+    vim.fn.writefile(header_lines, name_base .. ".http")
+    vim.fn.writefile(body_lines, name_base .. body_ext)
 end
 
 return M
