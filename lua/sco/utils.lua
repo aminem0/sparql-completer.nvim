@@ -1,20 +1,20 @@
 local M = {}
 
-local endpoints = require("sco.lookups.sparql_endpoints")
-local requests = require("sco.lookups.request_content_types")
+local sparql_endpoints = require("sco.lookups.sparql_endpoints")
+local content_types = require("sco.lookups.request_content_types")
 local mime_types = require("sco.lookups.mime_types")
 local extensions = require("sco.lookups.file_extensions")
 local http_methods = require("sco.lookups.http_methods")
 
 M.state = {
+    sparql_endpoint_url = nil,
     accept_mime_type = "*/*",
     request_content_type = "application/sparql-query",
     http_method = "POST",
-    sparql_endpoint_url = nil,
 }
 
 function M.select_endpoint_url()
-    vim.ui.select(endpoints, {
+    vim.ui.select(sparql_endpoints, {
         prompt = "Set ✨SPARQL✨ endpoint:",
         format_item = function(item) return item.name end,
     }, function(choice)
@@ -28,7 +28,7 @@ function M.select_endpoint_url()
 end
 
 function M.select_request_type()
-    vim.ui.select(requests, {
+    vim.ui.select(content_types, {
         prompt = "Set request type:",
         format_item = function(item) return item.name end,
     }, function(choice)
@@ -67,6 +67,15 @@ function M.select_http_method()
             print("HTTP method selection cancelled")
         end
     end)
+end
+
+function mime2ext(mimo)
+    for _, item in ipairs(extensions) do
+        if item.mime_type == mimo then
+            return item.extension
+        end
+    end
+    return nil
 end
 
 local function floaty(lines, ft)
@@ -123,23 +132,17 @@ local function extract_content_type(header_lines)
     return nil
 end
 
--- Main synchronous query function (keeps original blocking behaviour)
--- Uses curl; for POST we send query via STDIN and use --data-binary @- (avoids E475)
 function M.queryo()
     local endpoint = M.state.sparql_endpoint_url
-
     local filepath = vim.fn.expand("%:p")
     local query_lines = vim.fn.readfile(filepath)
     local query = table.concat(query_lines, "\n")
-
-    local is_form = (M.state.request_content_type == "application/x-www-form-urlencoded")
 
     local cmd
     local response
 
     if M.state.http_method == "POST" then
-        if is_form then
-            -- For form-encoded requests prefer --data-urlencode (curl handles encoding)
+        if M.state.request_content_type == "application/x-www-form-urlencoded" then
             cmd = {
                 "curl",
                 "-i",
@@ -150,7 +153,6 @@ function M.queryo()
             }
             response = vim.fn.systemlist(cmd)
         else
-            -- send query via stdin; curl will read stdin because of '@-'
             cmd = {
                 "curl",
                 "-i",
@@ -161,7 +163,6 @@ function M.queryo()
                 "-H", "Accept: " .. M.state.accept_mime_type,
                 "--data-binary", "@-",
             }
-            -- send query as stdin (this avoids previous E475 issues)
             response = vim.fn.systemlist(cmd, query)
         end
     elseif M.state.http_method == "GET" then
@@ -176,7 +177,7 @@ function M.queryo()
         }
         response = vim.fn.systemlist(cmd)
     else
-        notify("Unsupported HTTP method: " .. tostring(M.state.http_method), vim.log.levels.ERROR)
+        print("Unsupported HTTP method: " .. tostring(M.state.http_method), vim.log.levels.ERROR)
         return
     end
 
@@ -188,7 +189,6 @@ function M.queryo()
 
     local header_lines = {}
     if headers_part and headers_part ~= "" then
-        -- split on CRLF primarily, fallback to LF
         for line in headers_part:gmatch("[^\r\n]+") do
             table.insert(header_lines, line)
         end
@@ -201,7 +201,6 @@ function M.queryo()
         end
     end
 
-    -- Determine filenames and write outputs (use safe defaults)
     local ctype = extract_content_type(header_lines)
     local ext = mime2ext(ctype) or ".txt"
     local name_base = vim.fn.fnamemodify(vim.fn.expand("%"), ":t:r")
