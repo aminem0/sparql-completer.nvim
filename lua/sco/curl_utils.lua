@@ -171,7 +171,7 @@ function M.queryo()
     vim.fn.writefile(header_lines, name_base .. ".http")
     vim.fn.writefile(body_lines, name_base .. body_ext)
 
-    floating_window.floaty(body_lines, body_ext)
+    floating_window.floaty(body_lines, "turtle")
 end
 
 return M
