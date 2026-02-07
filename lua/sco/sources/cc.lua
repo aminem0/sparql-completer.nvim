@@ -119,7 +119,7 @@ return {
     },
     {
         label = "cc:Attribution",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Attribution",
         documentation = {
             kind = "markdown",
@@ -137,7 +137,7 @@ return {
     },
     {
         label = "cc:CommercialUse",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:CommercialUse",
         documentation = {
             kind = "markdown",
@@ -155,7 +155,7 @@ return {
     },
     {
         label = "cc:Copyleft",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Copyleft",
         documentation = {
             kind = "markdown",
@@ -173,7 +173,7 @@ return {
     },
     {
         label = "cc:DerivativeWork",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:DerivativeWork",
         documentation = {
             kind = "markdown",
@@ -191,7 +191,7 @@ return {
     },
     {
         label = "cc:Distribution",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Distribution",
         documentation = {
             kind = "markdown",
@@ -209,7 +209,7 @@ return {
     },
     {
         label = "cc:HighIncomeNationUse",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:HighIncomeNationUse",
         documentation = {
             kind = "markdown",
@@ -227,7 +227,7 @@ return {
     },
     {
         label = "cc:LesserCopyleft",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:LesserCopyleft",
         documentation = {
             kind = "markdown",
@@ -245,7 +245,7 @@ return {
     },
     {
         label = "cc:Notice",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Notice",
         documentation = {
             kind = "markdown",
@@ -263,7 +263,7 @@ return {
     },
     {
         label = "cc:Reproduction",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Reproduction",
         documentation = {
             kind = "markdown",
@@ -281,7 +281,7 @@ return {
     },
     {
         label = "cc:ShareAlike",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:ShareAlike",
         documentation = {
             kind = "markdown",
@@ -299,7 +299,7 @@ return {
     },
     {
         label = "cc:Sharing",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Sharing",
         documentation = {
             kind = "markdown",
@@ -317,7 +317,7 @@ return {
     },
     {
         label = "cc:SourceCode",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:SourceCode",
         documentation = {
             kind = "markdown",
