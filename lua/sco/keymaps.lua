@@ -6,8 +6,8 @@ local M = {}
 
 function M.setup()
     vim.keymap.set("n", "<leader>rp", function()
-        print("PRAISE THE SPARQL")
-    end, { desc = "KOUKOU" })
+        print("Praise SPARQL")
+    end, { desc = "praise" })
 
     vim.keymap.set("n", "<leader>ra", utils.select_mime_type, { desc = "Set accept type" })
     vim.keymap.set("n", "<leader>rc", utils.select_request_type, { desc = "Set content type" })

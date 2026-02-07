@@ -1,4 +1,4 @@
-# `sparql-completer.nvim`
+# sparql-completer.nvim
 
 A Neovim plugin to help write SPARQL queries more efficiently by providing namespace-aware completion.
 
@@ -12,7 +12,7 @@ Several interesting vocabularies are considered, providing a more fluid and exci
 
 ## Installation
 
-Using [lazy.nvim](https://github.com/folke/lazy.nvim)
+Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 return {

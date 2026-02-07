@@ -8,6 +8,123 @@ local cmp = require("cmp")
 
 return {
     {
+        label = "pizza:American",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:American",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#American]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:American] ⊑ [pizza:NamedPizza]
+- [pizza:American] ⊑ ∃[pizza:hasCountryOfOrigin].{[pizza:America]}
+- [pizza:American] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+- [pizza:American] ⊑ ∃[pizza:hasTopping].[pizza:PeperoniSausageTopping]
+- [pizza:American] ⊑ ∃[pizza:hasTopping].[pizza:TomatoTopping]
+- [pizza:American] ⊑ ∀[pizza:hasTopping].([pizza:MozzarellaTopping] ⊔ [pizza:PeperoniSausageTopping] ⊔ [pizza:TomatoTopping])
+]],
+        },
+    },
+    {
+        label = "pizza:AmericanHot",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:AmericanHot",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:AmericanHot] ⊑ [pizza:NamedPizza]
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasCountryOfOrigin].{[pizza:America]}
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasTopping].[pizza:HotGreenPepperTopping]
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasTopping].[pizza:JalapenoTopping]
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasTopping].[pizza:PeperoniSausageTopping]
+- [pizza:AmericanHot] ⊑ ∃[pizza:hasTopping].[pizza:TomatoTopping]
+- [pizza:AmericanHot] ⊑ ∀[pizza:hasTopping].([pizza:HotGreenPepperTopping] ⊔ [pizza:JalapenoTopping] ⊔ [pizza:MozzarellaTopping] ⊔ [pizza:PeperoniSausageTopping] ⊔ [pizza:TomatoTopping])
+]],
+        },
+    },
+    {
+        label = "pizza:Cajun",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:Cajun",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:Cajun] ⊑ [pizza:NamedPizza]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:OnionTopping]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:PeperonataTopping]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:PrawnsTopping]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:TobascoPepperSauceTopping]
+- [pizza:Cajun] ⊑ ∃[pizza:hasTopping].[pizza:TomatoTopping]
+- [pizza:Cajun] ⊑ ∀[pizza:hasTopping].([pizza:MozzarellaTopping] ⊔ [pizza:OnionTopping] ⊔ [pizza:PeperonataTopping] ⊔ [pizza:PrawnsTopping] ⊔ [pizza:TobascoPepperSauceTopping] ⊔ [pizza:TomatoTopping])
+]],
+        },
+    },
+    {
+        label = "pizza:Capricciosa",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:Capricciosa",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:Capricciosa] ⊑ [pizza:NamedPizza]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:AnchoviesTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:CaperTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:HamTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:OliveTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:PeperonataTopping]
+- [pizza:Capricciosa] ⊑ ∃[pizza:hasTopping].[pizza:TomatoTopping]
+- [pizza:Capricciosa] ⊑ ∀[pizza:hasTopping].([pizza:AnchoviesTopping] ⊔ [pizza:CaperTopping] ⊔ [pizza:HamTopping] ⊔ [pizza:MozzarellaTopping] ⊔ [pizza:OliveTopping] ⊔ [pizza:PeperonataTopping] ⊔ [pizza:TomatoTopping])
+]],
+        },
+    },
+    {
+        label = "pizza:Caprina",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:Caprina",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:Caprina] ⊑ [pizza:NamedPizza]
+- [pizza:Caprina] ⊑ ∃[pizza:hasTopping].[pizza:GoatsCheeseTopping]
+- [pizza:Caprina] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+- [pizza:Caprina] ⊑ ∃[pizza:hasTopping].[pizza:SundriedTomatoTopping]
+- [pizza:Caprina] ⊑ ∃[pizza:hasTopping].[pizza:TomatoTopping]
+- [pizza:Caprina] ⊑ ∀[pizza:hasTopping].([pizza:GoatsCheeseTopping] ⊔ [pizza:MozzarellaTopping] ⊔ [pizza:SundriedTomatoTopping] ⊔ [pizza:TomatoTopping])
+]],
+        },
+    },
+    {
         label = "pizza:CheeseTopping",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "pizza:CheeseTopping",
@@ -185,7 +302,7 @@ return {
 - [pizza:IceCream] ⊑ [pizza:Food]
 - [pizza:IceCream] ⊑ ∃[pizza:hasTopping].[pizza:FruitTopping]
 
-+ **Comment**
++ **Comments**
 - A class to demonstrate mistakes made with setting a property domain. The property [pizza:hasTopping] has a domain of [pizza:Pizza]. This means that the reasoner can infer that all individuals using the [pizza:hasTopping] property must be of type [pizza:Pizza]. Because of the restriction on this class, all members of [pizza:IceCream] must use the [pizza:hasTopping] property, and therefore must also be members of [pizza:Pizza]. However, [pizza:Pizza] and [pizza:IceCream] are disjoint, so this causes an inconsistency. If they were not disjoint, [pizza:IceCream] would be inferred to be a subclass of [pizza:Pizza].
 ]],
         },
@@ -555,6 +672,27 @@ return {
         },
     },
     {
+        label = "pizza:UnclosedPizza",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "pizza:UnclosedPizza",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza]
+
++ **Type**
+- [owl:Class]
+
++ **Subclass relationships**
+- [pizza:UnclosedPizza] ⊑ [pizza:Pizza]
+- [pizza:UnclosedPizza] ⊑ ∃[pizza:hasTopping].[pizza:MozzarellaTopping]
+
++ **Comments**
+- An [pizza:UnclosedPizza] cannot be inferred to be either a [pizza:VegetarianPizza] or a [pizza:NonVegetarianPizza], because it might have other toppings.
+]],
+        },
+    },
+    {
         label = "pizza:VegetarianTopping",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "pizza:VegetarianTopping",
@@ -572,7 +710,7 @@ return {
 + **Subclass relationships**
 - [pizza:VegetarianTopping] ⊑ [pizza:PizzaTopping]
 
-+ **Comment**
++ **Comments**
 - An example of a covering axiom. [pizza:VegetarianTopping] is equivalent to the union of all toppings in the given axiom. [pizza:VegetarianTopping] instances can only be [pizza:CheeseTopping] or [pizza:VegetableTopping] or ... etc.
 ]],
         },
