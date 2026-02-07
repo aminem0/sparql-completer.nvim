@@ -1,5 +1,7 @@
 local M = {}
 
+local floating_window = require("sco.floating_window")
+
 local sparql_endpoints = require("sco.lookups.sparql_endpoints")
 local content_types = require("sco.lookups.request_content_types")
 local mime_types = require("sco.lookups.mime_types")
@@ -76,42 +78,6 @@ function mime2ext(mimo)
         end
     end
     return nil
-end
-
-local function floaty(lines, ft)
-    local buf = vim.api.nvim_create_buf(false, true)
-    vim.api.nvim_buf_set_option(buf, "buftype", "nofile")
-    vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
-    vim.api.nvim_buf_set_option(buf, "swapfile", false)
-    if ft then
-        vim.api.nvim_buf_set_option(buf, "filetype", ft)
-    end
-    vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
-
-    local width = math.floor(vim.o.columns * 0.8)
-    local height = math.floor(vim.o.lines * 0.8)
-    local row = math.floor((vim.o.lines - height) / 2)
-    local col = math.floor((vim.o.columns - width) / 2)
-
-    local opts = {
-        style = "minimal",
-        relative = "editor",
-        width = width,
-        height = height,
-        row = row,
-        col = col,
-        border = "rounded",
-    }
-
-    local win = vim.api.nvim_open_win(buf, true, opts)
-
-    vim.keymap.set("n", "q", function()
-        if vim.api.nvim_win_is_valid(win) then
-            vim.api.nvim_win_close(win, true)
-        end
-    end, { buffer = buf, nowait = true, silent = true })
-
-    return buf, win
 end
 
 local function extract_content_type(header_lines)
@@ -205,7 +171,7 @@ function M.queryo()
     vim.fn.writefile(header_lines, name_base .. ".http")
     vim.fn.writefile(body_lines, name_base .. body_ext)
 
-    floaty(body_lines, body_ext)
+    floating_window.floaty(body_lines, body_ext)
 end
 
 return M
