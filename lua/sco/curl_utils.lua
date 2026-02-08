@@ -127,7 +127,7 @@ function M.queryo()
 
     if M.state.http_method == "POST" then
         if M.state.request_content_type == "application/x-www-form-urlencoded" then
-            local flatto = query:gsub("%s+", " ")
+            local flatto = query:gsub("\n", " ")
 
             cmd = {
                 "curl",
