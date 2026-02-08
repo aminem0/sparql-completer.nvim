@@ -115,6 +115,7 @@ local function url_encode(str)
     return str
 end
 
+
 function M.queryo()
     local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
@@ -126,12 +127,14 @@ function M.queryo()
 
     if M.state.http_method == "POST" then
         if M.state.request_content_type == "application/x-www-form-urlencoded" then
+            local flatto = query:gsub("%s+", " ")
+
             cmd = {
                 "curl",
                 "-i",
                 "-s",
                 "-X", "POST",
-                "--data-urlencode", "query=" .. url_encode(query),
+                "--data-urlencode", "query=" .. flatto,
                 endpoint,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
