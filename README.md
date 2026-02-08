@@ -52,11 +52,13 @@ Completion and suggestion of terms is provided via [nvim-cmp](https://github.com
 
 For an improved editing experience, the following plugins are recommended:
 
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), for syntax highlighting. Ensure that the `sparql` parser is installed. This is done either in the Lua config files or manually by running the command `TSInstall sparql`.
+- **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**, for syntax highlighting. Ensure that the `sparql` parser is installed. This is done either in the Lua config files or manually by running the command `TSInstall sparql`.
 
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), for indentation visualization. 
+- **[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)**, for indentation visualization. 
 
-- [lspkind](https://github.com/onsails/lspkind.nvim), for completion icons.
+- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** (with the **[telescope-ui-select.nvim](https://github.com/nvim-telescope/telescioe-ui-select.nvim)**) or **[dressing.nvim](http://github.com/stevearc/dressing.nvim)**, ofr a more interactive and user-friendly picker experience, replacing the default number-based Neovim picker.
+
+- **[lspkind.nvim](https://github.com/onsails/lspkind.nvim)**, for completion icons.
 
 ---
 
