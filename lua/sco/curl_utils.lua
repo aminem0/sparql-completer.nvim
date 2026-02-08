@@ -115,6 +115,7 @@ function M.queryo()
                 "-s",
                 "--data-urlencode", "query=" .. query,
                 endpoint,
+                "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
             response = vim.fn.systemlist(cmd)
