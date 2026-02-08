@@ -17,7 +17,7 @@ return {
     { name = "LOADS",         url = "http://ldf.fi/loa/sparql" },
     { name = "MeSH",          url = "https://id.nlm.nih.gov/mesh/sparql" },
     { name = "MetaNetX",      url = "https://rdf.metanetx.org/" },
-    { name = "NERC",          url = "http://vocab.nerc.ac.uk/sparq/sparql" },
+    { name = "NERC",          url = "http://vocab.nerc.ac.uk/sparql/sparql" },
     { name = "NVS",           url = "https://vocab.nerc.ac.uk/sparql" },
     { name = "OMA",           url = "https://sparql.omabrowser.org/lode/sparql" },
     { name = "OntoBee",       url = "https://ontobee.org/library/php/remote.php?" },
