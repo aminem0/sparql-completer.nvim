@@ -55,6 +55,7 @@ return {
     pato = "http://purl.obolibrary.org/obo/PATO_",
     pizza = "http://www.co-ode.org/ontologies/pizza/pizza.owl#",
     po = "http://purl.obolibrary.org/obo/PO_",
+    poke = "https://triplydb.com/academy/pokemon/vocab/",
     prof = "http://www.w3.org/ns/dx/prof/",
     prov = "http://www.w3.org/ns/prov#",
     qb = "http://purl.org/linked-data/cube#",
