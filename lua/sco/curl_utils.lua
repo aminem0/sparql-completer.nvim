@@ -137,7 +137,7 @@ function M.queryo()
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
             print(table.concat(cmd, " "))
-            -- response = vim.fn.systemlist(cmd)
+            response = vim.fn.systemlist(cmd)
         else
             cmd = {
                 "curl",
