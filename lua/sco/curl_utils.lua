@@ -139,7 +139,7 @@ function M.queryo()
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
-            print(table.concat(cmd, " "))
+            print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
             response = vim.fn.systemlist(cmd)
         else
             cmd = {
