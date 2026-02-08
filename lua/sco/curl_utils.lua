@@ -63,7 +63,7 @@ function M.select_http_method()
         format_item = function(item) return item.name end,
     }, function(choice)
         if choice then
-            M.state.http_method = choice
+            M.state.http_method = choice.verb
             print("HTTP method set to " .. choice.verb)
         else
             print("HTTP method selection cancelled")
