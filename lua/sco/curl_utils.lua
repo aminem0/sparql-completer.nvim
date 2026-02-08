@@ -98,6 +98,21 @@ local function extract_content_type(header_lines)
     return nil
 end
 
+
+-- NOTE: Temporary small function to URL-encode a query
+-- Pretty it up later
+local function url_encode(str)
+    if str == nil then
+        return ""
+    end
+
+    str = tostring(str)
+
+    str = str:gsub("\n", " ")
+    str = str:gsub("([^%w%-._~ ])", function(c) return string.format("%%02X", string.byte(c)) end)
+    str = str:gsub(" ", "%%2020")
+end
+
 function M.queryo()
     local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
@@ -115,7 +130,7 @@ function M.queryo()
                 "-i",
                 "-s",
                 "-X", "POST",
-                "--data-urlencode", "query=" .. query,
+                "--data-urlencode", "query=" .. url_encode(query),
                 endpoint,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
