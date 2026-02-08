@@ -2,6 +2,7 @@ local M = {}
 
 function M.floaty(lines, ext)
     local buf = vim.api.nvim_create_buf(false, true)
+
     vim.api.nvim_buf_set_option(buf, "buftype", "nofile")
     vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
     vim.api.nvim_buf_set_option(buf, "swapfile", false)
@@ -12,6 +13,7 @@ function M.floaty(lines, ext)
 
     if ft then
         vim.api.nvim_buf_set_option(buf, "filetype", ft)
+        vim.api.nvim_buf_set_name(buf, "sparql_output" .. ext)
     end
     vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
 
