@@ -1,10 +1,15 @@
 local M = {}
 
-function M.floaty(lines, ft)
+function M.floaty(lines, ext)
     local buf = vim.api.nvim_create_buf(false, true)
     vim.api.nvim_buf_set_option(buf, "buftype", "nofile")
     vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
     vim.api.nvim_buf_set_option(buf, "swapfile", false)
+
+    local ft = vim.filetype.match({
+        filename = "sparql_output" .. ext,
+    })
+
     if ft then
         vim.api.nvim_buf_set_option(buf, "filetype", ft)
     end
