@@ -109,6 +109,7 @@ function M.queryo()
 
     if M.state.http_method == "POST" then
         if M.state.request_content_type == "application/x-www-form-urlencoded" then
+            print("TOOK THE FORM BRANCH!")
             cmd = {
                 "curl",
                 "-i",
@@ -119,7 +120,8 @@ function M.queryo()
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
-            response = vim.fn.systemlist(cmd)
+            print(table.concat(cmd, " "))
+            -- response = vim.fn.systemlist(cmd)
         else
             cmd = {
                 "curl",
