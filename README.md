@@ -56,7 +56,7 @@ For an improved editing experience, the following plugins are recommended:
 
 - **[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)**, for indentation visualization. 
 
-- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** (with the **[telescope-ui-select.nvim](https://github.com/nvim-telescope/telescioe-ui-select.nvim)**) or **[dressing.nvim](http://github.com/stevearc/dressing.nvim)**, ofr a more interactive and user-friendly picker experience, replacing the default number-based Neovim picker.
+- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** (with the **[telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)**) or **[dressing.nvim](http://github.com/stevearc/dressing.nvim)**, for a more interactive and user-friendly picker experience, replacing the default number-based Neovim picker.
 
 - **[lspkind.nvim](https://github.com/onsails/lspkind.nvim)**, for completion icons.
 
