@@ -113,6 +113,7 @@ function M.queryo()
                 "curl",
                 "-i",
                 "-s",
+                "-X", "POST",
                 "--data-urlencode", "query=" .. query,
                 endpoint,
                 "-H", "Content-Type: " .. M.state.request_content_type,
