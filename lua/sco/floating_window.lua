@@ -12,7 +12,7 @@ function M.floaty(lines, ext)
     })
 
     if ft then
-        vim.api.nvim_buf_set_option(buf, "filetype", ft)
+        -- vim.api.nvim_buf_set_option(buf, "filetype", ft)
         vim.api.nvim_buf_set_name(buf, "sparql_output" .. ext)
     end
     vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
