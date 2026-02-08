@@ -134,8 +134,8 @@ function M.queryo()
                 "-i",
                 "-s",
                 "-X", "POST",
-                "--data-urlencode", "query=" .. flatto,
                 endpoint,
+                "--data-urlencode", "query=" .. flatto,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
