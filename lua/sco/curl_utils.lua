@@ -133,7 +133,7 @@ function M.queryo()
                 "--data-urlencode", "query=" .. flatto,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
-                "-A", M.state.user_agent,
+                -- "-A", M.state.user_agent,
             }
             print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
             response = vim.fn.systemlist(cmd)
