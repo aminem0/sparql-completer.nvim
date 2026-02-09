@@ -13,6 +13,7 @@ M.state = {
     accept_mime_type = "*/*",
     request_content_type = "application/sparql-query",
     http_method = "POST",
+    user_agent = "curl/8.16.0",
 }
 
 function M.select_endpoint_url()
@@ -103,6 +104,7 @@ function M.preview_request()
     local request_headers = {}
 
     table.insert(request_headers, M.state.http_method .. " " .. M.state.sparql_endpoint_url .. " " .. "HTTP/1.1")
+    table.insert(request_headers, "User-Agent: " .. M.state.user_agent)
     table.insert(request_headers, "Accept: " .. M.state.accept_mime_type)
     table.insert(request_headers, "Content-Type: " .. M.state.request_content_type)
 
@@ -131,6 +133,7 @@ function M.queryo()
                 "--data-urlencode", "query=" .. flatto,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
+                "-A", M.state.user_agent,
             }
             print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
             response = vim.fn.systemlist(cmd)
@@ -141,6 +144,7 @@ function M.queryo()
                 "-s",
                 "-X", "POST",
                 endpoint,
+                "-A", M.state.user_agent,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
                 "--data-binary", "@-",
@@ -156,6 +160,7 @@ function M.queryo()
             "--data-urlencode", "query=" .. query,
             endpoint,
             "-H", "Accept: " .. M.state.accept_mime_type,
+            "-A", M.state.user_agent,
         }
         response = vim.fn.systemlist(cmd)
     end
