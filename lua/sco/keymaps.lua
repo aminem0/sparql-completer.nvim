@@ -12,6 +12,8 @@ function M.setup()
     vim.keymap.set("n", "<leader>rm", curl_utils.select_http_method, { desc = "Set HTTP method" })
     vim.keymap.set("n", "<leader>re", curl_utils.select_endpoint_url, { desc = "Set SPARQL endpoint" })
     vim.keymap.set("n", "<leader>rq", curl_utils.queryo, { desc = "Run SPARQL query" })
+
+    vim.keymap.set("n", "<leader>rv", curl_utils.preview_request, { desc = "Preview request headers" })
 end
 
 return M

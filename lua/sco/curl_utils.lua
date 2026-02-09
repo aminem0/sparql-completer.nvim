@@ -98,6 +98,15 @@ local function extract_content_type(header_lines)
     return nil
 end
 
+
+function M.preview_request()
+    local request_headers = {}
+
+    table.insert(request_headers, "Accept: " .. M.state.accept_mime_type)
+
+    floating_window.floaty(request_headers, ".http")
+end
+
 function M.queryo()
     local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
