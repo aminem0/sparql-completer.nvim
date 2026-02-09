@@ -102,7 +102,7 @@ end
 function M.preview_request()
     local request_headers = {}
 
-    table.insert(request_headers, M.state.http_method .. M.state.sparql_endpoint_url .. "HTTP/1.1")
+    table.insert(request_headers, M.state.http_method .. " " .. M.state.sparql_endpoint_url .. " " .. "HTTP/1.1")
     table.insert(request_headers, "Accept: " .. M.state.accept_mime_type)
     table.insert(request_headers, "Content-Type: " .. M.state.request_content_type)
 
