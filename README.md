@@ -12,7 +12,7 @@ Several interesting vocabularies are considered, providing a more fluid and exci
 
 ## Installation
 
-Using [lazy.nvim](https://github.com/folke/lazy.nvim):
+Using **[lazy.nvim](https://github.com/folke/lazy.nvim)**:
 
 ```lua
 return {
@@ -32,13 +32,13 @@ return {
 
 ## Dependencies and requirements
 
-To make HTTP requests [curl](https://curl.se) is required. It is installed on most systems.
+To make HTTP requests **[curl](https://curl.se)** is required. It is installed on most systems.
 
 ---
 
 ## Usage
 
-Completion and suggestion of terms is provided via [nvim-cmp](https://github.com/hrsh7th/nvim-cmp). It is a dependency of this project.
+Completion and suggestion of terms is provided via **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)**. It is a dependency of this project.
 
   The plugin considers an internal lookup table to define prefixes and namespaces.
 
@@ -56,7 +56,7 @@ For an improved editing experience, the following plugins are recommended:
 
 - **[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)**, for indentation visualization. 
 
-- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** (with the **[telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)**) or **[dressing.nvim](http://github.com/stevearc/dressing.nvim)**, for a more interactive and user-friendly picker experience, replacing the default number-based Neovim picker.
+- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** (with the **[telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)** extension) or **[dressing.nvim](http://github.com/stevearc/dressing.nvim)**, for a more interactive and user-friendly picker experience, replacing the default number-based Neovim picker.
 
 - **[lspkind.nvim](https://github.com/onsails/lspkind.nvim)**, for completion icons.
 

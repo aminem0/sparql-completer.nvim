@@ -74,18 +74,6 @@ end
 -- NOTE: nvim-cmp source definition
 local source = {}
 
--- function source:get_debug_name()
---     return "sparql_completer"
--- end
---
--- function source:is_available()
---     return vim.tbl_contains({ "sparql", "rq" }, vim.bo.filetype)
--- end
---
--- function source:get_trigger_characters()
---     return { ":", "<" } -- after "dc:", "rdf:", "<http"
--- end
-
 -- NOTE: Define method that nvim-cmp will call for completion items
 function source:complete(params, callback)
     local prefix = params.context.cursor_before_line:match("([%w_:]+)$")
@@ -108,7 +96,10 @@ function M.setup(opts)
     -- Enable it to work only on .rq or .sparql filetypes
     cmp.setup.filetype({ "sparql", "rq" }, {
         sources = cmp.config.sources({
-            { name = "sparql_completer" },
+            {
+                name = "sparql_completer",
+                -- keyword_length = 3,
+            },
         }),
     })
 end
