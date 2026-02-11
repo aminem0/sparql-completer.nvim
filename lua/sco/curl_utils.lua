@@ -72,6 +72,17 @@ function M.select_http_method()
     end)
 end
 
+function M.user_agent_input()
+    vim.ui.input({ prompt = "Whatcha user agent?" }, function(user_input)
+        if user_input ~= nil and user_input ~= "" then
+            M.state.user_agent = user_input
+            print("User-Agent header changed to " .. user_input)
+        else
+            print("User-Agent header left at default.")
+        end
+    end)
+end
+
 local function mime2ext(mimo)
     for _, item in ipairs(file_extensions) do
         if item.mime_type == mimo then
