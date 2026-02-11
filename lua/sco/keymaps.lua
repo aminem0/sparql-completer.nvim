@@ -13,7 +13,7 @@ function M.setup()
     vim.keymap.set("n", "<leader>re", curl_utils.select_endpoint_url, { desc = "Set SPARQL endpoint" })
     vim.keymap.set("n", "<leader>rq", curl_utils.queryo, { desc = "Run SPARQL query" })
 
-    vim.keymap.set("n", "<leader>ru", curl_utils.queryo, { desc = "Change user agent" })
+    vim.keymap.set("n", "<leader>ru", curl_utils.user_agent_input, { desc = "Change user agent" })
     vim.keymap.set("n", "<leader>rv", curl_utils.preview_request, { desc = "Preview request headers" })
 end
 
