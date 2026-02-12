@@ -7,13 +7,14 @@ local content_types = require("sco.lookups.request_content_types")
 local mime_types = require("sco.lookups.mime_types")
 local file_extensions = require("sco.lookups.file_extensions")
 local http_methods = require("sco.lookups.http_methods")
+local utils = require("sco.utils")
 
 M.state = {
     sparql_endpoint_url = nil,
     accept_mime_type = "*/*",
     request_content_type = "application/sparql-query",
     http_method = "POST",
-    user_agent = "curl/8.16.0",
+    user_agent = "curl/" .. utils.get_curl_version(),
 }
 
 function M.select_endpoint_url()
