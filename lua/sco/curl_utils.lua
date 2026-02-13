@@ -48,7 +48,7 @@ end
 function M.select_mime_type()
     vim.ui.select(mime_types, {
         prompt = "Set accept type:",
-        format_item = function(item) return item.name end,
+        format_item = function(item) return string.format("%-12s (%s)", item.name, item.mime_type) end,
     }, function(choice)
         if choice then
             M.state.accept_mime_type = choice.mime_type
