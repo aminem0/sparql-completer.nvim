@@ -15,6 +15,7 @@ M.options = {
         "dwciri",
         "eco",
         "ecoiri",
+        "foaf",
         "gbif",
         "ggbn",
         "http",
