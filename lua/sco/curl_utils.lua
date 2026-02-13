@@ -84,34 +84,6 @@ function M.user_agent_input()
     end)
 end
 
-local function mime2ext(mimo)
-    for _, item in ipairs(file_extensions) do
-        if item.mime_type == mimo then
-            return item.extension
-        end
-    end
-    return nil
-end
-
-local function extract_content_type(header_lines)
-    if not header_lines or type(header_lines) ~= "table" then
-        return nil
-    end
-    for _, line in ipairs(header_lines) do
-        local name, value = line:match("^%s*([^:]+):%s*(.+)$")
-        if name and value and name:lower() == "content-type" then
-            local main = value:match("^[^;]+")
-            if main then
-                return vim.trim(main)
-            else
-                return vim.trim(value)
-            end
-        end
-    end
-    return nil
-end
-
-
 function M.preview_request()
     local request_headers = {}
 
@@ -198,8 +170,8 @@ function M.queryo()
         end
     end
 
-    local ctype = extract_content_type(header_lines)
-    local body_ext = mime2ext(ctype) or ".txt"
+    local ctype = utils.extract_content_type(header_lines)
+    local body_ext = utils.mime2ext(ctype, file_extensions) or ".txt"
     local name_base = vim.fn.fnamemodify(vim.fn.expand("%"), ":t:r")
 
     vim.fn.writefile(header_lines, name_base .. ".http")
