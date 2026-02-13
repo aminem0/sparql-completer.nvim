@@ -119,6 +119,7 @@ function M.preview_request()
     table.insert(request_headers, "User-Agent: " .. M.state.user_agent)
     table.insert(request_headers, "Accept: " .. M.state.accept_mime_type)
     table.insert(request_headers, "Content-Type: " .. M.state.request_content_type)
+    table.insert(request_headers, "Content-Length: " .. utils.count_buffer_bytes())
 
     floating_window.floaty(request_headers, ".http")
 end

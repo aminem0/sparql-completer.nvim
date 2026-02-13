@@ -1,5 +1,5 @@
 -- Annoying I know, but I need to know it loaded correctly
-print("Welcome, wayward sheep, to the holy Church of SPARQL ⛪")
+-- print("Welcome, wayward sheep, to the holy Church of SPARQL ⛪")
 
 local M = {}
 

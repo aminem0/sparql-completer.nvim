@@ -24,4 +24,16 @@ function M.get_curl_version()
     return version
 end
 
+-- Function to get the number of bytes in the current buffer
+---@return integer
+function M.count_buffer_bytes()
+    local buf = vim.api.nvim_get_current_buf()
+
+    local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
+
+    local content = table.concat(lines, "\n")
+
+    return #content
+end
+
 return M
