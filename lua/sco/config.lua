@@ -5,6 +5,7 @@ M.options = {
         "abcd",
         "ac",
         "cc",
+        "cnt",
         "dc",
         "dcam",
         "dcmitype",
