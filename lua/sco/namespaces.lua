@@ -11,6 +11,7 @@ return {
     chmo = "http://purl.obolibrary.org/obo/CHMO_",
     chrono = "http://rs.tdwg/chrono/terms/",
     cidoc = "http://www.cidoc-crm.org/cidoc-crm/",
+    cnt = "http://www.w3.org/2011/content#Content",
     coffee = "http://purl.org/net/coffee#",
     crmgeo = "http://www.ics.forth.gr/isl/CRMsci/",
     csvw = "http://www.w3.org/ns/csvw#",
