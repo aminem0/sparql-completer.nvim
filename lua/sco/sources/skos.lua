@@ -123,7 +123,7 @@ return {
 - The range of [skos:altLabel] is the class of RDF plain literals. [skos:prefLabel], [skos:altLabel] and [skos:hiddenLabel] are pairwise disjoint properties.
 
 + **Examples**
-- Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).
+- Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Misspelled terms are normally included as hidden labels (see [skos:hiddenLabel]).
 ]],
         },
     },
@@ -316,7 +316,7 @@ return {
 - [skos:exactMatch] is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. [skos:exactMatch] is a transitive property, and is a sub-property of [skos:closeMatch].
 
 + **Comments**
-- [skos:exactMatch] is disjoint with each of the properties skos:broadMatch and [skos:relatedMatch].
+- [skos:exactMatch] is disjoint with each of the properties [skos:broadMatch] and [skos:relatedMatch].
 ]],
         },
     },
