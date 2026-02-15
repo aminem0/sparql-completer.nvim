@@ -161,56 +161,21 @@ function M.save_curl_cmd()
 end
 
 function M.queryo()
-    local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
     local query_lines = vim.fn.readfile(filepath)
     local query = table.concat(query_lines, "\n")
 
-    local cmd
+    local cmd_tbl = M.build_query_tbl()
     local response
 
     if M.state.http_method == "POST" then
         if M.state.request_content_type == "application/x-www-form-urlencoded" then
-            local flatto = query:gsub("\n", " ")
-
-            cmd = {
-                "curl",
-                "-i",
-                "-s",
-                "-X", "POST",
-                "-A", M.state.user_agent,
-                endpoint,
-                "--data-urlencode", "query=" .. flatto,
-                "-H", "Content-Type: " .. M.state.request_content_type,
-                "-H", "Accept: " .. M.state.accept_mime_type,
-            }
-            response = vim.fn.systemlist(cmd)
+            response = vim.fn.systemlist(cmd_tbl)
         else
-            cmd = {
-                "curl",
-                "-i",
-                "-s",
-                "-X", "POST",
-                endpoint,
-                "-A", M.state.user_agent,
-                "-H", "Content-Type: " .. M.state.request_content_type,
-                "-H", "Accept: " .. M.state.accept_mime_type,
-                "--data-binary", "@-",
-            }
-            response = vim.fn.systemlist(cmd, query)
+            response = vim.fn.systemlist(cmd_tbl, query)
         end
     elseif M.state.http_method == "GET" then
-        cmd = {
-            "curl",
-            "-i",
-            "-s",
-            "--get",
-            "--data-urlencode", "query=" .. query,
-            endpoint,
-            "-H", "Accept: " .. M.state.accept_mime_type,
-            "-A", M.state.user_agent,
-        }
-        response = vim.fn.systemlist(cmd)
+        response = vim.fn.systemlist(cmd_tbl)
     end
 
     local resp_str = table.concat(response, "\n")
