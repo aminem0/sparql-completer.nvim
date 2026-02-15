@@ -96,6 +96,63 @@ function M.preview_request()
     floating_window.floaty(request_headers, ".http")
 end
 
+function M.save_curl_cmd()
+    local endpoint = M.state.sparql_endpoint_url
+    local filepath = vim.fn.expand("%:p")
+    local query_lines = vim.fn.readfile(filepath)
+    local query = table.concat(query_lines, "\n")
+
+    local cmd_tbl
+
+    if M.state.http_method == "POST" then
+        if M.state.request_content_type == "application/x-www-form-urlencoded" then
+            local flatto = query:gsub("\n", " ")
+
+            cmd_tbl = {
+                "curl",
+                "-i",
+                "-s",
+                "-X", "POST",
+                "-A", M.state.user_agent,
+                endpoint,
+                "--data-urlencode", "query=" .. flatto,
+                "-H", "Content-Type: " .. M.state.request_content_type,
+                "-H", "Accept: " .. M.state.accept_mime_type,
+            }
+            -- print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
+        else
+            cmd_tbl = {
+                "curl",
+                "-i",
+                "-s",
+                "-X", "POST",
+                endpoint,
+                "-A", M.state.user_agent,
+                "-H", "Content-Type: " .. M.state.request_content_type,
+                "-H", "Accept: " .. M.state.accept_mime_type,
+                "--data-binary", "@-",
+            }
+        end
+    elseif M.state.http_method == "GET" then
+        cmd_tbl = {
+            "curl",
+            "-i",
+            "-s",
+            "--get",
+            "--data-urlencode", "query=" .. query,
+            endpoint,
+            "-H", "Accept: " .. M.state.accept_mime_type,
+            "-A", M.state.user_agent,
+        }
+    end
+
+    local cmd_str = table.concat(vim.tbl_map(vim.fn.shellescape, cmd_tbl))
+
+    local script_lines = { "#!/usr/bin/bash", cmd_str }
+
+    vim.fn.writefile(script_lines, "sparql_curl.sh")
+end
+
 function M.queryo()
     local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
@@ -120,7 +177,6 @@ function M.queryo()
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
-            print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
             response = vim.fn.systemlist(cmd)
         else
             cmd = {
