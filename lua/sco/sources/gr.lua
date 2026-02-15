@@ -7,7 +7,7 @@ GR ontology
 return {
     {
         label = "gr:N-Ary-Relations",
-        kind = cmp.lsp.CompletionItemKind.Constant,
+        kind = cmp.lsp.CompletionItemKind.Class,
         description = "gr:N-Ary-Relations",
         deprecated = true,
         documentation = {
@@ -726,6 +726,422 @@ return {
 ]],
         },
     },
+    {
+        label = "gr:acceptedPaymentMethod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:acceptedPaymentMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#acceptedPaymentMethod]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [gr:PaymentMethod]
+
++ **Definition**
+- The [gr:PaymentMethod] or methods accepted by the [gr:BusinessEntity] for the given [gr:Offering].
+]],
+        },
+    },
+    {
+        label = "gr:addOne",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:addOn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#addOn]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [gr:Offering]
+
++ **Definition**
+- This property points from a [gr:Offering] to additional offerings that can only be obtained in combination with the first offering. This can be used to model supplements and extensions that are available for a surcharge. Any [gr:PriceSpecification] attached to the secondary offering is to be understood as an additional charge.
+]],
+        },
+    },
+    {
+        label = "gr:advanceBookingRequirement",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:advanceBookingRequirement",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#advanceBookingRequirement]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [gr:QuantitativeValueInteger]
+
++ **Definition**
+- The minimal and maximal amount of time that is required between accepting the [gr:Offering] and the actual usage of the resource or service. This is mostly relevant for offers regarding hotel rooms, the rental of objects, or the provisioning of services. The duration is specified relatively to the beginning of the usage of the contracted object. It is represented by attaching an instance of the class [gr:QuantitativeValueInteger]. The lower and upper boundaries are specified using the properties [gr:hasMinValueInteger] and [gr:hasMaxvalueInteger] to that instance. The units of measurements is specified using the property [gr:hasUnitsOfMeasurement] with a string holding a UN/CEFACT code suitable for duration, e.g. `MON` (months), `DAY` (days), `HUR` (hours), or `MIN` (minutes).
+
++ **Comments**
+- The difference to the [gr:validFrom] and [gr:validThrough] properties is that those specify the interval during which the [gr:Offering] is valid, while [gr:advanceBookingRequirement] specifies the acceptable relative amount of time between accepting the offer and fulfilment or usage.
+]],
+        },
+    },
+    {
+        label = "gr:appliesToDeliveryMethod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:appliesToDeliveryMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#appliesToDeliveryMethod]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:DeliveryChargeSpecification]
+
++ **Range**
+- [gr:DeliveryMethod]
+
++ **Definition**
+- This property specifies the [gr:DeliveryMethod] to which the [gr:DeliveryChargeSpecification] applies.
+]],
+        },
+    },
+    {
+        label = "gr:appliesToPaymentMethod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:appliesToPaymentMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#appliesToPaymentMethod]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:PaymentChargeSpecification]
+
++ **Range**
+- [gr:PaymentMethod]
+
++ **Definition**
+- This property specifies the [gr:PaymentMethod] to which the [gr:PaymentChargeSpecification] applies.
+]],
+        },
+    },
+    {
+        label = "gr:availableAtOrFrom",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:availableAtOrFrom",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#availableAtOrFrom]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [gr:Location]
+
++ **Definition**
+- This states that a particular [gr:Offering] is available at or from the given [gr:Location] (e.g. shop or branch).
+]],
+        },
+    },
+    {
+        label = "gr:availableDeliveryMethods",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:availableDeliveryMethods",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#availableDeliveryMethods]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [gr:DeliveryMethod]
+
++ **Definition**
+- This specifies the [gr:DeliveryMethod] or methods available for a given [gr:Offering].
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        label = "gr:amountOfThisGood",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:amountOfThisGood",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#amountOfThisGood]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:TypeAndQuantityNode]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- This property specifies the quantity of the goods included in the [gr:Offering] via this [gr:TypeAndQuantityNode]. The quantity is given in the unit of measurement attached to the [gr:TypeAndQuantityNode].
+]],
+        },
+    },
+    {
+        label = "gr:availabilityEnds",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:availabilityEnds",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#availabilityEnds]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [xsd:dateTime]
+
++ **Definition**
+- This property specifies the end of the availability of the [gr:ProductOrService] included in the [gr:Offering].
+
++ **Comments**
+- The difference to the properties [gr:validFrom] and [gr:validThrough] is that those specify the period of time during which the offer is valid and can be accepted.
+- There is another property, [gr:availableAtOrFrom], which is used to indicate the [gr:Location] (e.g. store or shop) from which the goods would be available.
+
++ **Examples**
+- `2008-05-30T09:30:10Z` (for a time in GMT/UTC)
+- `2008-05-30T09:30:10-09:00` (for a time with a negative offset)
+- `2008-05-30T09:30:10+09:00` (for a time with a positive offset)
+]],
+        },
+    },
+    {
+        label = "gr:availabilityStarts",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:availabilityStarts",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#availabilityStarts]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [xsd:dateTime]
+
++ **Definition**
+- This property specifies the beginning of the availability of the [gr:ProductOrService] included in the [gr:Offering].
+
++ **Comments**
+- The difference to the properties [gr:validFrom] and [gr:validThrough] is that those specify the period of time during which the offer is valid and can be accepted.
+- There is another property, [gr:availableAtOrFrom], which is used to indicate the [gr:Location] (e.g. store or shop) from which the goods would be available.
+
++ **Examples**
+- `2008-05-30T09:30:10Z` (for a time in GMT/UTC)
+- `2008-05-30T09:30:10-09:00` (for a time with a negative offset)
+- `2008-05-30T09:30:10+09:00` (for a time with a positive offset)
+]],
+        },
+    },
+    {
+        label = "gr:billingIncrement",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:billingIncrement",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#billingIncrement]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:Offering]
+- [schema:Offer]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the UN/CEFACT code attached to the [gr:UnitPriceSPecification] via the [gr:hasUnitsOfMeasurement] property.
+
++ **Comments**
+- This property makes sense only for instances of [gr:Offering] that include not more than one good or service.
+
++ **Examples**
+- `0.1` (for gasoline billed in units of `0.1` gallons)
+- `15` (for legal consulting billed in units of `15` minutes)
+]],
+        },
+    },
+    {
+        label = "gr:category",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:category",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#category]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:BusinessEntity]
+- [gr:Location]
+- [gr:Offering]
+- [gr:ProductOrService]
+- [schema:Offer]
+- [schema:Organization]
+- [schema:Place]
+- [schema:Product]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- Th ename of a category to which this [gr:ProductOrService], [gr:Offering], [gr:BusinessEntity], or [gr:Location] belongs.
+
++ **Comments**
+- For products, it is better to add and [rdf:type] statement referring to a [gr:]-compliant ontology for vertical industries instead, but if you have a short text label, [gr:category] is simpler.
+- You can use greater signes or slashes to informally indicate a category hierarchy.
+
++ **Examples**
+- `restaurants/asian_restaurants`
+- `cables > usb_cables`
+]],
+        },
+    },
+    {
+        label = "gr:closes",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:close",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#closes]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:OpeningHoursSpecification]
+
++ **Range**
+- [xsd:time]
+
++ **Definition**
+- The closing hour ofthe [gr:Location] on the given [r:DayOfWeek]. If no time-zone suffix is included, the time is given in the local time valid at the [gr:Location].
+
++ **Comments**
+- Use `00:00:00` for the first second of the respective day and `23:59:59` for the last second of that day.
+- If a store opens at `17:00:00` on Saturdays and closes at `03:00:00` A.M. next morning, use two instances of [gr:OpeningHoursSpecification], one with `17:00:00`-`23:59:59` for Saturday and another one with `00:00:00`-`03:00:00` for Sunday.
+- If the shop re-opens on the same day of the week or set of days of the week, you must create a second instance of [gr:OpeningHoursSpecification].
+
++ **Examples**
+- `09:30:10Z` (for a time in GMT/UTC)
+- `09:30:10-09:00` (for a time with a negative offset)
+- `09:30:10+09:00` (for a time with a positive offset)
+]],
+        },
+    },
+    {
+        label = "gr:color",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "gr:color",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#color]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [gr:ProductOrService]
+- [schema:Product]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- The color of the product.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
