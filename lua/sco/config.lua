@@ -18,6 +18,7 @@ M.options = {
         "foaf",
         "gbif",
         "ggbn",
+        "gr",
         "http",
         "minext",
         "miqe",
@@ -30,6 +31,7 @@ M.options = {
         "skos",
         "sparql",
         "up",
+        "wot",
     },
 
     enable_autocmds = true,
