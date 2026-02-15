@@ -10,7 +10,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Absorption_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Absorption_Annotation]
@@ -20,7 +19,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Absorption_Annotation] ⊑ [up:Biophysicochemical_Annotation] ⊑ [up:Annotation]
+- [up:Absorption_Annotation] ⊑ [up:Biophysicochemical_Annotation]
 
 + **Definition**
 - Indicates the wavelength in nm at which photoreactive proteins such as opsins and DNA photolyases show maximal absorption.
@@ -32,7 +31,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Active_Site_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Active_Site_Annotation]
@@ -42,7 +40,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Active_Site_Annotation] ⊑ [up:Biophysicochemical_Annotation] ⊑ [up:Annotation]
+- [up:Active_Site_Annotation] ⊑ [up:Site_Annotation]
 
 + **Definition**
 - Amino acid(s) involved in the activity of an enzyme.
@@ -54,7 +52,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Activity_Regulation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Activity_Regulation_Annotation]
@@ -76,7 +73,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Allergen_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Allergen_Annotation]
@@ -98,7 +94,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Alternative_Initiation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Alternative_Initiation_Annotation]
@@ -108,7 +103,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Alternative_Initiation_Annotation] ⊑ [up:Alternative_Products_Annotation] ⊑ [up:Annotation]
+- [up:Alternative_Initiation_Annotation] ⊑ [up:Alternative_Products_Annotation]
 ]],
         },
     },
@@ -117,7 +112,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Alternative_Products_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Alternative_Products_Annotation]
@@ -139,7 +133,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Alternative_Promoter_Usage_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation]
@@ -149,7 +142,28 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Alternative_Promoter_Usage_Annotation] ⊑ [up:Alternative_Products_Annotation] ⊑ [up:Annotation]
+- [up:Alternative_Promoter_Usage_Annotation] ⊑ [up:Alternative_Products_Annotation]
+]],
+        },
+    },
+    {
+        label = "up:Alternative_Sequence_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Alternative_Sequence_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Alternative_Sequence_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Alternative_Sequence_Annotation] ⊑ [up:Natural_Variation_Annotation]
+
++ **Definition**
+- Description of sequence variants produced by alternative splicing.
 ]],
         },
     },
@@ -158,7 +172,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Alternative_Splicing_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Alternative_Splicing_Annotation]
@@ -168,7 +181,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Alternative_Splicing_Annotation] ⊑ [up:Alternative_Products_Annotation] ⊑ [up:Annotation]
+- [up:Alternative_Splicing_Annotation] ⊑ [up:Alternative_Products_Annotation]
 ]],
         },
     },
@@ -177,7 +190,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Annotation]
@@ -196,7 +208,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Attribution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Attribution]
@@ -211,11 +222,31 @@ return {
         },
     },
     {
+        label = "up:Beta_Strand_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Beta_Strand_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Beta_Strand_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Beta_Strand_Annotation] ⊑ [up:Secondary_Structure_Annotation]
+
++ **Definition**
+- Beta strand regions within the experimentally determined protein structure.
+]],
+        },
+    },
+    {
         label = "up:Binding_Site_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Binding_Site_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Binding_Site_Annotation]
@@ -225,7 +256,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Binding_Site_Annotation] ⊑ [up:Site_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Binding_Site_Annotation] ⊑ [up:Site_Annotation]
 
 + **Definition**
 - Binding site for any chemical group (co-enzyme, prosthetic groupe, etc.).
@@ -237,7 +268,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Biophysicochemical_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Biophysicochemical_Annotation]
@@ -259,7 +289,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Biotechnology_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Biotechnology_Annotation]
@@ -281,7 +310,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Book_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Book_Citation]
@@ -291,7 +319,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Book_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Book_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - Description of the use of a specific protein in a biotechnological process.
@@ -303,7 +331,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Catalytic_Activity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Catalytic_Activity]
@@ -322,7 +349,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Catalytic_Activity_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Catalytic_Activity_Annotation]
@@ -344,7 +370,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Caution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Caution]
@@ -366,7 +391,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Cellular_Component",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Cellular_Component]
@@ -385,7 +409,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Chain_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Chain_Annotation]
@@ -395,10 +418,10 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Chain_Annotation] ⊑ [up:Molecule_Processing_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Chain_Annotation] ⊑ [up:Molecule_Processing_Annotation]
 
 + **Definition**
-- Warning about possible errors and/or grounds for confusion.
+- Extent of a polypeptide chain in the mature protein.
 ]],
         },
     },
@@ -407,7 +430,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Citation]
@@ -426,7 +448,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Citation_Statement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Citation_Statement]
@@ -448,7 +469,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Cluster",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Cluster]
@@ -470,7 +490,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Cofactor_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Cofactor_Annotation]
@@ -492,7 +511,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Coiled_Coil_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Coiled_Coil_Annotation]
@@ -502,7 +520,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Coiled_Coil_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Coiled_Coil_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Extent of a coiled-coil region.
@@ -514,7 +532,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Compositional_Bias_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Compositional_Bias_Annotation]
@@ -524,7 +541,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Compositional_Bias_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Compositional_Bias_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Extent of a compositionally biased region.
@@ -536,7 +553,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Concept",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Concept]
@@ -546,7 +562,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Concept] ⊑ [owl:Class] ⊑ [rdfs:Class]
+- [up:Concept] ⊑ [owl:Class]
 
 + **Definition**
 - A concept used to classify resources.
@@ -558,7 +574,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Cross-link_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Cross-link_Annotation]
@@ -568,7 +583,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Cross-link_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Cross-link_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
 - Posttranslationally formed amino acid bonds.
@@ -580,7 +595,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Database",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Database]
@@ -590,7 +604,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Database] ⊑ [owl:Class] ⊑ [rdfs:Class]
+- [up:Database] ⊑ [owl:Class]
 
 + **Definition**
 - Metadata for a life science database.
@@ -602,7 +616,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Developmental_Stage_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Developmental_Stage_Annotation]
@@ -624,7 +637,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Disease",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Disease]
@@ -640,7 +652,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Disease_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Disease_Annotation]
@@ -662,7 +673,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Disruption_Phenotype_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Disruption_Phenotype_Annotation]
@@ -681,7 +691,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Disulfide_Bond_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Disulfide_Bond_Annotation]
@@ -691,7 +700,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Disulfide_Bond_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Disulfide_Bond_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
 - Describes residues which are linked by an intra chain disulfide bond. If the endpoints are identical, the disulfide bond is an interchain one..
@@ -703,7 +712,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:DNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/DNA]
@@ -722,7 +730,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Domain_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Domain_Annotation]
@@ -744,7 +751,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Domain_Assignment_Statement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Domain_Assignment_Statement]
@@ -766,7 +772,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Domain_Extent_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Domain_Extent_Annotation]
@@ -776,7 +781,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Domain_Extent_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Domain_Extent_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - The relationship between a protein and a protein domain.
@@ -788,7 +793,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Electronic_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Electronic_Citation]
@@ -798,7 +802,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Electronic_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Electronic_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - An electronic publication.
@@ -810,7 +814,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Endpoint_Statement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Endpoint_Statement]
@@ -832,7 +835,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Enzyme",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Enzyme]
@@ -852,7 +854,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Enzyme_Regulation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Enzyme_Regulation_Annotation]
@@ -871,7 +872,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Erroneous_Gene_Model_Prediction_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Erroneous_Gene_Model_Prediction_Annotation]
@@ -881,8 +881,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Erroneous_Gene_Model_Prediction_Annotation] ⊑ [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
-
+- [up:Erroneous_Gene_Model_Prediction_Annotation] ⊑ [up:Sequence_Caution_Annotation]
 ]],
         },
     },
@@ -891,7 +890,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Erroneous_Initiation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Erroneous_Initiation_Annotation]
@@ -901,7 +899,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Erroneous_Initiation_Annotation] ⊑ [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
+- [up:Erroneous_Initiation_Annotation] ⊑ [up:Sequence_Caution_Annotation]
 ]],
         },
     },
@@ -910,7 +908,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Erroneous_Termination_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Erroneous_Termination_Annotation]
@@ -920,7 +917,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Erroneous_Termination_Annotation] ⊑ [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
+- [up:Erroneous_Termination_Annotation] ⊑ [up:Sequence_Caution_Annotation]
 ]],
         },
     },
@@ -929,7 +926,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Erroneous_Translation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Erroneous_Translation_Annotation]
@@ -939,7 +935,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Erroneous_Translation_Annotation] ⊑ [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
+- [up:Erroneous_Translation_Annotation] ⊑ [up:Sequence_Caution_Annotation]
 ]],
         },
     },
@@ -948,7 +944,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Excluded_Proteome",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Excluded_Proteome]
@@ -967,7 +962,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Experimental_Information_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Experimental_Information_Annotation]
@@ -977,7 +971,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation]
 ]],
         },
     },
@@ -986,7 +980,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:External_Sequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/External_Sequence]
@@ -996,7 +989,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:External_Sequence] ⊑ [up:Known_Sequence] ⊑ [up:Sequence]
+- [up:External_Sequence] ⊑ [up:Known_Sequence]
 
 + **Definition**
 - The protein described in the linked record is an alternative splice form of the same gene product as described in this record. The function between the two isoforms is highly divergent.
@@ -1009,7 +1002,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Family_Membership_Statement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Family_Membership_Statement]
@@ -1025,7 +1017,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Frameshift_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Frameshift_Annotation]
@@ -1035,7 +1026,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Frameshift_Annotation] ⊑ [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
+- [up:Frameshift_Annotation] ⊑ [up:Sequence_Caution_Annotation]
 ]],
         },
     },
@@ -1044,7 +1035,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Gene",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Gene]
@@ -1064,7 +1054,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Genomic_DNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Genomic_DNA]
@@ -1074,7 +1063,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Genomic_DNA] ⊑ [up:DNA] ⊑ [up:Molecule]
+- [up:Genomic_DNA] ⊑ [up:DNA]
 ]],
         },
     },
@@ -1083,7 +1072,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Genomic_RNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Genomic_RNA]
@@ -1093,7 +1081,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Genomic_RNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:Genomic_RNA] ⊑ [up:RNA]
 ]],
         },
     },
@@ -1102,7 +1090,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "Glycosylation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Glycosylation_Annotation]
@@ -1112,7 +1099,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Glycosylation_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Annotation]
+- [up:Glycosylation_Annotation] ⊑ [up:Sequence_Annotation]
 
 + **Definition**
 - Describes the occurrence of the attachment of a glycan (mono- or polysaccharide) to a residue of a protein.
@@ -1124,7 +1111,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Helix_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Helix_Annotation]
@@ -1134,7 +1120,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Helix_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Annotation]
+- [up:Helix_Annotation] ⊑ [up:Sequence_Annotation]
 
 + **Definition**
 - Helical regions within the experimentally determined protein structure.
@@ -1146,7 +1132,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Induction_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Induction_Annotation]
@@ -1168,7 +1153,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Initiator_Methionine_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Initiator_Methionine_Annotation]
@@ -1190,7 +1174,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Interaction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Interaction]
@@ -1209,7 +1192,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Intramembrane_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Intramembrane_Annotation]
@@ -1219,7 +1201,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Intramembrane_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Intramembrane_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Extent of a region located in a membrane without crossing it.
@@ -1231,7 +1213,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Journal",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Journal]
@@ -1250,7 +1231,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Journal_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Journal_Citation]
@@ -1260,7 +1240,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Journal_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Journal_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - An article published in a journal.
@@ -1272,7 +1252,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Kinetics_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Kinetics_Annotation]
@@ -1282,7 +1261,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Kinetics_Annotation] ⊑ [up:Biophysicochemical_Annotation] ⊑ [up:Annotation]
+- [up:Kinetics_Annotation] ⊑ [up:Biophysicochemical_Annotation]
 
 + **Definition**
 - Mentions the Michaelis-Menten constant (KM) and maximal velocity (Vmax) of enzymes.
@@ -1294,7 +1273,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Known_Sequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Known_Sequence]
@@ -1313,7 +1291,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Lipidation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Lipidation_Annotation]
@@ -1323,7 +1300,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Lipidation_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Lipidation_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
 - Covalent binding of a lipid moiety.
@@ -1335,7 +1312,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Mass_Measurement_Method",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Mass_Measurement_Method]
@@ -1357,7 +1333,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Mass_Spectrometry_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Mass_Spectrometry_Annotation]
@@ -1367,7 +1342,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Mass_Spectrometry_Annotation] ⊑ [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Mass_Spectrometry_Annotation] ⊑ [up:Experimental_Information_Annotation]
 
 + **Definition**
 - Indicates the mass of a sequence determined by mass spectrometry.
@@ -1379,7 +1354,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Member_Of_Redundant_Proteome",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Member_Of_Redundant_Proteome]
@@ -1389,8 +1363,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Member_Of_Redundant_Proteome] ⊑ [up:Obsolete_Protein] ⊑ [up:Obsolete]
-- [up:Member_Of_Redundant_Proteome] ⊑ [up:Obsolete_Protein] ⊑ [up:Protein] ⊑ [up:Thing]
+- [up:Member_Of_Redundant_Proteome] ⊑ [up:Obsolete_Protein]
 
 + **Definition**
 - This entry was obsoleted because its sequence belongs to a redundant proteome.
@@ -1402,7 +1375,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Method",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Method]
@@ -1421,7 +1393,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Modification_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Modification_Annotation]
@@ -1431,7 +1402,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Modification_Annotation] ⊑ [up:Sequence_Annotation]
 
 + **Definition**
 - Describes amino acid modifications, post pre- and post-translational.
@@ -1443,7 +1414,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Modified_Residue_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Modified_Residue_Annotation]
@@ -1453,7 +1423,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Modified_Residue_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Modified_Residue_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
 - Posttranslational modification of a residue.
@@ -1465,7 +1435,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Modified_Sequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Modified_Sequence]
@@ -1475,7 +1444,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Modified_Sequence] ⊑ [up:Known_Sequence] ⊑ [up:Sequence]
+- [up:Modified_Sequence] ⊑ [up:Known_Sequence]
 ]],
         },
     },
@@ -1484,7 +1453,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Molecule",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Molecule]
@@ -1506,7 +1474,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Molecule_Processing_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Molecule_Processing_Annotation]
@@ -1516,7 +1483,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Molecule_Processing_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Molecule_Processing_Annotation] ⊑ [up:Sequence_Annotation]
 ]],
         },
     },
@@ -1525,7 +1492,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Motif_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Motif_Annotation]
@@ -1535,7 +1501,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Motif_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Motif_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Short (<= 20 amino acids) sequence motif of biological interest.
@@ -1546,8 +1512,7 @@ return {
         label = "up:MRNA",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:MRNA",
-        documentation = { -- NOTE: REVOIR M
-            kind = "markdown",
+        documentation = {
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/MRNA]
@@ -1557,7 +1522,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:MRNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:MRNA] ⊑ [up:RNA]
 ]],
         },
     },
@@ -1566,7 +1531,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Mutagenesis_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Mutagenesis_Annotation]
@@ -1576,7 +1540,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Mutagenesis_Annotation] ⊑ [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Mutagenesis_Annotation] ⊑ [up:Experimental_Information_Annotation]
 
 + **Definition**
 - Site which has been experimentally altered.
@@ -1588,7 +1552,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Natural_Variation_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Natural_Variation_Annotation]
@@ -1598,7 +1561,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Natural_Variation_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Natural_Variation_Annotation] ⊑ [up:Sequence_Annotation]
 ]],
         },
     },
@@ -1607,7 +1570,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Non_Self_Interaction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Non_Self_Interaction]
@@ -1629,7 +1591,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Non-standard_Residue_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Non-standard_Residue_Annotation]
@@ -1639,7 +1600,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Non-standard_Residue_Annotation] ⊑ [up:Modification_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Non-standard_Residue_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
 - Describes the occurrence of a non-standard residue in the sequence record.
@@ -1651,7 +1612,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Non-adjacent_Residues_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Non-adjacent_Residues_Annotation]
@@ -1661,7 +1621,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Non-adjacent_Residues_Annotation] ⊑ [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Non-adjacent_Residues_Annotation] ⊑ [up:Experimental_Information_Annotation]
 
 + **Definition**
 - Indicates that two residues in a sequence are not consecutive and that there are a numbere of unsequenced residues between them.
@@ -1673,7 +1633,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Non-terminal_Residue_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Non-terminal_Residue_Annotation]
@@ -1683,7 +1642,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Non-terminal_Residue_Annotation] ⊑ [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Non-terminal_Residue_Annotation] ⊑ [up:Experimental_Information_Annotation]
 
 + **Definition**
 - The residue at an extremity of the sequence is not the terminal residue.
@@ -1695,7 +1654,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Not_Obsolete",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Not_Obsolete]
@@ -1714,7 +1672,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Not_Obsolete_Protein",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Not_Obsolete_Protein]
@@ -1725,7 +1682,7 @@ return {
 
 + **Subclass relationships**
 - [up:Not_Obsolete_Protein] ⊑ [up:Not_Obsolete]
-- [up:Not_Obsolete_Protein] ⊑ [up:Protein] ⊑ [owl:Thing]
+- [up:Not_Obsolete_Protein] ⊑ [up:Protein]
 ]],
         },
     },
@@ -1734,7 +1691,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Not_Obsolete_Taxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Not_Obsolete_Taxon]
@@ -1750,11 +1706,31 @@ return {
         },
     },
     {
+        label = "up:Nucleotide_Binding_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Nucleotide_Binding_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Nucleotide_Binding_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Nucleotide_Binding_Annotation] ⊑ [up:Region_Annotation]
+
++ **Definition**
+- Extent of a DNA-binding region.
+]],
+        },
+    },
+    {
         label = "up:Nucleotide_Mapping_Statement",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Nucleotide_Mapping_Statement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Nucleotide_Mapping_Statement]
@@ -1776,7 +1752,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Nucleotide_Resource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Nucleotide_Resource]
@@ -1798,7 +1773,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Observation_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Observation_Citation]
@@ -1808,7 +1782,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Observation_Citation] ⊑ [up:Unpublished_Citation] ⊑ [up:Citation]
+- [up:Observation_Citation] ⊑ [up:Unpublished_Citation]
 
 + **Definition**
 - Citation of an unpublished citation.
@@ -1820,7 +1794,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Obsolete",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Obsolete]
@@ -1839,7 +1812,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Obsolete_Protein",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Obsolete_Protein]
@@ -1850,7 +1822,7 @@ return {
 
 + **Subclass relationships**
 - [up:Obsolete_Protein] ⊑ [up:Obsolete]
-- [up:Obsolete_Protein] ⊑ [up:Protein] ⊑ [owl:Thing]
+- [up:Obsolete_Protein] ⊑ [up:Protein]
 ]],
         },
     },
@@ -1859,7 +1831,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Obsolete_Taxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Obsolete_Taxon]
@@ -1870,7 +1841,7 @@ return {
 
 + **Subclass relationships**
 - [up:Obsolete_Protein] ⊑ [up:Obsolete]
-- [up:Obsolete_Protein] ⊑ [up:Protein] ⊑ [owl:Thing]
+- [up:Obsolete_Protein] ⊑ [up:Protein]
 
 + **Definition**
 - Taxa are occasionally removed from the taxonomy database (particularly internal nodes, during a taxonomic revision) – these taxids are deleted, and are not reused.
@@ -1882,7 +1853,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Organelle",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Organelle]
@@ -1898,7 +1868,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Orientation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Orientation]
@@ -1917,7 +1886,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Other_DNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Other_DNA]
@@ -1927,7 +1895,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Other_DNA] ⊑ [up:DNA] ⊑ [up:Molecule]
+- [up:Other_DNA] ⊑ [up:DNA]
 ]],
         },
     },
@@ -1936,7 +1904,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Other_RNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Other_RNA]
@@ -1946,7 +1913,28 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Other_RNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:Other_RNA] ⊑ [up:RNA]
+]],
+        },
+    },
+    {
+        label = "up:Part",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Part",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Part]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Part] ⊑ [owl:Thing]
+
++ **Definition**
+- Description of a part of a protein.
 ]],
         },
     },
@@ -1955,7 +1943,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Participant",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Participant]
@@ -1969,13 +1956,11 @@ return {
 ]],
         },
     },
-
     {
         label = "up:Patent_Citation",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Patent_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Patent_Citation]
@@ -1985,7 +1970,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Patent_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Patent_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - A patent application.
@@ -1997,7 +1982,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Pathway",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Pathway]
@@ -2016,7 +2000,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Pathway_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Pathway_Annotation]
@@ -2038,7 +2021,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:Peptide_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Peptide_Annotation]
@@ -2048,7 +2030,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Peptide_Annotation] ⊑ [up:Molecule_Processing_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Peptide_Annotation] ⊑ [up:Molecule_Processing_Annotation]
 
 + **Definition**
 - Extent of a released active peptide.
@@ -2060,7 +2042,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "up:PH_Dependence_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/PH_Dependence_Annotation]
@@ -2070,21 +2051,216 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:PH_Dependence_Annotation] ⊑ [up:Biophysicochemical_Annotation] ⊑ [up:Annotation]
+- [up:PH_Dependence_Annotation] ⊑ [up:Biophysicochemical_Annotation]
 
 + **Definition**
 - Describes the optimum pH for enzyme activity and/or the variation of enzyme activity with pH variation.
 ]],
         },
     },
+    {
+        label = "up:Pharmaceutical_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Pharmaceutical_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Pharmaceutical_Annotation]
 
-    -------------------------------------------------------------------
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Pharmaceutical_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of the use of the protein as a pharmaceutical drug.
+]],
+        },
+    },
+    {
+        label = "up:Plasmid",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Plasmid",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Plasmid]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- Description of a plasmid.
+]],
+        },
+    },
+    {
+        label = "up:Polymorphism_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Polymorphism_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Polymorphism_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Polymorphism_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of polymorphisms.
+]],
+        },
+    },
+    {
+        label = "up:Propeptide_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Propeptide_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Propeptide_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Propeptide_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Exent of a propeptide.
+]],
+        },
+    },
+    {
+        label = "up:Protein",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Protein",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Protein]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Protein] ⊑ [owl:Thing]
+
++ **Definition**
+- Description of a protein.
+]],
+        },
+    },
+    {
+        label = "up:Protein_Existence",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Protein_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Protein_Existence]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Equivalency relationships**
+- [up:Protein] ⊑ [owl:Thing]
+]],
+        },
+    },
+    {
+        label = "up:Proteome",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Proteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Proteome]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- Description of a proteome.
+]],
+        },
+    },
+    {
+        label = "up:Proteome_Component",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Proteome_Component",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Proteome_Component]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Proteome_Component] ⊑ [owl:Thing]
+
++ **Definition**
+- The component of a proteome, e.g. chromosome, contig or plasmid.
+]],
+        },
+    },
+    {
+        label = "up:PTM_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:PTM_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/PTM_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:PTM_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of a posttranslational modification.
+]],
+        },
+    },
+    {
+        label = "up:Published_Citation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Published_Citation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Published_Citation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Published_Citation] ⊑ [up:Citation]
+]],
+        },
+    },
     {
         label = "up:Rank",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Rank",
+        description = "up:Rank",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Rank]
@@ -2099,11 +2275,335 @@ return {
         },
     },
     {
+        label = "up:Redox_Potential_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Redox_Potential_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Redox_Potential_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Redox_Potential_Annotation] ⊑ [up:Biophysicochemical_Annotation]
+
++ **Definition**
+- Reports the value of the standart (midpoint) oxido-reduction potential(s) for electron transport proteins.
+]],
+        },
+    },
+    {
+        label = "up:Reference_Proteome",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Reference_Proteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Reference_Proteome]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Reference_Proteome] ⊑ [up:Proteome]
+
++ **Definition**
+- Some proteomes have been (manually and algorithmically) selected as reference proteomes.
+]],
+        },
+    },
+    {
+        label = "up:Region_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Region_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Region_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Region_Annotation] ⊑ [up:Sequence_Annotation]
+]],
+        },
+    },
+    {
+        label = "up:Repeat_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Repeat_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Repeat_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Repeat_Annotation] ⊑ [up:Region_Annotation]
+
++ **Definition**
+- Extent of an internal sequence repetition.
+]],
+        },
+    },
+    {
+        label = "up:Representative_Proteome",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Representative_Proteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Representative_Proteome]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Representative_Proteome] ⊑ [up:Proteome]
+
++ **Definition**
+- A proteome that is believed by curators, or selected programatically to be representative for a number of related [up:Proteome]s.
+]],
+        },
+    },
+    {
+        label = "up:Resource",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Resource",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Resource]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Representative_Proteome] ⊑ [up:Proteome]
+
++ **Definition**
+- A life science resource.
+]],
+        },
+    },
+    {
+        label = "up:Reviewed",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Reviewed",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Reviewed]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Representative_Proteome] ⊑ [up:Proteome]
+
++ **Definition**
+- The class of all reviewed records in the database (i.e. records that were looked at by a curator for integration into the database).
+]],
+        },
+    },
+    {
+        label = "up:Reviewed_Protein",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Reviewed_Protein",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Reviewed_Protein]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Reviewed_Protein] ⊑ [up:Protein]
+- [up:Reviewed_Protein] ⊑ [up:Reviewed]
+]],
+        },
+    },
+    {
+        label = "up:Ribosomal_Frameshifting",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Ribosomal_Frameshifting",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Ribosomal_Frameshifting]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Ribosomal_Frameshifting] ⊑ [up:Alternative_Products_Annotation]
+]],
+        },
+    },
+    {
+        label = "up:RNA_Editing_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:RNA_Editing_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/RNA_Editing_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:RNA_Editing_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of any type of RNA editing that leads to one or more amino acid changes.
+]],
+        },
+    },
+    {
+        label = "up:Secondary_Structure_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Secondary_Structure_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Secondary_Structure_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Secondary_Structure_Annotation] ⊑ [up:Sequence_Annotation]
+
++ **Definition**
+- Describes the secondary structure of proteins whose tertiary structure is known experimentally.
+]],
+        },
+    },
+    {
+        label = "up:Self_Interaction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Self_Interaction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Self_Interaction]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Self_Interaction] ⊑ [up:Interaction]
+
++ **Definition**
+- Description of a self protein-protein interaction.
+]],
+        },
+    },
+    {
+        label = "up:Sequence",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Sequence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Sequence]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- An amino acid sequence.
+]],
+        },
+    },
+    {
+        label = "up:Sequence_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Sequence_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Sequence_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Sequence_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of a special region or site in a protein sequence.
+]],
+        },
+    },
+    {
+        label = "up:Sequence_Caution_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Sequence_Caution_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Sequence_Caution_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Sequence_Caution_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Warning about possible errors related to the protein sequence.
+]],
+        },
+    },
+    {
+        label = "up:Sequence_Conflict_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Sequence_Conflict_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Sequence_Conflict_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Sequence_Conflict_Annotation] ⊑ [up:Experimental_Information_Annotation]
+
++ **Definition**
+- Different sources report differing sequences.
+]],
+        },
+    },
+    {
         label = "up:Sequence_Uncertainty_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence_Uncertainty_Annotation",
+        description = "up:Sequence_Uncertainty_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Sequence_Uncertainty_Annotation]
@@ -2113,21 +2613,201 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Sequence_Uncertainty_Annotation] ⊑ [up:Experimental_Information_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Sequence_Uncertainty_Annotation] ⊑ [up:Experimental_Information_Annotation]
 
 + **Definition**
 - Used to describe region(s) of a sequence for which the authors are unsure about the sequence assignment.
 ]],
         },
     },
+    {
+        label = "up:Sequence_Variant_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Sequence_Variant_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Sequence_Variant_Annotation]
 
-    -----------------------------------------------------------------------------------
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Sequence_Variation_Annotation] ⊑ [up:Natural_Variation_Annotation]
+
++ **Definition**
+- Authors report that sequence variants exist.
+]],
+        },
+    },
+    {
+        label = "up:Signal_Peptide_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Signal_Peptide_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Signal_Peptide_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Signal_Peptide_Annotation] ⊑ [up:Molecule_Processing_Annotation]
+
++ **Definition**
+- Extent of a signal sequence (prepeptide).
+]],
+        },
+    },
+    {
+        label = "up:Similarity_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Similarity_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Similarity_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Similarity_Annotation] ⊑ [up:Annotation]
+
++ **Definition**
+- Description of the similarities (sequence or structural) of a protein with other proteins.
+]],
+        },
+    },
+    {
+        label = "up:Simple_Sequence",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Simple_Sequence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Simple_Sequence]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Simple_Sequence] ⊑ [up:Known_Sequence]
+]],
+        },
+    },
+    {
+        label = "up:Site_Annotation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Site_Annotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Site_Annotation]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Site_Annotation] ⊑ [up:Sequence_Annotation]
+
++ **Definition**
+- Any interesting single amino-acid site on the sequence, that is not defined by another feature key. It can also apply to an amino acid bond which is represented by the positions on the two flanking amino acids.
+]],
+        },
+    },
+    {
+        label = "up:Status",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Status",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Status]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Definition**
+- Indicator for the reliability of a piece of information.
+]],
+        },
+    },
+    {
+        label = "up:Structure_Determination_Method",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Structure_Determination_Method",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Structure_Determination_Method]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Structure_Determination_Method] ⊑ [up:Method]
+
++ **Definition**
+- An experimental method for determining the 3D structure of a protein.
+]],
+        },
+    },
+    {
+        label = "up:Structure_Mapping_Statement",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Structure_Mapping_Statement",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Structure_Mapping_Statement]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Structure_Mapping_Statement] ⊑ [up:Statement]
+
++ **Definition**
+- The relationship between a protein and a 3D structure.
+]],
+        },
+    },
+    {
+        label = "up:Structure_Resource",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "up:Structure_Resource",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Structure_Resource]
+
++ **Type**
+- [owl:Class]
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [up:Structure_Resource] ⊑ [up:Resource]
+
++ **Definition**
+- A resource that describes the 3D structure of a protein.
+]],
+        },
+    },
     {
         label = "up:Structured_Name",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Structured_Name",
+        description = "up:Structured_Name",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Structured_Name]
@@ -2144,9 +2824,8 @@ return {
     {
         label = "up:Subcellular_Location",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Subcellular_Location",
+        description = "up:Subcellular_Location",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Subcellular_Location]
@@ -2160,9 +2839,8 @@ return {
     {
         label = "up:Subcellular_Location_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Subcellular_Location_Annotation",
+        description = "up:Subcellular_Location_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Subcellular_Location_Annotation]
@@ -2182,9 +2860,8 @@ return {
     {
         label = "up:Submission_Citation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Submission_Citation",
+        description = "up:Submission_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Submission_Citation]
@@ -2194,7 +2871,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Submission_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Submission_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - Data that was submitted directly to a database.
@@ -2204,9 +2881,8 @@ return {
     {
         label = "up:Subunit_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Subunit_Annotation",
+        description = "up:Subunit_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Subunit_Annotation]
@@ -2226,9 +2902,8 @@ return {
     {
         label = "up:Taxon",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Taxon",
+        description = "up:Taxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Taxon]
@@ -2245,9 +2920,8 @@ return {
     {
         label = "up:Temperature_Dependence_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Temperature_Dependence_Annotation",
+        description = "up:Temperature_Dependence_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Temperature_Dependence_Annotation]
@@ -2257,7 +2931,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Temperature_Dependence_Annotation] ⊑ [up:Biophysicochemical_Annotation] ⊑ [up:Annotation]
+- [up:Temperature_Dependence_Annotation] ⊑ [up:Biophysicochemical_Annotation]
 
 + **Definition**
 - Indicates the optimum temperature for enzyme activity and/or the variation of enzyme activity with temperature variation, the thermostability/thermolability of the enzyme is also mentioned when it is known.
@@ -2267,9 +2941,8 @@ return {
     {
         label = "up:Thesis_Citation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Thesis_Citation",
+        description = "up:Thesis_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Thesis_Citation]
@@ -2279,7 +2952,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Thesis_Citation] ⊑ [up:Published_Citation] ⊑ [up:Citation]
+- [up:Thesis_Citation] ⊑ [up:Published_Citation]
 
 + **Definition**
 - A Ph.D. thesis.
@@ -2289,9 +2962,8 @@ return {
     {
         label = "up:Tissue",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Tissue",
+        description = "up:Tissue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Tissue]
@@ -2308,9 +2980,8 @@ return {
     {
         label = "up:Tissue_Specificity_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Tissue_Specificity_Annotation",
+        description = "up:Tissue_Specificity_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Tissue_Specificity_Annotation]
@@ -2330,9 +3001,8 @@ return {
     {
         label = "up:Topological_Domain_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Topological_Domain_Annotation",
+        description = "up:Topological_Domain_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Topological_Domain_Annotation]
@@ -2342,7 +3012,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Topological_Domain_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Topological_Domain_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation]
 
 + **Definition**
 - A topological domain.
@@ -2352,9 +3022,8 @@ return {
     {
         label = "up:Topology",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Topology",
+        description = "up:Topology",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Topology]
@@ -2371,9 +3040,8 @@ return {
     {
         label = "up:Toxic_Dose_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Toxic_Dose_Annotation",
+        description = "up:Toxic_Dose_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Toxic_Dose_Annotation]
@@ -2393,9 +3061,8 @@ return {
     {
         label = "up:Transcribed_RNA",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Transcribed_RNA",
+        description = "up:Transcribed_RNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Transcribed_RNA]
@@ -2405,16 +3072,15 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Transcribed_RNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:Transcribed_RNA] ⊑ [up:RNA]
 ]],
         },
     },
     {
         label = "up:Transcript_Resource",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Transcript_Resource",
+        description = "up:Transcript_Resource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Transcript_Resource]
@@ -2431,9 +3097,8 @@ return {
     {
         label = "up:Transit_Peptide_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Transit_Peptide_Annotation",
+        description = "up:Transit_Peptide_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Transit_Peptide_Annotation]
@@ -2443,7 +3108,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Transit_Peptide_Annotation] ⊑ [up:Molecule_Processing_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Transit_Peptide_Annotation] ⊑ [up:Molecule_Processing_Annotation]
 
 + **Definition**
 - Extent of a transit peptide (mitochondrion, chloroplast, thylakoid, cyanelle or microbody).
@@ -2453,9 +3118,8 @@ return {
     {
         label = "up:Transmembrane_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Transmembrane_Annotation",
+        description = "up:Transmembrane_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Transmembrane_Annotation]
@@ -2465,7 +3129,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Transmembrane_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Transmembrane_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Extent of a transmembrane region.
@@ -2475,9 +3139,8 @@ return {
     {
         label = "up:Transposon",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Transposon",
+        description = "up:Transposon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Transposon]
@@ -2494,9 +3157,8 @@ return {
     {
         label = "up:Turn_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Turn_Annotation",
+        description = "up:Turn_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Turn_Annotation]
@@ -2506,7 +3168,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Turn_Annotation] ⊑ [up:Secondary_Structure_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Turn_Annotation] ⊑ [up:Secondary_Structure_Annotation]
 
 + **Definition**
 - Turns within the experimentally determined protein structure.
@@ -2516,9 +3178,8 @@ return {
     {
         label = "up:Unassigned_DNA",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Unassigned_DNA",
+        description = "up:Unassigned_DNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Unassigned_DNA]
@@ -2528,16 +3189,15 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Unassigned_DNA] ⊑ [up:DNA] ⊑ [up:Molecule]
+- [up:Unassigned_DNA] ⊑ [up:DNA]
 ]],
         },
     },
     {
         label = "up:Unassigned_RNA",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Unassigned_RNA",
+        description = "up:Unassigned_RNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Unassigned_RNA]
@@ -2547,16 +3207,15 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Unassigned_RNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:Unassigned_RNA] ⊑ [up:RNA]
 ]],
         },
     },
     {
         label = "up:Unknown_Sequence",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Unknown_Sequence",
+        description = "up:Unknown_Sequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Unknown_Sequence]
@@ -2573,9 +3232,8 @@ return {
     {
         label = "up:Unpublished_Citation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Unpublished_Citation",
+        description = "up:Unpublished_Citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Unpublished_Citation]
@@ -2592,9 +3250,8 @@ return {
     {
         label = "up:Viral_cRNA",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Viral_cRNA",
+        description = "up:Viral_cRNA",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Viral_cRNA]
@@ -2604,7 +3261,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Viral_cRNA] ⊑ [up:RNA] ⊑ [up:Molecule]
+- [up:Viral_cRNA] ⊑ [up:RNA]
 
 + **Definition**
 - Positive cRNA molecule that is made from a single stranded genomic RNA.
@@ -2614,9 +3271,8 @@ return {
     {
         label = "up:Zinc_Finger_Annotation",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Zinc_Finger_Annotation",
+        description = "up:Zinc_Finger_Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/Zinc_Finger_Annotation]
@@ -2626,7 +3282,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [up:Zinc_Finger_Annotation] ⊑ [up:Region_Annotation] ⊑ [up:Sequence_Annotation] ⊑ [up:Annotation]
+- [up:Zinc_Finger_Annotation] ⊑ [up:Region_Annotation]
 
 + **Definition**
 - Extent of a zinc finger region.
@@ -2635,225 +3291,6 @@ return {
     },
 
     -----------------------------------------------------------------------------------
-    {
-        label = "up:Nucleotide_Binding_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Nucleotide_Binding_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Nucleotide_Binding_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Annotation > up:Sequence_Annotation > up:Region_Annotation > up:Nucleotide_Binding_Annotation`
-
-+ **Definition**
-- Extent of a DNA-binding region.
-]],
-        },
-    },
-    {
-        label = "up:Protein",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Protein",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Protein]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `owl:Thing > up:Protein`
-
-+ **Definition**
-- Description of a protein.
-]],
-        },
-    },
-    {
-        label = "up:Secondary_Structure_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Secondary_Structure_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Secondary_Structure_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Annotation > up:Sequence_Annotation > up:Secondary_Structure_Annotation`
-
-+ **Definition**
-- Describes the secondary structure of proteins whose tertiary structure is known experimentally.
-]],
-        },
-    },
-    {
-        label = "up:Self_Interaction",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Self_Interaction",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Self_Interaction]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Interaction > up:Self_Interaction`
-
-+ **Definition**
-- Description of a self protein-protein interaction.
-]],
-        },
-    },
-    {
-        label = "up:Sequence",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Sequence]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Definition**
-- An amino acid sequence.
-]],
-        },
-    },
-    {
-        label = "up:Sequence_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Sequence_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Annotation > up:Sequence_Annotation`
-
-+ **Definition**
-- Description of a special region or site in a protein sequence.
-]],
-        },
-    },
-    {
-        label = "up:Sequence_Caution_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence_Caution_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Sequence_Caution_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Annotation > up:Sequence_Caution_Annotation`
-
-+ **Definition**
-- Warning about possible errors related to the protein sequence.
-]],
-        },
-    },
-    {
-        label = "up:Sequence_Conflict_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence_Conflict_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Sequence_Conflict_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- `up:Annotation > up:Sequence_Annotation > up:Experimental_Information_Annotation > up:Sequence_Conflict_Annotation`
-
-+ **Definition**
-- Different sources report differing sequences.
-]],
-        },
-    },
-
-    {
-        label = "up:Sequence_Variant_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Sequence_Variant_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Sequence_Variant_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- [up:Annotation] ⊆ [up:Sequence_Annotation] ⊆ [up:Natural_Variation_Annotation] ⊆ [up:Sequence_Variation_Annotation]
-
-+ **Definition**
-- Authors report that sequence variants exist.
-]],
-        },
-    },
-    {
-        label = "up:Signal_Peptide_Annotation",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "Signal_Peptide_Annotation",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://purl.uniprot.org/core/Signal_Peptide_Annotation]
-
-+ **Type**
-- [owl:Class]
-- [rdfs:Class]
-
-+ **Subclass relationships**
-- [up:Annotation] ⊆ [up:Sequence_Annotation] ⊆ [up:Molecule_Processing_Annotation] ⊆ [up:Signal_Peptide_Annotation]
-
-+ **Definition**
-- Extent of a signal sequence (prepeptide).
-]],
-        },
-    },
-
     -------------------------------------------------------------------------
     {
         label = "up:activity",

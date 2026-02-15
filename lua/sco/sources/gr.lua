@@ -1087,7 +1087,7 @@ return {
 - [xsd:time]
 
 + **Definition**
-- The closing hour ofthe [gr:Location] on the given [r:DayOfWeek]. If no time-zone suffix is included, the time is given in the local time valid at the [gr:Location].
+- The closing hour of the [gr:Location] on the given [r:DayOfWeek]. If no time-zone suffix is included, the time is given in the local time valid at the [gr:Location].
 
 + **Comments**
 - Use `00:00:00` for the first second of the respective day and `23:59:59` for the last second of that day.
