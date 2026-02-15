@@ -1058,7 +1058,7 @@ return {
 ]],
         },
     },
-        {
+    {
         label = "owl:imports",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:imports",

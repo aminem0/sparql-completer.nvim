@@ -12,7 +12,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:DriedSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/DriedSpecimen]
@@ -35,7 +34,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:IndividualOrganism",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/IndividualOrganism]
@@ -58,7 +56,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:LivingSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/LivingSpecimen]
@@ -84,7 +81,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:PreservedSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/PreservedSpecimen]
@@ -109,7 +105,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:Specimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/Specimen]
@@ -125,7 +120,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:SpecimenInAlcohol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/SpecimenInAlcohol]
@@ -147,7 +141,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dsw:Token",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/Token]
@@ -166,7 +159,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:atEvent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/atEvent]
@@ -174,6 +166,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:atEvent] ≡ [dsw:eventOf]⁻
 
 + **Domain**
 - [dwc:Occurrence]
@@ -194,7 +189,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:derivedFrom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/derivedFrom]
@@ -202,6 +196,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:derivedFrom] ≡ [dsw:hasDerivative]⁻
 
 + **Domain**
 - [dsw:Token]
@@ -223,7 +220,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:eventOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/eventOf]
@@ -231,6 +227,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:eventOf] ≡ [dsw:atEvent]⁻
 
 + **Domain**
 - [dwc:Event]
@@ -251,7 +250,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:evidenceFor",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/evidenceFor]
@@ -259,6 +257,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:evidenceFor] ≡ [dsw:hasEvidence]⁻
 
 + **Subproperty relationships**
 - [dsw:evidenceFor] ⊑ [ro:0002472]
@@ -283,7 +284,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:georefBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/georefBy]
@@ -311,7 +311,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:hasDerivative",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/hasDerivative]
@@ -319,6 +318,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:hasDerivative] ≡ [dsw:derivedFrom]⁻
 
 + **Domain**
 - [dwc:Organism]
@@ -340,7 +342,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:hasEvidence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/hasEvidence]
@@ -348,6 +349,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:hasEvidence] ≡ [dsw:evidenceFor]⁻
 
 + **Domain**
 - [dwc:Occurrence]
@@ -368,7 +372,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:hasIdentification",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/hasIdentification]
@@ -376,6 +379,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:hasIdentification] ≡ [dsw:identifies]⁻
 
 + **Domain**
 - [dwc:Organism]
@@ -396,7 +402,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:hasOccurrence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/hasOccurrence]
@@ -404,6 +409,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:hasOccurrence] ≡ [dsw:occurrenceOf]⁻
 
 + **Domain**
 - [dwc:Organism]
@@ -424,7 +432,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:idBasedOn",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/idBasedOn]
@@ -432,6 +439,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:idBasedOn] ≡ [dsw:isBasisForId]⁻
 
 + **Subproperty relationships**
 - [dsw:idBasedOn] ⊑ [ro:0002558]
@@ -456,7 +466,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:idBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/idBy]
@@ -484,7 +493,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:identifies",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/identifies]
@@ -492,6 +500,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:identifies] ≡ [dsw:hasIdentification]⁻
 
 + **Domain**
 - [dwc:Identification]
@@ -512,7 +523,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:isBasisForId",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/isBasisForId]
@@ -520,6 +530,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:isBasisForId] ≡ [dsw:idBasedOn]⁻
 
 + **Subproperty relationships**
 - [dsw:isBasisForId] ⊑ [ro:isEvidenceFor]
@@ -543,7 +556,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:locatedAt",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/locatedAt]
@@ -551,6 +563,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:locatedAt] ≡ [dsw:locates]⁻
 
 + **Domain**
 - [dwc:Event]
@@ -571,7 +586,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:locates",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/locates]
@@ -579,6 +593,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:locates] ≡ [dsw:locatedAt]⁻
 
 + **Domain**
 - [dwc:Event]
@@ -599,7 +616,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:occurrenceOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/occurrenceOf]
@@ -607,6 +623,9 @@ return {
 + **Type**
 - [owl:ObjectProperty]
 - [rdf:Property]
+
++ **Equivalency relationships**
+- [dsw:occurrenceOf] ≡ [dsw:hasOccurrence]⁻
 
 + **Domain**
 - [dwc:Occurrence]
@@ -628,7 +647,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:recBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/recBy]
@@ -656,7 +674,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:taxonOfId",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/taxonOfId]
@@ -685,7 +702,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:toTaxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/toTaxon]
@@ -711,7 +727,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dsw:individualOrganismRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dsw/individualOrganismRemarks]
