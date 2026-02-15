@@ -1764,7 +1764,7 @@ return {
 - [rdfs:Class]
 
 + **Equivalency relationships**
-- [up:Nucleotide_Resource] ≡ ≥ 1 [up:located_on].⊤
+- [up:Nucleotide_Resource] ≡ ≥ 1 [up:locatedOn].⊤
 
 + **Subclass relationships**
 - [up:Nucleotide_Resource] ⊑ [up:Resource]
@@ -3381,19 +3381,11 @@ return {
 ]],
         },
     },
-
-
-
-
-
-    -----------------------------------------------------------------------------------
-    -------------------------------------------------------------------------
     {
         label = "up:activity",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:activity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/activity]
@@ -3417,7 +3409,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:alternativeName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/alternativeName]
@@ -3426,7 +3417,7 @@ return {
 - [owl:ObjectProperty]
 
 + **Subproperty relationships**
-- [up:alternativeName] ⊆ [up:structuredName]
+- [up:alternativeName] ⊑ [up:structuredName]
 
 + **Domain**
 - [up:Part]
@@ -3445,7 +3436,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/annotation]
@@ -3469,7 +3459,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:attribution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/attribution]
@@ -3491,7 +3480,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:basedOn",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/basedOn]
@@ -3515,7 +3503,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:catalyticActivity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/catalyticActivity]
@@ -3536,7 +3523,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:catalyzedPhysiologicalReaction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/catalyzedPhysiologicalReaction]
@@ -3554,7 +3540,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:catalyzedReaction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/catalyzedReaction]
@@ -3572,7 +3557,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:category",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/category]
@@ -3590,7 +3574,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:cellularComponent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/cellularComponent]
@@ -3599,9 +3582,7 @@ return {
 - [owl:ObjectProperty]
 
 + **Domain**
-- [up:Cellular_Component]
-- [up:Orientation]
-- [up:Topology]
+- (= 1 [up:cellularComponent].[up:Cellular_Component]) ⊓ (≥ 1 [up:orientation].[up:Orientation]) ⊓ (≥ 1 [up:topology].[up:Topology])
 
 + **Range**
 - [up:Cellular_Component]
@@ -3613,7 +3594,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:chainSequenceMapping",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/chainSequenceMapping]
@@ -3634,7 +3614,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:citation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/citation]
@@ -3664,7 +3643,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:classifiedWith",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/classifiedWith]
@@ -3688,7 +3666,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:cofactor",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/cofactor]
@@ -3706,7 +3683,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:commonName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/commonName]
@@ -3715,12 +3691,9 @@ return {
 - [owl:ObjectProperty]
 
 + **Subproperty relationships**
-- [up:commonName] ⊆ [up:name]
+- [up:commonName] ⊑ [up:name]
 
 + **Domain**
-- [up:Cluster]
-
-+ **Range**
 - [up:Taxon]
 ]],
         },
@@ -3730,7 +3703,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:commonTaxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/commonTaxon]
@@ -3751,7 +3723,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:conflictingSequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/conflictingSequence]
@@ -3774,7 +3745,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:context",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/context]
@@ -3792,7 +3762,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:database",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/database]
@@ -3813,7 +3782,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:disease",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/disease]
@@ -3834,7 +3802,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:domain",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/domain]
@@ -3861,7 +3828,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:encodedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/encodedBy]
@@ -3885,7 +3851,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:encodedIn",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/encodedIn]
@@ -3907,7 +3872,6 @@ return {
     {
         label = "up:enzyme",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "up:enzyme",
         documentation = {
             kind = "markdown",
             value = [[
@@ -3934,7 +3898,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:enzymeClass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/enzymeClass]
@@ -3955,7 +3918,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:erratum",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/erratum]
@@ -3979,7 +3941,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:erratumFor",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/erratumFor]
@@ -4003,7 +3964,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:existence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/existence]
@@ -4021,7 +3981,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:host",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/host]
@@ -4042,7 +4001,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:interaction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/interaction]
@@ -4063,7 +4021,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:isolatedFrom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/isolatedFrom]
@@ -4084,7 +4041,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:ligand",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/ligand]
@@ -4102,7 +4058,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "up:ligandPart",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.uniprot.org/core/ligandPart]
@@ -4115,4 +4070,86 @@ return {
 ]],
         },
     },
+    {
+        label = "up:locatedIn",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:locatedIn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/locatedIn]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Subcellular_Location_Annotation]
+
++ **Range**
+- (= 1 [up:cellularComponent].[up:Cellular_Component]) ⊓ (≥ 1 [up:orientation].[up:Orientation]) ⊓ (≥ 1 [up:topology].[up:Topology])
+]],
+        },
+    },
+    {
+        label = "up:locatedOn",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:locatedOn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/locatedOn]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Nucleotide_Resource]
+
++ **Range**
+- [up:Molecule]
+]],
+        },
+    },
+    {
+        label = "up:locusName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:locusName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/locusName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:locusName] ⊑ [up:name]
+
++ **Domain**
+- [up:Gene]
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
