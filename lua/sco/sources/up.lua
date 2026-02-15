@@ -3872,6 +3872,7 @@ return {
     {
         label = "up:enzyme",
         kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:enzyme",
         documentation = {
             kind = "markdown",
             value = [[
