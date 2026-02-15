@@ -130,7 +130,8 @@ function M.save_curl_cmd()
                 "-A", M.state.user_agent,
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
-                "--data-binary", "@-",
+                -- "--data-binary", "@-",
+                "--data-binary", "@" .. vim.fn.expand("%p"),
             }
         end
     elseif M.state.http_method == "GET" then
@@ -146,9 +147,9 @@ function M.save_curl_cmd()
         }
     end
 
-    local cmd_str = table.concat(vim.tbl_map(vim.fn.shellescape, cmd_tbl))
+    local cmd_str = table.concat(vim.tbl_map(vim.fn.shellescape, cmd_tbl), " ")
 
-    local script_lines = { "#!/usr/bin/bash", cmd_str }
+    local script_lines = { "#!/usr/bin/bash", "", cmd_str }
 
     vim.fn.writefile(script_lines, "sparql_curl.sh")
 end
