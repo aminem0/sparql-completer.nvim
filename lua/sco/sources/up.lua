@@ -1662,6 +1662,9 @@ return {
 - [owl:Class]
 - [rdfs:Class]
 
++ **Equivalency relationships**
+- [up:Not_Obsolete] ≡ ∃[up:obsolete].{"false"^^[xsd:boolean]}
+
 + **Definition**
 - A class introduced to group all records that are currently in the database.
 ]],
@@ -1760,6 +1763,9 @@ return {
 - [owl:Class]
 - [rdfs:Class]
 
++ **Equivalency relationships**
+- [up:Nucleotide_Resource] ≡ ≥ 1 [up:located_on].⊤
+
 + **Subclass relationships**
 - [up:Nucleotide_Resource] ⊑ [up:Resource]
 
@@ -1801,6 +1807,9 @@ return {
 + **Type**
 - [owl:Class]
 - [rdfs:Class]
+
++ **Equivalency relationships**
+- [up:Obsolete] ≡ ∃[up:obsolete].{"true"^^[xsd:boolean]}
 
 + **Definition**
 - The class of all obsolete records in the database (i.e. records that were once published but are now removed).
@@ -2174,7 +2183,7 @@ return {
 - [rdfs:Class]
 
 + **Equivalency relationships**
-- [up:Protein] ⊑ [owl:Thing]
+- [up:Obsolete] ≡ {[up:Evidence_at_Protein_Level_Existence], [up:Evidence_at_Transcript_Level_Existence], [up:Inferred_from_Homology_Existence], [up:Predicted_Existence], [up:Uncertain_Existence]}
 ]],
         },
     },
@@ -2389,6 +2398,9 @@ return {
 - [owl:Class]
 - [rdfs:Class]
 
++ **Equivalency relationships**
+- [up:Resource] ≡ ∃[up:database].[owl:Thing]
+
 + **Subclass relationships**
 - [up:Representative_Proteome] ⊑ [up:Proteome]
 
@@ -2409,6 +2421,9 @@ return {
 + **Type**
 - [owl:Class]
 - [rdfs:Class]
+
++ **Equivalency relationships**
+- [up:Reviewed] ≡ ∃[up:reviewed].{"true"^^[xsd:boolean]}
 
 + **Subclass relationships**
 - [up:Representative_Proteome] ⊑ [up:Proteome]
@@ -2794,6 +2809,9 @@ return {
 + **Type**
 - [owl:Class]
 - [rdfs:Class]
+
++ **Equivalency relationships**
+- [up:Structure_Resource] ≡ (∀[up:Structure_Determination_Method]) ⊓ (= 1 [up:method].⊤)
 
 + **Subclass relationships**
 - [up:Structure_Resource] ⊑ [up:Resource]
