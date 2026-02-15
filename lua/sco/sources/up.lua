@@ -2183,7 +2183,7 @@ return {
 - [rdfs:Class]
 
 + **Equivalency relationships**
-- [up:Obsolete] ≡ {[up:Evidence_at_Protein_Level_Existence], [up:Evidence_at_Transcript_Level_Existence], [up:Inferred_from_Homology_Existence], [up:Predicted_Existence], [up:Uncertain_Existence]}
+- [up:Protein_Existence] ≡ {[up:Evidence_at_Protein_Level_Existence], [up:Evidence_at_Transcript_Level_Existence], [up:Inferred_from_Homology_Existence], [up:Predicted_Existence], [up:Uncertain_Existence]}
 ]],
         },
     },
@@ -3307,6 +3307,84 @@ return {
 ]],
         },
     },
+    {
+        label = "up:Evidence_at_Protein_Level_Existence",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "up:Evidence_at_Protein_Level_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Evidence_at_Protein_Level_Existence]
+
++ **Type**
+- [owl:NamedIndividual]
+- [up:Protein_Existence]
+]],
+        },
+    },
+    {
+        label = "up:Evidence_at_Transcript_Level_Existence",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "up:Evidence_at_Transcript_Level_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Evidence_at_Transcript_Level_Existence]
+
++ **Type**
+- [owl:NamedIndividual]
+]],
+        },
+    },
+    {
+        label = "up:Inferred_from_Homology_Existence",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "up:Inferred_from_Homology_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Inferred_from_Homology_Existence]
+
++ **Type**
+- [owl:NamedIndividual]
+- [up:Protein_Existence]
+]],
+        },
+    },
+    {
+        label = "up:Predicted_Existence",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "up:Predicted_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Predicted_Existence]
+
++ **Type**
+- [owl:NamedIndividual]
+- [up:Protein_Existence]
+]],
+        },
+    },
+    {
+        label = "up:Uncertain_Existence",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "up:Uncertain_Existence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/Uncertain_Existence]
+
++ **Type**
+- [owl:NamedIndividual]
+- [up:Protein_Existence]
+]],
+        },
+    },
+
+
+
+
 
     -----------------------------------------------------------------------------------
     -------------------------------------------------------------------------
