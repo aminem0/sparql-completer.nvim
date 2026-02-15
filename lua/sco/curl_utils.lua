@@ -96,7 +96,7 @@ function M.preview_request()
     floating_window.floaty(request_headers, ".http")
 end
 
-function M.save_curl_cmd()
+function M.build_query_tbl()
     local endpoint = M.state.sparql_endpoint_url
     local filepath = vim.fn.expand("%:p")
     local query_lines = vim.fn.readfile(filepath)
@@ -131,7 +131,7 @@ function M.save_curl_cmd()
                 "-H", "Content-Type: " .. M.state.request_content_type,
                 "-H", "Accept: " .. M.state.accept_mime_type,
                 -- "--data-binary", "@-",
-                "--data-binary", "@" .. vim.fn.expand("%p"),
+                "--data-binary", "@" .. filepath,
             }
         end
     elseif M.state.http_method == "GET" then
@@ -146,6 +146,12 @@ function M.save_curl_cmd()
             "-A", M.state.user_agent,
         }
     end
+
+    return cmd_tbl
+end
+
+function M.save_curl_cmd()
+    local cmd_tbl = M.build_query_tbl()
 
     local cmd_str = table.concat(vim.tbl_map(vim.fn.shellescape, cmd_tbl), " ")
 
