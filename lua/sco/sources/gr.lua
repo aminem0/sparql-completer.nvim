@@ -6,6 +6,27 @@ GR ontology
 
 return {
     {
+        label = "gr:N-Ary-Relations",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:N-Ary-Relations",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#N-Ary-Relations]
+
++ **Type**
+- [owl:Class]
+
++ **Definition**
+- This is the superclass for all classes that are placeholders for n-ary relations, which OWL cannot represent.
+
++ **Comments**
+- This class is deprecated. Do not use this class in data or queries.
+]],
+        },
+    },
+    {
         label = "gr:AmericanExpress",
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "gr:AmericanExpress",
@@ -279,6 +300,469 @@ return {
 ]],
         },
     },
+    {
+        label = "gr:DinersClub",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:DinersClub",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#DinersClub]
+
++ **Type**
+- [gr:PaymentMethodCreditCard]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by credit or debit cards issued by the Diner's Club network.
+]],
+        },
+    },
+    {
+        label = "gr:DirectDebit",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:DirectDebit",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#DirectDebit]
+
++ **Type**
+- [gr:PaymentMethod]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by direct debit, i.e., the buying party will inform the offering [gr:BusinessEntity] about its bank account details and authorizes the [gr:BusinessEntity] to collect the aggreed amount directly from that account.
+]],
+        },
+    },
+    {
+        label = "gr:Discover",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Discover",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Discover]
+
++ **Type**
+- [gr:PaymentMethodCreditCard]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by credit or debit cards issued by the Discover network.
+]],
+        },
+    },
+    {
+        label = "gr:Dispose",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Dispose",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Dispose]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers (or seeks) the acceptance of the specified [gr:ProductOrService] for proper disposal, recycling, or any other kind of allowed usages, freeing the user from all rights and obligations of ownership.
+]],
+        },
+    },
+    {
+        label = "gr:Enduser",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Enduser",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Enduser]
+
++ **Type**
+- [gr:BusinessEntityType]
+- [owl:NamedIndividual]
+
++ **Definition**
+- The [gr:BusinessEntityType] representing such agents that are purchasing the good or service for private consumption, in particular not for resale or for usage within an industrial enterprise. By default, a [gr:BusinessEntity] is an [gr:Enduser].
+]],
+        },
+    },
+    {
+        label = "gr:FederalExpress",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:FederalExpress",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#FederalExpress]
+
++ **Type**
+- [gr:DeliveryModeParcelService]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Delivery via the parcel service Federal Express.
+]],
+        },
+    },
+    {
+        label = "gr:GoogleCheckout",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:GoogleCheckout",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#GoogleCheckout]
+
++ **Type**
+- [gr:PaymentMethod]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment via the Google Checkout payment service.
+]],
+        },
+    },
+    {
+        label = "gr:JCB",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:JCB",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#JCB]
+
++ **Type**
+- [gr:PaymentMethodCreditCard]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by credit or debit cards issued by the JCB network.
+]],
+        },
+    },
+    {
+        label = "gr:Labor-BringIn",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Labor-BringIn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Labor-BringIn]
+
++ **Type**
+- [gr:WarrantyScope]
+- [owl:NamedIndividual]
+
++ **Definition**
+- In case of a defect or malfunction, the buying party has the right to transport the good to a service location determined by the selling [gr:BusinessEntity] and will be charged only for parts and materials needed to fix the problem. Labor will be covered by the selling business entity or one of its partnering business entities.
+
++ **Comments**
+- This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the [gr:WarrantyPromise].
+]],
+        },
+    },
+    {
+        label = "gr:LeaseOut",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:LeaseOut",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#LeaseOut]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers (or seeks) the temporary right to use the specified [gr:ProductOrService].
+]],
+        },
+    },
+    {
+        label = "gr:Maintain",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Maintain",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Maintain]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers (or seeks) typical maintenance tasks for the specified [gr:ProductOrService]. Maintenance tasks are actions that undo or compensate for wear or other deterioration caused by regular usage, in order to restore the originally intended function of the product, or to prevent outage or malfunction.
+]],
+        },
+    },
+    {
+        label = "gr:MasterCard",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:MasterCard",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#MasterCard]
+
++ **Type**
+- [gr:PaymentMethodCreditCard]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by credit or debit cards issued by the MasterCard network.
+]],
+        },
+    },
+    {
+        label = "gr:PartsAndLabor-BringIn",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:PartsAndLabor-BringIn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#PartsAndLabor-BringIn]
+
++ **Type**
+- [gr:WarrantyScope]
+- [owl:NamedIndividual]
+
++ **Definition**
+- In case of a defect or malfunction, the buying party has the right to transport the good to a service location determined by the selling [gr:BusinessEntity] and will not be charged for labor, parts, and materials needed to fix the problem. All those costs will be covered by the selling business entity or one of its partnering business entities.
+
++ **Comments**
+- This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the [gr:WarrantyPromise].
+]],
+        },
+    },
+    {
+        label = "gr:PartsAndLabor-PickUp",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:PartsAndLabor-PickUp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#PartsAndLabor-PickUp]
+
++ **Type**
+- [gr:WarrantyScope]
+- [owl:NamedIndividual]
+
++ **Definition**
+- In case of a defect or malfunction, the buying party has the right to request from the selling [gr:BusinessEntity] to pick up the goods from its current location to a suitable service location where the functionality of the good will be restored. All transportation, labor, parts, and materials needed to fix the problem will be covered by the selling businss entity or one of its partnering business entities.
+
++ **Comments**
+- This is just a rough classification for filtering offers. It is up to the buying party to check the exact scope and terms and conditions of the [gr:WarrantyPromise].
+]],
+        },
+    },
+    {
+        label = "gr:PayPal",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:PayPal",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#PayPal]
+
++ **Type**
+- [gr:PaymentMethod]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment via the PayPal payment service.
+]],
+        },
+    },
+    {
+        label = "gr:PaySwarm",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:PaySwarm",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#PaySwarm]
+
++ **Type**
+- [gr:PaymentMethod]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment via the PaySwarm distributed micropayment service.
+]],
+        },
+    },
+    {
+        label = "gr:ProvideService",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:ProvideService",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#ProvideService]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers (or seeks) the respective type of service.
+
++ **Comments**
+- Maintain and repair are also types of services. However, products and services ontologgies often provide classes for tangible products as well as for types of services. The business function [gr:ProvideService] is to be used with such goods that are services, while [gr:Maintain] and [gr:Repair] can be used with goods for which only the class of product exists in the ontology, but not the respective type of service.
+]],
+        },
+    },
+    {
+        label = "gr:PublicHoliday",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:PublicHoliday",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#PublicHoliday]
+
++ **Type**
+- [gr:DayOfWeek]
+- [owl:NamedIndividual]
+
++ **Definition**
+- A placeholder for all official public holidays at the [gr:Location]. This allows specifying the opening hours on public holidays. If a given day is a public holiday, this specification supersedes the opening hours for the respective day of the week.
+]],
+        },
+    },
+    {
+        label = "gr:Repair",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Repair",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Repair]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers (or seeks) the evaluation of chances for repairing, and, if positive, repair of the specified [gr:ProductOrService]. Repairing means actions that restore the originally intended function of a product that suffers from outage or malfunction.
+]],
+        },
+    },
+    {
+        label = "gr:Reseller",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Reseller",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Reseller]
+
++ **Type**
+- [gr:BusinessEntityType]
+- [owl:NamedIndividual]
+
++ **Definition**
+- The [gr:BusinessEntityType] representing such agents that are purchasing the scope of products included in the [gr:Offering] for resale on the market. Resellers are also businesse, i.e., they are officially registered with the public administration and strive for profits by their activities.
+]],
+        },
+    },
+    {
+        label = "gr:Sell",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:Sell",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#Sell]
+
++ **Type**
+- [gr:BusinessFunction]
+- [owl:NamedIndividual]
+
++ **Definition**
+- This [gr:BusinessFunction] indicates that the [gr:BusinessEntity] offers to permanently transfer all property rights on the specified [gr:ProductOrService].
+]],
+        },
+    },
+    {
+        label = "gr:UPS",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:UPS",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#UPS]
+
++ **Type**
+- [gr:DeliveryModeParcelService]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Delivery via the parcel service UPS.
+]],
+        },
+    },
+    {
+        label = "gr:VISA",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "gr:VISA",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/goodrelations/v1#VISA]
+
++ **Type**
+- [gr:PaymentMethodCreditCard]
+- [owl:NamedIndividual]
+
++ **Definition**
+- Payment by credit or debit cards issued by the VISA network.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
