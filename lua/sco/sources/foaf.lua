@@ -10,7 +10,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Agent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Agent]
@@ -32,7 +31,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Document",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Document]
@@ -51,7 +49,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Group",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Group]
@@ -73,7 +70,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Image",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Image]
@@ -95,7 +91,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:OnlineAccount",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/OnlineAccount]
@@ -114,7 +109,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:OnlineChatAccount",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/OnlineChatAccount]
@@ -136,7 +130,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:OnlineEcommerceAccount",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/OnlineEcommerceAccount]
@@ -158,7 +151,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:OnlineGamingAccount",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/OnlineGamingAccount]
@@ -180,7 +172,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Organization",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Organization]
@@ -202,7 +193,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:PersonalProfileDocument",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/PersonalProfileDocument]
@@ -224,7 +214,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "foaf:Project",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/Project]
@@ -255,7 +244,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:account",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/account]
@@ -280,7 +268,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:accountServiceHomepage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/accountServiceHomepage]
@@ -300,13 +287,320 @@ return {
 ]],
         },
     },
+    {
+        label = "foaf:depiction",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:depiction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/depiction]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:depiction] ≡ [foaf:depicts]⁻
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [foaf:Image]
+
++ **Definition**
+- A depiction of some thing.
+]],
+        },
+    },
+    {
+        label = "foaf:depicts",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:depicts",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/depicts]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:depicts] ≡ [foaf:depiction]⁻
+
++ **Domain**
+- [foaf:Image]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- A thing depicted in this representation.
+]],
+        },
+    },
+    {
+        label = "foaf:isPrimaryTopicOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:isPrimaryTopicOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/isPrimaryTopicOf]
+
++ **Type**
+- [owl:InverseFunctionalProperty]
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:isPrimaryTopicOf] ≡ [foaf:primaryTopic]⁻
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [foaf:Document]
+
++ **Definition**
+- A [foaf:Document] that this thing is the primary topic of.
+]],
+        },
+    },
+    {
+        label = "foaf:made",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:made",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/made]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:made] ≡ [foaf:maker]⁻
+
++ **Domain**
+- [foaf:Agent]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- Something that was made by this [foaf:Agent].
+]],
+        },
+    },
+    {
+        label = "foaf:maker",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:maker",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/maker]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:maker] ≡ [dcterms:creator]
+- [foaf:maker] ≡ [foaf:made]⁻
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [foaf:Agent]
+
++ **Definition**
+- An [foaf:Agent] that made this thing.
+]],
+        },
+    },
+    {
+        label = "foaf:page",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:page",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/page]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:page] ≡ [foaf:topic]⁻
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [foaf:Document]
+
++ **Definition**
+- A page or document about this thing.
+]],
+        },
+    },
+    {
+        label = "foaf:primaryTopic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:primaryTopic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/primaryTopic]
+
++ **Type**
+- [owl:FunctionalProperty]
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:primaryTopic] ≡ [foaf:isPrimaryTopicOf]⁻
+
++ **Domain**
+- [foaf:Document]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- The primary topic of some page or document.
+]],
+        },
+    },
+    {
+        label = "foaf:topic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:topic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/topic]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [foaf:topic] ≡ [foaf:page]⁻
+
++ **Domain**
+- [foaf:Document]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- A topic of some page or document.
+]],
+        },
+    },
+    {
+        label = "foaf:weblog",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:weblog",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/weblog]
+
++ **Type**
+- [owl:ObjectProperty]
+- [owl:InverseFunctionalProperty]
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [foaf:weblog] ⊑ [foaf:page]
+
++ **Domain**
+- [foaf:Agent]
+
++ **Range**
+- [owl:Document]
+
++ **Definition**
+- A weblog of some thing (whether [foaf:Person], [foaf:Group], [foaf:Company], etc...).
+]],
+        },
+    },
+    {
+        label = "foaf:workInfoHomepage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:workInfoHomepage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/workInfoHomepage]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Domain**
+- [foaf:Person]
+
++ **Range**
+- [foaf:Document]
+
++ **Definition**
+- A work info homepage of some person. A page about their work for some organization.
+]],
+        },
+    },
+    {
+        label = "foaf:workplaceHomepage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:workplaceHomepage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/workplaceHomepage]
+
++ **Type**
+- [owl:ObjectProperty]
+- [rdf:Property]
+
++ **Domain**
+- [foaf:Person]
+
++ **Range**
+- [foaf:Document]
+
++ **Definition**
+- A workplace homepage of some person. The homepage of an organization they work for.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     {
         label = "foaf:accountName",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:accountName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/accountName]
@@ -331,7 +625,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:age",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/age]
@@ -357,7 +650,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:aimChatID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/aimChatID]
@@ -386,7 +678,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "foaf:birthday",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://xmlns.com/foaf/0.1/birthday]
@@ -407,6 +698,61 @@ return {
 ]],
         },
     },
+    -- NOTE:Verify domain
+    {
+        label = "foaf:nick",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:nick",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/nick]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain**
+- [foaf:Agent]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- A short informal nickname characterizing an [foaf:Agent] (includes login identifiers, IRC and other chat nicknames).
+]],
+        },
+    },
+    {
+        label = "foaf:yahooChatID",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "foaf:yahooChatID",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://xmlns.com/foaf/0.1/yahooChatID]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:InverseFunctionalProperty]
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [foaf:yahooChatID] ⊑ [foaf:nick]
+
++ **Domain**
+- [foaf:Agent]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- A Yahoo chat ID.
+]],
+        },
+    },
+
+
 
 
 }
