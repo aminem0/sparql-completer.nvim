@@ -2,10 +2,10 @@ local cmp = require("cmp")
 
 --[[
 SKOS.
-https://www.w3.org/TR/skos-reference/skos.rdf
-https://www.w3.org/TR/skos-reference/
 https://www.w3.org/2004/02/skos/core.rdf
 https://www.w3.org/2004/02/skos/history
+https://www.w3.org/TR/skos-reference/
+https://www.w3.org/TR/skos-reference/skos.rdf
 ]]
 
 return {
@@ -14,7 +14,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "skos:Collection",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#Collection]
@@ -35,7 +34,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "skos:Concept",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#Concept]
@@ -53,7 +51,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "skos:ConceptScheme",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#ConceptScheme]
@@ -77,7 +74,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "skos:OrderedCollection",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#OrderedCollection]
@@ -98,7 +94,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:altLabel",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#altLabel]
@@ -132,7 +127,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:broader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#broader]
@@ -157,7 +151,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:broaderTransitive",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#broaderTransitive]
@@ -180,7 +173,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:broadMatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#broadMatch]
@@ -203,7 +195,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:changeNote",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#changeNote]
@@ -228,7 +219,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:closeMatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#closeMatch]
@@ -251,7 +241,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:definition",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#definition]
@@ -273,7 +262,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:editorialNote",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#editorialNote]
@@ -298,7 +286,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:exactMatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#exactMatch]
@@ -325,7 +312,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:example",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#example]
@@ -347,7 +333,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:hasTopConcept",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#hasTopConcept]
@@ -375,7 +360,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:hiddenLabel",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#hiddenLabel]
@@ -406,7 +390,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:historyNote",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#historyNote]
@@ -431,7 +414,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:inScheme",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#inScheme]
@@ -459,7 +441,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:mappingRelation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#mappingRelation]
@@ -483,8 +464,7 @@ return {
         label = "skos:member",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:member",
-        documentation = { -- WARN: REVOIR RANGE
-            kind = "markdown",
+        documentation = {
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#member]
@@ -497,7 +477,8 @@ return {
 - [skos:Collection]
 
 + **Range**
-- [a owl:Class owl:unionOf ( skos:Concept skos:Collection ) ]
+- [skos:Collection]
+- [skos:Concept]
 
 + **Subproperty relationships**
 - [skos:mappingRelation] ⊑ [skos:semanticRelation]
@@ -515,7 +496,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:memberList",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#memberList]
@@ -544,7 +524,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:narrower",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#narrower]
@@ -569,7 +548,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:narrowerTransitive",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#narrowerTransitive]
@@ -592,7 +570,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:narrowMatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#narrowMatch]
@@ -615,7 +592,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:notation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#notation]
@@ -634,7 +610,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:note",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#note]
@@ -656,7 +631,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:prefLabel",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#prefLabel]
@@ -687,7 +661,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:related",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#related]
@@ -713,7 +686,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:relatedMatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#relatedMatch]
@@ -737,7 +709,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:scopeNote",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#scopeNote]
@@ -762,7 +733,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:semanticRelation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#semanticRelation]
@@ -790,7 +760,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "skos:topConceptOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2004/02/skos/core#topConceptOf]
