@@ -4131,6 +4131,241 @@ return {
 ]],
         },
     },
+    {
+        label = "up:mappedCitation",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:mappedCitation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/mappedCitation]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Citation_Statement]
+- [up:Protein]
+
++ **Range**
+- [up:Annotation]
+
++ **Definition**
+- Maps anotation to a resource. Used to link annotations/comments from external non UniProt sources via [up:Citations] to UniProt resources.
+]],
+        },
+    },
+    {
+        label = "up:mappedAnnotation",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:mappedAnnotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/mappedAnnotation]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+
++ **Range**
+- [up:Citation]
+
++ **Definition**
+- A publication from which data was extracted by a mapping from non UniProt origin, or which contains additional information.
+]],
+        },
+    },
+    {
+        label = "up:member",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:member",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/member]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:member] ≡ [up:memberOf]⁻
+
++ **Domain**
+- [up:Cluster]
+
++ **Range**
+- [up:Sequence]
+
++ **Definition**
+- One of several similar resources.
+]],
+        },
+    },
+    {
+        label = "up:memberOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:memberOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/memberOf]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:memberOf] ≡ [up:member]⁻
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [up:Cluster]
+]],
+        },
+    },
+    {
+        label = "up:method",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:method",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/method]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Mass_Spectrometry_Annotation]
+- [up:Structure_Resource]
+
++ **Range**
+- [up:Method]
+
++ **Definition**
+- The experimental method that was used.
+]],
+        },
+    },
+    { -- WARN: Differences between rdf and web resources
+        label = "up:mnemonic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:mnemonic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/mnemonic]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:mnemonic] ⊑ [up:name]
+
++ **Domain**
+- [up:Cluster]
+- [up:Protein]
+- [up:Sequence]
+
++ **Range**
+- [up:Cluster]
+]],
+        },
+    },
+    {
+        label = "up:modification",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:modification",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/modification]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Modified_Sequence]
+
++ **Range**
+- [up:Alternative_Sequence_Annotation]
+
++ **Definition**
+- A modification of a sequence.
+]],
+        },
+    },
+    {
+        label = "up:nucleotideSequenceMappingIssue",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:nucleotideSequenceMappingIssue",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/nucleotideSequenceMappingIssue]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Reviewed_Protein]
+
++ **Range**
+- [up:Nucleotide_Resource]
+
++ **Definition**
+- When a CDS differs substantially from a reviewed UniProtKB/Swiss-Prot sequence, the UniProt curators indicate the nature of the difference in the corresponding cross-reference.
+]],
+        },
+    },
+    { -- WARN: Differences between rdf and web resources
+        label = "up:oldMnemonic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:oldMnemonic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/oldMnemonic]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:oldMnemonic] ⊑ [up:name]
+
++ **Domain**
+- [up:Protein]
+]],
+        },
+    },
+    {
+        label = "up:organism",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:organism",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/organism]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Sequence]
+
++ **Range**
+- [up:Taxon]
+
++ **Definition**
+- The organism in which a protein occurrs.
+]],
+        },
+    },
 
 
 
@@ -4138,6 +4373,75 @@ return {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    { -- WARN: Differences between rdf and web resources
+        label = "up:mnemonic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:mnemonic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/mnemonic]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:mnemonic] ⊑ [up:name]
+
++ **Domain**
+- [up:Cluster]
+- [up:Protein]
+- [up:Sequence]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A easy to remember identifier for a UniProtKB entry, but it is not a stable identifier and should not be used by programs to identify entries.
+]],
+        },
+    },
+    { -- WARN: Differences between rdf and web resources
+        label = "up:oldMnemonic",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:oldMnemonic",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/oldMnemonic]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:oldMnemonic] ⊑ [up:name]
+
++ **Domain**
+- [up:Protein]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A mnemonic that is no longer in use for this entry.
+]],
+        },
+    },
 
 
 
