@@ -29,6 +29,7 @@ M.options = {
         "rdf",
         "rdfs",
         "skos",
+        "skosxl",
         "sparql",
         "up",
         "wot",
