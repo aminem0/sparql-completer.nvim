@@ -16,7 +16,7 @@ function M.get_curl_version()
     local lines = vim.fn.systemlist("curl -V")
 
     if not lines or #lines == 0 then
-        return nil
+        return ""
     end
 
     local version = lines[1]:match("^curl%s+(%d+%.%d+%.%d+)")
