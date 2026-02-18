@@ -6,7 +6,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:absentTaxa",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/absentTaxa]
@@ -31,7 +30,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:compilationSourceTypes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/compilationSourceTypes]
@@ -56,7 +54,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:compilationTypes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/compilationTypes]
@@ -81,7 +78,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:excludedDegreeOfEstablishmentScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope]
@@ -110,7 +106,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:excludedGrowthFormScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/excludedGrowthFormScope]
@@ -135,7 +130,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:excludedHabitatScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/excludedHabitatScope]
@@ -160,7 +154,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:excludedLifeStageScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/excludedLifeStageScope]
@@ -185,7 +178,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:excludedTaxonomicScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/excludedTaxonomicScope]
@@ -210,7 +202,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:geospatialScopeAreaUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit]
@@ -235,7 +226,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:inventoryTypes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/inventoryTypes]
@@ -260,7 +250,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:materialSampleTypes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/materialSampleTypes]
@@ -285,7 +274,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:nonTargetTaxa",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/materialSampleTypes]
@@ -310,7 +298,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:samplingEffortProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/samplingEffortProtocol]
@@ -335,7 +322,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:samplingEffortUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/samplingEffortUnit]
@@ -360,7 +346,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:samplingEffortUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/samplingEffortUnit]
@@ -385,7 +370,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:targetDegreeOfEstablishmentScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope]
@@ -414,7 +398,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:targetGrowthFormScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/targetGrowthFormScope]
@@ -439,7 +422,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:targetHabitatScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/targetHabitatScope]
@@ -464,7 +446,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:targetLifeStageScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/targetLifeStageScope]
@@ -489,7 +470,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:targetTaxonomicScope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/targetTaxonomicScope]
@@ -514,7 +494,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:taxonCompletenessProtocols",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols]
@@ -539,7 +518,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:taxonCompletenessReported",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/taxonCompletenessReported]
@@ -564,7 +542,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "ecoiri:totalAreaSampledUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/eco/iri/totalAreaSampledUnit]

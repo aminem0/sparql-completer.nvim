@@ -11,9 +11,7 @@ return {
         label = "dc:contributor",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:contributor",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/contributor]
@@ -33,9 +31,7 @@ return {
         label = "dc:coverage",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "coverage",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/coverage]
@@ -55,9 +51,7 @@ return {
         label = "dc:creator",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "creator",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/creator]
@@ -77,9 +71,7 @@ return {
         label = "dc:date",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:date",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/date]
@@ -99,9 +91,7 @@ return {
         label = "dc:description",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:description",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/description]
@@ -121,9 +111,7 @@ return {
         label = "dc:format",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:format",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/format]
@@ -143,9 +131,7 @@ return {
         label = "dc:identifier",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:identifier",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/identifier]
@@ -165,9 +151,7 @@ return {
         label = "dc:language",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:language",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/language]
@@ -187,9 +171,7 @@ return {
         label = "dc:publisher",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:publisher",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/publisher]
@@ -209,9 +191,7 @@ return {
         label = "dc:relation",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:relation",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/relation]
@@ -231,9 +211,7 @@ return {
         label = "dc:rights",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:rights",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/rights]
@@ -253,9 +231,7 @@ return {
         label = "dc:source",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:source",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/source]
@@ -275,9 +251,7 @@ return {
         label = "dc:subject",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:subject",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/subject]
@@ -297,9 +271,7 @@ return {
         label = "dc:title",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:title",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/title]
@@ -316,9 +288,7 @@ return {
         label = "dc:type",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dc:type",
-        deprecated = false,
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/elements/1.1/type]

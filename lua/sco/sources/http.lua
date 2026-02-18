@@ -13,7 +13,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Connection",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Connection]
@@ -31,7 +30,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:EntityHeader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#EntityHeader]
@@ -52,7 +50,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:GeneralHeader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#GeneralHeader]
@@ -73,7 +70,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:HeaderElement",
         documentation = { -- NOTE: Message Header or http:MessageHeader?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#HeaderElement]
@@ -91,7 +87,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:HeaderName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#HeaderName]
@@ -109,7 +104,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Message",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Message]
@@ -127,7 +121,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:MessageHeader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#MessageHeader]
@@ -145,7 +138,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Method",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Method]
@@ -163,7 +155,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Parameter",
         documentation = { -- NOTE: Header Element or http:HeaderElement?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Parameter]
@@ -181,7 +172,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Request",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Request]
@@ -202,7 +192,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:RequestHeader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#RequestHeader]
@@ -223,7 +212,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:Response",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#Response]
@@ -244,7 +232,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:ResponseHeader",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#ResponseHeader]
@@ -265,7 +252,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "http:StatusCode",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#StatusCode]
@@ -283,7 +269,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:absolutePath",
         documentation = { -- NOTE: First Message should be http:Message?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#absolutePath]
@@ -310,7 +295,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:absoluteURI",
         documentation = { -- NOTE: First Message should be http:Message?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#absoluteURI]
@@ -337,7 +321,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:authority",
         documentation = { -- NOTE: First Message should be http:Message?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#authority]
@@ -364,7 +347,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:body",
         documentation = { -- NOTE: First Message should be http:Message?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#body]
@@ -388,31 +370,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:connectionAuthority",
         documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2011/http#connectionAuthority]
-
-+ **Type**
-- [rdf:Property]
-
-+ **Domain**
-- [http:Connection]
-
-+ **Range**
-- [rdfs:Literal]
-
-+ **Definition**
-- Connection authority: server, host and port for a connection.
-]],
-        },
-    },
-    {
-        label = "http:elementName",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "http:elementName",
-        documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#elementName]
@@ -436,7 +393,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:elementValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#elementValue]
@@ -460,7 +416,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:fieldName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#fieldName]
@@ -484,7 +439,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:fieldValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#fieldValue]
@@ -508,7 +462,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:hdrName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#hdrName]
@@ -532,7 +485,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:headerElements",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#headerElements]
@@ -556,7 +508,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:headers",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#headers]
@@ -577,7 +528,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:httpVersion",
         documentation = { -- NOTE: RDFS:LITERAL?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#httpVersion]
@@ -601,7 +551,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:methodName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#methodName]
@@ -625,7 +574,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:mthd",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#mthd]
@@ -649,7 +597,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:paramName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#paramName]
@@ -673,7 +620,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:paramValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#paramValue]
@@ -697,7 +643,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:params",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#params]
@@ -718,7 +663,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:reasonPhrase",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#reasonPhrase]
@@ -742,7 +686,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:requests",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#requests]
@@ -763,31 +706,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:resp",
         documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2011/http#resp]
-
-+ **Type**
-- [rdf:Property]
-
-+ **Domain**
-- [http:Request]
-
-+ **Range**
-- [http:Response]
-
-+ **Definition**
-- This property relates a resource of type [http:Request] to a resource of type [http:Response].
-]],
-        },
-    },
-    {
-        label = "http:sc",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "http:sc",
-        documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#sc]
@@ -811,7 +729,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:statusCodeNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#statusCodeNumber]
@@ -835,7 +752,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "http:statusCodeValue",
         documentation = { -- NOTE: RDFS:LITERAL
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2011/http#statusCodeValue]

@@ -7,7 +7,6 @@ return {
         deprecated = true,
         description = "dwc:Dataset",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Dataset]
@@ -29,7 +28,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Event",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Event]
@@ -54,7 +52,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:EventAttribute",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/EventAttribute]
@@ -77,7 +74,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:EventMeasurement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/EventMeasurement]
@@ -99,7 +95,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:FossilSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/FossilSpecimen]
@@ -125,7 +120,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:GeologicalContext",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/GeologicalContext]
@@ -147,7 +141,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:HumanObservation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/HumanObservation]
@@ -170,7 +163,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Identification",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Identification]
@@ -192,7 +184,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:LivingSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/LivingSpecimen]
@@ -214,7 +205,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MachineObservation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MachineObservation]
@@ -240,7 +230,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MolecularProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MolecularProtocol]
@@ -264,7 +253,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MaterialCitation",
         documentation = { -- WARN: REVOIR QUOTES
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MaterialCitation]
@@ -290,7 +278,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MaterialEntity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MaterialEntity]
@@ -327,7 +314,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MaterialSample",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MaterialSample]
@@ -352,7 +338,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:MeasurementOrFact",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/MeasurementOrFact]
@@ -379,7 +364,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:NucleotideAnalysis",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/NucleotideAnalysis]
@@ -398,7 +382,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:NucleotideSequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/NucleotideSequence]
@@ -417,7 +400,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Occurrence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Occurrence]
@@ -442,7 +424,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:OccurrenceMeasurement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/OccurrenceMeasurement]
@@ -464,7 +445,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Organism",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Organism]
@@ -491,7 +471,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:OrganismInteraction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/OrganismInteraction]
@@ -522,7 +501,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:PreservedSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/PreservedSpecimen]
@@ -545,7 +523,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Protocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Protocol]
@@ -570,7 +547,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Provenance",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Provenance]
@@ -592,7 +568,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:ResourceRelationship",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/ResourceRelationship]
@@ -620,7 +595,6 @@ return {
         deprecated = true,
         description = "dwc:Sample",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Sample]
@@ -643,7 +617,6 @@ return {
         deprecated = true,
         description = "dwc:SampleAttribute",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/SampleAttribute]
@@ -666,7 +639,6 @@ return {
         deprecated = true,
         description = "dwc:SamplingEvent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/SamplingEvent]
@@ -689,7 +661,6 @@ return {
         deprecated = true,
         description = "dwc:SamplingLocation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/SamplingLocation]
@@ -711,7 +682,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:Taxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/Taxon]
@@ -733,7 +703,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:UsagePolicy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/UsagePolicy]
@@ -755,7 +724,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedNameUsage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedNameUsage]
@@ -786,7 +754,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedNameUsageID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedNameUsageID]
@@ -825,7 +792,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedScientificName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedScientificName]
@@ -857,7 +823,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedScientificNameID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedScientificNameID]
@@ -890,7 +855,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:AcceptedTaxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/AcceptedTaxon]
@@ -919,7 +883,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dwc:AcceptedTaxonID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/AcceptedTaxonID]
@@ -955,7 +918,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedTaxonName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedTaxonName]
@@ -987,7 +949,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:acceptedTaxonNameID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/acceptedTaxonNameID]
@@ -1019,7 +980,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:assayType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/assayType]
@@ -1052,7 +1012,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedMedia",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedMedia]
@@ -1081,7 +1040,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedOccurrences",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedOccurrences]
@@ -1114,7 +1072,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedOrganisms",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedOrganisms]
@@ -1147,7 +1104,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedReferences",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedReferences]
@@ -1178,7 +1134,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedSequences",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedSequences]
@@ -1208,7 +1163,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:associatedTaxa",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/associatedTaxa]
@@ -1242,7 +1196,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:bed",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/bed]
@@ -1270,7 +1223,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:behavior",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/behavior]
@@ -1303,7 +1255,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:caste",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/caste]
@@ -1339,7 +1290,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:catalogNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/catalogNumber]
@@ -1370,7 +1320,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:causeOfDeath",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/causeOfDeath]
@@ -1411,7 +1360,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:class",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/class]
@@ -1440,7 +1388,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:continent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/continent]
@@ -1477,7 +1424,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:coordinatePrecision",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/coordinatePrecision]
@@ -1508,7 +1454,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:coordinateUncertaintyInMeters",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters]
@@ -1538,7 +1483,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:country",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/country]
@@ -1571,7 +1515,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:countryCode",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/countryCode]
@@ -1605,7 +1548,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:county",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/county]
@@ -1638,7 +1580,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:cultivarEpithet",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/cultivarEpithet]
@@ -1671,7 +1612,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:dateIdentified",
         documentation = { -- WARN: PEUT ETRE DATE REVOIR
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/dateIdentified]
@@ -1710,7 +1650,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:day",
         documentation = { -- WARN: REVOIR INT VS INTEGER AUSSI NONNEGATIVE?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/day]
@@ -1739,7 +1678,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:decimalLatitude",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/decimalLatitude]
@@ -1767,7 +1705,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:decimalLongitude",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/decimalLongitude]
@@ -1795,7 +1732,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:degreeOfEstablishment",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/degreeOfEstablishment]
@@ -1836,7 +1772,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:digitalSpecimenID",
         documentation = { -- NOTE: NO CLASSO?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/digitalSpecimenID]
@@ -1874,7 +1809,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:disposition",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/disposition]
@@ -1910,7 +1844,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:earliestAgeOrLowestStage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage]
@@ -1940,7 +1873,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:earliestEonOrLowestEonotherm",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonotherm]
@@ -1969,7 +1901,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:earliestEpochOrLowestSeries",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries]
@@ -1999,36 +1930,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:earliestEraOrLowestErathem",
         documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem]
-
-+ **Type**
-- [owl:DatatypeProperty]
-- [rdf:Property]
-
-+ **Domain**
-- [dwc:GeologicalContext]
-
-+ **Range**
-- [xsd:string]
-
-+ **Definition**
-- The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the [dwc:MaterialEntity] was collected.
-
-+ **Examples**
-- `Cenozoic`
-- `Mesozoic`
-]],
-        },
-    },
-    {
-        label = "dwc:earliestPeriodOrLowestSystem",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dwc:earliestPeriodOrLowestSystem",
-        documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem]
@@ -2058,7 +1959,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:endDayOfYear",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/endDayOfYear]
@@ -2090,7 +1990,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:endTimeOfDay",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/endTimeOfDay]
@@ -2122,7 +2021,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:establishmentMeans",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/establishmentMeans]
@@ -2158,7 +2056,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:eventDate",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/eventDate]
@@ -2197,7 +2094,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:eventID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/eventID]
@@ -2229,7 +2125,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:eventRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/eventRemarks]
@@ -2257,7 +2152,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:eventTime",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/eventTime]
@@ -2290,45 +2184,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:eventType",
         documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://rs.tdwg.org/dwc/terms/eventType]
-
-+ **Type**
-- [owl:DatatypeProperty]
-- [rdf:Property]
-
-+ **Domain**
-- [dwc:Event]
-
-+ **Range**
-- [xsd:string]
-
-+ **Definition**
-- The nature of the [dwc:Event].
-
-+ **Comments**
-- Recommended best practice is to use a controlled vocabulary. Regardless of the [dwc:eventType], the interval of the [dwc:Event] can be captured in [dwc:eventDate]. This term has an equivalent in the [dwciri:] namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
-
-+ **Examples**
-- `Sample`
-- `Observation`
-- `Site Visit`
-- `Biotic Interaction`
-- `Bioblitz`
-- `Expedition`
-- `Survery`
-- `Project`
-]],
-        },
-    },
-    {
-        label = "dwc:family",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dwc:family",
-        documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/family]
@@ -2357,7 +2212,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:fieldNotes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/fieldNotes]
@@ -2388,7 +2242,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:fieldNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/fieldNumber]
@@ -2419,7 +2272,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:footprintSpatialFit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/footprintSpatialFit]
@@ -2452,7 +2304,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "footprintSRS",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/footprintSRS]
@@ -2485,7 +2336,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:footprintWKT",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/footprintWKT]
@@ -2516,7 +2366,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:formation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/formation]
@@ -2546,7 +2395,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:fundingAttributionID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/fundingAttributionID]
@@ -2583,7 +2431,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:genericName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/genericName]
@@ -2614,7 +2461,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:genus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/genus]
@@ -2643,7 +2489,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:geodeticDatum",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/geodeticDatum]
@@ -2680,7 +2525,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:geologicalContextID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/geologicalContextID]
@@ -2712,7 +2556,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferencedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferencedBy]
@@ -2744,7 +2587,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferencedDate",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferencedDate]
@@ -2783,7 +2625,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferenceProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferenceProtocol]
@@ -2815,7 +2656,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferenceRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferenceRemarks]
@@ -2843,7 +2683,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferenceSources",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferenceSources]
@@ -2877,7 +2716,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:georeferenceVerificationStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus]
@@ -2912,7 +2750,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:group",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/group]
@@ -2941,7 +2778,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:habitat",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/habitat]
@@ -2973,7 +2809,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:higherClassification",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/higherClassification]
@@ -3006,7 +2841,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:higherGeography",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/higherGeography]
@@ -3038,7 +2872,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:higherGeographyID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/higherGeographyID]
@@ -3073,7 +2906,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:highestBiostratigraphicZone",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone]
@@ -3101,7 +2933,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identificationID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identificationID]
@@ -3133,7 +2964,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identificationQualifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identificationQualifier]
@@ -3165,7 +2995,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identificationReferences",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identificationReferences]
@@ -3198,7 +3027,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identificationRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identificationRemarks]
@@ -3226,7 +3054,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identificationVerificationStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identificationVerificationStatus]
@@ -3257,7 +3084,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identifiedBy",
         documentation = { -- BUG: WTH?
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identifiedBy]
@@ -3288,7 +3114,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:identifiedByID",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/identifiedByID]
@@ -3324,7 +3149,6 @@ The full name, with authorship and date information if known, of the currently v
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwc:individualCount",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/terms/individualCount]

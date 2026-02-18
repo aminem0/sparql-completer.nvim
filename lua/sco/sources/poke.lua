@@ -6,7 +6,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "poke:Pokémon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://triplydb.com/academy/pokemon/vocab/Pokémon]
@@ -24,7 +23,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "poke:Species",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://triplydb.com/academy/pokemon/vocab/Species]
@@ -42,7 +40,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "poke:color",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://triplydb.com/academy/pokemon/vocab/color]
@@ -66,7 +63,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "poke:stepsToHatch",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://triplydb.com/academy/pokemon/vocab/stepsToHatch]

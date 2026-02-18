@@ -6,7 +6,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:Biotope",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/Biotope]
@@ -25,7 +24,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:Contact",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/Contact]
@@ -44,7 +42,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:DataSet",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/DataSet]
@@ -63,7 +60,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:Date",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/Date]
@@ -82,7 +78,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:Organization",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/Organization]
@@ -93,6 +88,7 @@ return {
 
 + **Subclass relationships**
 - [abcd:Organization] ⊑ [abcd:Contact]
+
 + **Definition**
 - Class to describe an organization.
 ]],
@@ -103,7 +99,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "abcd:Person",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/Person]
@@ -125,7 +120,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:address",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/address]
@@ -150,7 +144,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:emailAddress",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/emailAddress]
@@ -175,7 +168,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:logoURL",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/logoURL]
@@ -202,7 +194,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:role",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/role]
@@ -227,7 +218,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:resourceURI",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/resourceURI]
@@ -261,7 +251,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:telephoneNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/telephoneNumber]
@@ -286,7 +275,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:unformattedValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/unformattedValue]
@@ -315,7 +303,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "abcd:websiteURL",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/abcd/terms/websiteURL]

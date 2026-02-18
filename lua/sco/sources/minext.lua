@@ -12,7 +12,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:Chemistry",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/Chemistry]
@@ -30,7 +29,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:Conservation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/Conservation]
@@ -48,7 +46,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:ConstituentPart",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/ConstituentPart]
@@ -69,7 +66,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:Hazard",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/Hazard]
@@ -87,7 +83,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "minext:MineralName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/MineralName]
@@ -108,7 +103,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:aggregateForm",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/aggregateForm]
@@ -140,7 +134,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:alterationDescription",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/alterationDescription]
@@ -169,7 +162,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:associatedMinerals",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/associatedMinerals]
@@ -198,7 +190,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:chemistryRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/chemistryRemarks]
@@ -222,7 +213,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:classificationCode",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/classificationCode]
@@ -253,7 +243,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:cleavage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/cleavage]
@@ -280,7 +269,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:color",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/color]
@@ -313,7 +301,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:complex",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/complex]
@@ -346,7 +333,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartIdentifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/constituentPartIdentifier]
@@ -376,7 +362,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartProportion",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/constituentPartProportion]
@@ -408,7 +393,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartRole",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/constituentPartRole]
@@ -442,7 +426,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:constituentPartType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/constituentPartType]
@@ -474,7 +457,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:crystalForm",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/crystalForm]
@@ -506,7 +488,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:crystalHabit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/crystalHabit]
@@ -540,7 +521,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:damageRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/damageRemarks]
@@ -569,7 +549,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:exsolutionTexture",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/exsolutionTexture]
@@ -598,7 +577,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:geologicEvent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/geologicEvent]
@@ -630,7 +608,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:geologicProvince",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/geologicProvince]
@@ -662,7 +639,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:handlingRequirements",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/handlingRequirements]
@@ -692,7 +668,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:hazardDescription",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/hazardDescription]
@@ -720,7 +695,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:hazardType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/hazardType]
@@ -753,7 +727,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:isTypeLocality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/isTypeLocality]
@@ -781,7 +754,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:inclusions",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/inclusions]
@@ -810,7 +782,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:luminescence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/luminescence]
@@ -841,7 +812,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:luster",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/luster]
@@ -873,7 +843,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:materialEntityIdentifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/materialEntityIdentifier]
@@ -903,7 +872,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:maxSpecimenDimensionInMillimeters",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/maxSpecimenDimensionInMillimeters]
@@ -930,7 +898,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:maxSpecimenDimensionInMillimeters",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/maxSpecimenDimensionInMillimeters]
@@ -957,7 +924,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:measuredChemistry",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/measuredChemistry]
@@ -986,7 +952,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:measuredFormulaSource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/measuredFormulaSource]
@@ -1016,7 +981,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:measuredMassInGrams",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/measuredMassInGrams]
@@ -1043,7 +1007,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralDescription",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/mineralDescription]
@@ -1076,7 +1039,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralNamePublishedIn",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/mineralNamePublishedIn]
@@ -1107,7 +1069,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralogicalAnalysisProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/mineralogicalAnalysisProtocol]
@@ -1141,7 +1102,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:mineralSequence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/mineralSequence]
@@ -1172,7 +1132,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:modeOfOccurrence",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/modeOfOccurrence]
@@ -1205,7 +1164,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:name",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/name]
@@ -1238,7 +1196,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:namedPlace",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/namedPlace]
@@ -1270,7 +1227,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameRemarks",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/nameRemarks]
@@ -1294,7 +1250,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/nameType]
@@ -1328,7 +1283,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:nameIdentifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/nameIdentifier]
@@ -1359,7 +1313,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:predicatedName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/predicatedName]
@@ -1390,7 +1343,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:specimenDescription",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/specimenDescription]
@@ -1423,7 +1375,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:suite",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/suite]
@@ -1453,7 +1404,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:treatments",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/treatments]
@@ -1485,7 +1435,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:twinningLaw",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/twinningLaw]
@@ -1514,7 +1463,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:verbatimMass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/verbatimMass]
@@ -1543,7 +1491,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "minext:verbatimSize",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/minext/terms/verbatimSize]

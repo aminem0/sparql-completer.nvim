@@ -1,9 +1,9 @@
 local cmp = require("cmp")
 
 --[[
-https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_abstract_model.ttl
 https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/
 https://www.dublincore.org/specifications/dublin-core/abstract-model/2007-06-04/
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_abstract_model.ttl
 ]]
 
 return {
@@ -12,7 +12,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcam:VocabularyEncodingScheme",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/dcam/VocabularyEncodingScheme]
@@ -36,7 +35,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcam:domainIncludes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/dcam/domainIncludes]
@@ -54,7 +52,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcam:memberOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/dcam/memberOf]
@@ -72,7 +69,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcam:rangeIncludes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/dcam/rangeIncludes]

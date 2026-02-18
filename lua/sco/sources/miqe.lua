@@ -6,7 +6,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:amplificationReactionVolume",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/amplificationReactionVolume]
@@ -34,7 +33,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:amplificationReactionVolumeUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/amplificationReactionVolumeUnit]
@@ -62,7 +60,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:ampliconSize",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/ampliconSize]
@@ -90,7 +87,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:annealingTemp",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/annealingTemp]
@@ -118,7 +114,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:annealingTempUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/annealingTempUnit]
@@ -146,7 +141,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:automaticBaselineValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/automaticBaselineValue]
@@ -174,7 +168,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:automaticThresholdQuantificationCycle",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/automaticThresholdQuantificationCycle]
@@ -202,7 +195,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:baselineValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/baselineValue]
@@ -230,7 +222,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:contaminationAssessment",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/contaminationAssessment]
@@ -258,7 +249,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:estimatedNumberOfCopies",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/estimatedNumberOfCopies]
@@ -286,7 +276,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:experimentalVariance",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/experimentalVariance]
@@ -308,7 +297,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:partitionVolume",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/partitionVolume]
@@ -336,7 +324,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:partitionVolumeUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/partitionVolumeUnit]
@@ -364,7 +351,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:pcr_analysis_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/pcr_analysis_software]
@@ -392,7 +378,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:pcr_primer_lod",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/pcr_primer_lod]
@@ -417,7 +402,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:pcr_primer_loq",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/pcr_primer_loq]
@@ -442,7 +426,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:probeQuencher",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/probeQuencher]
@@ -470,7 +453,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:probeReporter",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/probeReporter]
@@ -498,7 +480,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:quantificationCycle",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/quantificationCycle]
@@ -526,7 +507,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "miqe:thresholdQuantificationCycle",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.gbif.org/terms/miqe/thresholdQuantificationCycle]

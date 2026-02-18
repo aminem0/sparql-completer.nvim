@@ -15,7 +15,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Alt",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt]
@@ -39,7 +38,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Bag",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag]
@@ -63,7 +61,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:CompoundLiteral",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral]
@@ -84,7 +81,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:List",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
@@ -108,7 +104,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Property",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Property]
@@ -134,7 +129,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Seq",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq]
@@ -143,7 +137,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [rdf:Seq] ⊑ [rdfs:Container] ⊑ [rdfs:Resource]
+- [rdf:Seq] ⊑ [rdfs:Container]
 
 + **Definition**
 - The class of ordered containers.
@@ -158,7 +152,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Statement",
         documentation = { -- WARN: REVOIR
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement]
@@ -182,7 +175,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Struct,
         description = "rdf:HTML",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML]
@@ -191,7 +183,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Datatype]
 
 + **Subclass relationships**
-- [rdf:HTML] ⊑ [rdfs:Literal] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [rdf:HTML] ⊑ [rdfs:Literal]
 
 + **Definition**
 - The datatype of RDF literals storing fragments of HTML content.
@@ -206,7 +198,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Struct,
         description = "rdf:JSON",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON]
@@ -215,7 +206,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Datatype]
 
 + **Subclass relationships**
-- [rdf:JSON] ⊑ [rdfs:Class] ⊑ [rdfs:Literal] ⊑ [rdfs:Resource]
+- [rdf:JSON] ⊑ [rdfs:Class]
 
 + **Definition**
 - The datatype of RDF literals storing JSON content.
@@ -224,10 +215,9 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
     },
     {
         label = "rdf:langString",
-        kind = cmp.lsp.CompletionItemKind.Struct, -- NOTE: So why not a Class?
+        kind = cmp.lsp.CompletionItemKind.Struct,
         description = "rdf:langString",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#langString]
@@ -236,7 +226,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Datatype]
 
 + **Subclass relationships**
-- [rdf:langString] ⊑ [rdfs:Literal] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [rdf:langString] ⊑ [rdfs:Literal]
 
 + **Definition**
 - The datatype of language-tagged string values.
@@ -251,7 +241,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Struct,
         description = "rdf:PlainLiteral",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral]
@@ -260,7 +249,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Datatype]
 
 + **Subclass relationships**
-- [rdf:PlainLiteral] ⊑ [rdfs:Literal] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [rdf:PlainLiteral] ⊑ [rdfs:Literal]
 
 + **Definition**
 - The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2.
@@ -272,7 +261,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Struct,
         description = "rdf:XMLLiteral",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral]
@@ -281,7 +269,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdfs:Datatype]
 
 + **Subclass relationships**
-- [rdf:XMLLiteral] ⊑ [rdfs:Literal] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [rdf:XMLLiteral] ⊑ [rdfs:Literal]
 
 + **Definition**
 - The datatype of XML literal values.
@@ -296,7 +284,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:direction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#direction]
@@ -317,7 +304,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:first",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#first]
@@ -344,7 +330,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:language",
         documentation = { -- NOTE: REVOIR COMPOUNDLITERAL
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#language]
@@ -365,7 +350,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:nil",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#nil]
@@ -386,7 +370,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:object",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#object]
@@ -413,7 +396,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:predicate",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate]
@@ -440,7 +422,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:rest",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#rest]
@@ -467,7 +448,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:subject",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#subject]
@@ -494,7 +474,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:type",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#type]
@@ -521,7 +500,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:value",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#value]

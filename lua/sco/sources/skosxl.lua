@@ -47,7 +47,7 @@ return {
 - The property [skosxl:altLabel] is used to associate a [skosxl:Label] with a [skos:Concept]. The property is analogous to [skos:altLabel].
 
 + **Comments**
-- If C [skosxl:altLabel] L and L [skosxl:literalForm] V, then C [skos:altLabel] V.
+- If [C] [skosxl:altLabel] [L] and [L] [skosxl:literalForm] [V], then [C] [skos:altLabel] [V].
 ]],
         },
     },
@@ -71,7 +71,7 @@ return {
 - The property [skosxl:hiddenLabel] is used to associate a [skosxl:Label] with a [skos:Concept]. The property is analogous to [skos:hiddenLabel].
 
 + **Comments**
-- If C [skos:prefLabel] L and L [skosxl:literalForm] V, then C [skos:hiddenLabel] V.
+- If [C] [skos:prefLabel] [L] and [L] [skosxl:literalForm] [V], then [C] [skos:hiddenLabel] [V].
 ]],
         },
     },
@@ -116,9 +116,6 @@ return {
 - [owl:ObjectProperty]
 - [rdf:Property]
 
-+ **Subproperty relationships**
-- [skos:altLabel] ⊑ [rdfs:label]
-
 + **Range**
 - [skosxl:Label]
 
@@ -126,7 +123,7 @@ return {
 - The property [skosxl:prefLabel] is used to associate a [skosxl:Label] with a [skos:Concept]. The property is analogous to [skos:prefLabel].
 
 + **Comments**
-- If C [skosxl:prefLabel] L and L [skosxl:literalForm] V, then C [skos:prefLabel] V.
+- If [C] [skosxl:prefLabel] [L] and [L] [skosxl:literalForm] [V], then [C] [skos:prefLabel] [V].
 ]],
         },
     },

@@ -15,7 +15,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:Class",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#Class]
@@ -36,7 +35,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:Container",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#Container]
@@ -57,7 +55,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:ContainerMembershipProperty",
         documentation = { -- NOTE: REVOIR SUBCLASSES
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty]
@@ -66,7 +63,7 @@ return {
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [rdfs:ContainerMembershipProperty] ⊑ [rdf:Property] ⊑ [rdfs:Class]
+- [rdfs:ContainerMembershipProperty] ⊑ [rdf:Property]
 
 + **Definition**
 - The class of container membership properties, [rdf:_1], [rdf:_2], ..., all of which are sub-properties of 'member'.
@@ -78,7 +75,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:Datatype",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#Datatype]
@@ -87,7 +83,7 @@ return {
 - [rdf:Class]
 
 + **Subclass relationships**
-- [rdfs:Datatype] ⊑ [rdfs:Class] ⊑ [rdfs:Resource]
+- [rdfs:Datatype] ⊑ [rdfs:Class]
 
 + **Definition**
 - The class of RDF datatypes.
@@ -99,7 +95,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:Literal",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#Literal]
@@ -120,7 +115,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdfs:Resource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#Resource]
@@ -138,7 +132,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:comment",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#comment]
@@ -162,7 +155,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:domain",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#domain]
@@ -186,7 +178,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:isDefinedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#isDefinedBy]
@@ -213,7 +204,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:label",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#label]
@@ -237,7 +227,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:member",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#member]
@@ -261,7 +250,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:range",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#range]
@@ -285,7 +273,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:seeAlso",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#seeAlso]
@@ -309,7 +296,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:subClassOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#subClassOf]
@@ -333,7 +319,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdfs:subPropertyOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://www.w3.org/2000/01/rdf-schema#subPropertyOf]
