@@ -11,7 +11,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:AllDifferent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#AllDifferent]
@@ -32,7 +31,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:AllDisjointClasses",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#AllDisjointClasses]
@@ -53,7 +51,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "AllDisjointProperties",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#AllDisjointProperties]
@@ -74,7 +71,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "Annotation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Annotation]
@@ -95,7 +91,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:AnnotationProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#AnnotationProperty]
@@ -116,7 +111,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:AsymmetricProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#AsymmetricProperty]
@@ -137,7 +131,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Axiom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Axiom]
@@ -158,7 +151,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Class",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Class]
@@ -180,7 +172,6 @@ return {
         deprecated = true,
         description = "owl:DataRange",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#DataRange]
@@ -204,7 +195,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:DatatypeProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#DatatypeProperty]
@@ -225,7 +215,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:DeprecatedClass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#DeprecatedClass]
@@ -246,7 +235,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:DeprecatedProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#DeprecatedProperty]
@@ -267,7 +255,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:FunctionalProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#FunctionalProperty]
@@ -288,7 +275,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:InverseFunctionalProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#FunctionalProperty]
@@ -309,7 +295,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:IrreflexiveProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#IrreflexiveProperty]
@@ -330,7 +315,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:NamedIndividual",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#NamedIndividual]
@@ -351,7 +335,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:NegativePropertyAssertion",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#NegativePropertyAssertion]
@@ -372,7 +355,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Nothing",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Nothing]
@@ -393,7 +375,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:ObjectProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#ObjectProperty]
@@ -414,7 +395,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Ontology",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Ontology]
@@ -435,7 +415,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:OntologyProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#OntologyProperty]
@@ -456,7 +435,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:ReflexiveProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#ReflexiveProperty]
@@ -477,7 +455,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Restriction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Restriction]
@@ -498,7 +475,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:SymmetricProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#SymmetricProperty]
@@ -519,7 +495,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:TransitiveProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#TransitiveProperty]
@@ -540,7 +515,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "owl:Thing",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#Thing]
@@ -553,12 +527,39 @@ return {
 ]],
         },
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         label = "owl:allValuesFrom",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:allValuesFrom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#allValuesFrom]
@@ -582,7 +583,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:annotatedProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#annotatedProperty]
@@ -606,7 +606,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:annotatedSource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#annotatedSource]
@@ -630,7 +629,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:annotatedTarget",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#annotatedTarget]
@@ -654,7 +652,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:assertionProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#assertionProperty]
@@ -674,84 +671,10 @@ return {
         },
     },
     {
-        label = "owl:backwardCompatibleWith",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:backwardCompatibleWith",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#backwardCompatibleWith]
-
-+ **Type**
-- [owl:AnnotationProperty]
-- [owl:OntologyProperty]
-
-+ **Domain**
-- [owl:Ontology]
-
-+ **Range**
-- [owl:Ontology]
-
-+ **Definition**
-- The annotation property that indicates that a given ontology is backward compatible with another ontology.
-]],
-        },
-    },
-    {
-        label = "owl:bottomDataProperty",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:bottomDataProperty",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#bottomDataProperty]
-
-+ **Type**
-- [owl:DatatypeProperty]
-
-+ **Domain**
-- [owl:Thing]
-
-+ **Range**
-- [rdfs:Literal]
-
-+ **Definition**
-- The data property that does not relate any individual to any data value.
-]],
-        },
-    },
-    {
-        label = "owl:bottomObjectProperty",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:bottomObjectProperty",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#bottomObjectProperty]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [owl:Thing]
-
-+ **Range**
-- [owl:Thing]
-
-+ **Definition**
-- The data property that does not relate any two individuals.
-]],
-        },
-    },
-    {
         label = "owl:cardinality",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:cardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#cardinality]
@@ -775,7 +698,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:complementOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#complementOf]
@@ -799,7 +721,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:datatypeComplementOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#datatypeComplementOf]
@@ -819,35 +740,10 @@ return {
         },
     },
     {
-        label = "owl:deprecated",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:deprecated",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#deprecated]
-
-+ **Type**
-- [owl:AnnotationProperty]
-
-+ **Domain**
-- [rdfs:Resource]
-
-+ **Range**
-- [rdfs:Resource]
-
-+ **Definition**
-- The annotation property that indicates that a given entity has been deprecated.
-]],
-        },
-    },
-    {
         label = "owl:differentFrom",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:differentFrom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#differentFrom]
@@ -871,7 +767,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:disjointUnionOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#disjointUnionOf]
@@ -895,7 +790,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:disjointWith",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#disjointWith]
@@ -919,7 +813,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:distinctMembers",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#distinctMembers]
@@ -943,7 +836,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:equivalentClass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#equivalentClass]
@@ -967,7 +859,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:equivalentProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#equivalentProperty]
@@ -991,7 +882,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:hasKey",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#hasKey]
@@ -1015,7 +905,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:hasSelf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#hasSelf]
@@ -1039,7 +928,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:hasValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#hasValue]
@@ -1059,60 +947,10 @@ return {
         },
     },
     {
-        label = "owl:imports",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:imports",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#imports]
-
-+ **Type**
-- [owl:OntologyProperty]
-
-+ **Domain**
-- [owl:Ontology]
-
-+ **Range**
-- [owl:Ontology]
-
-+ **Definition**
-- The property that is used for importing other ontologies into a given ontology.
-]],
-        },
-    },
-    {
-        label = "owl:incompatibleWith",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:incompatibleWith",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#incompatibleWith]
-
-+ **Type**
-- [owl:AnnotationProperty]
-- [owl:OntologyProperty]
-
-+ **Domain**
-- [owl:Ontology]
-
-+ **Range**
-- [owl:Ontology]
-
-+ **Definition**
-- The annotation property that indicates that a given ontology is incopatible with another ontology.
-]],
-        },
-    },
-    {
         label = "owl:intersectionOf",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:intersectionOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#intersectionOf]
@@ -1136,7 +974,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:inverseOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#inverseOf]
@@ -1160,7 +997,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:maxCardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#maxCardinality]
@@ -1184,7 +1020,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:maxQualifiedCardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#maxQualifiedCardinality]
@@ -1208,7 +1043,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:members",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#members]
@@ -1232,7 +1066,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:minCardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#minCardinality]
@@ -1256,7 +1089,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:minQualifiedCardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#minQualifiedCardinality]
@@ -1280,7 +1112,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:onClass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#onClass]
@@ -1304,7 +1135,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:onDataRange",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#onDataRange]
@@ -1328,7 +1158,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:onDatatype",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#onDatatype]
@@ -1352,7 +1181,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:oneOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#oneOf]
@@ -1376,7 +1204,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:onProperties",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#onProperties]
@@ -1400,7 +1227,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:onProperty",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#onProperty]
@@ -1420,36 +1246,10 @@ return {
         },
     },
     {
-        label = "owl:priorVersion",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:priorVersion",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#priorVersion]
-
-+ **Type**
-- [owl:AnnotationProperty]
-- [owl:OntologyProperty]
-
-+ **Domain**
-- [owl:Ontology]
-
-+ **Range**
-- [owl:Ontology]
-
-+ **Definition**
-- The annotation property that indicates the predecessor ontology of a given ontology.
-]],
-        },
-    },
-    {
         label = "owl:propertyChainAxiom",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:propertyChainAxiom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#propertyChainAxiom]
@@ -1473,7 +1273,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:propertyDisjointWith",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#propertyDisjointWith]
@@ -1497,7 +1296,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:qualifiedCardinality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#qualifiedCardinality]
@@ -1521,7 +1319,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:sameAs",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#sameAs]
@@ -1545,7 +1342,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:someValuesFrom",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#someValuesFrom]
@@ -1569,7 +1365,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:sourceIndividual",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#sourceIndividual]
@@ -1593,7 +1388,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:targetIndividual",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#targetIndividual]
@@ -1617,7 +1411,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:targetValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#targetValue]
@@ -1637,59 +1430,10 @@ return {
         },
     },
     {
-        label = "owl:topDataProperty",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:topDataProperty",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#topDataProperty]
-
-+ **Type**
-- [owl:DatatypeProperty]
-
-+ **Domain**
-- [owl:Thing]
-
-+ **Range**
-- [rdfs:Literal]
-
-+ **Definition**
-- The data property that relates every individual to every data value.
-]],
-        },
-    },
-    {
-        label = "owl:topObjectProperty",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:topObjectProperty",
-        documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [https://www.w3.org/2002/07/owl#topObjectProperty]
-
-+ **Type**
-- [owl:ObjectProperty]
-
-+ **Domain**
-- [owl:Thing]
-
-+ **Range**
-- [owl:Thing]
-
-+ **Definition**
-- The object property that relates every two individuals.
-]],
-        },
-    },
-    {
         label = "owl:unionOf",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:unionOf",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#unionOf]
@@ -1709,26 +1453,212 @@ return {
         },
     },
     {
-        label = "owl:versionInfo",
+        label = "owl:withRestrictions",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:versionInfo",
+        description = "owl:withRestrictions",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
-- [https://www.w3.org/2002/07/owl#versionInfo]
+- [https://www.w3.org/2002/07/owl#withRestrictions]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain**
+- [rdfs:Datatype]
+
++ **Range**
+- [rdf:List]
+
++ **Definition**
+- The property that determines the collection of facet-value pairs that define a datatype restriction.
+]],
+        },
+    },
+    {
+        label = "owl:bottomObjectProperty",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:bottomObjectProperty",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#bottomObjectProperty]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- The data property that does not relate any two individuals.
+]],
+        },
+    },
+    {
+        label = "owl:topObjectProperty",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:topObjectProperty",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#topObjectProperty]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [owl:Thing]
+
++ **Definition**
+- The object property that relates every two individuals.
+]],
+        },
+    },
+    {
+        label = "owl:bottomDataProperty",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:bottomDataProperty",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#bottomDataProperty]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- The data property that does not relate any individual to any data value.
+]],
+        },
+    },
+    {
+        label = "owl:topDataProperty",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:topDataProperty",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#topDataProperty]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [owl:Thing]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- The data property that relates every individual to every data value.
+]],
+        },
+    },
+    {
+        label = "owl:backwardCompatibleWith",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:backwardCompatibleWith",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#backwardCompatibleWith]
 
 + **Type**
 - [owl:AnnotationProperty]
+- [owl:OntologyProperty]
 
 + **Domain**
-- [rdfs:Resource]
+- [owl:Ontology]
 
 + **Range**
-- [rdfs:Resource]
+- [owl:Ontology]
 
 + **Definition**
-- The annotation property that provides version information for an ontology or another OWL construct.
+- The annotation property that indicates that a given ontology is backward compatible with another ontology.
+]],
+        },
+    },
+    {
+        label = "owl:imports",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:imports",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#imports]
+
++ **Type**
+- [owl:OntologyProperty]
+
++ **Domain**
+- [owl:Ontology]
+
++ **Range**
+- [owl:Ontology]
+
++ **Definition**
+- The property that is used for importing other ontologies into a given ontology.
+]],
+        },
+    },
+    {
+        label = "owl:incompatibleWith",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:incompatibleWith",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#incompatibleWith]
+
++ **Type**
+- [owl:AnnotationProperty]
+- [owl:OntologyProperty]
+
++ **Domain**
+- [owl:Ontology]
+
++ **Range**
+- [owl:Ontology]
+
++ **Definition**
+- The annotation property that indicates that a given ontology is incopatible with another ontology.
+]],
+        },
+    },
+    {
+        label = "owl:priorVersion",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:priorVersion",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#priorVersion]
+
++ **Type**
+- [owl:AnnotationProperty]
+- [owl:OntologyProperty]
+
++ **Domain**
+- [owl:Ontology]
+
++ **Range**
+- [owl:Ontology]
+
++ **Definition**
+- The annotation property that indicates the predecessor ontology of a given ontology.
 ]],
         },
     },
@@ -1737,7 +1667,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "owl:versionIRI",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://www.w3.org/2002/07/owl#versionIRI]
@@ -1757,26 +1686,48 @@ return {
         },
     },
     {
-        label = "owl:withRestrictions",
+        label = "owl:deprecated",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "owl:withRestrictions",
+        description = "owl:deprecated",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
-- [https://www.w3.org/2002/07/owl#withRestrictions]
+- [https://www.w3.org/2002/07/owl#deprecated]
 
 + **Type**
-- [rdf:Property]
+- [owl:AnnotationProperty]
 
 + **Domain**
-- [rdfs:Datatype]
+- [rdfs:Resource]
 
 + **Range**
-- [rdf:List]
+- [rdfs:Resource]
 
 + **Definition**
-- The property that determines the collection of facet-value pairs that define a datatype restriction.
+- The annotation property that indicates that a given entity has been deprecated.
+]],
+        },
+    },
+    {
+        label = "owl:versionInfo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "owl:versionInfo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://www.w3.org/2002/07/owl#versionInfo]
+
++ **Type**
+- [owl:AnnotationProperty]
+
++ **Domain**
+- [rdfs:Resource]
+
++ **Range**
+- [rdfs:Resource]
+
++ **Definition**
+- The annotation property that provides version information for an ontology or another OWL construct.
 ]],
         },
     },

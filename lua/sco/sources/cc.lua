@@ -11,7 +11,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:Jurisdiction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Jurisdiction]
@@ -29,7 +28,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:License",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#License]
@@ -50,7 +48,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:Permission",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Permission]
@@ -68,7 +65,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:Prohibition",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Prohibition]
@@ -86,7 +82,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:Requirement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Requirement]
@@ -104,7 +99,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "cc:Work",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Work]
@@ -122,7 +116,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Attribution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Attribution]
@@ -140,7 +133,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:CommercialUse",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#CommercialUse]
@@ -158,7 +150,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Copyleft",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Copyleft]
@@ -176,7 +167,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:DerivativeWork",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#DerivativeWork]
@@ -194,7 +184,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Distribution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Distribution]
@@ -212,7 +201,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:HighIncomeNationUse",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#HighIncomeNationUse]
@@ -230,7 +218,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:LesserCopyleft",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#LesserCopyleft]
@@ -248,7 +235,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Notice",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Notice]
@@ -266,7 +252,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Reproduction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Reproduction]
@@ -284,7 +269,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:ShareAlike",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#ShareAlike]
@@ -302,7 +286,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:Sharing",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#Sharing]
@@ -320,7 +303,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Constant,
         description = "cc:SourceCode",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#SourceCode]
@@ -338,7 +320,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:attributionName",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#attributionName]
@@ -362,7 +343,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:attributionURL",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#attributionURL]
@@ -386,7 +366,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:deprecatedOn",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#deprecatedOn]
@@ -410,7 +389,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:jurisdiction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#jurisdiction]
@@ -434,7 +412,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:legalcode",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#legalcode]
@@ -458,7 +435,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:license",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#license]
@@ -485,7 +461,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:morePermissions",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#morePermissions]
@@ -506,7 +481,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:permits",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#permits]
@@ -530,7 +504,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:prohibits",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#prohibits]
@@ -554,31 +527,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "cc:requires",
         documentation = {
-            kind = "markdown",
-            value = [[
-+ **Identifier**
-- [http://creativecommons.org/ns#requires]
-
-+ **Type**
-- [rdf:Property]
-
-+ **Domain**
-- [cc:License]
-
-+ **Range**
-- [cc:Requirement]
-
-+ **Definition**
-- A [cc:License] requires a [cc:Requirement].
-]],
-        },
-    },
-    {
-        label = "cc:useGuidelines",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "cc:useGuidelines",
-        documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://creativecommons.org/ns#useGuidelines]
