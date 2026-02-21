@@ -348,23 +348,6 @@ return {
         },
     },
     {
-        label = "vcard:Friend",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "vcard:Friend",
-        documentation = {
-            value = [[
-+ **Identifier**
-- [http://www.w3.org/2006/vcard/ns#Friend]
-
-+ **Type**
-- [owl:Class]
-
-+ **Subclass relationships**
-- [vcard:Friend] ⊑ [vcard:RelatedType]
-]],
-        },
-    },
-    {
         label = "vcard:Gender",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "vcard:Gender",
