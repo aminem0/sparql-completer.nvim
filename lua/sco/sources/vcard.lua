@@ -1183,7 +1183,7 @@ return {
 
     {
         label = "vcard:adr",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:adr",
         documentation = {
             value = [[
@@ -1203,7 +1203,7 @@ return {
     },
     {
         label = "vcard:agent",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:agent",
         deprecated = true,
         documentation = {
@@ -1221,7 +1221,7 @@ return {
     },
     {
         label = "vcard:email",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:email",
         documentation = {
             value = [[
@@ -1241,7 +1241,7 @@ return {
     },
     {
         label = "vcard:geo",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:geo",
         documentation = {
             value = [[
@@ -1261,7 +1261,7 @@ return {
     },
     {
         label = "vcard:hasAdditionalName",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:hasAdditionalName",
         documentation = {
             value = [[
@@ -1278,7 +1278,7 @@ return {
     },
     {
         label = "vcard:hasAddress",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:hasAddress",
         documentation = {
             value = [[
@@ -1295,7 +1295,7 @@ return {
     },
     {
         label = "vcard:hasCalendarBusy",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:hasCalendarBusy",
         documentation = {
             value = [[
@@ -1315,7 +1315,7 @@ return {
     },
     {
         label = "vcard:hasCalendarLink",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:hasCalendarLink",
         documentation = {
             value = [[
@@ -1348,7 +1348,7 @@ return {
 
     {
         label = "vcard:additional-name",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:additional-name",
         documentation = {
             value = [[
@@ -1368,7 +1368,7 @@ return {
     },
     {
         label = "vcard:anniversary",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:anniversary",
         documentation = {
             value = [[
@@ -1388,7 +1388,7 @@ return {
     },
     {
         label = "vcard:bday",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:bday",
         documentation = {
             value = [[
@@ -1408,7 +1408,7 @@ return {
     },
     {
         label = "vcard:category",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:category",
         documentation = {
             value = [[
@@ -1428,7 +1428,7 @@ return {
     },
     {
         label = "vcard:class",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:class",
         deprecated = true,
         documentation = {
@@ -1449,7 +1449,7 @@ return {
     },
     {
         label = "vcard:country-name",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:country-name",
         documentation = {
             value = [[
@@ -1469,7 +1469,7 @@ return {
     },
     {
         label = "vcard:extended-address",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:extended-address",
         deprecated = true,
         documentation = {
@@ -1490,7 +1490,7 @@ return {
     },
     {
         label = "vcard:family-name",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:family-name",
         documentation = {
             value = [[
@@ -1510,7 +1510,7 @@ return {
     },
     {
         label = "vcard:fn",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:fn",
         documentation = {
             value = [[
@@ -1530,7 +1530,7 @@ return {
     },
     {
         label = "vcard:given-name",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "vcard:given-name",
         documentation = {
             value = [[
