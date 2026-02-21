@@ -28,6 +28,7 @@ M.options = {
         "poke",
         "rdf",
         "rdfs",
+        "schema",
         "skos",
         "skosxl",
         "sparql",
