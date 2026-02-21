@@ -1382,7 +1382,7 @@ return {
 - [xsd:dateTime] ⊔ [xsd:gYear]
 
 + **Definition**
-- The date of marriafe, or equivalent, of the object.
+- The date of marriage, or equivalent, of the object.
 ]],
         },
     },

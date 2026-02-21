@@ -72,6 +72,7 @@ return {
 - [owl:AnnotationProperty]
 
 + **Definition**
+- The preferrred namespace URI to use when using terms from this vocabulary in an XML document.
 ]],
         },
     },

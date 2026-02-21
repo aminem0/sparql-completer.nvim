@@ -4,6 +4,7 @@ M.options = {
     sources = {
         "abcd",
         "ac",
+        "ann",
         "cc",
         "cnt",
         "dc",
