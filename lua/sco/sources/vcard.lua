@@ -1181,6 +1181,396 @@ return {
 
 
 
+    {
+        label = "vcard:adr",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:adr",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#adr]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Equivalency relationships**
+- [vcard:adr] ≡ [vcard:hasAddress]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:agent",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:agent",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#agent]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Comments**
+- This object property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:email",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:email",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#email]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Equivalency relationships**
+- [vcard:email] ≡ [vcard:hasEmail]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:geo",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:geo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#geo]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Equivalency relationships**
+- [vcard:geo] ≡ [vcard:hasGeo]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:hasAdditionalName",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:hasAdditionalName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasAdditionalName]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Definition**
+- Used to support property parameters for the additional name data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasAddress",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:hasAddress",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasAddress]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Definition**
+- To specify the components of the delivery address for the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasCalendarBusy",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:hasCalendarBusy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasCalendarBusy]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Definition**
+- To specify the busy time associated with the object.
+
++ **Comments**
+- Was called [FBURL] in RFC6350.
+]],
+        },
+    },
+    {
+        label = "vcard:hasCalendarLink",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:hasCalendarLink",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasCalendarLink]
+
++ **Type**
+- [owl:ObjecProperty]
+
++ **Definition**
+- To specify the calendar associated with the object.
+
++ **Comments**
+- Was called [CALURI] in RFC6350.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        label = "vcard:additional-name",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:additional-name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#additional-name]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The additional name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:anniversary",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:anniversary",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#anniversary]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:dateTime] ⊔ [xsd:gYear]
+
++ **Definition**
+- The date of marriafe, or equivalent, of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:bday",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:bday",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#bday]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:dateTime] ⊔ [xsd:dateTimeStamp] ⊔ [xsd:gYear]
+
++ **Definition**
+- To specify the birth date of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:category",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:category",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#category]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The category information about the object, also known as tags.
+]],
+        },
+    },
+    {
+        label = "vcard:class",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:class",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#class]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Comments**
+- This data property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:country-name",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:country-name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#country-name]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The country name associated with the address of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:extended-address",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:extended-address",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#extended-address]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Comments**
+- This data property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:family-name",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:family-name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#family-name]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The family name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:fn",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:fn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#fn]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The formatted text corresponding to the name of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:given-name",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "vcard:given-name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#given-name]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The given name associated with the object.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

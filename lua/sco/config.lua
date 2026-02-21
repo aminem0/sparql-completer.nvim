@@ -33,6 +33,7 @@ M.options = {
         "skosxl",
         "sparql",
         "up",
+        "vann",
         "vcard",
         "wot",
     },
