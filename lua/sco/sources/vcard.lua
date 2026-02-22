@@ -694,7 +694,7 @@ return {
 - [owl:Class]
 
 + **Equivalency relationships**
-- [vcard:Name] ≡ (∃[vcard:given-name].[xsd:string] ⊓ (≤ 1 [vcard:given-name].⊤)) ⊔ (∃[family-name].[xsd:string] ⊓ (≤ 1 [vcard:family-name].⊤)) ⊔ (∃[additional-name].[xsd:string] ⊓ (≥ 0 [vcard:additional-name].⊤)) ⊔ (∃[honorary-prefix].[xsd:string] ⊓ (≥ 0 [vcard:honorary-prefix].⊤)) ⊔ (∃[honorary-suffix].[xsd:string] ⊓ (≥ 0 [vcard:honorary-suffix].⊤))
+- [vcard:Name] ≡ (∃[vcard:given-name].[xsd:string] ⊓ (≤ 1 [vcard:given-name].⊤)) ⊔ (∃[family-name].[xsd:string] ⊓ (≤ 1 [vcard:family-name].⊤)) ⊔ (∃[additional-name].[xsd:string] ⊓ (≥ 0 [vcard:additional-name].⊤)) ⊔ (∃[honorific-prefix].[xsd:string] ⊓ (≥ 0 [vcard:honorific-prefix].⊤)) ⊔ (∃[honorific-suffix].[xsd:string] ⊓ (≥ 0 [vcard:honorific-suffix].⊤))
 
 + **Comments**
 - To specify the components of the name of the object.
@@ -1175,12 +1175,6 @@ return {
 ]],
         },
     },
-
-
-
-
-
-
     {
         label = "vcard:adr",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -1191,7 +1185,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#adr]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Equivalency relationships**
 - [vcard:adr] ≡ [vcard:hasAddress]
@@ -1212,7 +1206,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#agent]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Comments**
 - This object property has been deprecated.
@@ -1229,7 +1223,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#email]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Equivalency relationships**
 - [vcard:email] ≡ [vcard:hasEmail]
@@ -1249,7 +1243,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#geo]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Equivalency relationships**
 - [vcard:geo] ≡ [vcard:hasGeo]
@@ -1269,7 +1263,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#hasAdditionalName]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Definition**
 - Used to support property parameters for the additional name data property.
@@ -1286,7 +1280,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#hasAddress]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Definition**
 - To specify the components of the delivery address for the object.
@@ -1303,7 +1297,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#hasCalendarBusy]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Definition**
 - To specify the busy time associated with the object.
@@ -1323,7 +1317,7 @@ return {
 - [http://www.w3.org/2006/vcard/ns#hasCalendarLink]
 
 + **Type**
-- [owl:ObjecProperty]
+- [owl:ObjectProperty]
 
 + **Definition**
 - To specify the calendar associated with the object.
@@ -1333,19 +1327,806 @@ return {
 ]],
         },
     },
+    {
+        label = "vcard:hasCalendarRequest",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasCalendarRequest",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasCalendarRequest]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- To specify the calendar user address to which a scheduling request be sent for an object.
 
++ **Comments**
+- Was called [CALADRURI] in RFC6350.
+]],
+        },
+    },
+    {
+        label = "vcard:hasCategory",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasCategory",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasCategory]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- Used to support property parameters for the [vcard:category] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasCountryName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasCountryName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasCountryName]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- Used to support property parameters for the [vcard:country-name] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasEmail",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasEmail",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasEmail]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- To specify the electronic mail address for communication with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasFamilyName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasFamilyName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasFamilyName]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- Used to support property parameters for the [vcard:family-name] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasFN",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasFN",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasFN]
 
++ **Type**
+- [owl:ObjectProperty]
 
++ **Definition**
+- Used to support property parameters for the [vcard:fn] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasGender",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasGender",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasGender]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To specify the sex or gender of the object.
+
++ **Comments**
+- URIs are recommended to enable interoperable sex and gender codes to be used.
+]],
+        },
+    },
+    {
+        label = "vcard:hasGeo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasGeo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasGeo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To specify the information related to the global positioning of the object.
+
++ **Comments**
+- May also be used as a property parameter.
+]],
+        },
+    },
+    {
+        label = "vcard:hasGivenName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasGivenName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasGivenName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:given-name] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasHonorificPrefix",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasHonorificPrefix",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasHonorificPrefix]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:honorific-prefix] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasHonorificSuffix",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasHonorificSuffix",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasHonorificSuffix]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:honorific-suffix] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasInstantMessage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasInstantMessage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasInstantMessage]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To specify the instant messaging and presence protocol communications with the object.
+
++ **Comments**
+- Was called [IMPP] in RFC6350.
+]],
+        },
+    },
+    {
+        label = "vcard:hasKey",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasKey",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasKey]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasKey] ≡ [vcard:key]
+
++ **Definition**
+- To specify a public key or authentification certificate associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasLanguage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasLanguage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasLanguage]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:language] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasLocality",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasLocality",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasLocality]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:locality] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasLogo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasLogo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasLogo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasLogo] ≡ [vcard:logo]
+
++ **Definition**
+- To specify a graphic image or logo associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasMember",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasMember",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasMember]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [vcard:Group]
+
++ **Range**
+- [vcard:Kind]
+
++ **Definition**
+- To include a member in the group this object represents.
+
++ **Comments**
+- This property can only be used by [vcard:Group] individuals.
+]],
+        },
+    },
+    {
+        label = "vcard:hasName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasName] ≡ [vcard:n]
+
++ **Domain**
+- [vcard:Name]
+
++ **Definition**
+- To specify the components of the name of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasNickname",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasNickname",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasNickname]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:nickname] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasNote",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasNote",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasNote]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:note] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasOrganizationName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasOrganizationName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasOrganizationName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:organization-name] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasOrganizationUnit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasOrganizationUnit",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasOrganizationUnit]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:organization-unit] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasPhoto",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasPhoto",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasPhoto]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasPhoto] ≡ [vcard:photo]
+
++ **Definition**
+- To specify an image or photograph information that annotates some aspect of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasPostalCode",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasPostalCode",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasPostalCode]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:postal-code] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasRegion",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasRegion",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasRegion]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:region] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasRelated",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasRelated",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasRelated]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To specify a relationship between another entity and the entity represented by this object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasRole",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasRole",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasRole]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:role] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasSound",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasSound",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasSound]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasSound] ≡ [vcard:sound]
+
++ **Definition**
+- To specify a digital sound content information that annotates some aspect of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasSource",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasSource",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasSource]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To identify the source of directory information of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasStreetAddress",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasStreetAddress",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasStreetAddress]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:street-address] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasTelephone",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasTelephone",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasTelephone]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasTelephone] ≡ [vcard:telephone]
+
++ **Definition**
+- To specify the telephone number for telephone communication with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasTitle",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasTitle",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasTitle]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to support property parameters for the [vcard:title] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:hasUID",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasUID",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasUID]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- To specify a value that represents a globally unique identifier corresponding to the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasURL",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasURL",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasTitle]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:hasURL] ≡ [vcard:url]
+
++ **Definition**
+- To specify a Uniform Resource Locator associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:hasValue",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:hasValue",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#hasValue]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Definition**
+- Used to indicate the resource value of an object property that requires property parameters.
+]],
+        },
+    },
+    {
+        label = "vcard:key",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:key",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#key]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:key] ≡ [vcard:hasKey]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:logo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:logo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#logo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:logo] ≡ [vcard:hasLogo]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:n",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:n",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#n]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:n] ≡ [vcard:hasName]
+
++ **Domain**
+- [vcard:Name]
+
++ **Coments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:org",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:org",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#org]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Comments**
+- This object property has been mapped. Use the [vcard:organization-name] data property.
+]],
+        },
+    },
+    {
+        label = "vcard:photo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:photo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#photo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:photo] ≡ [vcard:hasPhoto]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:sound",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:sound",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#sound]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:sound] ≡ [vcard:hasSound]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:tel",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:tel",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#tel]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:tel] ≡ [vcard:hasTelephone]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
+    {
+        label = "vcard:url",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:url",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#url]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [vcard:photo] ≡ [vcard:hasPhoto]
+
++ **Comments**
+- This object property has been mapped.
+]],
+        },
+    },
     {
         label = "vcard:additional-name",
         kind = cmp.lsp.CompletionItemKind.Property,
@@ -1548,32 +2329,462 @@ return {
 ]],
         },
     },
+    {
+        label = "vcard:honorific-prefix",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:honorific-prefix",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#honorific-prefix]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- The honorific prefix of the name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:honorific-suffix",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:honorific-suffix",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#honorific-suffix]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- The honorific suffix of the name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:label",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:label",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#label]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Comments**
+- This data property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:language",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:language",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#language]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Definition**
+- To specify the language that may be used for contacting the object.
 
++ **Comments**
+- May also be used as a property parameter.
+]],
+        },
+    },
+    {
+        label = "vcard:latitude",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:latitude",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#latitude]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Comments**
+- This data property has been deprecated. See [vcard:hasGeo].
+]],
+        },
+    },
+    {
+        label = "vcard:locality",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:locality",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#locality]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- The locality (e.g. city or town) associated with the address of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:longitude",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:longitude",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#longitude]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Definition**
+- To specify the language that may be used for contacting the object.
 
++ **Comments**
+- This data property has been deprecated. See [vcard:hasGeo].
+]],
+        },
+    },
+    {
+        label = "vcard:mailer",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:mailer",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#mailer]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Comments**
+- This data property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:nickname",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:nickname",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#nickname]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- The nick name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:note",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:note",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#note]
 
++ **Type**
+- [owl:DatatypeProperty]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- A note associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:organization-name",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:organization-name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#organization-name]
 
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the organizational name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:organization-unit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:organization-unit",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#organization-unit]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the organizational unit name associated with the object.
+]],
+        },
+    },
+    {
+        label = "vcard:post-office-box",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:post-office-box",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#post-office-box]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Comments**
+- This data property has been deprecated.
+]],
+        },
+    },
+    {
+        label = "vcard:postal-code",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:postal-code",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#postal-code]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The postal code associated with the address of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:prodid",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:prodid",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#prodid]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the identifier for the product that created the object.
+]],
+        },
+    },
+    {
+        label = "vcard:region",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:region",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#region]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The region (e.g. state or province) associated with the address of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:rev",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:rev",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#rev]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify revision information about the object.
+]],
+        },
+    },
+    {
+        label = "vcard:role",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:role",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#role]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the function or part played in a particular situation by the object.
+]],
+        },
+    },
+    {
+        label = "vcard:sort-string",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:sort-string",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#sort-string]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the string used for national-language-specific sorting.
+
++ **Comments**
+- Used as a property parameter only.
+]],
+        },
+    },
+    {
+        label = "vcard:street-address",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:street-address",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#street-address]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The street address associated with the address of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:title",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:title",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#title]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To specify the position or job of the object.
+]],
+        },
+    },
+    {
+        label = "vcard:tz",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:tz",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#tz]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- To indicate time zone information that is specific to the object.
+
++ **Comments**
+- May also be used as a property parameter.
+]],
+        },
+    },
+    {
+        label = "vcard:value",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "vcard:value",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/2006/vcard/ns#value]
+
+---
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Definition**
+- Used to indicate the literal value of a data property that requires property parameters.
+]],
+        },
+    },
 }
