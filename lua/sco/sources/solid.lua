@@ -188,7 +188,7 @@ return {
     },
     {
         label = "solid:account",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:account",
         documentation = {
             value = [[
@@ -205,7 +205,7 @@ return {
     },
     {
         label = "solid:deletes",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:deletes",
         documentation = {
             value = [[
@@ -228,7 +228,7 @@ return {
     },
     {
         label = "solid:forClass",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:forClass",
         documentation = {
             value = [[
@@ -245,7 +245,7 @@ return {
     },
     {
         label = "solid:inbox",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:inbox",
         deprecated = true,
         documentation = {
@@ -269,7 +269,7 @@ return {
     },
     {
         label = "solid:inserts",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:inserts",
         documentation = {
             value = [[
@@ -292,7 +292,7 @@ return {
     },
     {
         label = "solid:instance",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:instance",
         documentation = {
             value = [[
@@ -309,7 +309,7 @@ return {
     },
     {
         label = "solid:instanceContainer",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:instanceContainer",
         documentation = {
             value = [[
@@ -326,7 +326,7 @@ return {
     },
     {
         label = "solid:loginEndpoint",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:loginEndpoint",
         documentation = {
             value = [[
@@ -343,7 +343,7 @@ return {
     },
     {
         label = "solid:logoutEndpoint",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:logoutEndpoint",
         documentation = {
             value = [[
@@ -360,7 +360,7 @@ return {
     },
     {
         label = "solid:notification",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:notification",
         documentation = {
             value = [[
@@ -377,7 +377,7 @@ return {
     },
     {
         label = "solid:oidcIssuer",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:oidcIssuer",
         documentation = {
             value = [[
@@ -397,7 +397,7 @@ return {
     },
     {
         label = "solid:owner",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:owner",
         documentation = {
             value = [[
@@ -417,7 +417,7 @@ return {
     },
     {
         label = "solid:privateTypeIndex",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:privateTypeIndex",
         documentation = {
             value = [[
@@ -440,7 +440,7 @@ return {
     },
     {
         label = "solid:publicTypeIndex",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:publicTypeIndex",
         documentation = {
             value = [[
@@ -463,7 +463,7 @@ return {
     },
     {
         label = "solid:read",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:read",
         documentation = {
             value = [[
@@ -486,7 +486,7 @@ return {
     },
     {
         label = "solid:typeIndex",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:typeIndex",
         documentation = {
             value = [[
@@ -506,7 +506,7 @@ return {
     },
     {
         label = "solid:timeline",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:timeline",
         documentation = {
             value = [[
@@ -526,7 +526,7 @@ return {
     },
     {
         label = "solid:storageQuota",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:storageQuota",
         documentation = {
             value = [[
@@ -547,7 +547,7 @@ return {
     },
     {
         label = "solid:storageUse",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:storageUse",
         documentation = {
             value = [[
@@ -568,7 +568,7 @@ return {
     },
     {
         label = "solid:patches",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:patches",
         documentation = {
             value = [[
@@ -592,7 +592,7 @@ return {
     },
     {
         label = "solid:storageDescription",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:storageDescription",
         documentation = {
             value = [[
@@ -610,7 +610,7 @@ return {
     },
     {
         label = "solid:where",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "solid:where",
         documentation = {
             value = [[
