@@ -32,6 +32,7 @@ M.options = {
         "schema",
         "skos",
         "skosxl",
+        "solid",
         "sparql",
         "up",
         "vann",
