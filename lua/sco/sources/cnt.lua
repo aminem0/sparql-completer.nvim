@@ -17,7 +17,7 @@ return {
 - [http://www.w3.org/2011/content#Content]
 
 + **Type**
-- [owl:Class]
+- [rdfs:Class]
 
 + **Definition**
 - The content.
@@ -35,7 +35,7 @@ return {
 - [http://www.w3.org/2011/content#ContentAsBase64]
 
 + **Type**
-- [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [cnt:ContentAsBase64] ⊑ [cnt:Content]
@@ -56,7 +56,7 @@ return {
 - [http://www.w3.org/2011/content#ContentAsText]
 
 + **Type**
-- [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [cnt:ContentAsText] ⊑ [cnt:Content]
@@ -77,7 +77,7 @@ return {
 - [http://www.w3.org/2011/content#ContentAsXML]
 
 + **Type**
-- [owl:Class]
+- [rdfs:Class]
 
 + **Subclass relationships**
 - [cnt:ContentAsXML] ⊑ [cnt:Content]
@@ -98,7 +98,7 @@ return {
 - [http://www.w3.org/2011/content#DoctypeDecl]
 
 + **Type**
-- [owl:Class]
+- [rdfs:Class]
 
 + **Definition**
 - The document type declaration.
@@ -116,7 +116,7 @@ return {
 - [http://www.w3.org/2011/content#dtDecl]
 
 + **Type**
-- [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
@@ -140,7 +140,7 @@ return {
 - [http://www.w3.org/2011/content#bytes]
 
 + **Type**
-- [owl:ObjectProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsBase64]
@@ -164,7 +164,7 @@ return {
 - [http://www.w3.org/2011/content#characterEncoding]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:Content]
@@ -188,7 +188,7 @@ return {
 - [http://www.w3.org/2011/content#chars]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsText]
@@ -212,7 +212,7 @@ return {
 - [http://www.w3.org/2011/content#declaredEncoding]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
@@ -236,7 +236,7 @@ return {
 - [http://www.w3.org/2011/content#doctypeName]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:DoctypeDecl]
@@ -260,7 +260,7 @@ return {
 - [http://www.w3.org/2011/content#internalSubset]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:DoctypeDecl]
@@ -284,7 +284,7 @@ return {
 - [http://www.w3.org/2011/content#leadingMisc]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
@@ -308,7 +308,7 @@ return {
 - [http://www.w3.org/2011/content#publicId]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:DoctypeDecl]
@@ -332,7 +332,7 @@ return {
 - [http://www.w3.org/2011/content#rest]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
@@ -356,7 +356,7 @@ return {
 - [http://www.w3.org/2011/content#standalone]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
@@ -380,7 +380,7 @@ return {
 - [http://www.w3.org/2011/content#systemId]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:DoctypeDecl]
@@ -404,7 +404,7 @@ return {
 - [http://www.w3.org/2011/content#version]
 
 + **Type**
-- [owl:DatatypeProperty]
+- [rdf:Property]
 
 + **Domain**
 - [cnt:ContentAsXML]
