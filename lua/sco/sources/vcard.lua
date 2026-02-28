@@ -2777,8 +2777,6 @@ return {
 + **Identifier**
 - [http://www.w3.org/2006/vcard/ns#value]
 
----
-
 + **Type**
 - [owl:DatatypeProperty]
 

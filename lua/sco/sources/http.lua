@@ -542,7 +542,7 @@ return {
 - [rdfs:Literal]
 
 + **Definition**
-- Property representing the HTTP version number as a Literal (the format is 'digit.digit').
+- Property representing the HTTP version number as a Literal (the format is `digit.digit`).
 ]],
         },
     },
@@ -763,7 +763,7 @@ return {
 - [http:Response]
 
 + **Range**
-- [rds:Literal]
+- [rdfs:Literal]
 
 + **Definition**
 - The actual status code value sent by the server (Literal).
