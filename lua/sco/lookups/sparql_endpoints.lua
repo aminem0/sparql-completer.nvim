@@ -1,7 +1,7 @@
 return {
     { name = "Bgee",                url = "https://www.bgee.org/sparql/" },
     { name = "Bio2RDF",             url = "https://bio2rdf.org/sparql" },
-    { name = "BioBoum",             url = "http://localhost:8000/query" },
+    { name = "BioBoum",             url = "http://localhost:8000/sparql" },
     { name = "Bioimages",           url = "https://sparql.vanderbilt.edu/sparql" },
     { name = "Cellosaurus",         url = "https://sparql.cellosaurus.org/sparql" },
     { name = "DBCLS",               url = "http://data.allie.dbcls.jp/sparql" },
