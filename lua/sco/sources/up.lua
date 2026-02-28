@@ -703,7 +703,7 @@ return {
 - [up:Disulfide_Bond_Annotation] ⊑ [up:Modification_Annotation]
 
 + **Definition**
-- Describes residues which are linked by an intra chain disulfide bond. If the endpoints are identical, the disulfide bond is an interchain one..
+- Describes residues which are linked by an intra chain disulfide bond. If the endpoints are identical, the disulfide bond is an interchain one.
 ]],
         },
     },
@@ -4366,9 +4366,2428 @@ return {
 ]],
         },
     },
+    {
+        label = "up:orientation",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:orientation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/orientation]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- (= 1 [up:cellularComponent].[up:Cellular_Component]) ⊓ (≥ 1 [up:orientation].[up:Orientation]) ⊓ (≥ 1 [up:topology].[up:Topology])
+
++ **Range**
+- [up:Orientation]
+
++ **Definition**
+- The organism in which a protein occurs.
+]],
+        },
+    },
+    {
+        label = "up:panproteome",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:panproteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/panproteome]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Proteome]
+
++ **Range**
+- [up:Proteome]
+
++ **Comments**
+- The current pan proteome sequences are derived from the reference proteome clusters (75% proteome similarity for Fungus and 55% proteome similarity for Archaea and Bacteria).
+- A reference proteome cluster is also known as a representative proteome group (RPG) (Chen et al. 2011). A RPG contains similar proteomes calculated based on their co-membership in UniRef50 clusters.
+- For each non-singleton reference proteome cluster, a pan proteome is a set of sequences consisting of all the sequneces in the reference proteome, plus the addition of unique protein sequences that are found in other species or strains of the clustere but not in the reference proteome. These additional sequences are identified using UniRef50 membership.
+]],
+        },
+    },
+    {
+        label = "up:part",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:part",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/part]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Range**
+- [up:Part]
+]],
+        },
+    },
+    {
+        label = "up:partOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:partOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/partOf]
+
++ **Type**
+- [owl:ObjectProperty]
+]],
+        },
+    },
+    {
+        label = "up:participant",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:participant",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/participant]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Interaction]
+
++ **Domain**
+- [up:Participant]
+
++ **Definition**
+- A protein that takes part in a protein-protein interaction.
+]],
+        },
+    },
+    {
+        label = "up:potentialSequence",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:potentialSequence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/potentialSequence]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+
++ **Range**
+- [up:Sequence]
+
++ **Definition**
+- This is a predicate added by an automated procedure to link entities/proteins that might be isoforms of each other.
+]],
+        },
+    },
+    {
+        label = "up:proteomeComponent",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:proteomeComponent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/proteomeComponent]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+
++ **Range**
+- [up:Part]
+
++ **Definition**
+- A component of a protein.
+]],
+        },
+    },
+    {
+        label = "up:proteomeComponent",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:proteomeComponent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/proteomeComponent]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+
++ **Range**
+- [up:Part]
+
++ **Definition**
+- A component of a [up:Protein].
+]],
+        },
+    },
+    {
+        label = "up:publishedIn",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:publishedIn",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/publishedIn]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [up:Journal]
+
++ **Definition**
+- Reserved predicate to link a [up:Citation] to the [up:Journal] that it appeared in.
+]],
+        },
+    },
+    {
+        label = "up:range",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:range",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/range]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:range] ⊑ [faldo:location]
+
++ **Range**
+- [faldo:Region]
+
++ **Definition**
+- A specialization of [faldo:location] where all objects are [faldo:Region]s.
+]],
+        },
+    },
+    {
+        label = "up:rank",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:rank",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/rank]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Taxon]
+
++ **Range**
+- [up:Rank]
+
++ **Definition**
+- The [up:Rank] of a [up:Taxon].
+]],
+        },
+    },
+    {
+        label = "up:recommendedName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:recommendedName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/recommendedName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:recommendedName] ⊑ [up:structuredName]
+
++ **Domain**
+- [up:Part]
+- [up:Protein]
+
++ **Range**
+- [up:Structured_Name]
+
++ **Definition**
+- The name recommended by the UniProt consortium.
+]],
+        },
+    },
+    {
+        label = "up:redundantTo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:redundantTo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/redundantTo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [rdfs:Resource]
+
++ **Range**
+- [up:Proteome]
+
++ **Definition**
+- Indicates which proteome this proteome is redundant to.
+]],
+        },
+    },
+    {
+        label = "up:relatedLocation",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:relatedLocation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/relatedLocation]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Subcellular_Location]
+
++ **Range**
+- [up:Subcellular_Location]
+]],
+        },
+    },
+    {
+        label = "up:replacedBy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:replacedBy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/replacedBy]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:replacedBy] ≡ [up:replaces]⁻
+
++ **Domain**
+- [up:Enzyme]
+- [up:Protein]
+- [up:Taxon]
+
++ **Range**
+- [up:Enzyme]
+- [up:Protein]
+- [up:Taxon]
+
++ **Definition**
+- A resource that replaces this resource.
+]],
+        },
+    },
+    {
+        label = "up:replaces",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:replaces",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/replaces]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:replaces] ≡ [up:replacedBy]⁻
+
++ **Domain**
+- [up:Enzyme]
+- [up:Protein]
+- [up:Taxon]
+
++ **Range**
+- [up:Enzyme]
+- [up:Protein]
+- [up:Taxon]
+
++ **Definition**
+- A resource that is replaced by this resources.
+]],
+        },
+    },
+    {
+        label = "up:representativeFor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:representativeFor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/representativeFor]
+
++ **Type**
+- [owl:FunctionalProperty]
+- [owl:InverseFunctionalProperty]
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Sequence]
+
++ **Range**
+- [up:Cluster]
+]],
+        },
+    },
+    {
+        label = "up:seedFor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:seedFor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/seedFor]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [up:Cluster]
+]],
+        },
+    },
+    {
+        label = "up:sequence",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:sequence",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/sequence]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:sequence] ≡ [up:sequenceFor]⁻
+
++ **Domain**
+- [up:Annotation]
+- [up:Protein]
+- [up:Resource]
+
++ **Range**
+- [up:Cluster]
+
++ **Definition**
+- An amino acid sequence.
+]],
+        },
+    },
 
 
 
+    {
+        label = "up:sequenceDiscrepancy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:sequenceDiscrepancy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/sequenceDiscrepancy]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Nucleotide_Resource]
+
++ **Definition**
+- Used when a CoDing Sequence (CDS) from the INSDC differs substantially from a reviewed UniProtKB/Swiss-Prot sequence, the UniProt crators indicate the nature of the difference as a [rdfs:comment] linked via this predicate.
+]],
+        },
+    },
+    {
+        label = "up:sequenceFor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:sequenceFor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/sequenceFor]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Equivalency relationships**
+- [up:sequenceFor] ≡ [up:sequence]⁻
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [up:Annotation]
+- [up:Protein]
+- [up:Resource]
+
++ **Definition**
+- A resource that describes this resource.
+]],
+        },
+    },
+    {
+        label = "up:signatureSequenceMatch",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:signatureSequenceMatch",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/signatureSequenceMatch]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Resource]
+
++ **Definition**
+- Indicates that the signature described by the subject resource matches mathematically and that that match is described by the object of a triple using this property as a predicate.
+]],
+        },
+    },
+    {
+        label = "up:someMembersClassifiedWith",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:someMembersClassifiedWith",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/someMembersClassifiedWith]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Cluster]
+
++ **Range**
+- [go:0003674]
+- [go:0005575]
+- [go:0008150]
+
++ **Definition**
+- Indicates which [go:] terms are somewhat consistently used to annotate UniProtKB members of this [up:Cluster].
+]],
+        },
+    },
+    {
+        label = "up:source",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:source",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/source]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Attribution]
+]],
+        },
+    },
+    {
+        label = "up:status",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:status",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/status]
+
++ **Type**
+- [owl:ObjectProperty]
+]],
+        },
+    },
+    {
+        label = "up:structuredName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:structuredName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/structuredName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Part]
+- [up:Protein]
+
++ **Range**
+- [up:Structured_Name]
+]],
+        },
+    },
+    {
+        label = "up:submittedName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:submittedName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/submittedName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:submittedName] ⊑ [up:structuredName]
+
++ **Domain**
+- [up:Part]
+- [up:Protein]
+
++ **Range**
+- [up:Structured_Name]
+
++ **Definition**
+- A name provided by the submitter of the underlying nucleotide sequence.
+]],
+        },
+    },
+    {
+        label = "up:topology",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:topology",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/topology]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- (= 1 [up:cellularComponent].[up:Cellular_Component]) ⊓ (≥ 1 [up:orientation].[up:Orientation]) ⊓ (≥ 1 [up:topology].[up:Topology])
+
++ **Range**
+- [up:Topology]
+]],
+        },
+    },
+    {
+        label = "up:transcribedFrom",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:transcribedFrom",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/transcribedFrom]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [owl:Transcript_Resource]
+]],
+        },
+    },
+    {
+        label = "up:translatedFrom",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:translatedFrom",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/translatedFrom]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [owl:External_Sequence]
+
++ **Domain**
+- [up:Nucleotide_Resource]
+]],
+        },
+    },
+    {
+        label = "up:translatedTo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:translatedTo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/translatedTo]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- [up:Transcript_Resource]
+]],
+        },
+    },
+    {
+        label = "up:withdrawnFromINSDC",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:withdrawnFromINSDC",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/withdrawnFromINSDC]
+
++ **Type**
+- [owl:ObjectProperty]
+]],
+        },
+    },
+    {
+        label = "up:abstract",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:abstract",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/abstract]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- `true` if the class does not have any direct instances.
+]],
+        },
+    },
+    {
+        label = "up:alias",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:alias",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/alias]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- An alternative name used in the flat text format.
+]],
+        },
+    },
+    { -- NOTE: Link is broken btw...
+        label = "up:allergenName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:allergenName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/allergenName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Definition**
+- See [http://www.expasy.org/cgi-bin/lists?allergen.txt](http://www.expasy.org/cgi-bin/lists?allergen.txt).
+]],
+        },
+    },
+    {
+        label = "up:atypical",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:atypical",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/atypical]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:author",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:author",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/author]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The author of a publication.
+]],
+        },
+    },
+    {
+        label = "up:authorsIncomplete",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:authorsIncomplete",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/authorsIncomplete]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [xsd:boolean]
+]],
+        },
+    },
+    {
+        label = "up:begin",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:begin",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/begin]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:biotechName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:biotechName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/biotechName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:biotechName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- A name used in a biotechnological context.
+]],
+        },
+    },
+    {
+        label = "up:cdAntigenName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:cdAntigenName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/cdAntigenName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:cdAntigenName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- A name from the Human Cell Differentiation Molecules (HCDM) nomenclature.
+]],
+        },
+    },
+    {
+        label = "up:certain",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:certain",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/certain]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Absorption_Annotation]
+
++ **Range**
+- [xsd:boolean]
+
++ **Comments**
+- `false` if there is any uncertainty about a statement.
+]],
+        },
+    },
+    {
+        label = "up:chain",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:chain",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/chain]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Structure_Mapping_Statement]
+
++ **Range**
+- [xsd:string]
+
++ **Comments**
+- Maps a series of symbols representing chains to a range of amino acids.
+]],
+        },
+    },
+    { -- NOTE: up:crc64Checksum is deprecated btw
+        label = "up:checksum",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:checksum",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/checksum]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Definition**
+- A calculated value that is used to detect if there are errors in the sequence as shown due to among others IO errors.
+
++ **Comments**
+- Both the [up:crc64Checksum] and the [up:md5Checksum] have collisions in UniProt data and cannot be used as unique keys.
+]],
+        },
+    },
+    {
+        label = "up:cofactorLabel",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:cofactorLabel",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/cofactorLabel]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Enzyme]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A cofactor required for a catalytic activity.
+]],
+        },
+    },
+    {
+        label = "up:complete",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:complete",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/complete]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Taxon]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- A cofactor required for a catalytic activity.
+]],
+        },
+    },
+    {
+        label = "up:crc64Checksum",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:crc64Checksum",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/crc64Checksum]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:created",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:created",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/created]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Resource]
+- [up:Sequence]
+
++ **Range**
+- [xsd:date]
+
++ **Definition**
+- The date a resource was created.
+]],
+        },
+    },
+    {
+        label = "up:curated",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:curated",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/curated]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- If `true`, the described database has some level of curation.
+]],
+        },
+    },
+    {
+        label = "up:date",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:date",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/date]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Attribution]
+- [up:Citation]
+- [up:Sequence]
+]],
+        },
+    },
+    {
+        label = "up:domains",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:domains",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/domains]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:ecName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:ecName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/ecName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:ecName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- The [up:ecName] is the enzyme classification associated with a structured name of the protein.
+
++ **Comments**
+- Proteins are often named after their enzymatic activity, but can have more than one activity, leading to multiple names.
+]],
+        },
+    },
+    {
+        label = "up:editor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:editor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/editor]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Book_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The editor of a publication.
+]],
+        },
+    },
+    {
+        label = "up:end",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:end",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/end]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:experiments",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:experiments",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/experiments]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Interaction]
+
++ **Range**
+- [xsd:int]
+]],
+        },
+    },
+    {
+        label = "up:fragment",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:fragment",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/fragment]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Simple_Sequence]
+
++ **Range**
+- {"multiple", "single"}
+
++ **Definition**
+- Indicates if a sequence is complete or consists of one or more fragments.
+]],
+        },
+    },
+    {
+        label = "up:frameshift",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:frameshift",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/frameshift]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:RNA_Editing_Annotation]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- `true` if a sequence modification causes a frameshift.
+]],
+        },
+    },
+    {
+        label = "up:fullName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:fullName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/fullName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:fullName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- The full name.
+]],
+        },
+    },
+    {
+        label = "up:fused",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:fused",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/fused]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:group",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:group",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/group]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:group] ⊑ [up:author]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The group or consortium that authored a publication.
+]],
+        },
+    },
+    {
+        label = "up:height",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:height",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/height]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [foaf:Image]
+
++ **Range**
+- [xsd:int]
+]],
+        },
+    },
+    {
+        label = "up:hits",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:hits",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/hits]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:identity",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:identity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/identity]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Cluster]
+
++ **Range**
+- {"0.5", "0.9", "1.0"}
+
++ **Definition**
+- The level of sequence identity in a [up:Cluster].
+]],
+        },
+    },
+    {
+        label = "up:implicit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:implicit",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/implicit]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- `true` if existence of this resource can be inferred.
+]],
+        },
+    },
+    {
+        label = "up:institution",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:institution",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/institution]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Thesis_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The institution at which a [up:Thesis_Citation] was written.
+]],
+        },
+    },
+    {
+        label = "up:institution",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:institution",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/institution]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Thesis_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The institution at which a [up:Thesis_Citation] was written.
+]],
+        },
+    },
+    {
+        label = "up:internationalNonProprietaryName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:internationalNonProprietaryName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/internationalNonProprietaryName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:internationalNonProprietaryName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- The international nonproprietary name. A generic name for a pharmaceutical substance or active pharmaceutical ingredient that is globally recognized and is a public property.
+]],
+        },
+    },
+    {
+        label = "up:length",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:length",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/length]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [xsd:int]
+]],
+        },
+    },
+    {
+        label = "up:limit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:limit",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/limit]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:linkIsExplicit",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:linkIsExplicit",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/linkIsExplicit]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- `true` if the [up:Database] is linked by an explicit action to UniProt, `false` if it is done using a simple hardcoded rule.
+]],
+        },
+    },
+    {
+        label = "up:locator",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:locator",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/locator]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [xsd:string]
+]],
+        },
+    },
+    {
+        label = "up:manual",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:manual",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/manual]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Attribution]
+
++ **Range**
+- [xsd:boolean]
+]],
+        },
+    },
+    {
+        label = "up:maximum",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:maximum",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/maximum]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Absorption]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- A maximum value.
+]],
+        },
+    },
+    {
+        label = "up:md5Checksum",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:md5Checksum",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/md5Checksum]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Subproperty relationships**
+- [up:md5Checksum] ⊑ [up:checksum]
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [xsd:string]
+]],
+        },
+    },
+    {
+        label = "up:measuredActivity",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:measuredActivity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/measuredActivity]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Kinetics_Annotation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The maximum velocity, Vmax.
+]],
+        },
+    },
+    {
+        label = "up:measuredAffinity",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:measuredAffinity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/measuredAffinity]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Kinetics_Annotation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The Michaelis-Menten constant, Km.
+]],
+        },
+    },
+    {
+        label = "up:measuredError",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:measuredError",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/measuredError]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Mass_Spectrometry_Annotation]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- The magnitude of the error of a value that was measured.
+]],
+        },
+    },
+    {
+        label = "up:measuredValue",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:measuredValue",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/measuredValue]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Mass_Spectrometry_Annotation]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- A value that was measured.
+]],
+        },
+    },
+    {
+        label = "up:modifiedDate",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:modifiedDate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/modifiedDate]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Cluster]
+- [up:Protein]
+- [up:Resource]
+
++ **Range**
+- [xsd:date]
+
++ **Definition**
+- The date a resource was last modified.
+]],
+        },
+    },
+    {
+        label = "up:name",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/name]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Range**
+- [xsd:string]
+]],
+        },
+    },
+    {
+        label = "up:negative",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:negative",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/negative]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Interaction]
+
++ **Range**
+- [xsd:boolean]
+]],
+        },
+    },
+    {
+        label = "up:obsolete",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:obsolete",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/obsolete]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Taxon]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- `true` if this resource has been replaced or deleted.
+]],
+        },
+    },
+    {
+        label = "up:orfName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:orfName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/orfName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Gene]
+
++ **Range**
+- [xsd:string]
+]],
+        },
+    },
+    {
+        label = "up:pages",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:pages",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/pages]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Book_Citation]
+- [up:Journal_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The first and last page for a chapter or article.
+]],
+        },
+    },
+    {
+        label = "up:partOfLineage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:partOfLineage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/partOfLineage]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Taxon]
+
++ **Range**
+- [xsd:oolean]
+
++ **Definition**
+- `true` for taxa that can appear as part of an organism's non abbreviated lineage.
+
++ **Comments**
+- In the flatfile and XML views of an UniProt entry (as well as at INSDC), only these taxonomic nodes are shown.
+]],
+        },
+    },
+    {
+        label = "up:partial",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:partial",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/partial]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:pattern",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:pattern",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/pattern]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A URL pattern, used to generate links by substituting an identifier.
+]],
+        },
+    },
+    {
+        label = "up:placeOfPublication",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:placeOfPublication",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/placeOfPublication]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Book_Citation]
+- [up:Thesis_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The place where a publication was published. this usually includes a country name.
+]],
+        },
+    },
+    {
+        label = "up:position",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:position",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/position]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:precursor",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:precursor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/precursor]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Simple_Sequence]
+
++ **Range**
+- [xsd:boolean]
+]],
+        },
+    },
+    {
+        label = "up:predictedMass",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:predictedMass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/predictedMass]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Sequence]
+
++ **Range**
+- [xsd:int]
+
++ **Definition**
+- The predicted mass of a [up:Sequence] in Daltons.
+]],
+        },
+    },
+    {
+        label = "up:proteomeExclusionReason",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:proteomeExclusionReason",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/proteomeExclusionReason]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Proteome]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Indicates why the proteing of a [up:Proteome] were excluded from UniProtKB.
+]],
+        },
+    },
+    {
+        label = "up:publisher",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:publisher",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/publisher]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Book_Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The publisher of a book.
+]],
+        },
+    },
+    {
+        label = "up:referenceProteome",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:referenceProteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/referenceProteome]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:representativeProteome",
+        deprecated = true,
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:representativeProteome",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/representativeProteome]
+
++ **Type**
+- [owl:DatatypeProperty]
+]],
+        },
+    },
+    {
+        label = "up:resolution",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:resolution",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/resolution]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Structure_Resource]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- The resolution of an experiment, in Ångström.
+]],
+        },
+    },
+    {
+        label = "up:reviewed",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:reviewed",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/reviewed]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Taxon]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Indicates whether a resource has been reviewed by a curator.
+]],
+        },
+    },
+    {
+        label = "up:scientificName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:scientificName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/scientificName]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Range**
+- [xsd:string]
+]],
+        },
+    },
+    {
+        label = "up:scope",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:scope",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/scope]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Citation_Statement]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The extent of the work carried out by the authors of a publication.
+]],
+        },
+    },
+    {
+        label = "up:shortCoden",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:shortCoden",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/shortCoden]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Journal]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Used to link a [up:Journal] to its shortCoden.
+]],
+        },
+    },
+    {
+        label = "up:shortName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:shortName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/shortName]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Subproperty relationships**
+- [up:shortName] ⊑ [up:structuredNameType]
+
++ **Definition**
+- An abbreviation of the full name or an acronym.
+]],
+        },
+    },
+    {
+        label = "up:structuredNameType",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:structuredNameType",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/structuredNameType]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Structured_Name]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- All the names of the protein, from commonly used to obsolete, to used in the litterature.
+]],
+        },
+    },
+    {
+        label = "up:submittedTo",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:submittedTo",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/submittedTo]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Definition**
+- The database a resource was submitted to.
+]],
+        },
+    },
+    {
+        label = "up:substitution",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:substitution",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/substitution]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Mutagenesis_Annotation]
+- [up:Natural_Variation_Annotation]
+- [up:Sequence_Conflict_Annotation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A replacement sequence.
+]],
+        },
+    },
+    {
+        label = "up:title",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:title",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/title]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Citation]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The title of a publication.
+]],
+        },
+    },
+    {
+        label = "up:uriTemplate",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:uriTemplate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/uriTemplate]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:Database]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A string template that can be used to figure out from the database ID what URI describes it.
+]],
+        },
+    },
+
+
+
+    {
+        label = "up:version",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:version",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/version]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Protein]
+- [up:Sequence]
+
++ **Range**
+- [xsd:int]
+]],
+        },
+    },
+    {
+        label = "up:volume",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:volume",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/volume]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Book_Citation]
+- [up:Journal_Citation]
+
++ **Definition**
+- The volume a pulication is part of.
+]],
+        },
+    },
+    {
+        label = "up:width",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:width",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/width]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [foaf:Image]
+
++ **Range**
+- [xsd:int]
+]],
+        },
+    },
+    {
+        label = "up:xeno",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:xeno",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/xeno]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [owl:FunctionalProperty]
+
++ **Domain**
+- [up:Interaction]
+
++ **Range**
+- [xsd:boolean]
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        label = "up:",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/]
+
++ **Type**
+- [owl:DatatypeProperty]
+
++ **Domain**
+- [up:]
+
++ **Range**
+- [xsd:]
+
++ **Definition**
+-
+]],
+        },
+    },
 
 
 
@@ -4444,6 +6863,75 @@ return {
     },
 
 
+
+    {
+        label = "up:otherName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:otherName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/otherName]
+
++ **Type**
+- [owl:ObjectProperty]
+
++ **Domain**
+- (= 1 [up:cellularComponent].[up:Cellular_Component]) ⊓ (≥ 1 [up:orientation].[up:Orientation]) ⊓ (≥ 1 [up:topology].[up:Topology])
+
++ **Range**
+- [up:Orientation]
+
++ **Definition**
+- The organism in which a protein occurrs.
+]],
+        },
+    },
+
+
+
+    {
+        label = "up:scientificName",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:scientificName",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/scientificName]
+
++ **Type**
+- [owl:FunctionalProperty]
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:scientificName] ⊑ [up:name]
+
++ **Domain**
+- [up:Taxon]
+]],
+        },
+    },
+    {
+        label = "up:synonym",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "up:synonym",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.uniprot.org/core/synonym]
+
++ **Type**
+- [owl:FunctionalProperty]
+- [owl:ObjectProperty]
+
++ **Subproperty relationships**
+- [up:synonym] ⊑ [up:name]
+
++ **Domain**
+- [up:Taxon]
+]],
+        },
+    },
 
 
 
