@@ -15,7 +15,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Connection]
+- [http://www.w3.org/2011/http#Connection]
 
 + **Type**
 - [rdfs:Class]
@@ -32,7 +32,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#EntityHeader]
+- [http://www.w3.org/2011/http#EntityHeader]
 
 + **Type**
 - [rdfs:Class]
@@ -52,7 +52,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#GeneralHeader]
+- [http://www.w3.org/2011/http#GeneralHeader]
 
 + **Type**
 - [rdfs:Class]
@@ -72,7 +72,7 @@ return {
         documentation = { -- NOTE: Message Header or http:MessageHeader?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#HeaderElement]
+- [http://www.w3.org/2011/http#HeaderElement]
 
 + **Type**
 - [rdfs:Class]
@@ -89,7 +89,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#HeaderName]
+- [http://www.w3.org/2011/http#HeaderName]
 
 + **Type**
 - [rdfs:Class]
@@ -106,7 +106,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Message]
+- [http://www.w3.org/2011/http#Message]
 
 + **Type**
 - [rdfs:Class]
@@ -123,7 +123,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#MessageHeader]
+- [http://www.w3.org/2011/http#MessageHeader]
 
 + **Type**
 - [rdfs:Class]
@@ -140,7 +140,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Method]
+- [http://www.w3.org/2011/http#Method]
 
 + **Type**
 - [rdfs:Class]
@@ -157,7 +157,7 @@ return {
         documentation = { -- NOTE: Header Element or http:HeaderElement?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Parameter]
+- [http://www.w3.org/2011/http#Parameter]
 
 + **Type**
 - [rdfs:Class]
@@ -174,7 +174,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Request]
+- [http://www.w3.org/2011/http#Request]
 
 + **Type**
 - [rdfs:Class]
@@ -194,7 +194,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#RequestHeader]
+- [http://www.w3.org/2011/http#RequestHeader]
 
 + **Type**
 - [rdfs:Class]
@@ -214,7 +214,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#Response]
+- [http://www.w3.org/2011/http#Response]
 
 + **Type**
 - [rdfs:Class]
@@ -234,7 +234,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#ResponseHeader]
+- [http://www.w3.org/2011/http#ResponseHeader]
 
 + **Type**
 - [rdfs:Class]
@@ -254,7 +254,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#StatusCode]
+- [http://www.w3.org/2011/http#StatusCode]
 
 + **Type**
 - [rdfs:Class]
@@ -271,7 +271,7 @@ return {
         documentation = { -- NOTE: First Message should be http:Message?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#absolutePath]
+- [http://www.w3.org/2011/http#absolutePath]
 
 + **Type**
 - [rdf:Property]
@@ -297,7 +297,7 @@ return {
         documentation = { -- NOTE: First Message should be http:Message?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#absoluteURI]
+- [http://www.w3.org/2011/http#absoluteURI]
 
 + **Type**
 - [rdf:Property]
@@ -323,7 +323,7 @@ return {
         documentation = { -- NOTE: First Message should be http:Message?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#authority]
+- [http://www.w3.org/2011/http#authority]
 
 + **Type**
 - [rdf:Property]
@@ -349,7 +349,7 @@ return {
         documentation = { -- NOTE: First Message should be http:Message?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#body]
+- [http://www.w3.org/2011/http#body]
 
 + **Type**
 - [rdf:Property]
@@ -372,7 +372,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#elementName]
+- [http://www.w3.org/2011/http#elementName]
 
 + **Type**
 - [rdf:Property]
@@ -395,7 +395,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#elementValue]
+- [http://www.w3.org/2011/http#elementValue]
 
 + **Type**
 - [rdf:Property]
@@ -418,7 +418,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#fieldName]
+- [http://www.w3.org/2011/http#fieldName]
 
 + **Type**
 - [rdf:Property]
@@ -441,7 +441,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#fieldValue]
+- [http://www.w3.org/2011/http#fieldValue]
 
 + **Type**
 - [rdf:Property]
@@ -464,7 +464,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#hdrName]
+- [http://www.w3.org/2011/http#hdrName]
 
 + **Type**
 - [rdf:Property]
@@ -487,7 +487,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#headerElements]
+- [http://www.w3.org/2011/http#headerElements]
 
 + **Type**
 - [rdf:Property]
@@ -510,7 +510,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#headers]
+- [http://www.w3.org/2011/http#headers]
 
 + **Type**
 - [rdf:Property]
@@ -530,7 +530,7 @@ return {
         documentation = { -- NOTE: RDFS:LITERAL?
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#httpVersion]
+- [http://www.w3.org/2011/http#httpVersion]
 
 + **Type**
 - [rdf:Property]
@@ -553,7 +553,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#methodName]
+- [http://www.w3.org/2011/http#methodName]
 
 + **Type**
 - [rdf:Property]
@@ -576,7 +576,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#mthd]
+- [http://www.w3.org/2011/http#mthd]
 
 + **Type**
 - [rdf:Property]
@@ -599,7 +599,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#paramName]
+- [http://www.w3.org/2011/http#paramName]
 
 + **Type**
 - [rdf:Property]
@@ -622,7 +622,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#paramValue]
+- [http://www.w3.org/2011/http#paramValue]
 
 + **Type**
 - [rdf:Property]
@@ -645,7 +645,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#params]
+- [http://www.w3.org/2011/http#params]
 
 + **Type**
 - [rdf:Property]
@@ -665,7 +665,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#reasonPhrase]
+- [http://www.w3.org/2011/http#reasonPhrase]
 
 + **Type**
 - [rdf:Property]
@@ -688,7 +688,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#requests]
+- [http://www.w3.org/2011/http#requests]
 
 + **Type**
 - [rdf:Property]
@@ -708,7 +708,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#sc]
+- [http://www.w3.org/2011/http#sc]
 
 + **Type**
 - [rdf:Property]
@@ -731,7 +731,7 @@ return {
         documentation = {
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#statusCodeNumber]
+- [http://www.w3.org/2011/http#statusCodeNumber]
 
 + **Type**
 - [rdf:Property]
@@ -754,7 +754,7 @@ return {
         documentation = { -- NOTE: RDFS:LITERAL
             value = [[
 + **Identifier**
-- [https://www.w3.org/2011/http#statusCodeValue]
+- [http://www.w3.org/2011/http#statusCodeValue]
 
 + **Type**
 - [rdf:Property]
