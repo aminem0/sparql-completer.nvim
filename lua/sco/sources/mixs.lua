@@ -469,6 +469,9 @@ return {
 
 + **Definition**
 - The vertical distance below local surface. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples.
+
++ **Comments**
+- The preferred unit is meter.
 ]],
         },
     },
@@ -1087,7 +1090,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         label = "mixs:lib_vector",
         insertText = "mixs:0000042",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "mixs:",
+        description = "mixs:lib_vector",
         documentation = {
             kind = "markdown",
             value = [[
@@ -1105,7 +1108,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - Cloning vectir type(s) used in construction of libraries.
 
 + **Examples**
-- [Bacteriophage P1]
+- `Bacteriophage P1`
 ]],
         },
     },
@@ -1306,7 +1309,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - Description of reaction conditions and components of polymerase chain reaction performed during library preparation.
 
 + **Comments**
-- Expected values shoud follow the pattern `initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`
+- The expected values should follow the pattern `initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`
 
 + **Examples**
 - `initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35`
@@ -1407,15 +1410,1483 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 ]],
         },
     },
+    {
+        label = "mixs:tax_ident",
+        insertText = "mixs:0000053",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tax_ident",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000053]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- The phylogenetic marker(s) used to assign an organism name to the SAG or MAG.
 
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/TaxIdentEnum/].
 
++ **Examples**
+- `other`
+]],
+        },
+    },
+    {
+        label = "mixs:sc_lysis_method",
+        insertText = "mixs:0000054",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sc_lysis_method",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000054]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
 
++ **Definition**
+- Name of the kit or standard protocol used for cell(s) or particle(s) lysis.
 
++ **Examples**
+- `ambion single cell lysis kit`
+]],
+        },
+    },
+    {
+        label = "mixs:wga_amp_appr",
+        insertText = "mixs:0000055",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wga_amp_appr",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000055]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method used to amplify genomic DNA in preparation for sequencing.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/WgaAmpApprEnum/].
+
++ **Examples**
+- `mda based`
+]],
+        },
+    },
+    {
+        label = "mixs:assembly_qual",
+        insertText = "mixs:0000056",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:assembly_qual",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000056]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The assembly quality category is based on sets of criteria outlined for each asssembly quality category.
+
++ **Comments**
+- For MISAG/MIMAG. `Finished genome`: single validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. `High-quality draft genome`: Multiple fragments where gaps span repetitive regions; presence of the large subunit (LSU) RNA, small subunit (SSU) and the presence of 5.8 rRNA or 5S rRNA depending on whether it is a eukaryotic or prokaryotic genome, respectively. `Medium-quality draft genome`: Many fragments with little to no review of assembly other than reporting of standard assembly statistics. `Low-quality draft genome`: Many fragments with little to no review of assembly other than reporting of standard assembly statistics; assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length.
+- For MIUVIG. `Finished genome`: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. `High-quality draft genome`: One or multiple fragments, totaling 90% of the expected genome or replicon sequence or predicted complete. `Genome fragment(s)`: One or multiple fragments, totalling < 90% of the expected genome or replicon sequence, or for which no genome size could be estimated.
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/AssemblyQualEnum/].
+
++ **Examples**
+- `High-quality draft genome`
+]],
+        },
+    },
+    {
+        label = "mixs:assembly_name",
+        insertText = "mixs:0000057",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:assembly_name",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000057]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name/version of the assembly provided by the submitter that is used in genome browsers and in the community.
+
++ **Examples**
+- `HuRef, JCVI_ISG_i3_1.0`
+]],
+        },
+    },
+    {
+        label = "mixs:assembly_software",
+        insertText = "mixs:0000058",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:assembly_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000058]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Tool(s) used for assembly, including version number and parameters.
+
++ **Examples**
+- `metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121, default parameters otherwise`
+]],
+        },
+    },
+    {
+        label = "mixs:annot",
+        insertText = "mixs:0000059",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:annot",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000059]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool used for annotation, or for cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter.
+
++ **Examples**
+- `prokka`
+]],
+        },
+    },
+    {
+        label = "mixs:number_contig",
+        insertText = "mixs:0000060",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:number_contig",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000060]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG.
+
++ **Examples**
+- `40`
+]],
+        },
+    },
+    {
+        label = "mixs:feat_pred",
+        insertText = "mixs:0000061",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:feat_pred",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000061]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Method used to predict UViG features such as ORFs, integration site, etc.
+
++ **Examples**
+- `Prodigal;2.6.3;default parameters`
+]],
+        },
+    },
+    {
+        label = "mixs:ref_db",
+        insertText = "mixs:0000062",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ref_db",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000062]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- List of database(s) used for ORF annotation, along with version number and reference to website or publication.
+
++ **Examples**
+- `pVOGs;5;http://dmk-brain.ecn.uiowa.edu/pVOGs/ Grazziotin et al. 2017 doi:10.1093/nar/gkw975`
+]],
+        },
+    },
+    {
+        label = "mixs:sim_search_meth",
+        insertText = "mixs:0000063",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sim_search_meth",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000063]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Tool usued to compare ORFs with database, with version and cutoffs used.
+
++ **Examples**
+- `HMMER3;3.1b2;hmmsearch, cutoff of 50 on score`
+]],
+        },
+    },
+    {
+        label = "mixs:sim_search_meth",
+        insertText = "mixs:0000063",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sim_search_meth",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000063]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Tool usued to compare ORFs with database, with version and cutoffs used.
+
++ **Examples**
+- `HMMER3;3.1b2;hmmsearch, cutoff of 50 on score`
+]],
+        },
+    },
+    {
+        label = "mixs:tax_class",
+        insertText = "mixs:0000064",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tax_class",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000064]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes.
+
++ **Examples**
+- `vConTACT vContact2 (references from NCBI RefSeq v83, genus rank classification, default parameters)`
+]],
+        },
+    },
+    { -- WARN: boolean but yes?
+        label = "mixs:x16s_recover",
+        insertText = "mixs:0000065",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:x16s_recover",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000065]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Can a 16S gene be recovered from the submitted SAG or MAG?
+
++ **Examples**
+- `yes`
+]],
+        },
+    },
+    {
+        label = "mixs:x16s_recover_software",
+        insertText = "mixs:0000066",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:x16s_recover_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000066]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Tools used for 16S rRNA gene extraction.
+
++ **Examples**
+- `rambl;v2;default parameters`
+]],
+        },
+    },
+    { -- WARN: Recheck range
+        label = "mixs:trnas",
+        insertText = "mixs:0000067",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:trnas",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000067]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The total number of tRNAs identified from the SAG or MAG.
+
++ **Comments**
+- The expected values shoud be between `0` and `21`.
+
++ **Examples**
+- `18`
+]],
+        },
+    },
+    {
+        label = "mixs:trna_ext_software",
+        insertText = "mixs:0000068",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:trna_ext_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000068]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{software};{version};{parameters}$`
+
++ **Definition**
+- Tools used for tRNA identification.
+
++ **Examples**
+- `infernal;v2;default parameters`
+]],
+        },
+    },
+    {
+        label = "mixs:compl_score",
+        insertText = "mixs:0000069",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:compl_score",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000069]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome.
+
++ **Comments**
+- High-quality draft: >90%, Medium-quality draft: >50%, and Low-quality draft: <50%, should have the indicated completeness score.
+- The expected values should follow the pattern `{quality};{percent_completeness}`.
+
++ **Examples**
+- `med;60%`
+]],
+        },
+    },
+    {
+        label = "mixs:compl_software",
+        insertText = "mixs:0000070",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:compl_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000070]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tools used for completion estimate, i.e. `checkm`, `anvi'o`, `busco`.
+
++ **Comments**
+- The expected values should contain the names and version(s) of the software(s) used.
+
++ **Examples**
+- `checkm`
+]],
+        },
+    },
+    {
+        label = "mixs:compl_appr",
+        insertText = "mixs:0000071",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:compl_appr",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000071]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The approach used to determine the completeness of a given genomic assembly, which would typically make use of make use of a set of conserved marker genes or a closely related reference genome.
+
++ **Comments**
+-  For UViG completeness, include reference genome or group used and contig feature suggesting a complete genome.
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/ComplApprEnum/].
+
++ **Examples**
+- `other`
+]],
+        },
+    },
+    { -- WARN: Error in value for `Low-quality draft`.
+        label = "mixs:contam_score",
+        insertText = "mixs:0000072",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:contam_score",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000072]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome.
+
++ **Comments**
+- The following scores are acceptable for; High-quality draft: <5%, `Medium-quality draft`: <10%, `Low-quality draft`: >10%.
+- Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases.
+
++ **Examples**
+- `0.01`
+]],
+        },
+    },
+    {
+        label = "mixs:contam_screen_param",
+        insertText = "mixs:0000073",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:contam_screen_param",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000073]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specific parameters used in the decontamination software, such as reference database, coverage, and kmers.
+
++ **Comments**
+- Combinations of these parameters may also be used, i.e. kmer and coverage, or reference database and kmer.
+
++ **Examples**
+- `kmer`
+]],
+        },
+    },
+    {
+        label = "mixs:decontam_software",
+        insertText = "mixs:0000074",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:decontam_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000074]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool(s) used in contamination screening.
+
++ **Examples**
+- `anvi'o`
+]],
+        },
+    },
+    {
+        label = "mixs:sort_tech",
+        insertText = "mixs:0000075",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sort_tech",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000075]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method used to sort/isolate cells or particles of interest.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/SortTechEnum/].
+
++ **Examples**
+- `optical manipulation`
+]],
+        },
+    },
+    {
+        label = "mixs:sc_lysis_approach",
+        insertText = "mixs:0000076",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sc_lysis_approach",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000076]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method used to free DNA from interior of the cell(s) or particle(s).
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/ScLysisApproachEnum/].
+
++ **Examples**
+- `enzymatic`
+]],
+        },
+    },
+    {
+        label = "mixs:bin_param",
+        insertText = "mixs:0000077",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:bin_param",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000077]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The parameters that have been applied during the extraction of genomes from metagenomic datasets.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/BinParamEnum/].
+
++ **Examples**
+- `coverage`
+- `kmer`
+]],
+        },
+    },
+    {
+        label = "mixs:bin_software",
+        insertText = "mixs:0000078",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:bin_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000078]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool(s) used for the extraction of genomes from metagenomic datasets, where possible include a product ID (PID) of the tool(s) used.
+
++ **Comments**
+- The expected values should contain the names and versions of the software(s) used.
+
++ **Examples**
+- `MetaCluster-TA (RRID:SCR_004599), MaxBin (biotools:maxbin)`
+]],
+        },
+    },
+    { -- WARN: Again boolean but no
+        label = "mixs:reassembly_bin",
+        insertText = "mixs:0000079",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:reassembly_bin",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000079]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Has an assembly been performed on a genome bin extracted from a metagenomic assembly?
+
++ **Examples**
+- `no`
+]],
+        },
+    },
+    {
+        label = "mixs:mag_cov_software",
+        insertText = "mixs:0000080",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:mag_cov_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000080]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool(s) used to determine the genome coverage if coverage is used as a binning parameter in the extraction of genomes from metagenomic datasets.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/MagCovSoftwareEnum/].
+
++ **Examples**
+- `bbmap`
+]],
+        },
+    },
+    {
+        label = "mixs:vir_ident_software",
+        insertText = "mixs:0000081",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:vir_ident_software",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000081]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool(s) used for the identification of UViG as a viral genome, software or protocol name including version number, parameters, and cutoffs used.
+
++ **Comments**
+- The expected values should contain the software name, version and relevant parameters.
+
++ **Examples**
+- `VirSorter, 1.0.4; Virome database, category 2`
+]],
+        },
+    },
+    {
+        label = "mixs:pred_genome_type",
+        insertText = "mixs:0000082",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pred_genome_type",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000082]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Type of genome predicted for the UViG.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/ViralGenomeTypeEnum/].
+
++ **Examples**
+- `dsDNA`
+]],
+        },
+    },
+    {
+        label = "mixs:pred_genome_struc",
+        insertText = "mixs:0000083",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pred_genome_struc",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000083]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Expected structure of the viral genome.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/PredGenomeStrucEnum/].
+
++ **Examples**
+- `non-segmented`
+]],
+        },
+    },
+    {
+        label = "mixs:detec_type",
+        insertText = "mixs:0000084",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:detec_type",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000084]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Type of UViG detection.
+
++ **Examples**
+- `independent sequence (UViG)`
+]],
+        },
+    },
+    {
+        label = "mixs:otu_class_appr",
+        insertText = "mixs:0000085",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:otu_class_appr",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000085]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer}%\s*ANI;\s*{integer}%s*AF;\s*{text}$`
+
++ **Definition**
+- Cutoffs and approach used when clustering species-level OTUs.
+
++ **Comments**
+- Note that the results from standard 95% ANI / 85% AF clustering should be provided alongside OTUs defined from another set of thresholds, even if the latter are the ones primarily used during the analysis.
+
++ **Examples**
+- `95% ANI;85% AF;greedy incremental clustering`
+]],
+        },
+    },
+    {
+        label = "mixs:otu_seq_comp_appr",
+        insertText = "mixs:0000086",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:otu_seq_comp_appr",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000086]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer}%\s*ANI;\s*{integer}%s*AF;\s*{text}$`
+
++ **Definition**
+- Tool and thresholds used to compare sequences when computing "species-level" OTUs.
+
++ **Comments**
+- The expected values should contain the software name, version and relevant parameters.
+
++ **Examples**
+- `blastn;2.6.0+;e-value cutoff: 0.01`
+]],
+        },
+    },
+    {
+        label = "mixs:otu_db",
+        insertText = "mixs:0000087",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:otu_db",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000087]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Reference database (i.e. sequences not generated as part of the current study) used to cluster new genomes in "species-level" OTUs, if any.
+
++ **Comments**
+- The expected values should contain the database and version.
+
++ **Examples**
+- `NCBI Viral RefSeq;83`
+]],
+        },
+    },
+    {
+        label = "mixs:host_pred_appr",
+        insertText = "mixs:0000088",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_pred_appr",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000088]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Tool or approach used for host prediction.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/HostPredApprEnum/].
+
++ **Examples**
+- `CRISPR spacer match`
+]],
+        },
+    },
+    { -- NOTE: Seems more like a comment than a definition.
+        label = "mixs:host_pred_est_acc",
+        insertText = "mixs:0000089",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_pred_est_acc",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000089]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- For each tool or approach used for host prediction, estimated false discovery rates should be included, either computed *de novo* or from the literature.
+
++ **Examples**
+- `CRISPR spacer match: 0 or 1 mismatches, estimated 8% FDR at the host genus rank (Edwards et al. 2016 doi:10.1093/femsre/fuv048)`
+]],
+        },
+    },
+    {
+        label = "mixs:sop",
+        insertText = "mixs:0000090",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sop",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000090]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences.
+
++ **Examples**
+- [http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/]
+]],
+        },
+    },
+    {
+        label = "mixs:associated_resource",
+        insertText = "mixs:0000091",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:associated_resource",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000091]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- A related resource that is referenced, cited, or otherwise associated to the sequence.
+
++ **Examples**
+- [http://www.earthmicrobiome.org]
+]],
+        },
+    },
+    {
+        label = "mixs:project_name",
+        insertText = "mixs:0000092",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:project_name",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000092]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name of the project within which the sequencing was organized.
+
++ **Examples**
+- `Forest soil metagenome`
+]],
+        },
+    },
+    {
+        label = "mixs:elev",
+        insertText = "mixs:0000093",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:elev",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000093]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level.
+
++ **Comments**
+- Elevation s mainly used when referring to points on the Earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit.
+- The preferred unit is meter.
+
++ **Examples**
+- `100 meter`
+]],
+        },
+    },
+    {
+        label = "mixs:alt",
+        insertText = "mixs:0000094",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:alt",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000094]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Height of objects such as airplanes, space shuttles, rockets, atmospheric ballons and heights of places such as atmospheric layers and clouds. It is used to measure the height of an object which is above the Earth's surface.
+
++ **Comments**
+- In this context, the altitude measurement is the vertical distance between the Earth's surface above sea level and the sampled position in the air.
+- The preferred unit is meter.
+
++ **Examples**
+- `100 meter`
+]],
+        },
+    },
+    {
+        label = "mixs:barometric_pres",
+        insertText = "mixs:0000096",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:barometric_pres",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000096]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Force per unit area exerted against a surface by the weight of air above that surface.
+
++ **Comments**
+- The preferred unit is millibar.
+
++ **Examples**
+- `5 millibar`
+]],
+        },
+    },
+    {
+        label = "mixs:carb_dioxide",
+        insertText = "mixs:0000097",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:carb_dioxide",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000097]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Carbon dioxide (gas) amount or concentration at the time of sampling.
+
++ **Comments**
+- The preferred unit is micromole per liter, or parts per million.
+
++ **Examples**
+- `410 parts per million`
+]],
+        },
+    },
+    {
+        label = "mixs:carb_monoxide",
+        insertText = "mixs:0000098",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:carb_monoxide",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000098]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Carbon monoxide (gas) amount or concentration at the time of sampling.
+
++ **Comments**
+- The preferred unit is micromole per liter, or parts per million.
+
++ **Examples**
+- `0.1 parts per million`
+]],
+        },
+    },
+    { -- WARN: Number of cells has no business being here it seems.
+        label = "mixs:org_count_qpcr_info",
+        insertText = "mixs:0000099",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:org_count_qpcr_info",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000099]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- If qPCR was used for the cell count, the target gene name, the primer sequence and the cycling conditions should also be provided.
+
++ **Comments**
+- The expected values should follow the pattern `{gene_name}; FWD:{forward_primer_sequence} REV:{reverse_primer_sequence}; initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`
+- The preferred unit is number of cells per gram (or ml or cm^2).
+
++ **Examples**
+- `16S rrna; FWD:ACGTAGCTATGACGT REV:GTGCTAGTCGAGTAC; initial denaturation:90C_5min; denaturation:90C_2min; annealing:52C_30sec; elongation:72C_30sec; 90 C for 1 min; final elongation:72C_5min; 30 cycles`
+]],
+        },
+    },
+    {
+        label = "mixs:humidity",
+        insertText = "mixs:0000100",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:humidity",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000100]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Amount of water vapour in the air, at the time of sampling.
+]],
+        },
+    },
+    {
+        label = "mixs:methane",
+        insertText = "mixs:0000101",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:methane",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000101]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Methane (gas) amount or concentration at the time of sampling.
+
++ **Comments**
+- The preferred unit is micromole per liter, parts per billion, or parts per million.
+
++ **Examples**
+- `0.1 parts per million`
+]],
+        },
+    },
+    {
+        label = "mixs:tot_nitro",
+        insertText = "mixs:0000102",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tot_nitro",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000102]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen.
+
++ **Comments**
+- Can also be measured without filtering, reported as nitrogen.
+
++ **Examples**
+- `50 micromole per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:organism_count",
+        insertText = "mixs:0000103",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:organism_count",
+        documentation = {
+            kind = "markdown",
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000103]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count.
+
++ **Comments**
+- The method that was ued for the enumeration (e.g. qPCR, atp, mpn, etc.) should also be provided.
+- The expected values should follow the pattern `{organism_name};{measurement_value};{enumeration}`
+
++ **Examples**
+- `total prokaryotes;3.5e7 cells per ml;qpcr`
+]],
+        },
+    },
 
 
 
