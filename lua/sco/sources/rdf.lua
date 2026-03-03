@@ -95,7 +95,7 @@ return {
 - The class of RDF Lists.
 
 + **Comments**
-- [rdf:List] is an instance of rdfs:Class that can be used to build descriptions of lists and other list-like structures.
+- [rdf:List] is an instance of [rdfs:Class] that can be used to build descriptions of lists and other list-like structures.
 ]],
         },
     },
@@ -151,7 +151,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         label = "rdf:Statement",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rdf:Statement",
-        documentation = { -- WARN: REVOIR
+        documentation = {
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement]
@@ -280,6 +280,26 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         },
     },
     {
+        label = "rdf:nil",
+        kind = cmp.lsp.CompletionItemKind.Constant,
+        description = "rdf:nil",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://www.w3.org/1999/02/22-rdf-syntax-ns#nil]
+
++ **Type**
+- [rdf:List]
+
++ **Definition**
+- The empty list, with no items in it. If the rest of a list is [rdf:nil] then the list has no more items in it.
+
++ **Comments**
+- The resource [rdf:nil] is an instance of [rdf:List] that can be used to represent an empty list or other list-like structure. A triple of the form: [L] [rdf:rest] [rdf:nil] states that [L] is an instance of [rdf:List] that has one item; that item can be indicated using the [rdf:first] property.
+]],
+        },
+    },
+    {
         label = "rdf:direction",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:direction",
@@ -295,7 +315,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdf:CompoundLiteral]
 
 + **Definition**
-- The base direction component of a CompoundLiteral.
+- The base direction component of a [rdf:CompoundLiteral].
 ]],
         },
     },
@@ -329,7 +349,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
         label = "rdf:language",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "rdf:language",
-        documentation = { -- NOTE: REVOIR COMPOUNDLITERAL
+        documentation = {
             value = [[
 + **Identifier**
 - [http://www.w3.org/1999/02/22-rdf-syntax-ns#language]
@@ -342,26 +362,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 
 + **Definition**
 - The language component of a [rdf:CompoundLiteral].
-]],
-        },
-    },
-    {
-        label = "rdf:nil",
-        kind = cmp.lsp.CompletionItemKind.Property,
-        description = "rdf:nil",
-        documentation = {
-            value = [[
-+ **Identifier**
-- [http://www.w3.org/1999/02/22-rdf-syntax-ns#nil]
-
-+ **Type**
-- [rdfs:List]
-
-+ **Definition**
-- The empty list, with no items in it. If the rest of a list is nil then the list has no more items in it.
-
-+ **Comments**
-- The resource [rdf:nil] is an instance of [rdf:List] that can be used to represent an empty list or other list-like structure. A triple of the form: [L] [rdf:rest] [rdf:nil] states that [L] is an instance of [rdf:List] that has one item; that item can be indicated using the [rdf:first] property.
 ]],
         },
     },
@@ -436,7 +436,7 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 - [rdf:List]
 
 + **Definition**
-- The predicate of the subject RDF statement.
+- The rest of the subject RDF list after the first item.
 
 + **Comments**
 - [rdf:rest] is an instance of [rdf:Property] that can be used to build descriptions of lists and other list-like structures. A triple of the form: [L] [rdf:rest] [O] states that there is a rest-of-list relationship between [L] and [O]. The [rdfs:domain] of [rdf:rest] is [rdf:List]. The [rdfs:range] of [rdf:rest] is [rdf:List].
@@ -518,15 +518,6 @@ This specification defines the concept of subproperty. The rdfs:subPropertyOf pr
 
 + **Comments**
 - [rdf:value] is an instance of [rdf:Property] that may be used in describing structured values. [rdf:value] has no meaning on its own. It is provided as a piece of vocabulary that may be used in idioms such as illustrated in example below. The [rdfs:domain] of [rdf:value] is [rdfs:Resource]. The [rdfs:range] of [rdf:value] is [rdfs:Resource].
-
-+ **BLABLA**
-- Example 1
-<http://www.example.com/2002/04/products#item10245>
-    <http://www.example.org/terms/weight> [
-       rdf:value 2.4 ;
-       <http://www.example.org/terms/units> <http://www.example.org/units/kilograms>
-       ] .
-Despite the lack of formal specification of the meaning of this property, there is value in defining it to encourage the use of a common idiom in examples of this kind.
 ]],
         },
     },
