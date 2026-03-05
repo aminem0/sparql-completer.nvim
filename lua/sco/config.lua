@@ -28,6 +28,7 @@ M.options = {
         "pizza",
         "poke",
         "prof",
+        "qb",
         "rdf",
         "rdfs",
         "schema",
@@ -40,6 +41,7 @@ M.options = {
         "vann",
         "vcard",
         "wot",
+        "xkos",
     },
 
     enable_autocmds = true,
