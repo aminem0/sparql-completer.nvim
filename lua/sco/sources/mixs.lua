@@ -10,7 +10,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:samp_size",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000001]
@@ -39,7 +38,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:samp_collect_device",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000002]
@@ -66,7 +64,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:isol_growth_condt",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000003]
@@ -95,7 +92,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:contam_screen_input",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000005]
@@ -124,7 +120,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:wga_amp_kit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000006]
@@ -150,7 +145,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:experimental_factor",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000008]
@@ -182,7 +176,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lat_lon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000009]
@@ -214,7 +207,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:geo_loc_name",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000010]
@@ -246,7 +238,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:collection_date",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000011]
@@ -275,7 +266,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:env_broad_scale",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000012]
@@ -307,7 +297,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:env_local_scale",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000013]
@@ -339,7 +328,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:env_medium",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000014]
@@ -371,7 +359,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:rel_to_oxygen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000015]
@@ -400,7 +387,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:samp_mat_process",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000016]
@@ -426,7 +412,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:size_frac",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000017]
@@ -452,7 +437,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:depth",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000018]
@@ -481,7 +465,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:subspecf_gen_lin",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000020]
@@ -507,7 +490,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:ploidy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000021]
@@ -539,7 +521,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:num_replicons",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000022]
@@ -565,7 +546,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:extrachrom_elements",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000023]
@@ -591,7 +571,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:estimated_size",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000024]
@@ -617,7 +596,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:ref_biomaterial",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000025]
@@ -646,7 +624,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:source_mat_id",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000026]
@@ -678,7 +655,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:pathogenicity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000027]
@@ -704,7 +680,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:biotic_relationship",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000028]
@@ -733,7 +708,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:specific_host",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000029]
@@ -759,7 +733,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:host_spec_range",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000030]
@@ -785,7 +758,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:host_disease_stat",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000031]
@@ -811,7 +783,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:trophic_level",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000032]
@@ -840,7 +811,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:trophic_level",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000033]
@@ -869,7 +839,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:encoded_traits",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000034]
@@ -895,7 +864,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:source_uvig",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000035]
@@ -921,7 +889,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:virus_enrich_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000036]
@@ -953,7 +920,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:nucl_acid_ext",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000037]
@@ -982,7 +948,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:nucl_acid_amp",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000038]
@@ -1011,7 +976,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lib_size",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000039]
@@ -1037,7 +1001,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lib_reads_seqd",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000040]
@@ -1063,7 +1026,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lib_layout",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000041]
@@ -1092,7 +1054,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lib_vector",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000042]
@@ -1118,7 +1079,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:lib_screen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000043]
@@ -1144,7 +1104,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:target_gene",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000044]
@@ -1170,7 +1129,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:target_subfragment",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000045]
@@ -1196,7 +1154,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:pcr_primers",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000046]
@@ -1229,7 +1186,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:mid",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000047]
@@ -1261,7 +1217,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:adapters",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000048]
@@ -1293,7 +1248,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:pcr_cond",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000049]
@@ -1309,7 +1263,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - Description of reaction conditions and components of polymerase chain reaction performed during library preparation.
 
 + **Comments**
-- The expected values should follow the pattern `initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`
+- The expected values should follow the pattern `initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`.
 
 + **Examples**
 - `initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35`
@@ -1323,7 +1277,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:seq_meth",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000050]
@@ -1355,7 +1308,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:seq_quality_check",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000051]
@@ -1384,7 +1336,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:chimera_check",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000052]
@@ -1416,7 +1367,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:tax_ident",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000053]
@@ -1445,7 +1395,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sc_lysis_method",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000054]
@@ -1471,7 +1420,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:wga_amp_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000055]
@@ -1500,7 +1448,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:assembly_qual",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000056]
@@ -1531,7 +1478,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:assembly_name",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000057]
@@ -1557,7 +1503,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:assembly_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000058]
@@ -1586,7 +1531,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:annot",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000059]
@@ -1612,7 +1556,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:number_contig",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000060]
@@ -1638,7 +1581,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:feat_pred",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000061]
@@ -1667,7 +1609,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:ref_db",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000062]
@@ -1693,7 +1634,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sim_search_meth",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000063]
@@ -1722,7 +1662,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sim_search_meth",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000063]
@@ -1751,7 +1690,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:tax_class",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000064]
@@ -1777,7 +1715,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:x16s_recover",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000065]
@@ -1803,7 +1740,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:x16s_recover_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000066]
@@ -1832,7 +1768,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:trnas",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000067]
@@ -1861,7 +1796,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:trna_ext_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000068]
@@ -1890,7 +1824,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:compl_score",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000069]
@@ -1920,7 +1853,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:compl_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000070]
@@ -1949,7 +1881,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:compl_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000071]
@@ -1979,7 +1910,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:contam_score",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000072]
@@ -2009,7 +1939,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:contam_screen_param",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000073]
@@ -2038,7 +1967,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:decontam_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000074]
@@ -2064,7 +1992,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sort_tech",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000075]
@@ -2093,7 +2020,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sc_lysis_approach",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000076]
@@ -2122,7 +2048,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:bin_param",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000077]
@@ -2152,7 +2077,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:bin_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000078]
@@ -2181,7 +2105,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:reassembly_bin",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000079]
@@ -2207,7 +2130,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:mag_cov_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000080]
@@ -2236,7 +2158,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:vir_ident_software",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000081]
@@ -2265,7 +2186,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:pred_genome_type",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000082]
@@ -2294,7 +2214,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:pred_genome_struc",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000083]
@@ -2323,7 +2242,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:detec_type",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000084]
@@ -2349,7 +2267,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:otu_class_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000085]
@@ -2381,7 +2298,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:otu_seq_comp_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000086]
@@ -2413,7 +2329,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:otu_db",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000087]
@@ -2442,7 +2357,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:host_pred_appr",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000088]
@@ -2471,7 +2385,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:host_pred_est_acc",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000089]
@@ -2497,7 +2410,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:sop",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000090]
@@ -2526,7 +2438,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:associated_resource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000091]
@@ -2555,7 +2466,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:project_name",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000092]
@@ -2581,7 +2491,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:elev",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000093]
@@ -2614,7 +2523,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:alt",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000094]
@@ -2647,7 +2555,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:barometric_pres",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000096]
@@ -2679,7 +2586,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:carb_dioxide",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000097]
@@ -2711,7 +2617,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:carb_monoxide",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000098]
@@ -2743,7 +2648,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:org_count_qpcr_info",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000099]
@@ -2759,7 +2663,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - If qPCR was used for the cell count, the target gene name, the primer sequence and the cycling conditions should also be provided.
 
 + **Comments**
-- The expected values should follow the pattern `{gene_name}; FWD:{forward_primer_sequence} REV:{reverse_primer_sequence}; initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`
+- The expected values should follow the pattern `{gene_name}; FWD:{forward_primer_sequence} REV:{reverse_primer_sequence}; initial denaturation:{degrees}_{minutes};annealing:{degrees}_{minutes};elongation:{degrees}_{minutes};final elongation:{degrees}_{minutes};{total_cycles}`.
 - The preferred unit is number of cells per gram (or ml or cm^2).
 
 + **Examples**
@@ -2773,7 +2677,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:humidity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000100]
@@ -2799,7 +2702,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:methane",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000101]
@@ -2831,7 +2733,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:tot_nitro",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000102]
@@ -2863,7 +2764,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "mixs:organism_count",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [https://w3id.org/mixs/0000103]
@@ -2880,21 +2780,1993 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 
 + **Comments**
 - The method that was ued for the enumeration (e.g. qPCR, atp, mpn, etc.) should also be provided.
-- The expected values should follow the pattern `{organism_name};{measurement_value};{enumeration}`
+- The expected values should follow the pattern `{organism_name};{measurement_value};{enumeration}`.
 
 + **Examples**
 - `total prokaryotes;3.5e7 cells per ml;qpcr`
 ]],
         },
     },
+    {
+        label = "mixs:oxygen",
+        insertText = "mixs:0000104",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:oxygen",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000104]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
 
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
 
++ **Definition**
+- Oxygen (gas) amount or concentration at the time of sampling.
 
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
 
++ **Examples**
+- `600 parts per million`
+]],
+        },
+    },
+    {
+        label = "mixs:tot_iron",
+        insertText = "mixs:0000105",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tot_iron",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000105]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of total iron in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or milligram per kilogram.
+]],
+        },
+    },
+    {
+        label = "mixs:diss_inorg_phosp",
+        insertText = "mixs:0000106",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diss_inorg_phosp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000106]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of dissolved inorganic phosphorus in the sample.
+
++ **Examples**
+- `56.5 micromole per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:pollutants",
+        insertText = "mixs:0000107",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pollutants",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000107]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Pollutants types and, amount or concentrations measured at the time of sampling; can report multiple pollutants by entering numeric values preceded by name of pollutant.
+
++ **Comments**
+- The expected values should follow the pattern `{pollutant_name};{measurement_value}`.
+- The preferred unit is gram, mole per liter, milligram per liter, or microgram per cubic meter.
+
++ **Examples**
+- `lead;0.15 microgram per cubic meter`
+]],
+        },
+    },
+    {
+        label = "mixs:air_PM_concen",
+        insertText = "mixs:0000108",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:air_PM_concen",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000108]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{particulate_matter_name};{float} {unit}$`
+
++ **Definition**
+- Concentration of substances that remain suspended in the air, and comprise mixtures of organic and inorganic substances (PM10 and PM2.5); can report multiple PMs by entering numericvalues preceded by name of PM.
+
++ **Examples**
+- `PM2.5;10 microgram per cubic meter`
+]],
+        },
+    },
+    {
+        label = "mixs:samp_stor_temp",
+        insertText = "mixs:0000110",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_stor_temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000110]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Temperature at which the sample was stored.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `-80 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:samp_vol_we_dna_ext",
+        insertText = "mixs:0000111",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_vol_we_dna_ext",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000111]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Volume (ml) or mass (g) of collected sample processed for DNA extraction.
+
++ **Comments**
+- The total collected should be entered under the term [mixs:samp_size] (i.e. [mixs:0000001]).
+- The preferred unit is milliliter, gram, milligram or square centimeter.
+
++ **Examples**
+- `1500 milliliter`
+]],
+        },
+    },
+    {
+        label = "mixs:solar_irradiance",
+        insertText = "mixs:0000112",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:solar_irradiance",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000112]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The amount of solar energy that arrives at a specific area of a surface during a specific time interval.
+
++ **Comments**
+- The preferred unit is kilowatts per square meter per day, ergs per square centimeter per second.
+
++ **Examples**
+- `1.36 kilowatts per square meter per day`
+]],
+        },
+    },
+    {
+        label = "mixs:temp",
+        insertText = "mixs:0000113",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000113]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Temperature at the time of sampling.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `25 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:ventilation_rate",
+        insertText = "mixs:0000114",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ventilation_rate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000114]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Ventilation rate of the sampled premises.
+
++ **Comments**
+- The preferred unit is cubic meter per minute, or liters per second.
+
++ **Examples**
+- `750 cubic meter per minute`
+]],
+        },
+    },
+    { -- NOTE: I find the pattern ^{organic_compound_name};{float} {unit}$ to be better...
+        label = "mixs:volatile_org_comp",
+        insertText = "mixs:0000115",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:volatile_org_comp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000115]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Conncentration of carbon-based chemicals that easily evaporate at room temperature; can report multiple volatile compounds by rentering numeric values preceded by the name of compound.
+
++ **Comments**
+- The expected values should follow the pattern `^{organic_compound_name};{measurement_value}$`.
+- The preferred unit is microgram per cubic meter, parts per million, or nanogram per liter.
+
++ **Examples**
+- `formaldehyde;500 nanogram per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:samp_store_dur",
+        insertText = "mixs:0000116",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_stor_dur",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000116]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{duration}$`
+
++ **Definition**
+- Duration for which the sample was stored.
+
++ **Examples**
+- `P1Y6M`
+]],
+        },
+    },
+    {
+        label = "mixs:tot_phosp",
+        insertText = "mixs:0000117",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tot_phosp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000117]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Total phosphorus concentration in the sample, calculated by: total phosphorus = total dissolved phosphorus + particulate phosphorus.
+
++ **Comments**
+- The preferred unit is micromole per liter, milligram per liter, or parts per million.
+
++ **Examples**
+- `0.03 milligram per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:wind_speed",
+        insertText = "mixs:0000118",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wind_speed",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000118]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Speed of wind measured at the time of sampling.
+]],
+        },
+    },
+    {
+        label = "mixs:diss_oxygen",
+        insertText = "mixs:0000119",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diss_oxygen",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000119]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of dissolved oxygen.
+
++ **Comments**
+- The preferred unit is micromole per kilogram, or milligram per liter.
+
++ **Examples**
+- `175 micromole per kilogram`
+]],
+        },
+    },
+    {
+        label = "mixs:tan",
+        insertText = "mixs:0000120",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:tan",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000120]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Total Acid Number (TAN) is a measurement of acidity that is determined by the amount of potassium hydroxide in milligrams that is needed to neutralize the acids in one gram of oil. It is an important quality measurement of crude oil. (Source: [https://en.wikipedia.org/wiki/Total_acid_number]).
+
++ **Comments**
+- The preferred unit is milligram per liter.
+]],
+        },
+    },
+    {
+        label = "mixs:rel_air_humidity",
+        insertText = "mixs:0000121",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:rel_air_humidity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000121]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:float]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+
++ **Comments**
+- Partial vapor and air pressure, density of the vapor and air, or by the actual mass of the vapor and air.
+
++ **Examples**
+- `0.8`
+]],
+        },
+    },
+    {
+        label = "mixs:abs_air_humidity",
+        insertText = "mixs:0000122",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:abs_air_himidity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000122]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Actual mass of water vapor present in the air water vapor mixture.
+
++ **Comments**
+- The preferred unit is gram per gram, kilogram per kilogram, kilogram, pound, gram per cubic meter, kilogram per cubic meter, or percent.
+
++ **Examples**
+- `7 gram per cubic meter`
+]],
+        },
+    },
+    {
+        label = "mixs:surf_humidity",
+        insertText = "mixs:0000123",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:surf_humidity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000123]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:float]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Surfaces: water activity as a function of air and material moisture.
+
++ **Comments**
+- The preferred unit is percentage.
+
++ **Examples**
+- `0.1`
+]],
+        },
+    },
+    {
+        label = "mixs:air_temp",
+        insertText = "mixs:0000124",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:air_temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000124]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Temperature of the air at the time of sampling.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `25 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:surf_temp",
+        insertText = "mixs:0000125",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:surf_temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000125]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Temperature of the surface at the time of sampling.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `15 degrees Celsius`
+]],
+        },
+    },
+    { -- NOTE: Recheck first comment
+        label = "mixs:viscosity",
+        insertText = "mixs:0000126",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:viscosity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000126]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A measure of oil's resistance to gradual deformation by shear stress or tensile stress (e.g. 3.5 cp; 100 °C).
+
++ **Comments**
+- The expected values should follow the pattern `^{measurement_value};{measurement_value}$`.
+- The preferred unit is cP at degrees Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:pour_point",
+        insertText = "mixs:0000127",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pour_point",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000127]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Temperature at which a liquid becomes semi-solid and loses its flow characteristic. In crude oil, a high pour point is generally associated with a high paraffin content, typically found in crude deriving from a larger proportion of plant material. (Source: [https://en.wikipedia.org/wiki/pour_point]).
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:surf_moisture",
+        insertText = "mixs:0000128",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:surf_moisture",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000128]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Water held on a surface.
+
++ **Comments**
+- The preferred unit is parts per million, gram per cubic meter, gram per square meter.
+
++ **Examples**
+- `0.01 gram per square meter`
+]],
+        },
+    },
+    {
+        label = "mixs:dew_point",
+        insertText = "mixs:0000129",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:dew_point",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000129]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The temperature to which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `22 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:saturates_pc",
+        insertText = "mixs:0000131",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:saturates_pc",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000131]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{name};{float} {unit}$`
+
++ **Definition**
+- Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that divides crude oil components according to their polarizability and polarity. There are three main methods to obtain SARA results. The most popular one is known as the latroscan TLC-FID and is referred to as IP-143. (Source: https://en.wikipedia.org/wiki/Saturate_aromatic_resin_and_asphaltene).
+
++ **Comments**
+- The preferred unit is percent.
+]],
+        },
+    },
+    {
+        label = "mixs:aromatics_pc",
+        insertText = "mixs:0000133",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:aromatics_pc",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000133]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{name};{float} {unit}$`
+
++ **Definition**
+- Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that divides crude oil components according to their polarizability and polarity. There are three main methods to obtain SARA results. The most popular one is known as the latroscan TLC-FID and is referred to as IP-143. (Source: https://en.wikipedia.org/wiki/Saturate_aromatic_resin_and_asphaltene).
+
++ **Comments**
+- The preferred unit is percent.
+]],
+        },
+    },
+    {
+        label = "mixs:aromatics_pc",
+        insertText = "mixs:0000133",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:aromatics_pc",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000133]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{name};{float} {unit}$`
+
++ **Definition**
+- Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that divides crude oil components according to their polarizability and polarity. There are three main methods to obtain SARA results. The most popular one is known as the latroscan TLC-FID and is referred to as IP-143. (Source: https://en.wikipedia.org/wiki/Saturate_aromatic_resin_and_asphaltene).
+
++ **Comments**
+- The preferred unit is percent.
+]],
+        },
+    },
+    {
+        label = "mixs:resins_pc",
+        insertText = "mixs:0000134",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:resins_pc",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000134]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{name};{float} {unit}$`
+
++ **Definition**
+- Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that divides crude oil components according to their polarizability and polarity. There are three main methods to obtain SARA results. The most popular one is known as the latroscan TLC-FID and is referred to as IP-143. (Source: https://en.wikipedia.org/wiki/Saturate_aromatic_resin_and_asphaltene).
+
++ **Comments**
+- The preferred unit is percent.
+]],
+        },
+    },
+    {
+        label = "mixs:asphaltenes_pc",
+        insertText = "mixs:0000135",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:asphaltenes_pc",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000135]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{name};{float} {unit}$`
+
++ **Definition**
+- Saturate, Aromatic, Resin and Asphaltene (SARA) is an analysis method that divides crude oil components according to their polarizability and polarity. There are three main methods to obtain SARA results. The most popular one is known as the latroscan TLC-FID and is referred to as IP-143. (Source: https://en.wikipedia.org/wiki/Saturate_aromatic_resin_and_asphaltene).
+
++ **Comments**
+- The preferred unit is percent.
+]],
+        },
+    },
+    {
+        label = "mixs:samp_loc_corr_rate",
+        insertText = "mixs:0000136",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_loc_corr_rate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000136]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{float} *- *{float} {unit}$`
+
++ **Definition**
+- Metal corrosion rate is the speed of metal deterioration due to environmental conditions As environmental conditions change, corrosion rates change accordingly. Therefore, long-term corrosion rates are generally more informative than short-term rates and for that reason they are preferred during reporting. In the case of suspected MIC, corrosion rate measurements at the time of sampling might provide insights into the involvement of certain microbial community members in MIC as well as potential microbial interplays.
+
++ **Comments**
+- The preferred unit is millimeter per year.
+]],
+        },
+    },
+    {
+        label = "mixs:glucosidase_act",
+        insertText = "mixs:0000137",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:glucosidase_act",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000137]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measurement of glucosidase activity.
+
++ **Comments**
+- The preferred unit is mol per liter per hour.
+
++ **Examples**
+- `5 mol per liter per hour`
+]],
+        },
+    },
+    {
+        label = "mixs:diss_iron",
+        insertText = "mixs:0000139",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diss_iron",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000139]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of dissolved iron in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter.
+]],
+        },
+    },
+    {
+        label = "mixs:amount_light",
+        insertText = "mixs:0000140",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:amount_light",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000140]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The unit of illuminance and luminous emittance, measuring luminous flux per unit area.
+
++ **Comments**
+- The preferred unit is lux, lumens per square meter.
+]],
+        },
+    },
+    {
+        label = "mixs:avg_dew_point",
+        insertText = "mixs:0000141",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:avg_dew_point",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000141]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The average dew point measures taken at the beginning of every hour over a 24 period on the sampling day.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `25.5 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:avg_temp",
+        insertText = "mixs:0000142",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:avg_temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000142]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The average temperatures taken at the beginning of every hour over a 24 hour period on the sampling day.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `12.5 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:ceil_thermal_mass",
+        insertText = "mixs:0000143",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ceil_thermal_mass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000143]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The ability of the ceiling to provide inertia against temperature fluctuations. Generally this means concrete that is exposed. A metal deck that supports a concrete slab will act thermally as long as it is exposed to room air flow.
+
++ **Comments**
+- The preferred unit is joule per degree Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:exp_duct",
+        insertText = "mixs:0000144",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:exp_duct",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000144]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The amount of exposed ductwork in the room.
+
++ **Comments**
+- The preferred unit is square meter.
+]],
+        },
+    },
+    {
+        label = "mixs:built_struct_age",
+        insertText = "mixs:0000145",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:built_struct_age",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000145]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The age of the built structure since construction.
+
++ **Comments**
+- The preferred unit is year.
+
++ **Examples**
+- `15 years`
+]],
+        },
+    },
+    {
+        label = "mixs:ceil_area",
+        insertText = "mixs:0000148",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ceil_area",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000148]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The area of the ceiling space within the room.
+
++ **Comments**
+- The preferred unit is square meter.
+
++ **Examples**
+- `25 square meter`
+]],
+        },
+    },
+    {
+        label = "mixs:suspend_solids",
+        insertText = "mixs:0000150",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:suspend_solids",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000150]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Concentration of substances including a wide variety of material, such as silt, decaying plant and animal matter, can include multiple substances.
+
++ **Comments**
+- The expected values should follow the pattern `{suspended_solid_name};{measurement_value}`.
+- The preferred unit is gram, microgram, milligram per liter, mole per liter, gram per liter, or part per million.
+]],
+        },
+    },
+    {
+        label = "mixs:vfa",
+        insertText = "mixs:0000152",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:vfa",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000152]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of Volatile Fatty Acids in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
+]],
+        },
+    },
+    {
+        label = "mixs:benzene",
+        insertText = "mixs:0000153",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:benzene",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000153]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of benzene in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
+]],
+        },
+    },
+    {
+        label = "mixs:toluene",
+        insertText = "mixs:0000154",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:toluene",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000154]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of toluene in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
+]],
+        },
+    },
+    {
+        label = "mixs:ethylbenzene",
+        insertText = "mixs:0000155",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ethylbenzene",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000155]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of ethylbenzene in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
+]],
+        },
+    },
+    {
+        label = "mixs:xylene",
+        insertText = "mixs:0000156",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:xylene",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000156]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of xylene in the sample.
+
++ **Comments**
+- The preferred unit is milligram per liter, or parts per million.
+]],
+        },
+    },
+    {
+        label = "mixs:api",
+        insertText = "mixs:0000157",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:api",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000157]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- API gravity is a measure of how heavy or light a petroleum liquid is compared to water. (Source: [https://en.wikipedia.org/wiki/API_gravity]).
+
++ **Comments**
+- The preferred unit is degrees API.
+
++ **Examples**
+- `31.1 API`
+]],
+        },
+    },
+    {
+        label = "mixs:door_size",
+        insertText = "mixs:0000158",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:door_size",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000158]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The size of the door.
+
++ **Examples**
+- `2.5 square meter`
+]],
+        },
+    },
+    {
+        label = "mixs:diss_org_nitro",
+        insertText = "mixs:0000162",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diss_org_nitro",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000162]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Dissolved organic nitrogen concentration, measured as: total dissolved nitrogen - NH4 - NO3 - NO2.
+]],
+        },
+    },
+    {
+        label = "mixs:floor_age",
+        insertText = "mixs:0000164",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:floor_age",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000164]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The time period since installment of the carpet or flooring.
+
++ **Comments**
+- The preferred unit is years, weeks, or days.
+]],
+        },
+    },
+    {
+        label = "mixs:floor_area",
+        insertText = "mixs:0000165",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:floor_area",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000165]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The area of the floor space within the room.
+
++ **Comments**
+- The preferred unit is square meters.
+]],
+        },
+    },
+    {
+        label = "mixs:floor_thermal_mass",
+        insertText = "mixs:0000166",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:floor_thermal_mass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000166]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The ability of the floor to provide inertia against temperature fluctuations.
+
++ **Comments**
+- The preferred unit is joule per degree Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:height_carpet_fiber",
+        insertText = "mixs:0000167",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:height_carpet_fiber",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000167]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The average carpet fiber height in the indoor environment.
+
++ **Comments**
+- The preferred unit is centimeter.
+]],
+        },
+    },
+    {
+        label = "mixs:inside_lux",
+        insertText = "mixs:0000168",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:inside_lux",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000168]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The recorded value at sampling time (power density).
+
++ **Comments**
+- The preferred unit is kilowatt per square meter.
+]],
+        },
+    },
+    {
+        label = "mixs:room_air_exch_rate",
+        insertText = "mixs:0000169",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_air_exch_rate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000169]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The rate at which outside air replaces indoor air in a given space.
+
++ **Comments**
+- The preferred unit is liter per hour.
+]],
+        },
+    },
+    {
+        label = "mixs:ext_door",
+        insertText = "mixs:0000170",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ext_door",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000170]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The number of exterior doors in the built structure.
+]],
+        },
+    },
+    {
+        label = "mixs:aminopept_act",
+        insertText = "mixs:0000172",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:aminopept_act",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000172]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measurement of aminopeptidase activity.
+
++ **Comments**
+- The preferred unit is mole per liter per hour.
+
++ **Examples**
+- `0.269 mole per liter per hour`
+]],
+        },
+    },
+    {
+        label = "mixs:bacteria_carb_prod",
+        insertText = "mixs:0000173",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:bacteria_carb_prod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000173]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measurement of bacterial carbon production.
+
++ **Examples**
+- `2.53 microgram per liter per hour`
+]],
+        },
+    },
+    {
+        label = "mixs:biomass",
+        insertText = "mixs:0000174",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:biomass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000174]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Amount of biomass; should include the name for the part of biomass measured, e.g. microbial, total. Can include multiple measurements.
+
++ **Comments**
+- The expected values should follow the pattern `{biomass_type};{measurement_value}`.
+- The preferred unit is ton, kilogram, or gram.
+
++ **Examples**
+- `total;20 gram`
+]],
+        },
+    },
+    {
+        label = "mixs:bishomohopanol",
+        insertText = "mixs:0000175",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:bishomohopanol",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000175]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of bishomohopanol.
+
++ **Comments**
+- The preferred unit is microgram per liter, or microgram per gram.
+
++ **Examples**
+- `14 microgram per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:bromide",
+        insertText = "mixs:0000176",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:bromide",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000176]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of bromide.
+
++ **Comments**
+- The preferred unit is parts per million.
+
++ **Examples**
+- `0.05 parts per million`
+]],
+        },
+    },
+    {
+        label = "mixs:chlorophyll",
+        insertText = "mixs:0000177",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:chlorophyll",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000177]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of chlorophyll.
+
++ **Comments**
+- The preferred unit is milligram per cubic meter, or microgram per liter.
+
++ **Examples**
+- `5 milligram per cubic meter`
+]],
+        },
+    },
+    { -- NOTE: Expected value is somewhat misleading as measurement unit is not explicitly stated.
+        -- NOTE: Example does not follow pattern since it gives no name
+        label = "mixs:diether_lipids",
+        insertText = "mixs:0000178",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diether_lipids",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000178]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Concentration of diether lipids; can include multiple types of diether lipids.
+
++ **Comments**
+- The expected values should follow the pattern `{diether_lipid_name};{measurement_value}`.
+- The preferred unit is nanogram per liter.
+
++ **Examples**
+- `0.2 nanogram per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:diss_hydrogen",
+        insertText = "mixs:0000179",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diss_hydrogen",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000179]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of dissolved hydrogen.
+
++ **Comments**
+- The preferred unit is micromole per liter.
+
++ **Examples**
+- `0.3 micromole per liter`
+]],
+        },
+    },
+    { -- NOTE: Expected value is somewhat misleading as measurement unit is not explicitly stated.
+        -- NOTE: Example does not follow pattern since it gives no name
+        label = "mixs:phaeopigments",
+        insertText = "mixs:0000180",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:phaeopigments",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000180]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Concentration of phaeopigments; can include multiple phaeopigments.
+
++ **Comments**
+- The expected values should follow the pattern `{phaeopigment_name};{measurement_value}`.
+- The preferred unit is milligram per cubic meter.
+
++ **Examples**
+- `2.5 milligram per cubic meter`
+]],
+        },
+    },
+    { -- NOTE: Expected value is somewhat misleading as measurement unit is not explicitly stated.
+        -- NOTE: Example does not follow pattern since it gives no name
+        label = "mixs:phospholipid_fatt_acid",
+        insertText = "mixs:0000181",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:phospholipid_fatt_acid",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000181]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Concentration of phospholipid fatty acids; can include multiple phaeopigments.
+
++ **Comments**
+- The expected values should follow the pattern `{phospholipid_fatty_acid_name};{measurement_value}`.
+
++ **Examples**
+- `2.98 milligram per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:redox_potential",
+        insertText = "mixs:0000182",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:redox_potential",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000182]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential.
+
++ **Comments**
+- The preferred unit is millivolt.
+
++ **Examples**
+- `300 millivolt`
+]],
+        },
+    },
+    {
+        label = "mixs:salinity",
+        insertText = "mixs:0000183",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:salinity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000183]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time-consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.
+
++ **Comments**
+- The preferred unit is practical salinity unit, or percentage.
+
++ **Examples**
+- `25 practical salinity units`
+]],
+        },
+    },
 
 
 
