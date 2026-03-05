@@ -2,7 +2,7 @@
 
 A Neovim plugin to help write SPARQL queries more efficiently by providing namespace-aware completion.
 
-![Snapshot of the plugin in use](https://raw.githubusercontent.com/aminem0/dwc-owl/refs/head/main/images/nvimsnip.png)
+![Snapshot of the plugin in use](https://raw.githubusercontent.com/aminem0/dwc-owl/refs/heads/main/images/nvimsnip.png)
 
 This plugin was motivated by limitations in existing SPARQL editors such as [the Wikidata query service](https://query.wikidata.org), where completion requires manual prefix invocation (you have to type `prefix:` followed by the combination of `<CTRL + SPACE>`) and is largely restricted to Wikidata vocabularies.
 
