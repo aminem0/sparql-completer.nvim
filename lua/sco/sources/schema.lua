@@ -2239,6 +2239,9 @@ return {
 + **Type**
 - [rdfs:Class]
 
++ **Subclass relationships**
+- [schema:City] ⊑ [schema:AdministrativeArea]
+
 + **Equivalency relationships**
 - [schema:City] ≡ [fibo-fnd-plc-loc:Municipality]
 
@@ -2687,37 +2690,1458 @@ return {
 ]],
         },
     },
-
-
-
-
-
-
-
-
-
-
-
     {
-        label = "schema:",
+        label = "schema:Continent",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "schema:",
+        description = "schema:Continent",
         documentation = {
             value = [[
 + **Identifier**
-- [https://schema.org/]
+- [https://schema.org/Continent]
 
 + **Type**
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [schema:] ⊑ [schema:]
+- [schema:Continent] ⊑ [schema:Landform]
 
 + **Definition**
--
+- One of the continents (for example: Europe or Africa).
 ]],
         },
     },
+    {
+        label = "schema:ControlAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ControlAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ControlAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ControlAction] ⊑ [schema:Action]
+
++ **Definition**
+- An agent controls a device or application.
+]],
+        },
+    },
+    {
+        label = "schema:ConvenienceStore",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ConvenienceStore",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ConvenienceStore]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ConvenienceStore] ⊑ [schema:Store]
+
++ **Definition**
+- A convenience store.
+]],
+        },
+    },
+    {
+        label = "schema:Conversation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Conversation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Conversation]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Conversation] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- One or more messages between organizations or people on a particular topic.
+
++ **Comments**
+- Individual messages can be linked to the conversation with the [schema:isPartOf] or [schema:hasPart] properties.
+]],
+        },
+    },
+    {
+        label = "schema:CookAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CookAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CookAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CookAction] ⊑ [schema:CreateAction]
+
++ **Definition**
+- The act of producing/preparing food.
+]],
+        },
+    },
+    {
+        label = "schema:Corporation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Corporation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Corporation]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Corporation] ⊑ [schema:Organization]
+
++ **Definition**
+- Organization: A business corporation.
+]],
+        },
+    },
+    {
+        label = "schema:Country",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Country",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Country]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Country] ⊑ [schema:AdministrativeArea]
+
++ **Definition**
+- A country.
+]],
+        },
+    },
+    {
+        label = "schema:Course",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Course",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Course]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Course] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A description of an educational course which may be offered as distinct instances at which take place at different times take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/orcreative works which aim to build knowledge, competence or ability of learners.
+]],
+        },
+    },
+    {
+        label = "schema:Courthouse",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Courthouse",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Courthouse]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Courthouse] ⊑ [schema:GovernmentBuilding]
+
++ **Definition**
+- A courthouse.
+]],
+        },
+    },
+    {
+        label = "schema:CreateAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CreateAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CreateAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CreateAction] ⊑ [schema:Action]
+
++ **Definition**
+- The act of deliberately creating/producing/generating/building a result out of the agent.
+]],
+        },
+    },
+    {
+        label = "schema:CreativeWork",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CreativeWork",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CreativeWork]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CreativeWork] ⊑ [schema:Thing]
+
++ **Definition**
+- The most generic kind of creative work, including books, movies, photographs, software programs, etc.
+]],
+        },
+    },
+    {
+        label = "schema:CreativeWorkSeason",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CreativeWorkSeason",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CreativeWorkSeason]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CreativeWorkSeason] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A media season e.g. TV, radio, video games, etc.
+]],
+        },
+    },
+    {
+        label = "schema:CreativeWorkSeries",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CreativeWorkSeries",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CreativeWorkSeries]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CreativeWorkSeries] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A [schema:CreativeWorkSeries] in schema.org is a group of related items, typically but not necessarily of the same kind. [schema:CreativeWorkSeries] are usually organized into some order, chronological. Unlike [schema:ItemList] which is a general purpose data structure for a list of things, the emphasis with [schema:CreativeWorkSeries] is on published material (written e.g. books and periodicals, or media such as TV, radio and games).
+
++ **Comments**
+- Specific subtypes are available for describing [schema:TVSeries], [schema:RadioSeries], [schema:MovieSeries], [schema:BookSeries], [schema:Periodical] and [schema:VideoGameSeries]. In each case, the [schema:hasPart]/[schema:isPartOf] properties can be used to relate the [schema:CreativeWorkSeries] to itsparts. The general [schema:CreativeWorkSeries] type serves largely just to organize these more specific and practical subtypes/
+- It is common for properties to be applicable to an item from the series to be usefully applied to the contining group. Schema.org attemps to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.
+]],
+        },
+    },
+    {
+        label = "schema:CreditCard",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CreditCard",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CreditCard]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CreditCard] ⊑ [schema:LoanOrCredit]
+- [schema:CreditCard] ⊑ [schema:PaymentCard]
+
++ **Definition**
+- A card payment method of a particular brand or name. Used to mark up a particular payment method and/pr the financial product/service that supplies the card account.
+
++ **Comments**
+- Commonly used values are drawn from the [gr:] ontology.
+
++ **Examples**
+- [gr:AmericanExpress]
+- [gr:DinersClub]
+- [gr:Discover]
+- [gr:JCB]
+- [gr:MasterCard]
+- [gr:VISA]
+]],
+        },
+    },
+    {
+        label = "schema:Crematorium",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Crematorium",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Crematorium]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Crematorium] ⊑ [schema:CivicStructure]
+
++ **Definition**
+- A crematorium.
+]],
+        },
+    },
+    {
+        label = "schema:CurrencyConversionService",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:CurrencyConversionService",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/CurrencyConversionService]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:CurrencyConversionService] ⊑ [schema:FinancialProduct]
+
++ **Definition**
+- A service to convert funds from one currency to another currency.
+]],
+        },
+    },
+    {
+        label = "schema:DanceEvent",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DanceEvent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DanceEvent]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DanceEvent] ⊑ [schema:Event]
+
++ **Definition**
+- Event type: A social dance.
+]],
+        },
+    },
+    {
+        label = "schema:DanceGroup",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DanceGroup",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DanceGroup]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DanceGroup] ⊑ [schema:PerformingGroup]
+
++ **Definition**
+- A dance group - for example,the Alvin Ailey Dance Theater or Riverdance.
+]],
+        },
+    },
+    {
+        label = "schema:DataCatalog",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DataCatalog",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DataCatalog]
+
++ **Type**
+- [rdfs:Class]
+
++ **Equivalency relationships**
+- [schema:DataCatalog] ≡ [dcat:Catalog]
+
++ **Subclass relationships**
+- [schema:DataCatalog] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A collection of datasets.
+]],
+        },
+    },
+    {
+        label = "schema:DataDownload",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DataDownload",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DataDownload]
+
++ **Type**
+- [rdfs:Class]
+
++ **Equivalency relationships**
+- [schema:DataDownload] ≡ [dcat:Distribution]
+
++ **Subclass relationships**
+- [schema:DataDownload] ⊑ [schema:MediaObject]
+
++ **Definition**
+- A dataset in downloadable form.
+]],
+        },
+    },
+    {
+        label = "schema:DataFeed",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DataFeed",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DataFeed]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DataFeed] ⊑ [schema:Dataset]
+
++ **Definition**
+- A single feed providing structured information about one or more entities or topics.
+]],
+        },
+    },
+    {
+        label = "schema:DataFeedItem",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DataFeedItem",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DataFeedItem]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DataFeedItem] ⊑ [schema:Intangible]
+
++ **Definition**
+- A single Item within a larger data feed.
+]],
+        },
+    },
+    {
+        label = "schema:DataType",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DataType",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DataType]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DataType] ⊑ [rdfs:Class]
+
++ **Definition**
+- The basic data types such as [schema:Integer]s, [schema:String]s, etc.
+]],
+        },
+    },
+    {
+        label = "schema:Dataset",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Dataset",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Dataset]
+
++ **Type**
+- [rdfs:Class]
+
++ **Equivalency relationships**
+- [schema:Dataset] ≡ [dcat:Dataset]
+- [schema:Dataset] ≡ [dcmitype:Dataset]
+- [schema:Dataset] ≡ [void:Dataset]
+
++ **Subclass relationships**
+- [schema:Dataset] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A body of structured information describing some topic(s) of interest.
+]],
+        },
+    },
+    {
+        label = "schema:Date",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Date",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Date]
+
++ **Type**
+- [rdfs:Class]
+- [schema:DataType]
+
++ **Definition**
+- A date value in [ISO 8601 date format](https://en.wikipedia.org/wiki/ISO_8601).
+]],
+        },
+    },
+    {
+        label = "schema:DateTime",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DateTime",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DateTime]
+
++ **Type**
+- [rdfs:Class]
+- [schema:DataType]
+
++ **Definition**
+- A combination of date and timein the time of dayin the form `[-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]` (see Chapter 5.4 of ISO 8601).
+]],
+        },
+    },
+    {
+        label = "schema:DatedMoneySpecification",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DatedMoneySpecification",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DatedMoneySpecification]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DatedMoneySpecification] ⊑ [schema:StructuredValue]
+
++ **Definition**
+- A [schema:DatedMoneySpecification] represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time.
+
++ **Comments**
+- This property has been superseded by [schema:MonetaryAmount].
+]],
+        },
+    },
+    {
+        label = "schema:DayOfWeek",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DayOfWeek",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DayOfWeek]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DayOfWeek] ⊑ [schema:Enumeration]
+
++ **Definition**
+- The day of the week, e.g. used to specify which day the opening hours of an [schema:OpeningHoursSpecification] refer.
+
++ **Comments**
+- Originally, URLs from [gr:] were used for [gr:Monday], [gr:Tuesday], [gr:Wednesday], [gr:Thursday], [gr:Friday], [gr:Saturday], [gr:Sunday] plus a special entry for [gr:PublicHoliday]; these have now been integrated directly into schema.org.
+]],
+        },
+    },
+    {
+        label = "schema:DaySpa",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DaySpa",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DaySpa]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DaySpa] ⊑ [schema:HealthAndBeautyBusiness]
+
++ **Definition**
+- A day spa.
+]],
+        },
+    },
+    {
+        label = "schema:DeactivateAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DeactivateAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DeactivateAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DeactivateAction] ⊑ [schema:ControlAction]
+
++ **Definition**
+- The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight).
+]],
+        },
+    },
+    {
+        label = "schema:DefenceEstablishment",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DefenceEstablishment",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DefenceEstablishment]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DefenceEstablishment] ⊑ [schema:GovernmentBuilding]
+
++ **Definition**
+- A defence establishment, such as an army or navy base.
+]],
+        },
+    },
+    {
+        label = "schema:DeleteAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DeleteAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DeleteAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DeleteAction] ⊑ [schema:UpdateAction]
+
++ **Definition**
+- The act of editing a recipient by removing one of its objects.
+]],
+        },
+    },
+    {
+        label = "schema:DeliveryChargeSpecification",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DeliveryChargeSpecification",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DeliveryChargeSpecification]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DeliveryChargeSpecification] ⊑ [schema:PriceSpecification]
+
++ **Definition**
+- The price for the delivery of an offer using a particular delivery method.
+]],
+        },
+    },
+    {
+        label = "schema:DeliveryEvent",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DeliveryEvent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DeliveryEvent]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DeliveryEvent] ⊑ [schema:Event]
+
++ **Definition**
+- An event involving the delivery of an item.
+]],
+        },
+    },
+    {
+        label = "schema:DeliveryMethod",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DeliveryMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DeliveryMethod]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DeliveryMethod] ⊑ [schema:Enumeration]
+
++ **Definition**
+- A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer. Delivery methods are characterized by the means of transportation used, and by the organization or group that is the contracting party for the sending organization or person.
+
++ **Comments**
+- Commonly used values are drawn from the [gr:] ontology.
+
++ **Examples**
+- [gr:DeliveryModeDirectDownload]
+- [gr:DeliveryModeFreight]
+- [gr:DeliveryModeMail]
+- [gr:DeliveryModeOwnFleet]
+- [gr:DeliveryModePickUp]
+- [gr:DHL]
+- [gr:FederalExpress]
+- [gr:UPS]
+]],
+        },
+    },
+    {
+        label = "schema:Demand",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Demand",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Demand]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Demand] ⊑ [schema:Intangible]
+
++ **Definition**
+- A [schema:Demand] entity represents the public, not necessarily binding, not necessarily exclusive, announcement by and organization or person to seek a certain type of goods or services.
+
++ **Comments**
+- For describing demand using this type, the very same properties used for [schema:Offer] apply.
+]],
+        },
+    },
+    {
+        label = "schema:Dentist",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Dentist",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Dentist]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Dentist] ⊑ [schema:LocalBusiness]
+- [schema:Dentist] ⊑ [schema:MedicalOrganization]
+
++ **Definition**
+- A dentist.
+]],
+        },
+    },
+    { -- NOTE: The definition makes it feel like the property is the depart location ...
+        label = "schema:DepartAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DepartAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DepartAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DepartAction] ⊑ [schema:MoveAction]
+
++ **Definition**
+- The act of departing from a place. An agent departs from a [schema:fromLocation] for a destination, optionally with participants.
+]],
+        },
+    },
+    {
+        label = "schema:DepartmentStore",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DepartmentStore",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DepartmentStore]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DepartmentStore] ⊑ [schema:Store]
+
++ **Definition**
+- A department store.
+]],
+        },
+    },
+    {
+        label = "schema:DepositAccount",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DepositAccount",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DepositAccount]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DepositAccount] ⊑ [schema:BankAccount]
+- [schema:DepositAccount] ⊑ [schema:InvestmentOrDeposit]
+
++ **Definition**
+- A type of [schema:BankAccount] with a main purpose of depositing funds to gain interest or other benefits.
+]],
+        },
+    },
+    {
+        label = "schema:DigitalDocument",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DigitalDocument",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DigitalDocument]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DigitalDocument] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- An electronic file or document.
+]],
+        },
+    },
+    {
+        label = "schema:DigitalDocumentPermission",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DigitalDocumentPermission",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DigitalDocumentPermission]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DigitalDocumentPermission] ⊑ [schema:Intangible]
+
++ **Definition**
+- A permission for a particular person or group to access a particular file.
+]],
+        },
+    },
+    {
+        label = "schema:DigitalDocumentPermissionType",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DigitalDocumentPermissionType",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DigitalDocumentPermissionType]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DigitalDocumentPermissionType] ⊑ [schema:Enumeration]
+
++ **Definition**
+- A type of permission which can be granted for accessing a digital document.
+]],
+        },
+    },
+    {
+        label = "schema:DisagreeAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DisagreeAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DisagreeAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DisagreeAction] ⊑ [schema:ReactAction]
+
++ **Definition**
+- The act of expressing a difference of opiion with the object. An agent disagrees to/about an object (a proposition, topic or theme) with participants.
+]],
+        },
+    },
+    {
+        label = "schema:DiscoverAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DiscoverAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DiscoverAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DiscoverAction] ⊑ [schema:FindAction]
+
++ **Definition**
+- The act of discovering/finding an object.
+]],
+        },
+    },
+    {
+        label = "schema:DiscussionForumPosting",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DiscussionForumPosting",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DiscussionForumPosting]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DiscussionForumPosting] ⊑ [schema:SocialMediaPosting]
+
++ **Definition**
+- A posting to a discussion forum.
+]],
+        },
+    },
+    {
+        label = "schema:DislikeAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DislikeAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DislikeAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DislikeAction] ⊑ [schema:ReactAction]
+
++ **Definition**
+- The act of expressing a negative sentiment about the object. An agent dislikes an object (a proposition, topic or theme) with participants.
+]],
+        },
+    },
+    {
+        label = "schema:Distance",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Distance",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Distance]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Distance] ⊑ [schema:Quantity]
+
++ **Definition**
+- Properties that take [schema:Distance] as values are of the form `<Number> <Length unit of measure>`, e.g. `7 ft`.
+]],
+        },
+    },
+    {
+        label = "schema:DonateAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DonateAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DonateAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DonateAction] ⊑ [schema:TradeAction]
+
++ **Definition**
+- The act of providing goods, services, or money without compensation, often for philantropic reasons.
+]],
+        },
+    },
+    {
+        label = "schema:DownloadAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DownloadAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DownloadAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DownloadAction] ⊑ [schema:TransferAction]
+
++ **Definition**
+- The act of downloading an object.
+]],
+        },
+    },
+    {
+        label = "schema:DrawAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DrawAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DrawAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DrawAction] ⊑ [schema:CreateAction]
+
++ **Definition**
+- The act of producing a visual/graphical representation of an object, typically with a pen/pencil and paper as instruments.
+]],
+        },
+    },
+    {
+        label = "schema:DrinkAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DrinkAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DrinkAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DrinkAction] ⊑ [schema:ConsumeAction]
+
++ **Definition**
+- The act of swallowing liquids.
+]],
+        },
+    },
+    {
+        label = "schema:DriveWheelConfigurationValue",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DriveWheelConfigurationValue",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DriveWheelConfigurationValue]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DriveWheelConfigurationValue] ⊑ [schema:QualitativeValue]
+
++ **Definition**
+- A value indicating which roadwheels will receive torque.
+]],
+        },
+    },
+    {
+        label = "schema:DryCleaningOrLaundry",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:DryCleaningOrLaundry",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/DryCleaningOrLaundry]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:DryCleaningOrLaundry] ⊑ [schema:LocalBusiness]
+
++ **Definition**
+- A dry-cleaning business.
+]],
+        },
+    },
+    { -- NOTE: I thought wikipedia was https:?
+        label = "schema:Duration",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Duration",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Duration]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Duration] ⊑ [schema:Quantity]
+
++ **Definition**
+- Quantity: Duration (use [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601)).
+]],
+        },
+    },
+    {
+        label = "schema:EatAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EatAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EatAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EatAction] ⊑ [schema:ConsumeAction]
+
++ **Definition**
+- The act of swallowing solid objects.
+]],
+        },
+    },
+    {
+        label = "schema:EducationEvent",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EducationEvent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EducationEvent]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EducationEvent] ⊑ [schema:Event]
+
++ **Definition**
+- Event type: Education event.
+]],
+        },
+    },
+    {
+        label = "schema:EducationalAudience",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EducationalAudience",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EducationalAudience]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EducationalAudience] ⊑ [schema:Audience]
+
++ **Definition**
+- An [schema:EducationalAudience].
+]],
+        },
+    },
+    {
+        label = "schema:EducationalOrganization",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EducationalOrganization",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EducationalOrganization]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EducationalOrganization] ⊑ [schema:Organization]
+
++ **Definition**
+- An educational organization.
+]],
+        },
+    },
+    {
+        label = "schema:Electrician",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Electrician",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Electrician]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Electrician] ⊑ [schema:HomeAndConstructionBusiness]
+
++ **Definition**
+- An electrician.
+]],
+        },
+    },
+    {
+        label = "schema:ElectronicsStore",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ElectronicsStore",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ElectronicsStore]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ElectronicsStore] ⊑ [schema:Store]
+
++ **Definition**
+- An eletronics store.
+]],
+        },
+    },
+    {
+        label = "schema:ElementarySchool",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ElementarySchool",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ElementarySchool]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ElementarySchool] ⊑ [schema:EducationalOrganization]
+
++ **Definition**
+- An elementary school.
+]],
+        },
+    },
+    {
+        label = "schema:EmailMessage",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EmailMessage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EmailMessage]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EmailMessage] ⊑ [schema:Message]
+
++ **Definition**
+- An e-mail message.
+]],
+        },
+    },
+    {
+        label = "schema:Embassy",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Embassy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Embassy]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Embassy] ⊑ [schema:GovernmentBuilding]
+
++ **Definition**
+- An embassy.
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --
+    --
+    --     {
+    --         label = "schema:",
+    --         kind = cmp.lsp.CompletionItemKind.Class,
+    --         description = "schema:",
+    --         documentation = {
+    --             value = [[
+    -- + **Identifier**
+    -- - [https://schema.org/]
+    --
+    -- + **Type**
+    -- - [rdfs:Class]
+    --
+    -- + **Subclass relationships**
+    -- - [schema:] ⊑ [schema:]
+    --
+    -- + **Definition**
+    -- -
+    -- ]],
+    --         },
+    --     },
+    --
+    --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4029,7 +5453,7 @@ return {
 - [rdf:Property]
 
 + **Domain includes**
-- [schema:DatedMonetarySpecification]
+- [schema:DatedMoneySpecification]
 - [schema:InvestmentOrDeposit]
 - [schema:LoanOrCredit]
 
