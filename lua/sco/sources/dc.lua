@@ -1,5 +1,6 @@
 --[[
 Dublin Core terms
+
 Definitions and information obtained from:
 https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 ]]
@@ -30,7 +31,7 @@ return {
     {
         label = "dc:coverage",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "coverage",
+        description = "dc:coverage",
         documentation = {
             value = [[
 + **Identifier**
@@ -50,7 +51,7 @@ return {
     {
         label = "dc:creator",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "creator",
+        description = "dc:creator",
         documentation = {
             value = [[
 + **Identifier**
