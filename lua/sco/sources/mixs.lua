@@ -3105,7 +3105,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - [xsd:string]
 
 + **Definition**
-- Conncentration of carbon-based chemicals that easily evaporate at room temperature; can report multiple volatile compounds by rentering numeric values preceded by the name of compound.
+- Concentration of carbon-based chemicals that easily evaporate at room temperature; can report multiple volatile compounds by entering numeric values preceded by the name of compound.
 
 + **Comments**
 - The expected values should follow the pattern `^{organic_compound_name};{measurement_value}$`.
@@ -3280,8 +3280,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - `^{scientific_float}( *- *{scientific_float})? *{text}$`
 
 + **Definition**
-
-+ **Comments**
 - Partial vapor and air pressure, density of the vapor and air, or by the actual mass of the vapor and air.
 
 + **Examples**
@@ -4767,17 +4765,1902 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 ]],
         },
     },
+    {
+        label = "mixs:silicate",
+        insertText = "mixs:0000184",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:silicate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000184]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
 
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
 
++ **Definition**
+- Concentration of silicate.
 
++ **Comments**
+- The preferred unit is micromole per liter.
 
++ **Examples**
+- `0.05 micromole per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:water_content",
+        insertText = "mixs:0000185",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:water_content",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000185]
 
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
 
++ **Range**
+- [xsd:string]
 
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
 
++ **Definition**
+- Water content measurement.
 
++ **Comments**
+- The preferred unit is gram per gram, or cubic centimeter per cubic centimeter.
+]],
+        },
+    },
+    {
+        label = "mixs:rel_humidity_out",
+        insertText = "mixs:0000188",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:rel_humidity_out",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000188]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The recorded outside relative humidity value at the time of sampling.
+
++ **Comments**
+- The preferred unit is gram of air, or kilogram of air.
+
++ **Examples**
+- `12 per kilogram of air`
+]],
+        },
+    },
+    {
+        label = "mixs:turbidity",
+        insertText = "mixs:0000191",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:turbidity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000191]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measure of the amount of cloudiness or haziness in water caused by individual particles.
+
++ **Examples**
+- `0.3 nephelometric turbidity units`
+]],
+        },
+    },
+    {
+        label = "mixs:room_dim",
+        insertText = "mixs:0000192",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_dim",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000192]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The length, width, and height of the sampling room.
+
++ **Comments**
+- The preferred unit is meter.
+
++ **Examples**
+- `4 meter x 4 meter x 4 meter`
+]],
+        },
+    },
+    { -- WARN: INTEGER? I think decimal (or float) would be a better fit...
+        label = "mixs:room_door_dist",
+        insertText = "mixs:0000193",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_door_dist",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000193]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`
+
++ **Definition**
+- Distance between doors (meters) in the hallway between the sampling room and adjacent rooms.
+
++ **Comments**
+- The preferred unit is meter.
+]],
+        },
+    },
+    { -- WARN: INTEGER? I think decimal (or float) would be a better fit...
+        label = "mixs:room_net_area",
+        insertText = "mixs:0000194",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_net_area",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000194]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`
+
++ **Definition**
+- The net floor area of sampling room. Net area excludes wall thickness.
+
++ **Comments**
+- The preferred unit is square feet, or square meter.
+]],
+        },
+    },
+    { -- WARN: INTEGER? I think decimal (or float) would be a better fit...
+        label = "mixs:room_vol",
+        insertText = "mixs:0000195",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_vol",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000195]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`
+
++ **Definition**
+- Volume of sampling room.
+
++ **Comments**
+- The preferred unit is cubic feet, or cubic meter.
+]],
+        },
+    },
+    {
+        label = "mixs:samp_time_out",
+        insertText = "mixs:0000196",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_time_out",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000196]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The recent and long term history of outside sampling.
+
++ **Comments**
+- The expected value shoud be a time value.
+- The preferred unit is hour.
+]],
+        },
+    },
+    {
+        label = "mixs:temp_out",
+        insertText = "mixs:0000197",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:temp_out",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000197]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The recorded temparature value at sampling time outside.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+
++ **Examples**
+- `5 degrees Celsius`
+]],
+        },
+    },
+    {
+        label = "mixs:wall_area",
+        insertText = "mixs:0000198",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wall_area",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000198]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The total area of the sampled room's walls.
+
++ **Comments**
+- The preferred unit is square meter.
+]],
+        },
+    },
+    {
+        label = "mixs:water_current",
+        insertText = "mixs:0000203",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:water_current",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000203]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measurement of magnitude and direction of flow within a fluid.
+
++ **Comments**
+- The preferred unit is cubic meter per second, or knots.
+
++ **Examples**
+- `10 cubic meter per second`
+]],
+        },
+    },
+    { -- NOTE: Example not given in preferred unit
+        label = "mixs:org_matter",
+        insertText = "mixs:0000204",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:org_matter",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000204]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of organic matter.
+
++ **Comments**
+- The preferred unit is cubic microgram per liter.
+
++ **Examples**
+- `1.75 milligram per cubic meter`
+]],
+        },
+    },
+    {
+        label = "mixs:org_nitro",
+        insertText = "mixs:0000205",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:org_nitro",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000205]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Concentration of organic nitrogen.
+
++ **Examples**
+- `4 micromole per liter`
+]],
+        },
+    },
+    {
+        label = "mixs:particle_class",
+        insertText = "mixs:0000206",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:particle_class",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000206]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Particles are classified, based on their size, into six general categories: clay, silt, sand, gravel, coblles, and boulders; should include the amount of particle preceded by the name of the particle type; can include multiple values.
+
++ **Comments**
+- The expected values should follow the pattern `{particle_name};{measurement_value}`.
+- The preferred unit is micrometer.
+]],
+        },
+    },
+    {
+        label = "mixs:porosity",
+        insertText = "mixs:0000211",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:porosity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000211]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Porosity of deposited sediment is volume of voids divided by the total volume of sample.
+
++ **Comments**
+- The expected values should be a measurement value or a range.
+- The preferred unit is percentage.
+]],
+        },
+    },
+    {
+        label = "mixs:specific_humidity",
+        insertText = "mixs:0000214",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:specific_humidity",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000214]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The mass of water vapour in a unit mass of moist air, usually expressed as grams of vapour per kilogram of air, or, in air conditioning, as grains per pound.
+
++ **Comments**
+- The preferred unit is gram of air, or kilogram of air.
+
++ **Examples**
+- `15 per kilogram of air`
+]],
+        },
+    },
+    {
+        label = "mixs:sewage_type",
+        insertText = "mixs:0000215",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sewage_type",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000215]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Type of wastewater treatment plant as municipal or industrial.
+
++ **Comments**
+- The expected value is a sewage type name.
+]],
+        },
+    },
+    {
+        label = "mixs:samp_sort_meth",
+        insertText = "mixs:0000216",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_sort_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000216]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method by which samples are sorted; open face filter collecting total suspended particles, prefilter to remove particles larger than X micrometers in diameter, where common values of X would be 10 and 2.5 full size sortingin a cascade impactor.
+]],
+        },
+    },
+    {
+        label = "mixs:occup_density_samp",
+        insertText = "mixs:0000217",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:occup_density_samp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000217]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- Average number of occupants at time of sampling per square footage.
+
++ **Examples**
+- `0.1`
+]],
+        },
+    },
+    {
+        label = "mixs:address",
+        insertText = "mixs:0000218",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:address",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000218]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The street name and building number where the sampling occurred.
+]],
+        },
+    },
+    {
+        label = "mixs:adj_room",
+        insertText = "mixs:0000219",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:adj_room",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000219]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{room_name};{room_number}$`.
+
++ **Definition**
+- List of rooms (room number, room name) immediately adjacent to the sampling room.
+]],
+        },
+    },
+    {
+        label = "mixs:exp_pipe",
+        insertText = "mixs:0000220",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:exp_pipe",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000220]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The number of exposed pipes in the room.
+]],
+        },
+    },
+    {
+        label = "mixs:wall_height",
+        insertText = "mixs:0000221",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wall_height",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000221]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The average height of the walls in the sampled room.
+
++ **Comments**
+- The preferred unit is centimeter.
+]],
+        },
+    },
+    {
+        label = "mixs:wall_thermal_mass",
+        insertText = "mixs:0000222",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:wall_thermal_mass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000222]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The ability of the wall to provide inertia against temperature fluctuations. Generally, this means concrete or concrete block that is either exposed or covered only with paint.
+
++ **Comments**
+- The preferred unit is joule per degree Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:water_feat_size",
+        insertText = "mixs:0000223",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:water_feat_size",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000223]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The size of the water feature.
+
++ **Comments**
+- The preferred unit is square meter.
+]],
+        },
+    },
+    {
+        label = "mixs:window_size",
+        insertText = "mixs:0000224",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:window_size",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000224]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The window's length and width.
+
++ **Comments**
+- The expected value should be a measurement value.
+- The preferred unit is inch, or meter.
+]],
+        },
+    },
+    {
+        label = "mixs:floor_count",
+        insertText = "mixs:0000225",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:floor_count",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000225]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The number of floors in the building, including basements and mechanical penthouse.
+]],
+        },
+    },
+    {
+        label = "mixs:freq_clean",
+        insertText = "mixs:0000226",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:freq_clean",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000226]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The number of times the sample location is cleaned. Frequency of cleaning might be on a `Daily` basis, `Weekly`, `Monthly`, `Quarterly` or `Annually`.
+
++ **Comments**
+- This property only takes a finite set of possible literal values. For more details, see: [https://genomicsstandardsconsortium.github.io/mixs/FreqCleanEnum/].
+
++ **Examples**
+- `Daily`
+- `Weekly`
+- `Monthly`
+- `Quarterly`
+- `Annually`
+]],
+        },
+    },
+    {
+        label = "mixs:freq_cook",
+        insertText = "mixs:0000227",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:freq_cook",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000227]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The number of times a meal is cooked per week.
+]],
+        },
+    },
+    {
+        label = "mixs:hall_count",
+        insertText = "mixs:0000228",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:hall_count",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000228]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The total count of hallways and corridors in the built structure.
+]],
+        },
+    },
+    {
+        label = "mixs:max_occup",
+        insertText = "mixs:0000229",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:max_occup",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000229]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The maximum amount of people allowed in the indoor environment.
+]],
+        },
+    },
+    {
+        label = "mixs:number_plants",
+        insertText = "mixs:0000230",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:number_plants",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000230]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The number of plants in the sampling space.
+]],
+        },
+    },
+    {
+        label = "mixs:number_pets",
+        insertText = "mixs:0000231",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:number_pets",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000231]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The number of pets in the sampled space.
+]],
+        },
+    },
+    {
+        label = "mixs:number_resident",
+        insertText = "mixs:0000232",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:number_resident",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000232]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- The number of individuals currently occupying the sampling location.
+]],
+        },
+    },
+    {
+        label = "mixs:room_achitec_elem",
+        insertText = "mixs:0000233",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_achitec_elem",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000233]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The unique details and component parts tha, together, form the architecture of a distinguishable space within a built structure.
+]],
+        },
+    },
+    {
+        label = "mixs:room_count",
+        insertText = "mixs:0000234",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_count",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000234]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The total count of rooms in the built structure including all room types.
+]],
+        },
+    },
+    {
+        label = "mixs:room_moist_dam_hist",
+        insertText = "mixs:0000235",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_moist_dam_hist",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000235]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The history of moisture damage or mold in the past 12 months. Number of events of moisture damage or mold observed.
+]],
+        },
+    },
+    {
+        label = "mixs:room_moist_dam_hist",
+        insertText = "mixs:0000235",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_moist_dam_hist",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000235]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The history of moisture damage or mold in the past 12 months. Number of events of moisture damage or mold observed.
+]],
+        },
+    },
+    {
+        label = "mixs:room_occup",
+        insertText = "mixs:0000236",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_occup",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000236]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{integer} {text}$`.
+
++ **Definition**
+- Count of room occupancy at the time of sampling.
+]],
+        },
+    },
+    {
+        label = "mixs:room_window_count",
+        insertText = "mixs:0000237",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_window_count",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000237]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- Number of windows in the room.
+]],
+        },
+    },
+    {
+        label = "mixs:room_hallway",
+        insertText = "mixs:0000238",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_hallway",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000238]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{room_name};{room_number}$`.
+
++ **Definition**
+- List of room(s) (room number, room name) located in the same hallway as sampling room.
+]],
+        },
+    },
+    {
+        label = "mixs:room_door_share",
+        insertText = "mixs:0000242",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_door_share",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000242]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{room_name};{room_number}$`.
+
++ **Definition**
+- List of room(s) (room number, room name) sharing a door with the sampling room.
+]],
+        },
+    },
+    {
+        label = "mixs:room_wall_share",
+        insertText = "mixs:0000243",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:room_wall_share",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000243]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{room_name};{room_number}$`.
+
++ **Definition**
+- List of room(s) (room number, room name) sharing a wall with the sampling room.
+]],
+        },
+    },
+    {
+        label = "mixs:samp_room_id",
+        insertText = "mixs:0000244",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_room_id",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000244]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- Sampling room number. This ID should be consistent with the designations on the building floor plans.
+]],
+        },
+    },
+    {
+        label = "mixs:shading_device_mat",
+        insertText = "mixs:0000245",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:shading_device_mat",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000245]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The material the shading device is composed of.
+
++ **Comments**
+- The expected value should be a material name.
+]],
+        },
+    },
+    {
+        label = "mixs:window_open_freq",
+        insertText = "mixs:0000246",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:window_open_freq",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000246]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:integer]
+
++ **Definition**
+- The number of times windows are opened per week.
+]],
+        },
+    },
+    {
+        label = "mixs:ances_data",
+        insertText = "mixs:0000247",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:ances_data",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000247]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Information about either pedigree or other ancestral information description (e.g. parental variety in case of mutant selection), e.g. `A/3*B` (meaning [(A x B) x B] x B).
+
++ **Examples**
+- `A/3*B`
+]],
+        },
+    },
+    {
+        label = "mixs:host_common_name",
+        insertText = "mixs:0000248",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_common_name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000248]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Common name of the host.
+]],
+        },
+    },
+    {
+        label = "mixs:host_taxid",
+        insertText = "mixs:0000250",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_taxid",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000250]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- NCBI taxon ID of the host.
+
++ **Comments**
+- The expected value should be an NCBI taxon identifier.
+
++ **Examples**
+- `9606`
+]],
+        },
+    },
+    {
+        label = "mixs:host_life_stage",
+        insertText = "mixs:0000251",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_life_stage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000251]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Description of the life stage of the host.
+
++ **Comments**
+- The expected value should be a stage.
+]],
+        },
+    },
+    {
+        label = "mixs:host_substrate",
+        insertText = "mixs:0000252",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_substrate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000252]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The growth substrate of the host.
+
++ **Examples**
+- `rock`
+]],
+        },
+    },
+    {
+        label = "mixs:host_infra_spec_name",
+        insertText = "mixs:0000253",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_infra_spec_name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000253]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Taxonomic information about the host below subspecies level.
+]],
+        },
+    },
+    {
+        label = "mixs:host_infra_spec_rank",
+        insertText = "mixs:0000254",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_infra_spec_rank",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000254]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Taxonomic rank information about the host below subspecies level, such as variety, form, rank, etc.
+]],
+        },
+    },
+    {
+        label = "mixs:host_age",
+        insertText = "mixs:0000255",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_age",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000255]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Age of host at the time of sampling; relevant scale depends on species and study, e.g. could be seconds for amoebae or centuries for trees.
+
++ **Comments**
+- The preferred unit is years, days, or hours.
+]],
+        },
+    },
+    {
+        label = "mixs:host_length",
+        insertText = "mixs:0000256",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_length",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000256]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The length of the subject.
+
++ **Comments**
+- The preferred unit is centimeter, millimeter, or meter.
+
++ **Examples**
+- `1 meter`
+]],
+        },
+    },
+    {
+        label = "mixs:host_dry_mass",
+        insertText = "mixs:0000257",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_dry_mass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000257]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Measurement of dry mass.
+
++ **Comments**
+- The preferred unit is kilogram, or gram.
+
++ **Examples**
+- `500 gram`
+]],
+        },
+    },
+    {
+        label = "mixs:blood_press_diast",
+        insertText = "mixs:0000258",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:blood_press_diast",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000258]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Resting diastolic blood pressure, measured as mm mercury.
+
++ **Comments**
+- The preferred unit is millimeter mercury.
+]],
+        },
+    },
+    {
+        label = "mixs:blood_press_syst",
+        insertText = "mixs:0000259",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:blood_press_syst",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000259]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Resting systolic blood pressure, measured as mm mercury.
+
++ **Comments**
+- The preferred unit is millimeter mercury.
+]],
+        },
+    },
+    {
+        label = "mixs:host_color",
+        insertText = "mixs:0000260",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_color",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000260]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- The color of the host.
+]],
+        },
+    },
+    {
+        label = "mixs:host_shape",
+        insertText = "mixs:0000261",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_shape",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000261]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Morphological shape of the host.
+
++ **Examples**
+- `round`
+]],
+        },
+    },
+    { -- NOTE: Recheck boolean
+        label = "mixs:smoker",
+        insertText = "mixs:0000262",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:smoker",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000262]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Specification of smoking status.
+
++ **Examples**
+- `yes`
+]],
+        },
+    },
+    {
+        label = "mixs:host_tot_mass",
+        insertText = "mixs:0000263",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_tot_mass",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000263]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Total mass of the host at collection, the unit depends on the host.
+
++ **Comments**
+- The preferred unit is kilogram, or gram.
+]],
+        },
+    },
+    {
+        label = "mixs:host_height",
+        insertText = "mixs:0000264",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_height",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000264]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- The height of the subject.
+
++ **Comments**
+- The preferred unit is centimeter, millimeter or meter.
+]],
+        },
+    },
+    {
+        label = "mixs:host_hiv_stat",
+        insertText = "mixs:0000265",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_hiv_stat",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000265]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+-HIV status of the subject, if `yes`, HAART initiation status should also be indicated as [`YES` or `NO`].
+
++ **Comments**
+- The expected values should follow the pattern `{hiv_status};{haart_initiation_status}`.
+
++ **Examples**
+- `yes;yes`
+]],
+        },
+    },
+    {
+        label = "mixs:diet_last_six_month",
+        insertText = "mixs:0000266",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:diet_last_six_month",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000266]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of major diet changes in the last six months, if `yes` the change should e specified.
+
++ **Comments**
+- The expected values should follow the pattern `{diet_change};{current_diet}`.
+
++ **Examples**
+- `yes; vegetarian diet`
+]],
+        },
+    },
+    {
+        label = "mixs:pet_farm_animal",
+        insertText = "mixs:0000267",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pet_farm_animal",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000267]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the presence of pets or farm animals in the enviroment of the subject, if `yes` the animals should be specified; can include multiple animals present.
+
++ **Comments**
+- The expected values should follow the pattern `{presence_status};{type_of_animal_or_pet}`.
+
++ **Examples**
+- `yes; 5 cats`
+]],
+        },
+    },
+    {
+        label = "mixs:travel_out_six_months",
+        insertText = "mixs:0000268",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:travel_out_six_months",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000268]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the countries travelled in the last six months; can include multiple travels.
+
++ **Comments**
+- The expected value should be a country name.
+]],
+        },
+    },
+    {
+        label = "mixs:pulmonary_disord",
+        insertText = "mixs:0000269",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pulmonary_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000269]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of pulmonary disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: lung disease ([https://disease-ontology.org/?id=DOID:850]).
+]],
+        },
+    },
+    {
+        label = "mixs:nose_throat_disord",
+        insertText = "mixs:0000270",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:nose_throat_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000270]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Report any history of nose, mouth, teeth and/or throat disorders in the subject. May include multiple disorders.
+]],
+        },
+    },
+    {
+        label = "mixs:blood_blood_disord",
+        insertText = "mixs:0000271",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:blood_blood_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000271]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of blood disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: hematopoietic system disease ([https://disease-ontology.org/?id=DOID:74]).
+]],
+        },
+    },
+    {
+        label = "mixs:gestation_state",
+        insertText = "mixs:0000272",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:gestation_state",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000272]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the gestation state.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: hematopoietic system disease ([https://disease-ontology.org/?id=DOID:74]).
+]],
+        },
+    },
+    {
+        label = "mixs:maternal_health_stat",
+        insertText = "mixs:0000273",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:maternal_health_stat",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000273]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the maternal health status.
+]],
+        },
+    },
 
 
 
