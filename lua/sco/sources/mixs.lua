@@ -18,6 +18,25 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFarmEnvironment]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
@@ -46,15 +65,34 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFarmEnvironment]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
 + **Definition**
 - The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device ([http://purl.obolibrary.org/obo/ENVO]).
 
-
 + **Comments**
 - This field also accepts terms listed under specimen collection device ([http://purl.obolibrary.org/obo/GENEPIO_0002094]).
+- The expected value should be a device name.
 ]],
         },
     },
@@ -71,6 +109,15 @@ return {
 + **Type**
 - [owl:DatatypeProperty]
 - [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:MimarksC]
 
 + **Range**
 - [xsd:string]
@@ -100,6 +147,10 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Mimag]
+- [mixs:Misag]
+
 + **Range**
 - [xsd:string]
 
@@ -128,11 +179,16 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Misag]
+- [mixs:Miuvig]
+
 + **Range**
 - [xsd:string]
 
 + **Definition**
 - Kit used to amplify genomic DNA in preparation for sequencing.
+- The expected value should be a kit name.
 
 + **Examples**
 - `qiagen repli-g`
@@ -153,6 +209,23 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
@@ -164,6 +237,7 @@ return {
 
 + **Comments**
 - This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI).
+- The expected value should be text or EFO and/or OBI.
 
 + **Examples**
 - `time series design [EFO:0001779]`
@@ -183,6 +257,25 @@ return {
 + **Type**
 - [owl:DatatypeProperty]
 - [rdf:Property]
+
++ **Domain of**
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFarmEnvironment]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+- [mixs:SymbiontAssociated]
 
 + **Range**
 - [xsd:string]
@@ -215,6 +308,25 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFarmEnvironment]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+- [mixs:SymbiontAssociated]
+
 + **Range**
 - [xsd:string]
 
@@ -246,6 +358,25 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFarmEnvironment]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:FoodHumanFood]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+- [mixs:SymbiontAssociated]
+
 + **Range**
 - [xsd:dateTime]
 
@@ -273,6 +404,20 @@ return {
 + **Type**
 - [owl:DatatypeProperty]
 - [rdf:Property]
+
++ **Domain of**
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
 
 + **Range**
 - [xsd:string]
@@ -305,6 +450,20 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
@@ -335,6 +494,20 @@ return {
 + **Type**
 - [owl:DatatypeProperty]
 - [rdf:Property]
+
++ **Domain of**
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
 
 + **Range**
 - [xsd:string]
@@ -367,6 +540,15 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:MigsBa]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
@@ -395,6 +577,21 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:MigsBa]
+- [mixs:MigsEu]
+- [mixs:MigsOrg]
+- [mixs:MigsPl]
+- [mixs:MigsVi]
+- [mixs:Mimag]
+- [mixs:MimarksC]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
@@ -420,11 +617,20 @@ return {
 - [owl:DatatypeProperty]
 - [rdf:Property]
 
++ **Domain of**
+- [mixs:Mimag]
+- [mixs:MimarksS]
+- [mixs:Mims]
+- [mixs:Misag]
+- [mixs:Miuvig]
+- [mixs:MimsMisip]
+
 + **Range**
 - [xsd:string]
 
 + **Definition**
 - Filtering pore size used in sample preparation.
+- The expected value should be a filter size value range.
 
 + **Examples**
 - `0-0.22 micrometer`
@@ -6451,7 +6657,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - [xsd:string]
 
 + **Definition**
--HIV status of the subject, if `yes`, HAART initiation status should also be indicated as [`YES` or `NO`].
+- HIV status of the subject, if `yes`, HAART initiation status should also be indicated as [`YES` or `NO`].
 
 + **Comments**
 - The expected values should follow the pattern `{hiv_status};{haart_initiation_status}`.
@@ -6563,7 +6769,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - History of pulmonary disorders; can include multiple disorders.
 
 + **Comments**
-- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: lung disease ([https://disease-ontology.org/?id=DOID:850]).
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], lung disease ([https://disease-ontology.org/?id=DOID:850]).
 ]],
         },
     },
@@ -6610,7 +6816,7 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 - History of blood disorders; can include multiple disorders.
 
 + **Comments**
-- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: hematopoietic system disease ([https://disease-ontology.org/?id=DOID:74]).
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], hematopoietic system disease ([https://disease-ontology.org/?id=DOID:74]).
 ]],
         },
     },
@@ -6633,9 +6839,6 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 
 + **Definition**
 - Specification of the gestation state.
-
-+ **Comments**
-- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org]. For example: hematopoietic system disease ([https://disease-ontology.org/?id=DOID:74]).
 ]],
         },
     },
@@ -6661,6 +6864,1144 @@ The value ofthe field depends on the host; for humans the terms should be chosen
 ]],
         },
     },
+    {
+        label = "mixs:host_body_temp",
+        insertText = "mixs:0000274",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_body_temp",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000274]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Core body temperature of the host when the sample was collected.
+
++ **Comments**
+- The preferred unit is degrees Celsius.
+]],
+        },
+    },
+    {
+        label = "mixs:foetal_health_stat",
+        insertText = "mixs:0000275",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:foetal_health_stat",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000275]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the foetal heath status, should also include abortion.
+]],
+        },
+    },
+    {
+        label = "mixs:amniotic_fluid_color",
+        insertText = "mixs:0000276",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:amniotic_fluid_color",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000276]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of the color of the amniotic fluid sample.
+]],
+        },
+    },
+    {
+        label = "mixs:kidney_disord",
+        insertText = "mixs:0000277",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:kidney_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000277]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of kidney disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], kidney disease ([https://disease-ontology.org/?id=DOID:557]).
+]],
+        },
+    },
+    { -- NOTE: Yes, the alias is urogenit_tract_disor
+        label = "mixs:urogenit_tract_disor",
+        insertText = "mixs:0000278",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:urogenit_tract_disor",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000277]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of urogenital tract disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], urinary system disease ([https://disease-ontology.org/?id=DOID:18]).
+]],
+        },
+    },
+    {
+        label = "mixs:gastrointest_disord",
+        insertText = "mixs:0000280",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:gastrointest_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000280]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of gastrointestinal tract disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], gastrointestinal system disease ([https://disease-ontology.org/?id=DOID:18]).
+]],
+        },
+    },
+    {
+        label = "mixs:liver_disord",
+        insertText = "mixs:0000282",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:liver_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000282]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of liver disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], liver disease ([https://disease-ontology.org/?id=DOID:409]).
+]],
+        },
+    },
+    {
+        label = "mixs:nose_mouth_teeth_throat_disord",
+        insertText = "mixs:0000283",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:nose_mouth_teeth_throat_disord",
+        deprecated = true,
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000283]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of nose/mouth/teet/throat disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], nose disease ([https://disease-ontology.org/?id=DOID:2825]), mouth disease ([https://disease-ontology.org/?id=DOID:403]), tooth disease ([https://disease-ontology.org/?id=DOID:1091]), or upper respiratory tract disease ([https://disease-ontology.org/?id=DOID:974]).
+- This property is deprecated. Replace with [mixs:nose_throat_disord] ([mixs:0000270]).
+]],
+        },
+    },
+    {
+        label = "mixs:dermatology_disord",
+        insertText = "mixs:0000284",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:dermatology_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000284]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of dermatology disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], skin disease ([https://disease-ontology.org/?id=DOID:37]).
+]],
+        },
+    },
+    {
+        label = "mixs:sexual_act",
+        insertText = "mixs:0000285",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sexual_act",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000285]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Current sexual partner and frequency of sex.
+
++ **Comments**
+- The expected values should follow the pattern `{partner_sex};{frequency}`.
+]],
+        },
+    },
+    { -- NOTE: Recheck no
+        label = "mixs:hysterectomy",
+        insertText = "mixs:0000287",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:hysterectomy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000287]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Specification of whether hysterectomy was performed.
+
++ **Examples**
+- `no`
+]],
+        },
+    },
+    {
+        label = "mixs:gynecologic_disord",
+        insertText = "mixs:0000288",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:gynecologic_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000288]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of gynecological disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], female reproductive system disease ([https://disease-ontology.org/?id=DOID:229]).
+]],
+        },
+    },
+    {
+        label = "mixs:urogenit_disord",
+        insertText = "mixs:0000289",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:urogenit_disord",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000289]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- History of urogenital disorders; can include multiple disorders.
+
++ **Comments**
+- The terms should be chosen from the DO (Human Disease Ontology) at [http://www.disease-ontology.org], reproductive system disease ([https://disease-ontology.org/?id=DOID:15]), or urinary system disease ([https://disease-ontology.org/?id=DOID:18]).
+]],
+        },
+    },
+    {
+        label = "mixs:basin",
+        insertText = "mixs:0000290",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:basin",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000290]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name of the basin.
+
++ **Example**
+- `Campos`
+]],
+        },
+    },
+    {
+        label = "mixs:field",
+        insertText = "mixs:0000291",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:field",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000291]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name of the hydrocarbon field.
+
++ **Example**
+- `Albacora`
+]],
+        },
+    },
+    {
+        label = "mixs:weight_loss_3_months",
+        insertText = "mixs:0000295",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:weight_loss_3_months",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000295]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Specification of weight loss in the last three months, if `yes` should be further specified to include amount of weight loss.
+
++ **Comments**
+- The expected values should follow the pattern `{weight_loss_specification};{measurement_value}`.
+- The preferred unit is kilogram, or gram.
+
++ **Examples**
+- `yes;5 kilogram`
+]],
+        },
+    },
+    {
+        label = "mixs:samp_well_name",
+        insertText = "mixs:0000296",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:samp_well_name",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000296]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name of the well where the sample was taken.
+
++ **Example**
+- `BXA1123`
+]],
+        },
+    },
+    {
+        label = "mixs:win",
+        insertText = "mixs:0000297",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:win",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/win]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- A unique identifier of a well or wellbore. This is part of the Global Framework for Well Identification Initiative which is compiled by the Professional Petroleum Data Management Association (PPDM) in an effort to improve well identification systems. (Supporting information: [https://ppdm.org/] and [http://dl.ppdm.org/dl/690]).
+]],
+        },
+    },
+    {
+        label = "mixs:alkalinity_method",
+        insertText = "mixs:0000298",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:alkalinity_method",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000298]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Method used for alkalinity measurement.
+
++ **Examples**
+- `titration`
+]],
+        },
+    },
+    {
+        label = "mixs:additional_info",
+        insertText = "mixs:0000300",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:additional_info",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000300]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Information that doesn't fit anywhere else. Can also be used to propose new entries for field with controlled vocabularies.
+]],
+        },
+    },
+    {
+        label = "mixs:reservoir",
+        insertText = "mixs:0000303",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:reservoir",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000303]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Name of the reservoir.
+
++ **Examples**
+- `Carabepus`
+]],
+        },
+    },
+    {
+        label = "mixs:carb_nitro_ratio",
+        insertText = "mixs:0000310",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:carb_nitro_ratio",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000310]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:float]
+
++ **Definition**
+- Ratio of amount or concentrations of carbon to nitrogen.
+
++ **Examples**
+- `0.417361111`
+]],
+        },
+    },
+    {
+        label = "mixs:cur_vegetation",
+        insertText = "mixs:0000312",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:cur_vegetation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000312]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Vegetation classification from one or more standard classification systems, or agricultural crop.
+
++ **Comments**
+- The expect value should be a current vegetation type.
+]],
+        },
+    },
+    {
+        label = "mixs:cur_vegetation_meth",
+        insertText = "mixs:0000314",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:cur_vegetation_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000314]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in vegetation classification.
+]],
+        },
+    },
+    {
+        label = "mixs:previous_land_use",
+        insertText = "mixs:0000315",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:previous_land_use",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000315]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Previous land use and dates.
+
++ **Comments**
+- The expected values should follow the pattern `{land_use_name};{date}`.
+
++ **Examples**
+- `fallow;2018-05-11T14:30Z`
+]],
+        },
+    },
+    {
+        label = "mixs:prev_land_use_meth",
+        insertText = "mixs:0000316",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:prev_land_use_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000316]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in determining previous land use and dates.
+]],
+        },
+    },
+    {
+        label = "mixs:host_body_mass_index",
+        insertText = "mixs:0000317",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_body_mass_index",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000317]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Body mass index, calculated as weight/(height)squared.
+
++ **Comments**
+- The preferred unit is kilogram per square meter.
+
++ **Examples**
+- `22 kilogram per square meter`
+]],
+        },
+    },
+    {
+        label = "mixs:crop_rotation",
+        insertText = "mixs:0000318",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:crop_rotation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000318]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Whether or not crop is rotated, and if `yes`, rotation schedule.
+
++ **Comments**
+- The expected values should follow the pattern `{crop_rotation_status};{schedule}`.
+
++ **Examples**
+- `yes;R2/2017-01-01/2018-12-31/P6M`
+]],
+        },
+    },
+    {
+        label = "mixs:flooding",
+        insertText = "mixs:0000319",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:flooding",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000319]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:dateTime]
+
++ **Definition**
+- Historical and/or physical evidence of flooding.
+]],
+        },
+    },
+    {
+        label = "mixs:extreme_event",
+        insertText = "mixs:0000320",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:extreme_event",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000320]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:dateTime]
+
++ **Definition**
+- Unusual physical events that may have affected microbial populations.
+]],
+        },
+    },
+    {
+        label = "mixs:horizon_meth",
+        insertText = "mixs:0000321",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:horizon_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000321]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in determining the horizon.
+]],
+        },
+    },
+    {
+        label = "mixs:sieving",
+        insertText = "mixs:0000322",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:sieving",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000322]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Collection design of pooled samples and/or sieve size and amount of sample sieved.
+
++ **Comments**
+- The expected values should follow the pattern `{design_name_and_or_size};{amount}`.
+]],
+        },
+    },
+    {
+        label = "mixs:water_cont_soil_meth",
+        insertText = "mixs:0000323",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:water_cont_soil_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000323]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in determining the water content of soil.
+]],
+        },
+    },
+    {
+        label = "mixs:al_sat_meth",
+        insertText = "mixs:0000324",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:al_sal_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000324]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in determining Al saturation.
+]],
+        },
+    },
+    { -- NOTE: Example did not follow the structured pattern
+        label = "mixs:pool_dna_extracts",
+        insertText = "mixs:0000325",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:pool_dna_extracts",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000325]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:FoodAnimalAndAnimalFeed]
+- [mixs:FoodFoodProductionFacility]
+- [mixs:HumanAssociated]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Indicate whether multiple DNA extractions were mixed. If the answer is `yes`, the number of extracts that were pooled should be given.
+
++ **Comments**
+- The expected values should follow the pattern `{pooling_status};{number_of_pooled_extracts}`.
+- The preferred unit is gram, milliliter, or microliter.
+
++ **Examples**
+- `yes; 5`
+]],
+        },
+    },
+    { -- NOTE: Recheck boolean
+        label = "mixs:twin_sibling",
+        insertText = "mixs:0000326",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:twin_sibling",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000326]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:HumanAssociated]
+
++ **Range**
+- [xsd:boolean]
+
++ **Definition**
+- Specification of a twin sibling presence.
+
++ **Examples**
+- `yes`
+]],
+        },
+    },
+    {
+        label = "mixs:store_cond",
+        insertText = "mixs:0000327",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:store_cond",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000327]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{storage_condition_type};{duration}$`
+
++ **Definition**
+- Explain how and for how long the soild sample was stored before DNA extraction (fresh/frozen/other).
+
++ **Examples**
+- `-20 degrees Celsius freezer;P2Y10D`
+]],
+        },
+    },
+    {
+        label = "mixs:link_climate_info",
+        insertText = "mixs:0000328",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:link_climate_info",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000328]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Link to climate resource.
+]],
+        },
+    },
+    {
+        label = "mixs:link_class_info",
+        insertText = "mixs:0000329",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:link_class_info",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000329]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Link to digitized soil maps or other soil classification information.
+]],
+        },
+    },
+    {
+        label = "mixs:local_class",
+        insertText = "mixs:0000330",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:local_class",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000330]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Soil classification based on local soil classification system.
+
++ **Comments**
+- The expected value should be a local classification name.
+]],
+        },
+    },
+    {
+        label = "mixs:local_class_meth",
+        insertText = "mixs:0000331",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:local_class_meth",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000331]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^({PMID}|{DOI}|{URL})$`
+
++ **Definition**
+- Reference or method used in determining the local soil classification.
+]],
+        },
+    },
+    {
+        label = "mixs:soil_type",
+        insertText = "mixs:0000332",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:soil_type",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000332]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Domain of**
+- [mixs:Agriculture]
+- [mixs:FoodFarmEnvironment]
+- [mixs:Soil]
+
++ **Range**
+- [xsd:string]
+
++ **Definition**
+- Description of the soil type or classitification.
+
++ **Comments**
+- This field accepts terms under soil ([http://purl.obolibrary.org/obo/ENVO_00001998]). Multiple terms can be separated by pipes.
+
++ **Examples**
+- `plinthosol [ENVO:00002250]`
+]],
+        },
+    },
+    {
+        label = "mixs:host_pulse",
+        insertText = "mixs:0000333",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "mixs:host_pulse",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://w3id.org/mixs/0000333]
+
++ **Type**
+- [owl:DatatypeProperty]
+- [rdf:Property]
+
++ **Range**
+- [xsd:string]
+
++ **Structured pattern**
+- `^{scientific_float}( *- *{scientific_float})? *{text}$`
+
++ **Definition**
+- Resting pulse, measured as beats per minute.
+
++ **Comments**
+- The preferred unit is beats per minute.
+
++ **Examples**
+- `65 beats per minute`
+]],
+        },
+    },
+
+
+
+
+
+
+
+
+
 
 
 
