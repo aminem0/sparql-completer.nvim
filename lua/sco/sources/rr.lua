@@ -265,7 +265,7 @@ return {
     },
     { -- NOTE: Yes, lowercase.
         label = "rr:defaultGraph",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "rr:defaultGraph",
         documentation = {
             value = [[
@@ -282,7 +282,7 @@ return {
     },
     {
         label = "rr:SQL2008",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Constant,
         description = "rr:SQL2008",
         documentation = {
             value = [[
@@ -299,7 +299,7 @@ return {
     },
     {
         label = "rr:class",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:class",
         documentation = {
             value = [[
@@ -322,7 +322,7 @@ return {
     },
     { -- NOTE:
         label = "rr:constant",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:constant",
         documentation = {
             value = [[
@@ -339,7 +339,7 @@ return {
     },
     {
         label = "rr:datatype",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:datatype",
         documentation = {
             value = [[
@@ -362,7 +362,7 @@ return {
     },
     {
         label = "rr:graph",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:graph",
         documentation = {
             value = [[
@@ -379,7 +379,7 @@ return {
     },
     {
         label = "rr:graphMap",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:graphMap",
         documentation = {
             value = [[
@@ -402,7 +402,7 @@ return {
     },
     {
         label = "rr:joinCondition",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:joinCondition",
         documentation = {
             value = [[
@@ -425,7 +425,7 @@ return {
     },
     {
         label = "rr:logicalTable",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:logicalTable",
         documentation = {
             value = [[
@@ -448,7 +448,7 @@ return {
     },
     {
         label = "rr:object",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:object",
         documentation = {
             value = [[
@@ -468,7 +468,7 @@ return {
     },
     {
         label = "rr:parentTriplesMap",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:parentTriplesMap",
         documentation = {
             value = [[
@@ -491,7 +491,7 @@ return {
     },
     {
         label = "rr:predicate",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:predicate",
         documentation = {
             value = [[
@@ -511,7 +511,7 @@ return {
     },
     {
         label = "rr:predicateMap",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:predicateMap",
         documentation = {
             value = [[
@@ -534,7 +534,7 @@ return {
     },
     {
         label = "rr:predicateObjectMap",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:predicateObjectMap",
         documentation = {
             value = [[
@@ -554,7 +554,7 @@ return {
     },
     {
         label = "rr:sqlVersion",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:sqlVersion",
         documentation = {
             value = [[
@@ -574,7 +574,7 @@ return {
     },
     {
         label = "rr:subject",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:subject",
         documentation = {
             value = [[
@@ -591,7 +591,7 @@ return {
     },
     {
         label = "rr:subjectMap",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:subjectMap",
         documentation = {
             value = [[
@@ -614,7 +614,7 @@ return {
     },
     { -- NOTE: Object property but definition makes it seem like a datatype property. Documentation is object property though, even if it considers punning.
         label = "rr:termType",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:termType",
         documentation = {
             value = [[
@@ -634,7 +634,7 @@ return {
     },
     {
         label = "rr:child",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:child",
         documentation = {
             value = [[
@@ -657,7 +657,7 @@ return {
     },
     {
         label = "rr:column",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:column",
         documentation = {
             value = [[
@@ -683,7 +683,7 @@ return {
     },
     {
         label = "rr:inverseExpression",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:inverseExpression",
         documentation = {
             value = [[
@@ -709,7 +709,7 @@ return {
     },
     {
         label = "rr:language",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:language",
         documentation = {
             value = [[
@@ -732,7 +732,7 @@ return {
     },
     {
         label = "rr:parent",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:parent",
         documentation = {
             value = [[
@@ -755,7 +755,7 @@ return {
     },
     {
         label = "rr:sqlQuery",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:sqlQuery",
         documentation = {
             value = [[
@@ -778,7 +778,7 @@ return {
     },
     {
         label = "rr:tableName",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:tableName",
         documentation = {
             value = [[
@@ -801,7 +801,7 @@ return {
     },
     {
         label = "rr:template",
-        kind = cmp.lsp.CompletionItemKind.Class,
+        kind = cmp.lsp.CompletionItemKind.Property,
         description = "rr:template",
         documentation = {
             value = [[
