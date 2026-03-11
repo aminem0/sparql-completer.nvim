@@ -5,6 +5,8 @@ M.options = {
         "abcd",
         "ac",
         "accd",
+        "acorient",
+        "acpart",
         "acsubtype",
         "ann",
         "cc",
