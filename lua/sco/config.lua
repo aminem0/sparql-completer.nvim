@@ -4,6 +4,8 @@ M.options = {
     sources = {
         "abcd",
         "ac",
+        "accd",
+        "acsubtype",
         "ann",
         "cc",
         "cnt",
@@ -28,6 +30,7 @@ M.options = {
         "owl",
         "pizza",
         "poke",
+        "ppi",
         "prof",
         "qb",
         "rdf",
