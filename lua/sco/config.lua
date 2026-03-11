@@ -8,6 +8,7 @@ M.options = {
         "acorient",
         "acpart",
         "acsubtype",
+        "acvariant",
         "ann",
         "cc",
         "cnt",
