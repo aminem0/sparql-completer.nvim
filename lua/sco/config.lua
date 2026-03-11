@@ -30,6 +30,7 @@ M.options = {
         "minext",
         "miqe",
         "mixs",
+        "obis",
         "owl",
         "pizza",
         "poke",
