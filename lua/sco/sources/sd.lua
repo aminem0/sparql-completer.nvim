@@ -301,7 +301,7 @@ return {
 - [http://www.w3.org/ns/sparql-service-description#SPARQL11Query]
 
 + **Type**
-- [sd:Feature]
+- [sd:Language]
 
 + **Definition**
 - [sd:SPARQL11Query] is an [sd:Language] representing the SPARQL 1.1 Query language.
@@ -318,7 +318,7 @@ return {
 - [http://www.w3.org/ns/sparql-service-description#SPARQL11Update]
 
 + **Type**
-- [sd:Feature]
+- [sd:Language]
 
 + **Definition**
 - [sd:SPARQL11Update] is an [sd:Language] representing the SPARQL 1.1 Update language.
