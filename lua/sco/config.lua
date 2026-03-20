@@ -14,6 +14,7 @@ M.options = {
         "cc",
         "cnt",
         "cpprole",
+        "csvw",
         "dc",
         "dcam",
         "dcat",
