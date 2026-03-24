@@ -17,7 +17,7 @@ return {
 - [http://rs.tdwg.org/ac/terms/Digital3DResource]
 
 + **Type**
-- [rdf:Class]
+- [rdfs:Class]
 
 + **Definition**
 - One or more binary files primarily intended to hold information about the three-dimensional geometry (surface or volume) of a real or non-real object, set of objects, or scene.
@@ -40,7 +40,7 @@ return {
 - [http://rs.tdwg.org/ac/terms/RegionOfInterest]
 
 + **Type**
-- [rdf:Class]
+- [rdfs:Class]
 
 + **Definition**
 - A designated region of a media item bounded in dimensions appropriate for the media type.
@@ -60,7 +60,7 @@ return {
 - [http://rs.tdwg.org/ac/terms/ServiceAccessPoint]
 
 + **Type**
-- [rdf:Class]
+- [rdfs:Class]
 
 + **Definition**
 - A specific digital representation ofa media resource.
@@ -990,7 +990,7 @@ return {
 - [xsd:string]
 
 + **Definition**
-- The URI of the language of description and other metadata (but not necessarily of theimage itself), from the ISO639-2 list of URIs for ISO 3-letter language codes, [http://id.loc.gov/vocabulary/iso639-2].
+- The URI of the language of description and other metadata (but not necessarily of the image itself), from the ISO639-2 list of URIs for ISO 3-letter language codes, [http://id.loc.gov/vocabulary/iso639-2].
 
 + **Comments**
 - At least one of [ac:metadataLanguage] and [ac:metadataLanguageLiteral] MUST be supplied, but, when feasible, supplying both might make the metadata more widely useful. They must specify the same language. In case of ambiguity, [ac:metadataLanguage] prevails.
@@ -1017,7 +1017,7 @@ return {
 - [xsd:string]
 
 + **Definition**
-- Language of description and other metadata (but not necessarily of theimage itself), represented as an ISO639-2 three letter language code.
+- Language of description and other metadata (but not necessarily of the image itself), represented as an ISO639-2 three letter language code.
 
 + **Comments**
 - ISO639-1 two-letter codes are premitted, but deprecated.
