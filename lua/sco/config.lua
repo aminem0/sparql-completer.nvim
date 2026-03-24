@@ -11,6 +11,7 @@ M.options = {
         "acvariant",
         "ann",
         "bf",
+        "bibo",
         "cc",
         "cnt",
         "cpprole",
