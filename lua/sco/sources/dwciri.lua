@@ -6,7 +6,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:behavior",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/behavior]
@@ -17,9 +16,6 @@ return {
 
 + **Domain**
 - [dwc:Occurrence]
-
-+ **Range**
-- [xsd:anyURI]
 
 + **Definition**
 - A description of the behavior shown by the subject at the time the [dwc:Occurrence] was recorded.
@@ -34,7 +30,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:caste",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/caste]
@@ -45,9 +40,6 @@ return {
 
 + **Domain**
 - [dwc:Occurrence]
-
-+ **Range**
-- [xsd:anyURI]
 
 + **Definition**
 - Categorisation of individuals for eusocial species (including some mammals and arthropods).
@@ -62,7 +54,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:dataGeneralizations",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/dataGeneralizations]
@@ -73,9 +64,6 @@ return {
 
 + **Domain**
 - [dwc:Event]
-
-+ **Range**
-- [xsd:anyURI]
 
 + **Definition**
 - Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.
@@ -90,7 +78,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:degreeOfEstablishment",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/degreeOfEstablishment]
@@ -119,7 +106,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:discipline",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/discipline]
@@ -141,7 +127,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:disposition",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/disposition]
@@ -163,7 +148,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:earliestGeochronologicalEra",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/earliestGeochronologicalEra]
@@ -185,7 +169,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:establishmentMeans",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/earliestPeriodOrLowestSystem]
@@ -211,7 +194,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:eventType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/eventType]
@@ -233,7 +215,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:fieldNotes",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/fieldNotes]
@@ -255,7 +236,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:fieldNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/fieldNumber]
@@ -277,7 +257,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:footprintSRS",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/footprintSRS]
@@ -299,7 +278,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:footprintWKT",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/footprintWKT]
@@ -321,7 +299,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:fromLithostratigraphicUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/fromLithostratigraphicUnit]
@@ -343,7 +320,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:fundingAttribution",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/fundingAttribution]
@@ -365,7 +341,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:geodeticDatum",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/geodeticDatum]
@@ -387,7 +362,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:georeferencedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/georeferencedBy]
@@ -409,7 +383,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:georeferenceProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/georeferenceProtocol]
@@ -431,7 +404,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:georeferenceSources",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/georeferenceSources]
@@ -453,7 +425,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:georeferenceVerificationStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/georeferenceVerificationStatus]
@@ -475,7 +446,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:habitat",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/habitat]
@@ -497,7 +467,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:identificationQualifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/identificationQualifier]
@@ -519,7 +488,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:identificationVerificationStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/identificationVerificationStatus]
@@ -541,7 +509,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:identifiedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/identifiedBy]
@@ -563,7 +530,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:inCollection",
         documentation = { -- NOTE: Maybe dwc:Event
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/inCollection]
@@ -585,7 +551,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:inDataset",
         documentation = { -- NOTE: Maybe dwc:Event
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/inDataset]
@@ -607,7 +572,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:inDescribedPlace",
         documentation = { -- NOTE: Maybe dwc:Event
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/inDescribedPlace]
@@ -629,7 +593,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:informationWithheld",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/informationWithheld]
@@ -651,7 +614,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:latestGeochronologicalEra",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra]
@@ -673,7 +635,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:lifeStage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/lifeStage]
@@ -695,7 +656,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:locationAccordingTo",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/locationAccordingTo]
@@ -717,7 +677,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:measurementDeterminedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/measurementDeterminedBy]
@@ -739,7 +698,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:measurementMethod",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/measurementMethod]
@@ -761,7 +719,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:measurementType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/measurementType]
@@ -783,7 +740,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:measurementUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/measurementUnit]
@@ -805,7 +761,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:measurementValue",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/measurementValue]
@@ -830,7 +785,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:occurrenceStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/occurrenceStatus]
@@ -852,7 +806,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:organismQuantityType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/organismQuantityType]
@@ -874,7 +827,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:pathway",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/pathway]
@@ -900,7 +852,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:preparations",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/preparations]
@@ -922,7 +873,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:recordedBy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/recordedBy]
@@ -944,7 +894,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:recordNumber",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/recordNumber]
@@ -966,7 +915,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:reproductiveCondition",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/reproductiveCondition]
@@ -988,7 +936,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:sampleSizeUnit",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/sampleSizeUnit]
@@ -1010,7 +957,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:samplingProtocol",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/samplingProtocol]
@@ -1035,7 +981,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:sex",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/sex]
@@ -1057,7 +1002,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:toDigitalSpecimen",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/toDigitalSpecimen]
@@ -1079,7 +1023,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:toTaxon",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/toTaxon]
@@ -1101,7 +1044,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:typeStatus",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/typeStatus]
@@ -1123,7 +1065,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:verbatimCoordinateSystem",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/verbatimCoordinateSystem]
@@ -1145,7 +1086,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:verbatimSRS",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/verbatimSRS]
@@ -1167,7 +1107,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:verticalDatum",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/verticalDatum]
@@ -1189,7 +1128,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:vitality",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/vitality]
