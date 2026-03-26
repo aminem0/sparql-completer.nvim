@@ -52,6 +52,7 @@ M.options = {
         "sparql",
         "swrl",
         "tc",
+        "tdwgutility",
         "up",
         "vann",
         "vcard",
