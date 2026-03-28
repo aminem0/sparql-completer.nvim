@@ -24,7 +24,8 @@ return {
 - An entity responsible for making contributions to the resource.
 
 + **Comments**
-- The guidelines for using names of persons or organisations as creators also apply to contributors, typically, the name of a Contributor should be used to indicate the entity.
+- The guidelines for using names of persons or organisations as creators also apply to contributors.
+- Typically, the name of a [dc:contributor] should be used to indicate the entity.
 ]],
         },
     },
@@ -44,7 +45,11 @@ return {
 - The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.
 
 + **Comments**
-- Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or a date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.
+- Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates.
+- Temporal topic may be a named period, date, or a date range.
+- A jurisdiction may be a named administrative entity or a geographic place to which the resource applies.
+- Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN].
+- Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.
 ]],
         },
     },
@@ -64,7 +69,8 @@ return {
 - An entity primarily responsible for making the resource.
 
 + **Comments**
-- Examples of a Creator include a preson, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.
+- Examples of a [dc:creator] include a preson, an organization, or a service.
+- Typically, the name of a [dc:creator] should be used to indicate the entity.
 ]],
         },
     },
@@ -84,7 +90,10 @@ return {
 - A point or period of time associated with an event in the lifecycle of the resource.
 
 + **Comments**
-- Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format SPecification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing.
+- [dc:date] may be used to express temporal information at any level of granularity.
+- Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format SPecification [EDTF].
+- If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used.
+- Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a `/` (slash) character. Either the start or end date may be missing.
 ]],
         },
     },
@@ -104,7 +113,7 @@ return {
 - An account of the resource.
 
 + **Comments**
-- Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
+- [dc:description] may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
 ]],
         },
     },
@@ -184,7 +193,8 @@ return {
 - An entity responsible for making the resource available.
 
 + **Comments**
-- Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.
+- Examples of a [dc:publisher] include a person, an organization, or a service.
+- Typically, the name of a [dc:publisher] should be used to indicate the entity.
 ]],
         },
     },
@@ -244,7 +254,8 @@ return {
 - A related resource from which the described resource is derived.
 
 + **Comments**
-- The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.
+- The described resource may be derived from the related resource in whole or in part.
+- Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.
 ]],
         },
     },
@@ -264,7 +275,8 @@ return {
 - The topic of the resource.
 
 + **Comments**
-- Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.
+- Typically, the subject will be represented using keywords, key phrases, or classification codes.
+- Recommended best practice is to use a controlled vocabulary.
 ]],
         },
     },
@@ -301,7 +313,8 @@ return {
 - The nature or genre of the resource.
 
 + **Comments**
-- Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.
+- Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE].
+- To describe the file format, physical medium, or dimensions of the resource, use the [dc:format] element.
 ]],
         },
     },
