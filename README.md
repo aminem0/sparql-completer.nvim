@@ -74,50 +74,50 @@ Completion and suggestion of terms is provided via **[nvim-cmp](https://github.c
 
 At the moment, here is the current list of namespaces that have been integrated into the plugin:
 
-| Namespace                          | Prefix       | Status     |
-|------------------------------------|--------------|------------|
-| ABCD                               | ![abcd:]     | Incomplete |
-| Annotea                            | ![ann:]      | Complete   |
-| Audiovisual Core (AC)              | ![ac:]       | Complete   |
-| AC subject orientation vocabulary  | ![acorient:] | Complete   |
-| Bibliography Ontology              | ![bibo:]     | Complete   |
-| Content in RDF                     | ![cnt:]      | Complete   |
-| Creative Commons                   | ![cc:]       | Complete   |
-| CSVW                               | ![csvw:]     | Complete   |
-| Darwin Core                        | ![dwc:]      | Complete   |
-| Darwin Core IRI                    | ![dwciri:]   | Complete   |
-| Darwin Semantic Web                | ![dsw:]      | Complete   |
-| Dublin Core Elements               | ![dc:]       | Complete   |
-| Dublin Core Terms                  | ![dcterms:]  | Complete   |
-| DCMI Type                          | ![dcmitype:] | Complete   |
-| Data Cube (QB)                     | ![qb:]       | Complete   |
-| Evaluation andr Report Language    | ![earl:]     | Complete   |
-| Friend of a Friend                 | ![foaf:]     | Incomplete |
-| GBIF                               | ![gbif:]     | Complete   |
-| Good Relations                     | ![gr:]       | Incomplete |
-| HTTP Vocabulary in RDF             | ![http:]     | Complete   |
-| Mineral Extension                  | ![minext:]   | Complete   |
-| OBIS                               | ![obis:]     | Complete   |
-| OWL                                | ![owl:]      | Complete   |
-| Pizza Ontology                     | ![pizza:]    | Complete   |
-| Plant-Pollinators Interaction      | ![ppi:]      | Complete   |
-| Pointer Methods in RDF             | ![ptr:]      | Complete   |
-| Profile                            | ![prof:]     | Complete   |
-| R2RML                              | ![rr:]       | Complete   |
-| RDF                                | ![rdf:]      | Complete   |
-| RDF-Schema                         | ![rdfs:]     | Complete   |
-| schema.org                         | ![schema:]   | Complete   |
-| Semantic Web Rule Language         | ![swrl:]     | Complete   |
-| Shapes and Constraints Language    | ![shacl:]    | Incomplete |
-| Social Linked Data (Solid)         | ![solid:]    | Complete   |
-| SPARQL Service Description         | ![sd:]       | Complete   |
-| Taxon Concept                      | ![tc:]       | Complete   |
-| UniProt Ontology                   | ![up:]       | Complete   |
-| vCard                              | ![vcard:]    | Complete   |
-| Vocabulary Annotation              | ![vann:]     | Complete   |
-| Vocabulary of Interlinked Datasets | ![void:]     | Complete   |
-| Vocabulary Specification           | ![vs:]       | Complete   |
-| Web of Trust Ontology              | ![wot:]      | Complete   |
+| Namespace                          | Prefix        | Status     |
+|------------------------------------|---------------|------------|
+| ABCD                               | [abcd:]()     | Incomplete |
+| Annotea                            | [ann:]()      | Complete   |
+| Audiovisual Core (AC)              | [ac:]()       | Complete   |
+| AC subject orientation vocabulary  | [acorient:]() | Complete   |
+| Bibliography Ontology              | [bibo:]()     | Complete   |
+| Content in RDF                     | [cnt:]()      | Complete   |
+| Creative Commons                   | [cc:]()       | Complete   |
+| CSVW                               | [csvw:]()     | Complete   |
+| Darwin Core                        | [dwc:]()      | Complete   |
+| Darwin Core IRI                    | [dwciri:]()   | Complete   |
+| Darwin Semantic Web                | [dsw:]()      | Complete   |
+| Dublin Core Elements               | [dc:]()       | Complete   |
+| Dublin Core Terms                  | [dcterms:]()  | Complete   |
+| DCMI Type                          | [dcmitype:]() | Complete   |
+| Data Cube (QB)                     | [qb:]()       | Complete   |
+| Evaluation and Report Language     | [earl:]()     | Complete   |
+| Friend of a Friend                 | [foaf:]()     | Incomplete |
+| GBIF                               | [gbif:]()     | Complete   |
+| Good Relations                     | [gr:]()       | Incomplete |
+| HTTP Vocabulary in RDF             | [http:]()     | Complete   |
+| Mineral Extension                  | [minext:]()   | Complete   |
+| OBIS                               | [obis:]()     | Complete   |
+| OWL                                | [owl:]()      | Complete   |
+| Pizza Ontology                     | [pizza:]()    | Complete   |
+| Plant-Pollinators Interaction      | [ppi:]()      | Complete   |
+| Pointer Methods in RDF             | [ptr:]()      | Complete   |
+| Profile                            | [prof:]()     | Complete   |
+| R2RML                              | [rr:]()       | Complete   |
+| RDF                                | [rdf:]()      | Complete   |
+| RDF-Schema                         | [rdfs:]()     | Complete   |
+| schema.org                         | [schema:]()   | Complete   |
+| Semantic Web Rule Language         | [swrl:]()     | Complete   |
+| Shapes and Constraints Language    | [shacl:]()    | Incomplete |
+| Social Linked Data (Solid)         | [solid:]()    | Complete   |
+| SPARQL Service Description         | [sd:]()       | Complete   |
+| Taxon Concept                      | [tc:]()       | Complete   |
+| UniProt Ontology                   | [up:]()       | Complete   |
+| vCard                              | [vcard:]()    | Complete   |
+| Vocabulary Annotation              | [vann:]()     | Complete   |
+| Vocabulary of Interlinked Datasets | [void:]()     | Complete   |
+| Vocabulary Specification           | [vs:]()       | Complete   |
+| Web of Trust Ontology              | [wot:]()      | Complete   |
 
 ---
 
