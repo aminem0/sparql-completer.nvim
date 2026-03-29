@@ -7,12 +7,11 @@ https://www.dublincore.org/specifications/dublin-core/abstract-model/2007-06-04/
 ]]
 
 return {
-    {  -- NOTE: DOES THIS MEAN THAT DCTERMS PUNS?
+    { -- NOTE: DOES THIS MEAN THAT DCTERMS PUNS?
         label = "dcterms:Agent",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Agent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Agent]
@@ -31,7 +30,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:AgentClass",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/AgentClass]
@@ -52,7 +50,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:BibliographicResource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/BibliographicResource]
@@ -70,7 +67,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:FileFormat",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/FileFormat]
@@ -91,7 +87,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Frequency",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Frequency]
@@ -109,7 +104,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Jurisdiction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Jurisdiction]
@@ -130,7 +124,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:LicenseDocument",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/LicenseDocument]
@@ -151,7 +144,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:LinguisticSystem",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/LinguisticSystem]
@@ -172,7 +164,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Location",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Location]
@@ -193,7 +184,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:LocationPeriodOrJurisdiction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/LocationPeriodOrJurisdiction]
@@ -211,7 +201,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:MediaType",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/MediaType]
@@ -232,7 +221,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:MediaTypeOrExtent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/MediaTypeOrExtent]
@@ -250,7 +238,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:MethodOfAccrual",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/MethodOfAccrual]
@@ -268,7 +255,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:MethodOfInstruction",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/MethodOfInstruction]
@@ -286,7 +272,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Period",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Period]
@@ -304,7 +289,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:PeriodOfTime",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/PeriodOfTime]
@@ -325,7 +309,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:PhysicalMedium",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/PhysicalMedium]
@@ -349,7 +332,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:PhysicalResource",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/PhysicalResource]
@@ -367,7 +349,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Policy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Policy]
@@ -385,7 +366,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:ProvenanceStatement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/ProvenanceStatement]
@@ -403,7 +383,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:RightsStatement",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/RightsStatement]
@@ -421,7 +400,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:SizeOrDuration",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/SizeOrDuration]
@@ -445,7 +423,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "dcterms:Standard",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/Standard]
@@ -834,7 +811,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcterms:abstract",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/abstract]
@@ -855,7 +831,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcterms:accessRights",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/accessRights]
@@ -866,20 +841,22 @@ return {
 + **Subproperty relationships**
 - [dcterms:accessRights] ⊑ [dcterms:rights]
 
++ **Range includes**
+- [dcterms:RightsStatement]
+
 + **Definition**
 - Information about who access the resource or an indication of its security status.
 
 + **Comments**
-- Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.
+- [dcterms:accessRights] may include information regarding access or restrictions based on privacy, security, or other policies.
 ]],
         },
     },
     {
         label = "dcterms:accrualMethod",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "accrualMethod",
+        description = "dcterms:accrualMethod",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/accrualMethod]
@@ -890,7 +867,7 @@ return {
 + **Domain**
 - [dmcitype:Collection]
 
-+ **Range**
++ **Range includes**
 - [dcterms:MethodOfAccrual]
 
 + **Definition**
@@ -904,9 +881,8 @@ return {
     {
         label = "dcterms:accrualPeriodicity",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "accrualPeriodicity",
+        description = "dcterms:accrualPeriodicity",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/accrualPeriodicity]
@@ -917,7 +893,7 @@ return {
 + **Domain**
 - [dmcitype:Collection]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Frequency]
 
 + **Definition**
@@ -931,9 +907,8 @@ return {
     {
         label = "dcterms:accrualPolicy",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "accrualPolicy",
+        description = "dcterms:accrualPolicy",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/accrualPolicy]
@@ -944,7 +919,7 @@ return {
 + **Domain**
 - [dmcitype:Collection]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Policy]
 
 + **Definition**
@@ -960,7 +935,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcterms:alternative",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/alternative]
@@ -969,6 +943,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dcterms:alternative] ⊑ [dc:title]
 - [dcterms:alternative] ⊑ [dcterms:title]
 
 + **Range**
@@ -987,7 +962,6 @@ return {
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcterms:audience",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/audience]
@@ -995,7 +969,7 @@ return {
 + **Type**
 - [rdf:Property]
 
-+ **Range**
++ **Range includes**
 - [dcterms:AgentClass]
 
 + **Definition**
@@ -1010,8 +984,7 @@ return {
         label = "dcterms:available",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dcterms:available",
-        documentation = { --WARNING: Which Date y'all?
-            kind = "markdown",
+        documentation = {
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/available]
@@ -1020,6 +993,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dcterms:available] ⊑ [dc:date]
 - [dcterms:available] ⊑ [dcterms:date]
 
 + **Range**
@@ -1036,9 +1010,8 @@ return {
     {
         label = "dcterms:bibliographicCitation",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "bibliographicCitation",
+        description = "dcterms:bibliographicCitation",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/bibliographicCitation]
@@ -1047,6 +1020,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dcterms:bibliographicCitation] ⊑ [dc:identifier]
 - [dcterms:bibliographicCitation] ⊑ [dcterms:identifier]
 
 + **Range**
@@ -1063,9 +1037,8 @@ return {
     {
         label = "dcterms:conformsTo",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "conformsTo",
+        description = "dcterms:conformsTo",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/conformsTo]
@@ -1074,9 +1047,10 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dterms:conformsTo] ⊑ [dc:relation]
 - [dterms:conformsTo] ⊑ [dcterms:relation]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Standard]
 
 + **Definition**
@@ -1087,9 +1061,8 @@ return {
     {
         label = "dcterms:contributor",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "contributor",
+        description = "dcterms:contributor",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/contributor]
@@ -1100,7 +1073,7 @@ return {
 + **Subproperty relationships**
 - [dcterms:contributor] ⊑ [dc:contributor]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Agent]
 
 + **Definition**
@@ -1114,9 +1087,8 @@ return {
     {
         label = "dcterms:coverage",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "coverage",
+        description = "dcterms:coverage",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/coverage]
@@ -1127,7 +1099,7 @@ return {
 + **Subproperty relationships**
 - [dcterms:coverage] ⊑ [dc:coverage]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Jurisdiction]
 - [dcterms:Location]
 - [dcterms:Period]
@@ -1136,16 +1108,19 @@ return {
 - The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.
 
 + **Comments**
-- Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.
+- Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates.
+- Temporal topic may be a named period, date, or date range.
+- A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN].
+- Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.
+- Because coverage is so broadly defined, it is preferable to use the more specific subproperties [dcterms:temporal] and [dcterms:spatial].
 ]],
         },
     },
     {
         label = "dcterms:created",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "created",
+        description = "dcterms:created",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/created]
@@ -1154,6 +1129,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dcterms:created] ⊑ [dc:date]
 - [dcterms:created] ⊑ [dcterms:date]
 
 + **Range**
@@ -1170,9 +1146,8 @@ return {
     {
         label = "dcterms:creator",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "creator",
-        documentation = { -- WARNING: Recheck relationships
-            kind = "markdown",
+        description = "dcterms:creator",
+        documentation = {
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/creator]
@@ -1180,11 +1155,14 @@ return {
 + **Type**
 - [rdf:Property]
 
++ **Equivalency relationships**
+- [dcterms:creator] ≡ [foaf:maker]
+
 + **Subproperty relationships**
 - [dcterms:creator] ⊑ [dc:creator]
 - [dcterms:contributor] ⊑ [dcterms:contributor]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Agent]
 
 + **Definition**
@@ -1198,9 +1176,8 @@ return {
     {
         label = "dcterms:date",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "date",
+        description = "dcterms:date",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/date]
@@ -1218,16 +1195,17 @@ return {
 - A point or period of time associated with an event in the lifecycle of the resource.
 
 + **Comments**
-- Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing.
+- [dcterms:date] may be used to express temporal information at any level of granularity.
+- Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF].
+- If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a `/` (slash) character. Either the start or end date may be missing.
 ]],
         },
     },
     {
         label = "dcterms:dateAccepted",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dateAccepted",
+        description = "dcterms:dateAccepted",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/dateAccepted]
@@ -1236,6 +1214,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dc:dateAccepted] ⊑ [dc:date]
 - [dc:dateAccepted] ⊑ [dcterms:date]
 
 + **Range**
@@ -1245,16 +1224,16 @@ return {
 - Date of acceptance of the resource.
 
 + **Comments**
-- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty. Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
+- Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).
 ]],
         },
     },
     {
         label = "dcterms:dateCopyrighted",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dateCopyrighted",
+        description = "dcterms:dateCopyrighted",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/dateCopyrighted]
@@ -1263,7 +1242,8 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
-- [dc:dateCopyrighted] ⊑ [dcterms:date]
+- [dcterms:dateCopyrighted] ⊑ [dc:date]
+- [dcterms:dateCopyrighted] ⊑ [dcterms:date]
 
 + **Range**
 - [rdfs:Literal]
@@ -1272,16 +1252,16 @@ return {
 - Date of copyright of the resource.
 
 + **Comments**
-- Typically a year. Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
+- Typically a year.
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
 ]],
         },
     },
     {
         label = "dcterms:dateSubmitted",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "dateSubmitted",
+        description = "dcterms:dateSubmitted",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/dateSubmitted]
@@ -1290,7 +1270,8 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
-- [dc:dateSubmitted] ⊑ [dcterms:date]
+- [dcterms:dateSubmitted] ⊑ [dc:date]
+- [dcterms:dateSubmitted] ⊑ [dcterms:date]
 
 + **Range**
 - [rdfs:Literal]
@@ -1299,16 +1280,16 @@ return {
 - Date of submission of the resource.
 
 + **Comments**
-- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty. Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
+- Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).
 ]],
         },
     },
     {
         label = "dcterms:description",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "description",
+        description = "dcterms:description",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/description]
@@ -1330,9 +1311,8 @@ return {
     {
         label = "dcterms:educationLevel",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "educationLevel",
+        description = "dcterms:educationLevel",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/educationLevel]
@@ -1343,7 +1323,7 @@ return {
 + **Subproperty relationships**
 - [dcterms:educationLevel] ⊑ [dcterms:audience]
 
-+ **Range**
++ **Range includes**
 - [dcterms:AgentClass]
 
 + **Definition**
@@ -1357,9 +1337,8 @@ return {
     {
         label = "dcterms:extent",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "extent",
+        description = "dcterms:extent",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/extent]
@@ -1368,6 +1347,7 @@ return {
 - [rdf:Property]
 
 + **Subproperty relationships**
+- [dcterms:extent] ⊑ [dc:format]
 - [dcterms:extent] ⊑ [dcterms:format]
 
 + **Range**
@@ -1384,9 +1364,8 @@ return {
     {
         label = "dcterms:format",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "format",
+        description = "dcterms:format",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/format]
@@ -1397,7 +1376,7 @@ return {
 + **Subproperty relationships**
 - [dcterms:format] ⊑ [dc:format]
 
-+ **Range**
++ **Range includes**
 - [dcterms:Extent]
 - [dcterms:MediaType]
 
@@ -1412,9 +1391,8 @@ return {
     {
         label = "dcterms:hasFormat",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "hasFormat",
+        description = "dcterms:hasFormat",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/hasFormat]
@@ -1422,27 +1400,27 @@ return {
 + **Type**
 - [rdf:Property]
 
-+ **Subproperty relationships**
-- [dcterms:hasFormat] ⊑ [dcterms:relation]
++ **Equivalency relationships**
+- [dcterms:hasFormat] ≡ [dcterms:isFormatOf]⁻
 
-+ **Range**
-- [dcterms:Extent]
-- [dcterms:MediaType]
++ **Subproperty relationships**
+- [dcterms:hasFormat] ⊑ [dc:relation]
+- [dcterms:hasFormat] ⊑ [dcterms:relation]
 
 + **Definition**
 - A related resource that is substantially the same as the pre-existing described resource, but in another format.
 
 + **Comments**
-- This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of.
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isFormatOf].
 ]],
         },
     },
     {
         label = "dcterms:hasPart",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "hasFormat",
+        description = "dcterms:hasPart",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/hasPart]
@@ -1450,23 +1428,27 @@ return {
 + **Type**
 - [rdf:Property]
 
++ **Equivalency relationships**
+- [dcterms:hasPart] ≡ [dcterms:isPartOf]⁻
+
 + **Subproperty relationships**
+- [dcterms:hasPart] ⊑ [dc:relation]
 - [dcterms:hasPart] ⊑ [dcterms:relation]
 
 + **Definition**
 - A related resource that is included either physically or logically in the described resource.
 
 + **Comments**
-- This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isPartOf].
 ]],
         },
     },
     {
         label = "dcterms:hasVersion",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "hasVersion",
+        description = "dcterms:hasVersion",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/hasVersion]
@@ -1474,23 +1456,28 @@ return {
 + **Type**
 - [rdf:Property]
 
++ **Equivalency relationships**
+- [dcterms:hasVersion] ≡ [dcterms:isVersionOf]⁻
+
 + **Subproperty relationships**
+- [dcterms:hasVersion] ⊑ [dc:relation]
 - [dcterms:hasVersion] ⊑ [dcterms:relation]
 
 + **Definition**
 - A related resource that is a version, edition, or adaptation of the described resource.
 
 + **Comments**
-- Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of.
+- Changes in version imply substantive changes in content rather than differences in format.
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isVersionOf].
 ]],
         },
     },
     {
         label = "dcterms:identifier",
         kind = cmp.lsp.CompletionItemKind.Property,
-        description = "identifier",
+        description = "dcterms:identifier",
         documentation = {
-            kind = "markdown",
             value = [[
 + **Identifier**
 - [http://purl.org/dc/terms/identifier]
@@ -1501,11 +1488,764 @@ return {
 + **Subproperty relationships**
 - [dcterms:identifier] ⊑ [dc:identifier]
 
++ **Range**
+- [rdfs:Literal]
+
 + **Definition**
 - An unambiguous reference to the resource within a given context.
 
 + **Comments**
-- Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.
+- Recommended practice is to identify the resource by means of a string conforming to an identification system.
+- Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).
+- Persistent identifiers should be provided as HTTP URIs.
+]],
+        },
+    },
+    {
+        label = "dcterms:instructionalMethod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:instructionalMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/instructionalMethod]
+
++ **Type**
+- [rdf:Property]
+
++ **Range includes**
+- [dcterms:MethodOfInstruction]
+
++ **Definition**
+- A process,used to engender knowledge, attitudes and skills, that the described resource is designed to support.
+
++ **Comments**
+- [dcterms:instructionalMethod] typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to learner and learner to instructor interactions, and mechanisms by which group and individual levels of learning are measured.
+- Instructional methods include all aspects of the instruction and learning process from planning and implementation through evaluation and feedback.
+]],
+        },
+    },
+    {
+        label = "dcterms:isFormatOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isFormatOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isFormatOf]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isFormatOf] ≡ [dcterms:hasFormat]⁻
+
++ **Subproperty relationships**
+- [dcterms:isFormatOf] ⊑ [dc:relation]
+- [dcterms:isFormatOf] ⊑ [dcterms:relation]
+
++ **Definition**
+- A pre-existing related resource that is substantially the same as the pre-existing described resource, but in another format.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:hasFormat].
+]],
+        },
+    },
+    {
+        label = "dcterms:isPartOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isPartOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isPartOf]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isPartOf] ≡ [dcterms:hasPart]⁻
+
++ **Subproperty relationships**
+- [dcterms:isPartOf] ⊑ [dc:relation]
+- [dcterms:isPartOf] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that is included either physically or logically in the described resource.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:hasPart].
+]],
+        },
+    },
+    {
+        label = "dcterms:isReferencedBy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isReferencedBy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isReferencedBy]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isReferencedBy] ≡ [dcterms:references]⁻
+
++ **Subproperty relationships**
+- [dcterms:isReferencedBy] ⊑ [dc:relation]
+- [dcterms:isReferencedBy] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that references, cites, or otherwise points to the described resource.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:references].
+]],
+        },
+    },
+    {
+        label = "dcterms:isReplacedBy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isReplacedBy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isReplacedBy]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isReplacedBy] ≡ [dcterms:replaces]⁻
+
++ **Subproperty relationships**
+- [dcterms:isReplacedBy] ⊑ [dc:relation]
+- [dcterms:isReplacedBy] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that supplants, displaces, or supersedes the described resource.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:replaces].
+]],
+        },
+    },
+    {
+        label = "dcterms:isRequiredBy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isRequiredBy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isRequiredBy]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isRequiredBy] ≡ [dcterms:requires]⁻
+
++ **Subproperty relationships**
+- [dcterms:isRequiredBy] ⊑ [dc:relation]
+- [dcterms:isRequiredBy] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that requires the described resource to support its function, delivery, or coherence.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:requires].
+]],
+        },
+    },
+    {
+        label = "dcterms:issued",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:issued",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/issued]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:issued] ⊑ [dc:date]
+- [dcterms:issued] ⊑ [dcterms:date]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- Date of formal issuance of the resource.
+
++ **Comments**
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
+]],
+        },
+    },
+    {
+        label = "dcterms:isVersionOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:isVersionOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/isVersionOf]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:isVersionOf] ≡ [dcterms:hasVersion]⁻
+
++ **Subproperty relationships**
+- [dcterms:isVersionOf] ⊑ [dc:relation]
+- [dcterms:isVersionOf] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that is a version, edition, or adaptation of the described resource.
+
++ **Comments**
+- Changes in version imply substantive changes in content rather than differences in format.
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:hasVersion].
+]],
+        },
+    },
+    {
+        label = "dcterms:language",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:language",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/language]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:language] ⊑ [dc:language]
+
++ **Range includes**
+- [dcterms:LinguisticSystem]
+
++ **Definition**
+- A language of the resource.
+
++ **Comments**
+- Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag.
+]],
+        },
+    },
+    {
+        label = "dcterms:license",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:license",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/license]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:license] ⊑ [dc:rights]
+- [dcterms:license] ⊑ [dcterms:rights]
+
++ **Range includes**
+- [dcterms:LicenseDocument]
+
++ **Definition**
+- A legal document giving official permission to do something with the resource.
+
++ **Comments**
+- Recommended best practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.
+]],
+        },
+    },
+    {
+        label = "dcterms:mediator",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:mediator",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/mediator]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:mediator] ⊑ [dcterms:audience]
+
++ **Range includes**
+- [dcterms:AgentClass]
+
++ **Definition**
+- An entity that mediates access to the resource.
+
++ **Comments**
+- In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.
+]],
+        },
+    },
+    {
+        label = "dcterms:medium",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:medium",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/medium]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:medium] ⊑ [dc:format]
+- [dcterms:medium] ⊑ [dcterms:format]
+
++ **Domain includes**
+- [dcterms:PhysicalMedium]
+
++ **Range includes**
+- [dcterms:PhysicalResource]
+
++ **Definition**
+- The material or physical carrier of the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:modified",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:modified",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/modified]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:modified] ⊑ [dc:date]
+- [dcterms:modified] ⊑ [dcterms:date]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- Date on which the resource was changed.
+
++ **Comments**
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
+]],
+        },
+    },
+    {
+        label = "dcterms:provenance",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:provenance",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/provenance]
+
++ **Type**
+- [rdf:Property]
+
++ **Range includes**
+- [dcterms:ProvenanceStatement]
+
++ **Definition**
+- A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
+
++ **Comments**
+- The statement may include a description of any changes successive custodians made to the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:publisher",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:publisher",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/publisher]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:publisher] ⊑ [dc:publisher]
+
++ **Range includes**
+- [dcterms:Agent]
+
++ **Definition**
+- An entity responsible for making the resource available.
+]],
+        },
+    },
+    {
+        label = "dcterms:references",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:references",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/references]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:references] ≡ [dcterms:isReferencedBy]⁻
+
++ **Subproperty relationships**
+- [dcterms:references] ⊑ [dc:relation]
+- [dcterms:references] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that references, cites, or otherwise points to the described resource.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isReferencedBy].
+]],
+        },
+    },
+    {
+        label = "dcterms:relation",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:relation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/relation]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:relation] ⊑ [dc:relation]
+
++ **Definition**
+- A related resource.
+
++ **Comments**
+- Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.
+]],
+        },
+    },
+    {
+        label = "dcterms:replaces",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:replaces",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/replaces]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:replaces] ≡ [dcterms:isReplacedBy]⁻
+
++ **Subproperty relationships**
+- [dcterms:replaces] ⊑ [dc:relation]
+- [dcterms:replaces] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that is supplanted, displaced, or superseded by the described resource.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isReplacedBy].
+]],
+        },
+    },
+    {
+        label = "dcterms:requires",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:requires",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/requires]
+
++ **Type**
+- [rdf:Property]
+
++ **Equivalency relationships**
+- [dcterms:requires] ≡ [dcterms:isRequiredBy]⁻
+
++ **Subproperty relationships**
+- [dcterms:requires] ⊑ [dc:relation]
+- [dcterms:requires] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource that is required by the described resource to support its function, delivery, or coherence.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- This property is an inverse property of [dcterms:isRequiredBy].
+]],
+        },
+    },
+    {
+        label = "dcterms:rights",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:rights",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/rights]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:rights] ⊑ [dc:rights]
+
++ **Range includes**
+- [dcterms:RightsStatement]
+
++ **Definition**
+- Information about rights held in and over the resource.
+
++ **Comments**
+- Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.
+- Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided.
+]],
+        },
+    },
+    {
+        label = "dcterms:rightsHolder",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:rightsHolder",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/rightsHolder]
+
++ **Type**
+- [rdf:Property]
+
++ **Range includes**
+- [dcterms:Agent]
+
++ **Definition**
+- A person or organization owning or managing rights over the resource.
+
++ **Comments**
+- Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.
+]],
+        },
+    },
+    {
+        label = "dcterms:source",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:source",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/source]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:source] ⊑ [dc:source]
+- [dcterms:source] ⊑ [dcterms:relation]
+
++ **Definition**
+- A related resource from which the described resource is derived.
+
++ **Comments**
+- This property is intended to be used with non-literal values.
+- The described resource may be derived from the related resource in whole or in part.
+- Recommended practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.
+]],
+        },
+    },
+    {
+        label = "dcterms:spatial",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:spatial",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/spatial]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:spatial] ⊑ [dc:coverage]
+- [dcterms:spatial] ⊑ [dcterms:coverage]
+
++ **Definition**
+- Spatial characteristics of the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:subject",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:subject",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/subject]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:subject] ⊑ [dc:subject]
+
++ **Definition**
+- A topic of the resource.
+
++ **Comments**
+- Recommended practice is to refer to the subject with a URI. If this is notpossible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a asubject in a controlled vocabulary.
+]],
+        },
+    },
+    {
+        label = "dcterms:tableOfContents",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:tableOfContents",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/tableOfContents]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:tableOfContents] ⊑ [dc:description]
+- [dcterms:tableOfContents] ⊑ [dcterms:description]
+
++ **Range includes**
+- [dcterms:PeriodOfTime]
+
++ **Definition**
+- A list of subunits of the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:temporal",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:temporal",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/temporal]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:temporal] ⊑ [dc:coverage]
+- [dcterms:temporal] ⊑ [dcterms:coverage]
+
++ **Range includes**
+- [dcterms:PeriodOfTime]
+
++ **Definition**
+- Temporal characteristics of the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:title",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:title",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/title]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:title] ⊑ [dc:title]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- A name given to the resource.
+]],
+        },
+    },
+    {
+        label = "dcterms:type",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:type",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/type]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:type] ⊑ [dc:type]
+
++ **Definition**
+- The nature or genre of the resource.
+
++ **Comments**
+- Recommended practice is to use a controlled vocabulary such as the DCMI Type vocabulary [DCMI-TYPE].
+- To describe the file format, physical medium, or dimensions of the resource, use the property [dcterms:format].
+]],
+        },
+    },
+    {
+        label = "dcterms:valid",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "dcterms:valid",
+        documentation = {
+            value = [[
++ **Identifier**
+- [http://purl.org/dc/terms/valid]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [dcterms:valid] ⊑ [dc:date]
+- [dcterms:valid] ⊑ [dcterms:date]
+
++ **Range**
+- [rdfs:Literal]
+
++ **Definition**
+- Date (often a range) of validity of a resource.
+
++ **Comments**
+- Recommended practice is to describe the date, date/time, or period of time as recommended for the property [dcterms:date], of which this is a subproperty.
 ]],
         },
     },
