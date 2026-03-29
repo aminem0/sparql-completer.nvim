@@ -2128,19 +2128,19 @@ return {
         },
     },
     {
-        label = "schema:CheckOutPage",
+        label = "schema:CheckoutPage",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "schema:CheckOutPage",
+        description = "schema:CheckoutPage",
         documentation = {
             value = [[
 + **Identifier**
-- [https://schema.org/CheckOutPage]
+- [https://schema.org/CheckoutPage]
 
 + **Type**
 - [rdfs:Class]
 
 + **Subclass relationships**
-- [schema:CheckOutPage] ⊑ [schema:WebPage]
+- [schema:CheckoutPage] ⊑ [schema:WebPage]
 
 + **Definition**
 - Web page type: Checkout page.
@@ -4020,78 +4020,399 @@ return {
 ]],
         },
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+        label = "schema:EmergencyService",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EmergencyService",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EmergencyService]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EmergencyService] ⊑ [schema:LocalBusiness]
+
++ **Definition**
+- An emergency service, such as a fire station or ER.
+]],
+        },
+    },
+    {
+        label = "schema:EmployeeRole",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EmployeeRole",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EmployeeRole]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EmployeeRole] ⊑ [schema:OrganizationRole]
+
++ **Definition**
+- A subclass of [schema:OrganizationRole] used to describe employee relationships.
+]],
+        },
+    },
+    {
+        label = "schema:EmploymentAgency",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EmploymentAgency",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EmploymentAgency]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EmploymentAgency] ⊑ [schema:LocalBusiness]
+
++ **Definition**
+- An employment agency.
+]],
+        },
+    },
+    {
+        label = "schema:EndorseAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EndorseAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EndorseAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EndorseAction] ⊑ [schema:ReactAction]
+
++ **Definition**
+- An agent approves/certifies/likes/supports/sanctions an object.
+]],
+        },
+    },
+    {
+        label = "schema:Energy",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Energy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Energy]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Energy] ⊑ [schema:Quantity]
+
++ **Definition**
+- Properties that take [schema:Energy] as values are of the form `<Number> <Energy unit of measure>`.
+]],
+        },
+    },
+    {
+        label = "schema:EngineSpecification",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EngineSpecification",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EngineSpecification]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EngineSpecification] ⊑ [schema:StructuredValue]
+
++ **Definition**
+- Information about the engine of the vehicle.
+
++ **Comments**
+- A vehicle can have multiple engines represented by multiple [schema:EngineSpecification] entities.
+]],
+        },
+    },
+    {
+        label = "schema:EntertainmentBusiness",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EntertainmentBusiness",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EngineSpecification]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EntertainmentBusiness] ⊑ [schema:LocalBusiness]
+
++ **Definition**
+- A business providing entertainment.
+]],
+        },
+    },
+    {
+        label = "schema:EntryPoint",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EntryPoint",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EntryPoint]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EntryPoint] ⊑ [schema:Intangible]
+
++ **Definition**
+- An entry point, within some Web-based protocol.
+]],
+        },
+    },
+    {
+        label = "schema:Enumeration",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Enumeration",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Enumeration]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Enumeration] ⊑ [schema:Intangible]
+
++ **Definition**
+- Lists or enumerations - for example, a list of cuisines or music genres, etc.
+]],
+        },
+    },
+    {
+        label = "schema:Episode",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Episode",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Episode]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Episode] ⊑ [schema:CreativeWork]
+
++ **Definition**
+- A media episode (e.g. TV, radio, video game) which can be part of a series or season.
+]],
+        },
+    },
+    {
+        label = "schema:Event",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Event",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Event]
+
++ **Type**
+- [rdfs:Class]
+
++ **Equivalency relationships**
+- [schema:Event] ≡ [dcmitype:Event]
+
++ **Subclass relationships**
+- [schema:Event] ⊑ [schema:Thing]
+
++ **Definition**
+- An event happening at a certain time and location, such as a concert, lecture,or festival.
+
++ **Comments**
+- Ticketing information may be added via the [schema:offers] property.
+- Repeated events may be structured as separate [schema:Event] objects.
+]],
+        },
+    },
+    {
+        label = "schema:EventReservation",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EventReservation",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Event]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EventReservation] ⊑ [schema:Reservation]
+
++ **Definition**
+- A reservation for an event like a concert, sporting event or lecture.
+
++ **Comments**
+- This type is for information about actual reservations, e.g. in confirmation e-mails or HTML pages with individual confirmations of reservation. For offers of tickets, use [schema:Offer].
+]],
+        },
+    },
+    {
+        label = "schema:EventStatusType",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EventStatusType",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EventStatusType]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EventStatusType] ⊑ [schema:Enumeration]
+
++ **Definition**
+- [schema:EventStatusType] is an enumeration type whose instances represent several states that an [schema:Event] may be in.
+]],
+        },
+    },
+    {
+        label = "schema:EventVenue",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:EventVenue",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/EventVenue]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:EventVenue] ⊑ [schema:CivicStructure]
+
++ **Definition**
+- An event venue.
+]],
+        },
+    },
+    {
+        label = "schema:ExerciseAction",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ExerciseAction",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ExerciseAction]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ExerciseAction] ⊑ [schema:PlayAction]
+
++ **Definition**
+- The act of participating in exertive activity for the purpose of improving health and fitness.
+]],
+        },
+    },
+    {
+        label = "schema:ExerciseGym",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ExerciseGym",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ExerciseGym]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ExerciseGym] ⊑ [schema:SportsActivityLocation]
+
++ **Definition**
+- A gym.
+]],
+        },
+    },
+    {
+        label = "schema:ExhibitionEvent",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:ExhibitionEvent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/ExhibitionEvent]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:ExhibitionEvent] ⊑ [schema:Event]
+
++ **Definition**
+- Event type: Exhibition event, e.g. at a museum, library, archive, tradeshow, ...
+]],
+        },
+    },
+    {
+        label = "schema:FastFoodRestaurant",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:FastFoodRestaurant",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/FastFoodRestaurant]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:FastFoodRestaurant] ⊑ [schema:FoodEstablishment]
+
++ **Definition**
+- A fast-food restaurant.
+]],
+        },
+    },
+    {
+        label = "schema:Festival",
+        kind = cmp.lsp.CompletionItemKind.Class,
+        description = "schema:Festival",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/Festival]
+
++ **Type**
+- [rdfs:Class]
+
++ **Subclass relationships**
+- [schema:Festival] ⊑ [schema:Festival]
+
++ **Definition**
+- Event type: Festival.
+]],
+        },
+    },
 
 
 
@@ -5211,10 +5532,7 @@ return {
 - [schema:Person]
 
 + **Definition**
-- The direct performer or driver of the [schema:Action] (animate or inanimate). E.g. `John` wrote a book.
-
-+ **Examples**
-- `John`
+- The direct performer or driver of the [schema:Action] (animate or inanimate).
 ]],
         },
     },
@@ -6091,6 +6409,1024 @@ return {
 ]],
         },
     },
+    {
+        label = "schema:associatedArticle",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:associatedArticle",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/associatedArticle]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:MediaObject]
+
++ **Range includes**
+- [schema:NewsArticle]
+
++ **Definition**
+- A [schema:NewsArticle] associated with the [schema:MediaObject].
+]],
+        },
+    },
+    {
+        label = "schema:associatedMedia",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:associatedMedia",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/associatedMedia]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:CreativeWork]
+
++ **Range includes**
+- [schema:MediaObject]
+
++ **Definition**
+- A [schema:MediaObject] that encodes this [schema:CreativeWork].
+
++ **Comments**
+- This property is a synonym for encoding.
+]],
+        },
+    },
+    {
+        label = "schema:athlete",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:athlete",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/athlete]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:SportsTeam]
+
++ **Range includes**
+- [schema:Person]
+
++ **Definition**
+- A [schema:Person] that acts as a performing member of a [schema:SportsTeam].
+
++ **Comments**
+- A player, as opposed to a coach.
+]],
+        },
+    },
+    {
+        label = "schema:attendees",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:attendees",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/attendees]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Event]
+
++ **Range includes**
+- [schema:Organization]
+- [schema:Person]
+
++ **Definition**
+- A person attending the [schema:Event].
+]],
+        },
+    },
+    {
+        label = "schema:audienceType",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:audienceType",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/audienceType]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Audience]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- The target group associated with a given audience.
+
++ **Examples**
+- `veterans`
+- `car owners`
+- `musicians`
+]],
+        },
+    },
+    {
+        label = "schema:audio",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:audio",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/audio]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:CreativeWork]
+
++ **Range includes**
+- [schema:AudioObject]
+
++ **Definition**
+- An embedded [schema:AudioObject].
+]],
+        },
+    },
+    {
+        label = "schema:author",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:author",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/author]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:CreativeWork]
+- [schema:Rating]
+
++ **Range includes**
+- [schema:Organization]
+- [schema:Person]
+
++ **Definition**
+- The author of this content or rating.
+
++ **Comments**
+- Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the 'rel' tag. That is equivalent to this and may be used interchangeably.
+]],
+        },
+    },
+    {
+        label = "schema:availability",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availability",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availability]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Demand]
+- [schema:Offer]
+
++ **Range includes**
+- [schema:ItemAvailability]
+
++ **Definition**
+- The availability for this kind of item.
+
++ **Examples**
+- [schema:InStock]
+- [schema:OutOfStock]
+- [schema:PreOrder]
+]],
+        },
+    },
+    {
+        label = "schema:availabilityEnds",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availabilityEnds",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availabilityEnds]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Demand]
+- [schema:Offer]
+
++ **Range includes**
+- [schema:DateTime]
+
++ **Definition**
+- The end of the availability of the product or service included in the offer.
+]],
+        },
+    },
+    {
+        label = "schema:availabilityStarts",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availabilityStarts",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availabilityStarts]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Demand]
+- [schema:Offer]
+
++ **Range includes**
+- [schema:DateTime]
+
++ **Definition**
+- The beginning of the availability of the product or service included in the offer.
+]],
+        },
+    },
+    {
+        label = "schema:availableAtOrFrom",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableAtOrFrom",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableAtOrFrom]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [schema:availableAtOrFrom] ⊑ [schema:areaServed]
+
++ **Domain includes**
+- [schema:Demand]
+- [schema:Offer]
+
++ **Range includes**
+- [schema:Place]
+
++ **Definition**
+- The [schema:Place](s) from which the offer can be obtained (e.g. store locations).
+]],
+        },
+    },
+    {
+        label = "schema:availableChannel",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableChannel",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableChannel]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Service]
+
++ **Range includes**
+- [schema:ServiceChannel]
+
++ **Definition**
+- A means of accessing the [schema:Service] (e.g. a phone bank, a web site, a location, etc.).
+]],
+        },
+    },
+    {
+        label = "schema:availableDeliveryMethod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableDeliveryMethod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableDeliveryMethod]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Demand]
+- [schema:Offer]
+
++ **Range includes**
+- [schema:DeliveryMethod]
+
++ **Definition**
+- The [schema:DeliveryMethod](s) available for this offer.
+]],
+        },
+    },
+    {
+        label = "schema:availableFrom",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableFrom",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableFrom]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:DeliveryEvent]
+
++ **Range includes**
+- [schema:DateTime]
+
++ **Definition**
+- When the item is available for pickup from thestore, locker, etc.
+]],
+        },
+    },
+    {
+        label = "schema:availableLanguage",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableLanguage",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableLanguage]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:ContactPoint]
+- [schema:LodgingBusiness]
+- [schema:ServiceChannel]
+
++ **Range includes**
+- [schema:Language]
+- [schema:Text]
+
++ **Definition**
+- A language may use with the item.
+
++ **Comments**
+- Please use one of the language codes from the [IETF BCP47 standard](http://tools.ietf.org/html/bcp47).
+- See also: [schema:inLanguage].
+]],
+        },
+    },
+    {
+        label = "schema:availableThrough",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:availableThrough",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/availableThrough]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:DeliveryEvent]
+
++ **Range includes**
+- [schema:DateTime]
+
++ **Definition**
+- After this date, the item will no longer be available for pickup.
+]],
+        },
+    },
+    {
+        label = "schema:awards",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:awards",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/awards]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:CreativeWork]
+- [schema:Organization]
+- [schema:Person]
+- [schema:Product]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- Awards won by or for this item.
+
++ **Comments**
+- This class has been superseded by [schema:award].
+]],
+        },
+    },
+    {
+        label = "schema:awayTeam",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:awayTeam",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/awayTeam]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:SportsEvent]
+
++ **Range includes**
+- [schema:Person]
+- [schema:SportsTeam]
+
++ **Definition**
+- The away team in a [schema:SportsEvent].
+]],
+        },
+    },
+    {
+        label = "schema:baseSalary",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:baseSalary",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/baseSalary]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:EmployeeRole]
+- [schema:JobPosting]
+
++ **Range includes**
+- [schema:MonetaryAmount]
+- [schema:Number]
+- [schema:PriceSpecification]
+
++ **Definition**
+- The base salary of the job orof an employee in an [schema:EmployeeRole].
+]],
+        },
+    },
+    {
+        label = "schema:bed",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bed",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bed]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:HotelRoom]
+- [schema:Suite]
+
++ **Range includes**
+- [schema:BedDetails]
+- [schema:Text]
+
++ **Definition**
+- The type of bed or bedds included in this accomodation.
+
++ **Comments**
+- For the single case of just one bed of a certain type, you use [schema:bed] directly with a [schema:Text].
+- If you want to indicate the quantity of a certain kind of bed, use and instance of [schema:BedDetails].
+- For more detailed information, use the [schema:amenityFeature] property.
+]],
+        },
+    },
+    {
+        label = "schema:benefits",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:benefits",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/benefits]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:JobPosting]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- Description of benefits associated with the job.
+
++ **Comments**
+- This property has been superseded by [schema:benefit].
+]],
+        },
+    },
+    {
+        label = "schema:bestRating",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bestRating",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bestRating]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Rating]
+
++ **Range includes**
+- [schema:Number]
+- [schema:Text]
+
++ **Definition**
+- The highest value allowed in this rating system.
+
++ **Comments**
+- If [schema:bestRating] is omitted, `5` is assumed.
+]],
+        },
+    },
+    {
+        label = "schema:billingAddress",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:billingAddress",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/billingAddress]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Order]
+
++ **Range includes**
+- [schema:PostalAddress]
+
++ **Definition**
+- The billing address for the [schema:Order].
+]],
+        },
+    },
+    {
+        label = "schema:billingIncrement",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:billingIncrement",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/billingIncrement]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:UnitPriceSpecification]
+
++ **Range includes**
+- [schema:Number]
+
++ **Definition**
+- This property specifies the minimal quantity and rounding increment that will be the basis for the billing.
+
++ **Comments**
+- The unit of measurement is specified by the [schema:unitCode] property.
+]],
+        },
+    },
+    {
+        label = "schema:billingPeriod",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:billingPeriod",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/billingPeriod]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Invoice]
+
++ **Range includes**
+- [schema:Duration]
+
++ **Definition**
+- The time interval used to compute the [schema:Invoice].
+]],
+        },
+    },
+    {
+        label = "schema:birthDate",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:birthDate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/birthDate]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Person]
+
++ **Range includes**
+- [schema:Date]
+
++ **Definition**
+- Date of birth.
+]],
+        },
+    },
+    {
+        label = "schema:birthPlace",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:birthPlace",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/birthPlace]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Person]
+
++ **Range includes**
+- [schema:Date]
+
++ **Definition**
+- The place where the [schema:Person] was born.
+]],
+        },
+    },
+    {
+        label = "schema:bitrate",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bitrate",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bitrate]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:MediaObject]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- The bitrate of the [schema:MediaObject].
+]],
+        },
+    },
+    {
+        label = "schema:blogPosts",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:blogPosts",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/blogPosts]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Blog]
+
++ **Range includes**
+- [schema:BlogPosting]
+
++ **Definition**
+- The [schema:BlogPosting]s that are part of this [schema:Blog].
+
++ **Comments**
+- This property has been superseded by [schema:blogPost].
+]],
+        },
+    },
+    {
+        label = "schema:boardingGroup",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:boardingGroup",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/boardingGroup]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:FlightReservation]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- The airline-specific indicator of boarding order/preference.
+]],
+        },
+    },
+    {
+        label = "schema:boardingPolicy",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:boardingPolicy",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/boardingPolicy]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Airline]
+- [schema:Flight]
+
++ **Range includes**
+- [schema:BoardingPolicyType]
+
++ **Definition**
+- The type of boarding policy used by the airline (e.g. zone-based or group based).
+]],
+        },
+    },
+    {
+        label = "schema:bookEdition",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bookEdition",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bookEdition]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Book]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- The edition of the [schema:Book].
+]],
+        },
+    },
+    {
+        label = "schema:bookFormat",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bookFormat",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bookFormat]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Book]
+
++ **Range includes**
+- [schema:BookFormatType]
+
++ **Definition**
+- The format of the [schema:Book].
+]],
+        },
+    },
+    {
+        label = "schema:bookingAgent",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bookingAgent",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bookingAgent]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Reservation]
+
++ **Range includes**
+- [schema:Organization]
+- [schema:Person]
+
++ **Definition**
+- [schema:bookingAgent] is an out-dated term indicating a 'broker' that serves as a booking agent.
+
++ **Comments**
+- This property has been superseded by [schema:broker].
+]],
+        },
+    },
+    {
+        label = "schema:bookingTime",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:bookingTime",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/bookingTime]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Reservation]
+
++ **Range includes**
+- [schema:DateTime]
+
++ **Definition**
+- The date and time the [schema:Reservation] was booked.
+]],
+        },
+    },
+    {
+        label = "schema:borrower",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:borrower",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/borrower]
+
++ **Type**
+- [rdf:Property]
+
++ **Subproperty relationships**
+- [schema:borrower] ⊑ [schema:participant]
+
++ **Domain includes**
+- [schema:LendAction]
+
++ **Range includes**
+- [schema:Person]
+
++ **Definition**
+- The person that borrows the object being lent.
+
++ **Comments**
+- A sub-property of [schema:participant].
+]],
+        },
+    },
+    {
+        label = "schema:box",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:box",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/box]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:GeoShape]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- A box is the area enclosed by the rectangle formed by two points. The first point is lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.
+]],
+        },
+    },
+    {
+        label = "schema:branch",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:branch",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/branch]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Nerve]
+
++ **Range includes**
+- [schema:AnatomicalStructure]
+
++ **Definition**
+- The branches that delineate from the nerve bundle.
+
++ **Comments**
+- Not to be confused with the anatomical [schema:branch].
+- This property has been superseded by [schema:arterialBranch].
+]],
+        },
+    },
+    {
+        label = "schema:branchCode",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:branchCode",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/branchCode]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:Place]
+
++ **Range includes**
+- [schema:Text]
+
++ **Definition**
+- A short textual code (also called "store code") that uniquely identifies a place of business. The code is typically assigned by the [schema:parentOrganization] and is used in structured URLs.
+
++ **Comments**
+- For example, in the URL [http://starbucks.co.uk/store-locator/etc/detail/3047], the code `3047` is a [schema:branchCode] for a particular branch.
+
++ **Examples**
+- `3047`
+]],
+        },
+    },
+    {
+        label = "schema:branchOf",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "schema:branchOf",
+        documentation = {
+            value = [[
++ **Identifier**
+- [https://schema.org/branchOf]
+
++ **Type**
+- [rdf:Property]
+
++ **Domain includes**
+- [schema:LocalBusiness]
+
++ **Range includes**
+- [schema:Organization]
+
++ **Definition**
+- The larger [schema:Organization] that this [schema:LocalBusiness] is a branch of, if any.
+
++ **Comments**
+- Not to be confused with the anatomical [schema:branch].
+]],
+        },
+    },
+
+
+
+
+
+
+
 
 
 
