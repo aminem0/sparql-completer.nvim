@@ -70,6 +70,24 @@ Completion and suggestion of terms is provided via **[nvim-cmp](https://github.c
 
 ---
 
+## Keybinds
+
+The plugin considers several keybinds that perform various functions. These are all built around the template `<leader>r{x}`, where `{x}` can change. The current keymaps are:
+
+| Keymap       | Use                                                  |
+|--------------|------------------------------------------------------|
+| `<leader>ra` | Change `Accept` header value                         |
+| `<leader>rc` | Change `Content-Type` header value                   |
+| `<leader>re` | Change the SPARQL endpoint                           |
+| `<leader>rm` | Change the HTTP verb to either `POST` or `GET`       |
+| `<leader>rp` | Print a message praising SPARQL to console           |
+| `<leader>rq` | Execute a curl command to run the SPARQL query       |
+| `<leader>rs` | Save the current SPARQL query into a `.sh` file      |
+| `<leader>ru` | Change the `User-Agent` header value                 |
+| `<leader>rv` | Preview the headers that will be sent with the query |
+
+---
+
 ## Present namespaces
 
 At the moment, here is the current list of namespaces that have been integrated into the plugin:
