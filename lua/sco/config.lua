@@ -63,6 +63,7 @@ M.options = {
         "vcard",
         "vs",
         "wdrs",
+        "wgs84",
         "wot",
         "xkos",
     },
