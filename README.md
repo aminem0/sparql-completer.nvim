@@ -131,6 +131,7 @@ At the moment, here is the current list of namespaces that have been integrated 
 | R2RML                                       | [rr:]()       | Complete   |
 | RDF                                         | [rdf:]()      | Complete   |
 | RDF-Schema                                  | [rdfs:]()     | Complete   |
+| Rich Site Summary                           | [rss:]()      | Complete   |
 | schema.org                                  | [schema:]()   | Complete   |
 | Semantic Web Rule Language                  | [swrl:]()     | Complete   |
 | Shapes and Constraints Language             | [shacl:]()    | Incomplete |

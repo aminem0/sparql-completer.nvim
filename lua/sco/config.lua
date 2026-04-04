@@ -49,6 +49,7 @@ M.options = {
         "rdf",
         "rdfs",
         "rr",
+        "rss",
         "schema",
         "sd",
         "skos",
