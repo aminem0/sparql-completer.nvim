@@ -26,23 +26,6 @@ return {
         },
     },
     {
-        label = "rss:channel",
-        kind = cmp.lsp.CompletionItemKind.Class,
-        description = "rss:channel",
-        documentation = {
-            value = [[
-+ **Identifier**
-- [http://purl.org/rss/1.0/channel]
-
-+ **Type**
-- [rdfs:Class]
-
-+ **Definition**
-- An RSS information channel.
-]],
-        },
-    },
-    {
         label = "rss:image",
         kind = cmp.lsp.CompletionItemKind.Class,
         description = "rss:image",
