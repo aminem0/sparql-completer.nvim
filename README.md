@@ -117,7 +117,7 @@ At the moment, here is the current list of namespaces that have been integrated 
 | Evaluation and Report Language              | [earl:]()     | Complete   |
 | eXtended Knowledge Organization System      | [xkos:]()     | Complete   |
 | Feature Annotation Location Ontology        | [faldo:]()    | Complete   |
-| Friend of a Friend                          | [foaf:]()     | Incomplete |
+| Friend of a Friend                          | [foaf:]()     | Complete   |
 | GBIF                                        | [gbif:]()     | Complete   |
 | Good Relations                              | [gr:]()       | Incomplete |
 | HTTP Vocabulary in RDF                      | [http:]()     | Complete   |
