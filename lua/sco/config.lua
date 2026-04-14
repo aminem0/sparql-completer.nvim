@@ -62,6 +62,7 @@ M.options = {
         "up",
         "vann",
         "vcard",
+        "void",
         "vs",
         "wdrs",
         "wgs84",
