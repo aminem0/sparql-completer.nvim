@@ -9,7 +9,6 @@ This plugin was motivated by limitations in existing SPARQL editors such as [the
 Also, the awesome [rdflib](https://rdflib.readthedocs.io) Python library offers a 
 However, it does not give any information regarding the
 
-
 As a result, commonly used vocabularies in biodiversity and ecology, such as Darwin Core, are not supported
 
 Several interesting vocabularies are considered, providing a more fluid and exciting SPARQL experience. 
@@ -101,7 +100,9 @@ At the moment, here is the current list of namespaces that have been integrated 
 | ABCD                                        | [abcd:]()     | Incomplete |
 | Annotea                                     | [ann:]()      | Complete   |
 | Audiovisual Core (AC)                       | [ac:]()       | Complete   |
+| AC subject content description vocabulary   | [accd:]()     | Complete   |
 | AC subject orientation vocabulary           | [acorient:]() | Complete   |
+| AC subject part vocabulary                  | [acpart:]()   | Complete   |
 | Basic Geo Vocabulary (WGS84)                | [wgs84:]()    | Complete   |
 | Bibliography Ontology                       | [bibo:]()     | Complete   |
 | Content in RDF                              | [cnt:]()      | Complete   |
