@@ -21,7 +21,8 @@ return {
 - A description of the behavior shown by the subject at the time the [dwc:Occurrence] was recorded.
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -45,7 +46,8 @@ return {
 - Categorisation of individuals for eusocial species (including some mammals and arthropods).
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary that aligns best with the [dwc:Taxon]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary that aligns best with the [dwc:Taxon].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -90,10 +92,11 @@ return {
 - [dwc:Occurrence]
 
 + **Definition**
-- The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.
+- The degree to which a [dwc:Organism] survives, reproduces, and expands its range at the given place and time.
 
 + **Comments**
-- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/doe/]. For details, refer to [https://doi.org/10.3897/biss.3.38084]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/doe/]. For details, refer to [https://doi.org/10.3897/biss.3.38084].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 
 + **Examples**
 - [http://rs.tdwg.org/dwcdoe/values/d003]
@@ -118,7 +121,9 @@ return {
 - The primary branch or branches of knowledge represented by the record.
 
 + **Comments**
-- This term can be used to classify records according to branches of knowledge. Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+- This term can be used to classify records according to branches of knowledge.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -139,7 +144,8 @@ return {
 - The current state of a specimen with respect to the collection identified in [dwc:collectionCode] or [dwc:collectionID].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -157,10 +163,11 @@ return {
 - [rdf:Property]
 
 + **Definition**
-- Use to link a dwc:GeologicalContext instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the [dwc:MaterialEntity] was collected.
+- Use to link a [dwc:GeologicalContext] instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the earliest possible geological time period from which the [dwc:MaterialEntity] was collected.
 
 + **Comments**
-- Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.
+- Recommended best practice is to use an IRI from a controlled vocabulary.
+- A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.
 ]],
         },
     },
@@ -181,7 +188,8 @@ return {
 - Statement about whether a dwc:Organism has been introduced to a given place and time through the direct or indirect activity of modern humans.
 
 + **Comments**
-- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/em/]. For details, refer to [https://doi.org/10.3897/biss.3.38084]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/em/]. For details, refer to [https://doi.org/10.3897/biss.3.38084].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 
 + **Examples**
 - [http://rs.tdwg.org/dwcem/values/e001]
@@ -206,7 +214,9 @@ return {
 - The nature of the [dwc:Event].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Regardless of the [dwc:eventType], the interval of the [dwc:Event] can be captured in [dwc:eventDate]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Regardless of the [dwc:eventType], the interval of the [dwc:Event] can be captured in [dwc:eventDate].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -311,7 +321,8 @@ return {
 - Use to link a [dwc:GeologicalContext] instance to an IRI-identified lithostratigraphic unit at the lowest possible level in a hierarchy.
 
 + **Comments**
-- Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.7 of the Darwin Core RDF Guide for details.
+- Recommended best practice is to use an IRI from a controlled vocabulary.
+- A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.7 of the Darwin Core RDF Guide for details.
 ]],
         },
     },
@@ -437,7 +448,8 @@ return {
 - A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description for the [dcterms:Location] of the [dwc:Occurrence].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -500,11 +512,12 @@ return {
 - A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.
 
 + **Comments**
-- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects. Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.
 ]],
         },
     },
-    {
+    { -- NOTE: Recheck Event
         label = "dwciri:identifiedBy",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:identifiedBy",
@@ -521,7 +534,8 @@ return {
 - A person, group, or organization who assigned the [dwc:Taxon] to the subject.
 
 + **Comments**
-- When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the [dwc:Organisms] related to the Event. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- When used in the context of an [dwc:Event] (such as in the Humboldt Extension), the subject consists of all of the [dwc:Organism]s related to the [dwc:Event].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -542,7 +556,8 @@ return {
 - Use to link any subject resource that is part of a collection to the collection containing the resource.
 
 + **Comments**
-- Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.
+- Recommended best practice is to use an IRI from a controlled registry.
+- A "convenience property" that replaces literal-value terms related to collections and institutions. See Section 2.7.3 of the Darwin Core RDF Guide for details.
 ]],
         },
     },
@@ -550,7 +565,7 @@ return {
         label = "dwciri:inDataset",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:inDataset",
-        documentation = { -- NOTE: Maybe dwc:Event
+        documentation = {
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/inDataset]
@@ -571,7 +586,7 @@ return {
         label = "dwciri:inDescribedPlace",
         kind = cmp.lsp.CompletionItemKind.Property,
         description = "dwciri:inDescribedPlace",
-        documentation = { -- NOTE: Maybe dwc:Event
+        documentation = {
             value = [[
 + **Identifier**
 - [http://rs.tdwg.org/dwc/iri/inDescribedPlace]
@@ -584,7 +599,8 @@ return {
 - Use to link a [dcterms:Location] instance subject to the lowest level standardized hierarchically-described resource.
 
 + **Comments**
-- Recommended best practice is to use an IRI from a controlled registry. A "convenience property" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.
+- Recommended best practice is to use an IRI from a controlled registry.
+- A "convenience property" that replaces Darwin Core literal-value terms related to locations. See Section 2.7.5 of the Darwin Core RDF Guide for details.
 ]],
         },
     },
@@ -626,7 +642,8 @@ return {
 - Use to link a [dwc:GeologicalContext] instance to chronostratigraphic time periods at the lowest possible level in a standardized hierarchy. Use this property to point to the latest possible geological time period from which the [dwc:MaterialEntity] was collected.
 
 + **Comments**
-- Recommended best practice is to use an IRI from a controlled vocabulary. A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.
+- Recommended best practice is to use an IRI from a controlled vocabulary.
+- A "convenience property" that replaces Darwin Core literal-value terms related to geological context. See Section 2.7.6 of the Darwin Core RDF Guide for details.
 ]],
         },
     },
@@ -644,10 +661,11 @@ return {
 - [rdf:Property]
 
 + **Definition**
-- The age class or life stage of the [dwc:Organism(s)] at the time the [dwc:Occurrence] was recorded.
+- The age class or life stage of the [dwc:Organism](s) at the time the [dwc:Occurrence] was recorded.
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -731,7 +749,8 @@ return {
 - The nature of the measurement, fact, characteristic, or assertion.
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -797,7 +816,8 @@ return {
 - A statement about the presence or absence of a [dwc:Taxon] at a [dcterms:Location].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -839,7 +859,8 @@ return {
 - The process by which a [dwc:Organism] came to be in a given place at a given time.
 
 + **Comments**
-- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/pw/]. For details, refer to [https://doi.org/10.3897/biss.3.38084]. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use IRIs from the controlled vocabulary designated for use with this term, listed at [http://rs.tdwg.org/dwc/doc/pw/]. For details, refer to [https://doi.org/10.3897/biss.3.38084].
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 
 + **Examples**
 - [http://rs.tdwg.org/dwcpw/values/p002]
@@ -927,7 +948,8 @@ return {
 - The reproductive condition of the biological individual(s) represented in the [dwc:Occurrence].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -948,7 +970,8 @@ return {
 - The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling [dwc:Event].
 
 + **Comments**
-- A [dwciri:sampleSizeUnit] must have a corresponding [dwc:sampleSizeValue]. Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure [http://www.wurvoc.org/vocabularies/om-1.8/] of SI units, derived units, or other non-SI units accepted for use within the SI.
+- A [dwciri:sampleSizeUnit] must have a corresponding [dwc:sampleSizeValue].
+- Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure [http://www.wurvoc.org/vocabularies/om-1.8/] of SI units, derived units, or other non-SI units accepted for use within the SI.
 ]],
         },
     },
@@ -969,7 +992,8 @@ return {
 - The methods or protocols used during a [dwc:Event], denoted by an IRI.
 
 + **Comments**
-- Recommended best practice is describe a [dwc:Event] with no more than one sampling protocol. In the case of a summary [dwc:Event] in which a specific protocol can not be attributed to specific [dwc:Occurrences], the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the [dwc:Occurrence].
+- Recommended best practice is describe a [dwc:Event] with no more than one sampling protocol.
+- In the case of a summary [dwc:Event] in which a specific protocol can not be attributed to specific [dwc:Occurrences], the recommended best practice is to repeat the property for each IRI that denotes a different sampling protocol that applies to the [dwc:Occurrence].
 
 + **Examples**
 - [https://doi.org/10.1111/j.1466-8238.2009.00467.x]
@@ -993,7 +1017,8 @@ return {
 - The sex of the biological individual(s) represented in the [dwc:Occurrence].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -1077,7 +1102,8 @@ return {
 - The spatial coordinate system for the [dwc:verbatimLatitude] and [dwc:verbatimLongitude] or the [dwc:verbatimCoordinates] of the [dcterms:Location].
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -1119,7 +1145,8 @@ return {
 - The vertical datum used as the reference upon which the values in the elevation terms are based.
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
@@ -1140,7 +1167,9 @@ return {
 - An indication of whether a [dwc:Organism] was alive or dead at the time of collection or observation.
 
 + **Comments**
-- Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a [dwc:basisOfRecord] of `PreservedSpecimen`, `MaterialEntity`, `MaterialSample`, or `HumanObservation`. Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
+- Recommended best practice is to use a controlled vocabulary.
+- Intended to be used with records having a [dwc:basisOfRecord] of `PreservedSpecimen`, `MaterialEntity`, `MaterialSample`, or `HumanObservation`.
+- Terms in the [dwciri:] namespace are intended to be used in RDF with non-literal objects.
 ]],
         },
     },
