@@ -14,7 +14,7 @@ return {
 - [rdfs:Class]
 
 + **Definition**
-- A measurement of or fact abour an [rdfs:Resource] ([http://www.w3.org/2000/01/rdf-schema#Resource]).
+- A measurement of or fact about an [rdfs:Resource] ([http://www.w3.org/2000/01/rdf-schema#Resource]).
 ]],
         },
     },

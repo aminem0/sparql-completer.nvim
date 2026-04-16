@@ -50,7 +50,11 @@ return {
 - [xsd:string]
 
 + **Definition**
-- Forward PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment. If multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence]. The primer sequence should be reported in uppercase letters.
+- Forward PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment.
+
++ **Comments**
+- If multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
+- The primer sequence should be reported in uppercase letters.
 
 + **Examples**
 - `GGACTACHVGGGTWTCTAAT`
@@ -78,7 +82,10 @@ return {
 - [xsd:string]
 
 + **Definition**
-- Name of the forward PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment. If multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
+- Name of the forward PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment.
+
++ **Comments**
+- If multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
 
 + **Examples**
 - `GGACTACHVGGGTWTCTAAT`
@@ -106,7 +113,10 @@ return {
 - [xsd:string]
 
 + **Definition**
-- Name of the reverse PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment. If multiple multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
+- Name of the reverse PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment.
+
++ **Comments**
+- If multiple multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
 
 + **Examples**
 - `jgLCO1490`
@@ -162,7 +172,11 @@ return {
 - [xsd:string]
 
 + **Definition**
-- Reverse PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment. If multiple multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence]. The primer sequence should be reported in uppercase letters.
+- Reverse PCR primer that were used to amplify the sequence of the targeted gene, locus or subfragment.
+
++ **Comments**
+- If multiple multiple forward or reverse primers are present in a single PCR reaction, there should be a full row for each of these linked to the same [dwc:Occurrence].
+- The primer sequence should be reported in uppercase letters.
 
 + **Examples**
 - `GGACTACHVGGGTWTCTAAT`
@@ -170,5 +184,3 @@ return {
         },
     },
 }
-
-

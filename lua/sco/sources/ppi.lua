@@ -37,7 +37,7 @@ return {
 - [rdfs:Class]
 
 + **Definition**
-- Any attribute of a particular flower or a defined group of animal individuals.
+- Any attribute of a particular flower or a defined group of flowers.
 ]],
         },
     },

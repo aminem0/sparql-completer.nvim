@@ -409,7 +409,8 @@ return {
 - This predicate is used to indicate that the feature is found before the [faldo:ExactPosition].
 
 + **Comments**
-- Used to indicate, for example, a cleavage site. The cleavage happens between two amino acids before one and after the other.
+- Used to indicate, for example, a cleavage site.
+- The cleavage happens between two amino acids, before one and after the other.
 ]],
         },
     },
