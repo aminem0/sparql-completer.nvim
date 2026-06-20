@@ -13,6 +13,8 @@ M.options = {
         "bf",
         "bibo",
         "cc",
+        "chrono",
+        "chronoiri",
         "cnt",
         "cpprole",
         "csvw",
