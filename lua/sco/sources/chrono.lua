@@ -8,9 +8,9 @@ https://chrono.tdwg.org/list/
 
 return {
     {
-        label = "chrono:ChonometricAge",
+        label = "chrono:ChronometricAge",
         kind = cmp.lsp.CompletionItemKind.Class,
-        description = "chrono:ChonometricAge",
+        description = "chrono:ChronometricAge",
         documentation = {
             value = [[
 + **Identifier**
@@ -441,13 +441,13 @@ return {
         },
     },
     {
-        label = "chrono:materialdatedid",
-        kind = cmp.lsp.completionitemkind.property,
-        description = "chrono:materialdatedid",
+        label = "chrono:materialDatedID",
+        kind = cmp.lsp.CompletionItemKind.Property,
+        description = "chrono:materialDatedID",
         documentation = {
             value = [[
 + **identifier**
-- [http://rs.tdwg.org/chrono/terms/materialdatedid]
+- [http://rs.tdwg.org/chrono/terms/materialDatedID]
 
 + **type**
 - [owl:datatypeproperty]
@@ -663,54 +663,4 @@ return {
 ]],
         },
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

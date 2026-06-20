@@ -41,9 +41,6 @@ return {
 - [owl:ObjectProperty]
 - [rdf:Property]
 
-+ **Range**
-- [xsd:string]
-
 + **Definition**
 - A person, groups, or organizations that determined the [chrono:chronometricAge].
 
@@ -157,25 +154,4 @@ return {
 ]],
         },
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
