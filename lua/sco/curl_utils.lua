@@ -120,6 +120,20 @@ function M.build_query_tbl()
                 "-H", "Accept: " .. M.state.accept_mime_type,
             }
             -- print(table.concat(vim.tbl_map(vim.fn.shellescape, cmd), " "))
+        elseif M.state.request_content_type == "application/json" then
+            local flatto = query:gsub("\n", " ")
+
+            cmd_tbl = {
+                "curl",
+                "-i",
+                "-s",
+                "-X", "POST",
+                "-A", M.state.user_agent,
+                endpoint,
+                "--data", '{"query":"' .. flatto '"}',
+                "-H", "Content-Type: " .. M.state.request_content_type,
+                "-H", "Accept: " .. M.state.accept_mime_type,
+            }
         else
             cmd_tbl = {
                 "curl",
