@@ -21,13 +21,13 @@ function M.setup()
         end,
     })
 
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            prefixer.add_namespace2()
-        end,
-    })
-
+    -- vim.api.nvim_create_autocmd("BufWritePre", {
+    --     pattern = { "*.rq", "*.sparql" },
+    --     callback = function()
+    --         prefixer.add_namespace2()
+    --     end,
+    -- })
+    --
     -- vim.api.nvim_create_autocmd("BufWritePre", {
     --     pattern = { "*.rq", "*.sparql" },
     --     callback = function()
@@ -44,20 +44,20 @@ function M.setup()
     --     group = vim.api.nvim_create_augroup("UnusedNamespaces", { clear = true }),
     -- })
 
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            prefixer.insert_cr()
-        end,
-        group = vim.api.nvim_create_augroup("InsertCarriage", { clear = true }),
-    })
-
-    vim.api.nvim_create_autocmd("FileType", {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            vim.opt.isKeyword:append("?")
-        end,
-    })
+    -- vim.api.nvim_create_autocmd("BufWritePre", {
+    --     pattern = { "*.rq", "*.sparql" },
+    --     callback = function()
+    --         prefixer.insert_cr()
+    --     end,
+    --     group = vim.api.nvim_create_augroup("InsertCarriage", { clear = true }),
+    -- })
+    --
+    -- vim.api.nvim_create_autocmd("FileType", {
+    --     pattern = { "*.rq", "*.sparql" },
+    --     callback = function()
+    --         vim.opt.isKeyword:append("?")
+    --     end,
+    -- })
 end
 
 return M
