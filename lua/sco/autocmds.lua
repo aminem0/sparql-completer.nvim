@@ -21,7 +21,6 @@ function M.setup()
         end,
     })
 
-    -- Autocommand to run this function on file write
     vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = { "*.rq", "*.sparql" },
         callback = function()
@@ -29,22 +28,21 @@ function M.setup()
         end,
     })
 
-    -- Autocommand to run this function on file write
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            prefixer.sort_prefix_lines()
-        end,
-        group = vim.api.nvim_create_augroup("SortPrefixGroup", { clear = true }),
-    })
-
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = { "*.rq", "*.sparql" },
-        callback = function()
-            prefixer.remove_unused_prefixes()
-        end,
-        group = vim.api.nvim_create_augroup("UnusedNamespaces", { clear = true }),
-    })
+    -- vim.api.nvim_create_autocmd("BufWritePre", {
+    --     pattern = { "*.rq", "*.sparql" },
+    --     callback = function()
+    --         prefixer.sort_prefix_lines()
+    --     end,
+    --     group = vim.api.nvim_create_augroup("SortPrefixGroup", { clear = true }),
+    -- })
+    --
+    -- vim.api.nvim_create_autocmd("BufWritePre", {
+    --     pattern = { "*.rq", "*.sparql" },
+    --     callback = function()
+    --         prefixer.remove_unused_prefixes()
+    --     end,
+    --     group = vim.api.nvim_create_augroup("UnusedNamespaces", { clear = true }),
+    -- })
 
     vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = { "*.rq", "*.sparql" },
